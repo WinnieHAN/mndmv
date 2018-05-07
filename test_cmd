@@ -1,0 +1,1 @@
+python test.py --test  /public/home/tukewei/hanwj/Code/ldmv/data/wsj10_te --outdir /public/home/tukewei/hanwj/Code/ldmv/output --model /public/home/tukewei/hanwj/Code/ldmv/output/dmv.model --log /public/home/tukewei/hanwj/Code/ldmv/output/log --idx 15

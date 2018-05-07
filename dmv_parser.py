@@ -1,15 +1,15 @@
-import torch
-import torch.autograd as autograd
-from optparse import OptionParser
-import utils
-import eisner_for_dmv
-from tqdm import tqdm
-import sys
-import random
-from dmv_model import ldmv_model as LDMV
-import numpy as np
 import os
 import pickle
+import sys
+from optparse import OptionParser
+
+import numpy as np
+import torch
+from tqdm import tqdm
+
+import eisner_for_dmv
+import utils
+from dmv_model import ldmv_model as LDMV
 
 if __name__ == '__main__':
     parser = OptionParser()
@@ -30,6 +30,7 @@ if __name__ == '__main__':
     parser.add_option("--tag_num", type="int", dest="tag_num", default=1)
     parser.add_option("--tag_dim", type="int", dest="tag_dim", default=5)
     parser.add_option("--dvalency", type="int", dest="d_valency", default=2)
+    parser.add_option("--cvalency", type="int", dest="c_valency", default=1)
     parser.add_option("--em_type", type="string", dest="em_type", default='viterbi')
 
     parser.add_option("--count_smoothing", type="float", dest="count_smoothing", default=0.1)
@@ -40,6 +41,7 @@ if __name__ == '__main__':
     parser.add_option("--split_duration", type="int", dest="split_duration", default=5)
     parser.add_option("--split_factor", type="int", dest="split_factor", default=2)
     parser.add_option("--multi_split", action="store_true", dest="multi_split", default=False)
+    parser.add_option("--em_after_split", action="store_true", dest="em_after_split", default=False)
 
     parser.add_option("--optim", type="string", dest="optim", default='adam')
     parser.add_option("--lr", type="float", dest="learning_rate", default=0.01)
@@ -106,7 +108,8 @@ if __name__ == '__main__':
             eval_batch_words = np.array(eval_batch_words)
             eval_batch_pos = np.array(eval_batch_pos)
             batch_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_words, eval_batch_pos)
-            batch_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, dmv_model.dvalency)
+            batch_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, dmv_model.dvalency,
+                                                     dmv_model.cvalency)
             for i in range(len(eval_batch_pos)):
                 parse_results[eval_batch_sen[i]] = (batch_parse[0][i], batch_parse[1][i])
         utils.eval(parse_results, eval_sentences, devpath, options.log + '_dev' + str(options.sample_idx), epoch)
@@ -161,10 +164,15 @@ if __name__ == '__main__':
             no_split = False
             splitted_epoch += 1
 
+        if splitted_epoch > 1 and options.em_after_split:
+            lv_dmv_model.em_type = "em"
+
         for n in range(options.em_iter):
             print 'em iteration ', n
             training_likelihood = 0.0
-            trans_counter = np.zeros((len(pos.keys()), len(pos.keys()), lv_dmv_model.tag_num, lv_dmv_model.tag_num, 2))
+            # head_pos,child_pos,head_tag,child_tag,child_valence,direction
+            trans_counter = np.zeros(
+                (len(pos.keys()), len(pos.keys()), lv_dmv_model.tag_num, lv_dmv_model.tag_num, 2, options.c_valency))
             decision_counter = np.zeros((len(pos.keys()) - 1, lv_dmv_model.tag_num, 2, options.d_valency, 2))
             if options.use_lex:
                 lex_counter = np.zeros((len(pos.keys()), lv_dmv_model.tag_num, len(w2i.keys())))

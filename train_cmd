@@ -1,0 +1,1 @@
+python dmv_parser.py --train /public/home/tukewei/hanwj/Code/ldmv/data/wsj10_tr --epoch 25 --do_eval --use_lex --split_epoch 3 --param_smoothing 0.1 --split_factor 2 --multi_split --cvalency 2 --do_split --outdir /public/home/tukewei/hanwj/Code/ldmv/output --dev /public/home/tukewei/hanwj/Code/ldmv/data/wsj10_d --log /public/home/tukewei/hanwj/Code/ldmv/output/log

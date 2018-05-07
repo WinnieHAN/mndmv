@@ -1,11 +1,13 @@
-from optparse import OptionParser
 import os
 import pickle
-import utils
-import dmv_model
-import torch
+from optparse import OptionParser
+
 import numpy as np
+import torch
+
+import dmv_model
 import eisner_for_dmv
+import utils
 
 if __name__ == '__main__':
     parser = OptionParser()
@@ -74,7 +76,8 @@ if __name__ == '__main__':
         eval_batch_words = np.array(eval_batch_words)
         eval_batch_pos = np.array(eval_batch_pos)
         batch_score, batch_decision_score = learned_model.evaluate_batch_score(eval_batch_words, eval_batch_pos)
-        batch_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, learned_model.dvalency)
+        batch_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, learned_model.dvalency,
+                                                 learned_model.cvalency)
         for i in range(len(eval_batch_pos)):
             parse_results[eval_batch_sen[i]] = (batch_parse[0][i], batch_parse[1][i])
     utils.eval(parse_results, eval_sentences, outpath, options.log + '_' + str(options.sample_idx), 0)
