@@ -164,7 +164,7 @@ if __name__ == '__main__':
             no_split = False
             splitted_epoch += 1
 
-        if splitted_epoch > 1 and options.em_after_split:
+        if splitted_epoch > 0 and options.em_after_split:
             lv_dmv_model.em_type = "em"
 
         for n in range(options.em_iter):
@@ -192,7 +192,7 @@ if __name__ == '__main__':
                     # E-step
                     sub_batch_likelihood = lv_dmv_model.em_e(sub_batch_pos, sub_batch_words, sub_batch_sen,
                                                              trans_counter, decision_counter, lex_counter,
-                                                             options.em_type)
+                                                             lv_dmv_model.em_type)
                     batch_likelihood += sub_batch_likelihood
                 training_likelihood += batch_likelihood
             print 'Likelihood for this iteration', training_likelihood

@@ -183,7 +183,7 @@ def batch_inside(batch_scores, batch_decision_score, valency_num, cvalency_num):
             inside_ik_ic = inside_incomplete_table[:, ikcs[ij], :, :, :].reshape(batch_size, num_kc, tag_num, tag_num,
                                                                                  valency_num)
             inside_kj_cc = inside_complete_table[:, kjcs[ij], :, :].reshape(batch_size, num_kc, 1, tag_num, valency_num)
-            span_inside_c = inside_ik_ic + inside_kj_cc[:, :, :, :, 0].reshape(batch_size, num_kc, tag_num, 1, 1)
+            span_inside_c = inside_ik_ic + inside_kj_cc[:, :, :, :, 0].reshape(batch_size, num_kc, 1, tag_num, 1)
             span_inside_c = span_inside_c.swapaxes(3, 2).reshape(batch_size, num_kc * tag_num, tag_num, valency_num)
             # swap the left-right position since the left tags are to be indexed
             inside_complete_table[:, ij, :, :] = logsumexp(span_inside_c, axis=1)
