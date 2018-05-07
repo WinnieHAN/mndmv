@@ -87,7 +87,7 @@ class ldmv_model(nn.Module):
                     m_pos_id = self.pos.get(m_pos)
                     word_id = self.vocab.get(word)
                     if self.use_lex:
-                        self.lex_param[m_pos_id, :, word_id] += 1
+                        self.lex_param[m_pos_id, :, word_id] += 1. / span * scale
                     self.trans_param[h_pos_id, m_pos_id, :, :, dir, :] += 1. / span * scale
                     change[i - 1, dir] += 1. / span * scale
             self.update_decision(change, norm_counter, sentence.entries)
@@ -346,6 +346,8 @@ class ldmv_model(nn.Module):
                     if h > 0:
                         h_dec_pos = self.to_decision[h_pos]
                         decision_counter[h_dec_pos, :, dir, :, 1] += np.sum(np.exp(dep_count), axis=1)
+                    if self.use_lex:
+                        lex_counter[m_pos,:,m_word] += np.sum(np.exp(dep_count),axis=(0,2))
             for m in range(1, sentence_length):
                 m_pos = pos_sentence[m]
                 m_dec_pos = self.to_decision[m_pos]
