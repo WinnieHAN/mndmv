@@ -6,6 +6,7 @@ import torch.nn as nn
 
 import eisner_for_dmv
 import utils
+import m_dir
 
 
 class ldmv_model(nn.Module):
@@ -22,6 +23,8 @@ class ldmv_model(nn.Module):
         self.use_lex = options.use_lex
         self.split_factor = options.split_factor
         self.em_type = options.em_type
+        self.trans_counter = None
+        self.lex_counter = None
         p_counter = 0
         for p in pos.keys():
             if p == 'ROOT-POS':
@@ -42,6 +45,10 @@ class ldmv_model(nn.Module):
             self.lex_param = np.zeros((len(pos), self.tag_num, len(self.vocab)))
         else:
             self.lex_param = None
+
+        self.trans_alpha = None
+        self.lex_alpha = None
+        self.use_prior = options.use_prior
 
     # KM initialization
     def init_param(self, data):
@@ -70,6 +77,12 @@ class ldmv_model(nn.Module):
                     scale = float(word_num - 1) / word_num * (1. / child_sum)
                 else:
                     scale = 0
+                m_pos = m_entry.pos
+                m_word = m_entry.norm
+                m_pos_id = self.pos[m_pos]
+                m_word_id = self.vocab[m_word]
+                if self.use_lex:
+                    self.lex_param[m_pos_id, :, m_word_id] += 1.
                 for i, h_entry in enumerate(sentence.entries):
                     if i == j:
                         continue
@@ -86,8 +99,8 @@ class ldmv_model(nn.Module):
                     h_pos_id = self.pos.get(h_pos)
                     m_pos_id = self.pos.get(m_pos)
                     word_id = self.vocab.get(word)
-                    if self.use_lex:
-                        self.lex_param[m_pos_id, :, word_id] += 1. / span * scale
+                    # if self.use_lex:
+                    #     self.lex_param[m_pos_id, :, word_id] += 1. / span * scale
                     self.trans_param[h_pos_id, m_pos_id, :, :, dir, :] += 1. / span * scale
                     change[i - 1, dir] += 1. / span * scale
             self.update_decision(change, norm_counter, sentence.entries)
@@ -101,7 +114,7 @@ class ldmv_model(nn.Module):
         norm_counter = norm_counter.reshape((len(self.decision_pos), 1, 2, 2, 2))
         self.decision_param = self.decision_param + norm_counter
         self.trans_param[:, root_idx, :, :, :, :] = 0
-
+        # self.trans_param[root_idx, :, :, :, 0, :] = 0
         trans_sum = np.sum(self.trans_param, axis=(1, 3)).reshape((len(self.pos), 1, self.tag_num, 1, 2, self.cvalency))
         decision_sum = np.sum(self.decision_param, axis=4).reshape(
             (len(self.decision_pos), self.tag_num, 2, self.dvalency, 1))
@@ -160,6 +173,8 @@ class ldmv_model(nn.Module):
         best_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, self.dvalency, self.cvalency)
         batch_likelihood = self.update_counter(best_parse, trans_counter, decision_counter, lex_counter, batch_pos,
                                                batch_words)
+        self.trans_counter = trans_counter
+        self.lex_counter = lex_counter
         return batch_likelihood
 
     def run_em_estep(self, batch_pos, batch_words, batch_sen, trans_counter, decision_counter, lex_counter):
@@ -167,6 +182,8 @@ class ldmv_model(nn.Module):
         batch_score = np.array(batch_score)
         batch_decision_score = np.array(batch_decision_score)
         batch_score[:, :, 0, :, :, :] = -np.inf
+        if self.tag_num > 1:
+            batch_score[:, 0, :, 1:, :, :] = -np.inf
         inside_complete_table, inside_incomplete_table, sentence_prob = \
             eisner_for_dmv.batch_inside(batch_score, batch_decision_score, self.dvalency, self.cvalency)
         outside_complete_table, outside_incomplete_table = \
@@ -175,6 +192,8 @@ class ldmv_model(nn.Module):
         batch_likelihood = self.update_pseudo_count(inside_incomplete_table, inside_complete_table, sentence_prob,
                                                     outside_incomplete_table, outside_complete_table, trans_counter,
                                                     decision_counter, lex_counter, batch_pos, batch_words)
+        self.trans_counter = trans_counter
+        self.lex_counter = lex_counter
         return batch_likelihood
 
     def evaluate_batch_score(self, batch_words, batch_pos):
@@ -185,12 +204,17 @@ class ldmv_model(nn.Module):
         decision_scores = np.zeros((batch_size, sentence_length, self.tag_num, 2, self.dvalency, 2))
         # batch,position,tag,word
         lex_scores = np.zeros((batch_size, sentence_length, self.tag_num))
+        scores.fill(-np.inf)
+        decision_scores.fill(-np.inf)
+        lex_scores.fill(-np.inf)
         for sentence_id in range(batch_size):
             for i in range(sentence_length):
                 pos_id = batch_pos[sentence_id][i]
                 if i > 0:
                     dec_pos_id = self.to_decision[pos_id]
-                    decision_scores[sentence_id, i, :, :, :, :] += np.log(self.decision_param[dec_pos_id, :, :, :, :])
+                    decision_scores[sentence_id, i, :, :, :, :] = np.log(self.decision_param[dec_pos_id, :, :, :, :])
+                else:
+                    decision_scores[sentence_id, i, :, :, :, :] = 0
                 for j in range(sentence_length):
                     h_pos_id = batch_pos[sentence_id][i]
                     m_pos_id = batch_pos[sentence_id][j]
@@ -203,7 +227,7 @@ class ldmv_model(nn.Module):
                         dir = 0
                     else:
                         dir = 1
-                    scores[sentence_id, i, j, :, :, :] += np.log(self.trans_param[h_pos_id, m_pos_id, :, :, dir, :])
+                    scores[sentence_id, i, j, :, :, :] = np.log(self.trans_param[h_pos_id, m_pos_id, :, :, dir, :])
                     if self.use_lex:
                         lex_scores[sentence_id, j, :] = self.lex_param[m_pos_id, :, m_word_id]
                         scores[sentence_id, i, j, :, :, :] += np.log(
@@ -259,11 +283,13 @@ class ldmv_model(nn.Module):
 
     def em_m(self, trans_counter, decision_counter, lex_counter):
         root_idx = self.pos['ROOT-POS']
+        if self.tag_num > 1:
+            self.param_smoothing = 1e-8
         trans_counter = trans_counter + self.param_smoothing
         decision_counter = decision_counter + self.param_smoothing
         if self.use_lex:
             lex_counter = lex_counter + self.param_smoothing
-        trans_counter[:, root_idx, :, :, :] = 0
+        trans_counter[:, root_idx, :, :, :, :] = 0
         child_sum = np.sum(trans_counter, axis=(1, 3)).reshape(len(self.pos), 1, self.tag_num, 1, 2, self.cvalency)
         decision_sum = np.sum(decision_counter, axis=4).reshape(len(self.decision_pos), self.tag_num,
                                                                 2, self.dvalency, 1)
@@ -275,7 +301,7 @@ class ldmv_model(nn.Module):
             self.lex_param = lex_counter / lex_sum
         return
 
-    def split_tags(self):
+    def split_tags(self, trans_counter, prior_alpha,lex_counter,lex_prior_alpha):
         self.tag_num = self.tag_num * self.split_factor
         print "split maximum tag number from " + str(self.tag_num / self.split_factor) + " to " + str(self.tag_num)
         old_trans_param = np.copy(self.trans_param)
@@ -285,6 +311,9 @@ class ldmv_model(nn.Module):
         self.trans_param = np.zeros((len(self.pos), len(self.pos), self.tag_num, self.tag_num, 2, self.cvalency))
         self.decision_param = np.zeros((len(self.decision_pos), self.tag_num, 2, self.dvalency, 2))
         self.lex_param = np.zeros((len(self.pos), self.tag_num, len(self.vocab)))
+        self.trans_alpha = np.zeros((len(self.pos), 1, self.tag_num, 1, 2, self.cvalency))
+        self.lex_alpha = np.zeros((len(self.pos),self.tag_num,len(self.vocab)))
+        root_idx = self.pos["ROOT-POS"]
 
         for h_t in range(self.tag_num):
             decision_random = old_decision_param[:, h_t / self.split_factor, :, :, :] * (
@@ -302,8 +331,26 @@ class ldmv_model(nn.Module):
                                    np.random.rand(len(self.pos), len(self.pos), 2, self.cvalency) - 0.5) / 5000
                 # self.trans_param[:, :, h_t, m_t, :] = old_trans_param[:, :, h_t / self.split_factor,
                 #                                       m_t / self.split_factor, :] / self.split_factor + trans_random
-                self.trans_param[:, :, h_t, m_t, :] = old_trans_param[:, :, h_t / self.split_factor,
-                                                      m_t / self.split_factor, :] / self.split_factor
+                self.trans_param[:, :, h_t, m_t, :, :] = old_trans_param[:, :, h_t / self.split_factor,
+                                                         m_t / self.split_factor, :, :] / self.split_factor
+
+
+        if self.use_prior:
+            child_mean = np.average(trans_counter, axis=(1, 3)).reshape(len(self.pos), 1,
+                                                                        self.tag_num / self.split_factor, 1, 2,
+                                                                        self.cvalency)
+            old_trans_alpha = -child_mean * prior_alpha
+            for h_t in range(self.tag_num):
+                self.trans_alpha[:, :, h_t, :, :, :] = old_trans_alpha[:, :, h_t / self.split_factor, :, :,
+                                                   :] / self.split_factor
+
+            lex_mean = np.average(lex_counter,axis=2).reshape(len(self.pos),self.tag_num/self.split_factor,1)
+            old_lex_alpha = -lex_mean*lex_prior_alpha
+            for h_t in range(self.tag_num):
+                self.lex_alpha[:,h_t,:] = old_lex_alpha[:,h_t/self.split_factor,:]
+
+        lex_sum = np.sum(self.lex_param, axis=2).reshape(len(self.pos), self.tag_num, 1)
+        self.lex_param = self.lex_param / lex_sum
 
     def update_pseudo_count(self, inside_incomplete_table, inside_complete_table, sentence_prob,
                             outside_incomplete_table, outside_complete_table, trans_counter,
@@ -311,6 +358,8 @@ class ldmv_model(nn.Module):
         batch_likelihood = 0.0
         batch_size, sentence_length = batch_pos.shape
         span_2_id, id_2_span, ijss, ikcs, ikis, kjcs, kjis, basic_span = utils.constituent_index(sentence_length, False)
+        # complete_count = np.exp(inside_complete_table + outside_complete_table - sentence_prob)
+        # incomplete_count = np.exp(inside_incomplete_table + outside_incomplete_table - sentence_prob)
         for sen_id in range(batch_size):
             pos_sentence = batch_pos[sen_id]
             word_sentence = batch_words[sen_id]
@@ -322,10 +371,8 @@ class ldmv_model(nn.Module):
                         continue
                     if h > m:
                         dir = 0
-                        odir = 1
                     else:
                         dir = 1
-                        odir = 0
                     h_pos = pos_sentence[h]
 
                     m_pos = pos_sentence[m]
@@ -338,7 +385,7 @@ class ldmv_model(nn.Module):
                     dep_count = inside_incomplete_table[sen_id, span_id, :, :, :] + \
                                 outside_incomplete_table[sen_id, span_id, :, :, :] - sentence_prob[sen_id]
                     if dir == 0:
-                        dep_count = dep_count.swapaxes(0, 1)
+                        dep_count = dep_count.swapaxes(1, 0)
                     if self.cvalency == 1:
                         trans_counter[h_pos, m_pos, :, :, dir, 0] += np.sum(np.exp(dep_count), axis=2)
                     else:
@@ -347,17 +394,51 @@ class ldmv_model(nn.Module):
                         h_dec_pos = self.to_decision[h_pos]
                         decision_counter[h_dec_pos, :, dir, :, 1] += np.sum(np.exp(dep_count), axis=1)
                     if self.use_lex:
-                        lex_counter[m_pos,:,m_word] += np.sum(np.exp(dep_count),axis=(0,2))
+                        lex_counter[m_pos, :, m_word] += np.sum(np.exp(dep_count), axis=(0, 2))
             for m in range(1, sentence_length):
                 m_pos = pos_sentence[m]
                 m_dec_pos = self.to_decision[m_pos]
+                m_word = word_sentence[m]
                 for d in range(2):
                     m_span_id = span_2_id[(m, m, d)]
                     stop_count = inside_complete_table[sen_id, m_span_id, :, :] + \
                                  outside_complete_table[sen_id, m_span_id, :, :] - sentence_prob[sen_id]
                     decision_counter[m_dec_pos, :, d, :, 0] += np.exp(stop_count)
+                    # if self.use_lex:
+                    #     lex_counter[m_pos, :, m_word] += np.sum(np.exp(stop_count), axis=1)
             batch_likelihood += sentence_prob[sen_id]
         return batch_likelihood
+
+    def apply_prior(self, trans_counter, lex_counter, prior_alpha, prior_epsilon,lex_prior_alpha,lex_epsilon):
+        if self.trans_alpha is None:
+            child_mean = np.average(trans_counter, axis=(1, 3)).reshape(len(self.pos), 1, self.tag_num, 1, 2,
+                                                                        self.cvalency)
+            self.trans_alpha = -child_mean * prior_alpha
+        if self.tag_num > 1:
+            prior_epsilon = 1e-3
+        for h in range(len(self.pos)):
+            for t in range(self.tag_num):
+                for dir in range(2):
+                    for c in range(self.cvalency):
+                        dir_trans_alpha = trans_counter[h, :, t, :, dir, c] + self.trans_alpha[h, :, t, :, dir, c]
+                        dim = self.tag_num * len(self.pos)
+                        dir_trans_alpha = dir_trans_alpha.reshape(dim, 1)
+                        md = m_dir.modified_dir(dim, dir_trans_alpha, prior_epsilon)
+                        posterior_counts = md.get_mode()
+                        trans_counter[h, :, t, :, dir, c] = posterior_counts.reshape(len(self.pos), self.tag_num)
+
+        if self.use_lex and self.tag_num > 1:
+            if self.lex_alpha is None:
+                lex_mean = np.average(lex_counter, axis=2).reshape(len(self.pos), self.tag_num, 1)
+                self.lex_alpha = -lex_mean * lex_prior_alpha
+            for p in range(len(self.pos)):
+                for t in range(self.tag_num):
+                    dir_lex_alpha = lex_counter[p,t,:] + self.lex_alpha[p,t,:]
+                    dim = len(self.vocab)
+                    md = m_dir.modified_dir(dim,dir_lex_alpha,lex_epsilon)
+                    posterior_counts = md.get_mode()
+                    lex_counter[p,t,:] = posterior_counts
+
 
     def save(self, fn):
         tmp = fn + '.tmp'

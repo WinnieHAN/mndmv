@@ -2,6 +2,7 @@ import re
 import random
 from collections import Counter
 from itertools import groupby
+import numpy as np
 
 
 class ConllEntry:
@@ -264,4 +265,30 @@ def eval(predicted, gold, test_path, log_path, epoch):
         log.write(str(accuracy))
         log.write('\n')
         log.write('\n')
+
+
+def write_distribution(dmv_model):
+    path = "output/dis_log"
+    lex_path = "output/lex_log"
+    for t in range(dmv_model.tag_num):
+        log_path = path + str(t)
+        head_idx = dmv_model.pos["VB"]
+        writer = open(log_path,'w')
+        dist = dmv_model.trans_param[head_idx,:,t,:,:,:]
+        for c in range(len(dmv_model.pos)):
+            for ct in range(dmv_model.tag_num):
+                for dir in range(2):
+                    for cv in range(dmv_model.cvalency):
+                        writer.write(str(dist[c,ct,dir,cv]))
+                        writer.write('\n')
+        if dmv_model.tag_num > 1:
+            lex_log_path = lex_path + str(t)
+            lex_writer = open(lex_log_path,'w')
+            lex_dist = dmv_model.lex_param[head_idx,t,:]
+            min = np.min(np.array(lex_dist))
+            for w in range(len(dmv_model.vocab)):
+                if lex_dist[w] > min:
+                    lex_writer.write(str(lex_dist[w]))
+                    lex_writer.write('\n')
+
 

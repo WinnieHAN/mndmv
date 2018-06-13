@@ -80,4 +80,5 @@ if __name__ == '__main__':
                                                  learned_model.cvalency)
         for i in range(len(eval_batch_pos)):
             parse_results[eval_batch_sen[i]] = (batch_parse[0][i], batch_parse[1][i])
-    utils.eval(parse_results, eval_sentences, outpath, options.log + '_' + str(options.sample_idx), 0)
+    utils.eval(parse_results, eval_sentences, outpath,
+               options.log + str(options.model_idx) + '_' + str(options.sample_idx), 0)

@@ -24,8 +24,6 @@ if __name__ == '__main__':
                       default="output/dmv.model")
     parser.add_option("--wembedding", type="int", dest="wembedding_dim", default=100)
     parser.add_option("--pembedding", type="int", dest="pembedding_dim", default=50)
-    parser.add_option("--hidden", type="int", dest="hidden_dim", default=25)
-    parser.add_option("--nLayer", type="int", dest="n_layer", default=1)
     parser.add_option("--epochs", type="int", dest="epochs", default=5)
     parser.add_option("--tag_num", type="int", dest="tag_num", default=1)
     parser.add_option("--tag_dim", type="int", dest="tag_dim", default=5)
@@ -48,21 +46,17 @@ if __name__ == '__main__':
     parser.add_option("--outdir", type="string", dest="output", default="output")
     parser.add_option("--l2", type="float", dest="l2", default=0.0)
     parser.add_option("--sample_idx", type="int", dest="sample_idx", default=1000)
-    parser.add_option("--lstmdims", type="int", dest="lstm_dims", default=125)
-    parser.add_option("--distdim", type="int", dest="dist_dim", default=1)
-    parser.add_option("--dropout", type="float", dest="dropout_ratio", default=0.25)
 
     parser.add_option("--use_lex", action="store_true", dest="use_lex", default=False)
-    parser.add_option("--use_context", action="store_true", dest="use_context", default=False)
-    parser.add_option("--use_trigram", action="store_true", dest="use_trigram", default=False)
-    parser.add_option("--prior_weight", type="float", dest="prior_weight", default=0.0)
-    parser.add_option("--rule_type", type="string", dest="rule_type", default="WSJ")
-    parser.add_option("--use_gold", action="store_true", dest="use_gold", default=False)
-    parser.add_option("--use_initial", action="store_true", dest="use_initial", default=False)
+    parser.add_option("--prior_alpha", type="float", dest="prior_alpha", default=0.0)
     parser.add_option("--do_eval", action="store_true", dest="do_eval", default=False)
     parser.add_option("--log", dest="log", help="log file", metavar="FILE", default="output/log")
-    parser.add_option("--ddim", dest="ddim", type="int", default=5)
-    parser.add_option("--sub_batch", dest="sub_batch_size", default=100)
+    parser.add_option("--sub_batch", type="int", dest="sub_batch_size", default=100)
+    parser.add_option("--use_prior", action="store_true", dest="use_prior", default=False)
+    parser.add_option("--prior_epsilon", type="float", dest="prior_epsilon", default=1)
+    parser.add_option("--lex_epsilon", type="float", dest="lex_epsilon", default=1e-4)
+    parser.add_option("--lex_prior_alpha", type="float", dest="lex_prior_alpha", default=0.2)
+    parser.add_option("--lex_prior_only", action="store_true", default=False)
 
     parser.add_option("--predict", action="store_true", dest="predictFlag", default=False)
     parser.add_option("--gold_init", action="store_true", dest="gold_init", default=False)
@@ -113,6 +107,7 @@ if __name__ == '__main__':
             for i in range(len(eval_batch_pos)):
                 parse_results[eval_batch_sen[i]] = (batch_parse[0][i], batch_parse[1][i])
         utils.eval(parse_results, eval_sentences, devpath, options.log + '_dev' + str(options.sample_idx), epoch)
+        utils.write_distribution(dmv_model)
         print "===================================="
 
 
@@ -156,11 +151,13 @@ if __name__ == '__main__':
             splitted_epoch += 1
 
         if splitted_epoch > options.split_duration and options.multi_split:
-            lv_dmv_model.split_tags()
+            lv_dmv_model.split_tags(lv_dmv_model.trans_counter, options.prior_alpha,lv_dmv_model.lex_counter,
+                                    options.lex_prior_alpha)
             splitted_epoch = 1
 
         if epoch > options.split_epoch and no_split and options.do_split:
-            lv_dmv_model.split_tags()
+            lv_dmv_model.split_tags(lv_dmv_model.trans_counter, options.prior_alpha, lv_dmv_model.lex_counter,
+                                    options.lex_prior_alpha)
             no_split = False
             splitted_epoch += 1
 
@@ -170,11 +167,13 @@ if __name__ == '__main__':
         for n in range(options.em_iter):
             print 'em iteration ', n
             training_likelihood = 0.0
-            # head_pos,child_pos,head_tag,child_tag,child_valence,direction
+
             trans_counter = np.zeros(
                 (len(pos.keys()), len(pos.keys()), lv_dmv_model.tag_num, lv_dmv_model.tag_num, 2, options.c_valency))
+            # head_pos,head_tag,direction,decision_valence,decision
             decision_counter = np.zeros((len(pos.keys()) - 1, lv_dmv_model.tag_num, 2, options.d_valency, 2))
             if options.use_lex:
+                # pos,tag,word
                 lex_counter = np.zeros((len(pos.keys()), lv_dmv_model.tag_num, len(w2i.keys())))
             else:
                 lex_counter = None
@@ -197,6 +196,9 @@ if __name__ == '__main__':
                 training_likelihood += batch_likelihood
             print 'Likelihood for this iteration', training_likelihood
             # M-step
+            if options.use_prior:
+                lv_dmv_model.apply_prior(trans_counter, lex_counter, options.prior_alpha, options.prior_epsilon,
+                                         options.lex_prior_alpha, options.lex_epsilon)
             lv_dmv_model.em_m(trans_counter, decision_counter, lex_counter)
 
         if options.do_eval:

@@ -312,7 +312,7 @@ def batch_outside(inside_complete_table, inside_incomplete_table, batch_scores, 
                     outside_complete_table[:, kj, :, 1] = np.logaddexp(outside_complete_table[:, kj, :, 1],
                                                                        outside_kj_ci_i_1)
                 else:
-                    outside_complete_table[:, kj, :, 1] = outside_kj_ci_i_1
+                    outside_complete_table[:, kj, :, 1] = np.copy(outside_kj_ci_i_1)
                     complete_span_used_1.add(kj)
 
             else:
@@ -327,7 +327,7 @@ def batch_outside(inside_complete_table, inside_incomplete_table, batch_scores, 
                     outside_complete_table[:, kj, :, 0] = np.logaddexp(outside_complete_table[:, kj, :, 0],
                                                                        outside_kj_ci_i_0)
                 else:
-                    outside_complete_table[:, kj, :, 0] = outside_kj_ci_i_0
+                    outside_complete_table[:, kj, :, 0] = np.copy(outside_kj_ci_i_0)
                     complete_span_used_0.add(kj)
 
     return outside_complete_table, outside_incomplete_table
