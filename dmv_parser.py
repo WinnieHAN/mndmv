@@ -56,7 +56,8 @@ if __name__ == '__main__':
     parser.add_option("--prior_epsilon", type="float", dest="prior_epsilon", default=1)
     parser.add_option("--lex_epsilon", type="float", dest="lex_epsilon", default=1e-4)
     parser.add_option("--lex_prior_alpha", type="float", dest="lex_prior_alpha", default=0.2)
-    parser.add_option("--lex_prior_only", action="store_true", default=False)
+
+    parser.add_option("--specify_splitting", action="store_true", default=False)
 
     parser.add_option("--predict", action="store_true", dest="predictFlag", default=False)
     parser.add_option("--gold_init", action="store_true", dest="gold_init", default=False)
@@ -107,7 +108,7 @@ if __name__ == '__main__':
             for i in range(len(eval_batch_pos)):
                 parse_results[eval_batch_sen[i]] = (batch_parse[0][i], batch_parse[1][i])
         utils.eval(parse_results, eval_sentences, devpath, options.log + '_dev' + str(options.sample_idx), epoch)
-        utils.write_distribution(dmv_model)
+        #utils.write_distribution(dmv_model)
         print "===================================="
 
 
@@ -151,13 +152,19 @@ if __name__ == '__main__':
             splitted_epoch += 1
 
         if splitted_epoch > options.split_duration and options.multi_split:
-            lv_dmv_model.split_tags(lv_dmv_model.trans_counter, options.prior_alpha,lv_dmv_model.lex_counter,
+            if not options.specify_splitting:
+                lv_dmv_model.split_tags(lv_dmv_model.trans_counter, options.prior_alpha,lv_dmv_model.lex_counter,
                                     options.lex_prior_alpha)
+            else:
+                lv_dmv_model.specified_split_tags()
             splitted_epoch = 1
 
         if epoch > options.split_epoch and no_split and options.do_split:
-            lv_dmv_model.split_tags(lv_dmv_model.trans_counter, options.prior_alpha, lv_dmv_model.lex_counter,
+            if not options.specify_splitting:
+                lv_dmv_model.split_tags(lv_dmv_model.trans_counter, options.prior_alpha, lv_dmv_model.lex_counter,
                                     options.lex_prior_alpha)
+            else:
+                lv_dmv_model.specified_split_tags()
             no_split = False
             splitted_epoch += 1
 
