@@ -59,6 +59,8 @@ if __name__ == '__main__':
 
     parser.add_option("--specify_splitting", action="store_true", default=False)
 
+    parser.add_option("--function_mask",action="store_true",default=False )
+
     parser.add_option("--predict", action="store_true", dest="predictFlag", default=False)
     parser.add_option("--gold_init", action="store_true", dest="gold_init", default=False)
 

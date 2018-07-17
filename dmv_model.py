@@ -27,6 +27,7 @@ class ldmv_model(nn.Module):
         self.trans_counter = None
         self.lex_counter = None
         self.specify_splitting = options.specify_splitting
+        self.function_mask = options.function_mask
         p_counter = 0
         for p in pos.keys():
             self.id_to_pos[self.pos[p]] = p
@@ -56,7 +57,16 @@ class ldmv_model(nn.Module):
         if self.specify_splitting:
             self.specify_list = set()
             self.specify_list.add("V")
-            #self.specify_list.add("NN")
+            # self.specify_list.add("NN")
+
+        if self.function_mask:
+            self.function_set = set()
+            self.function_set.add("ADP")
+            self.function_set.add("AUX")
+            self.function_set.add("CONJ")
+            self.function_set.add("DET")
+            self.function_set.add("PART")
+            self.function_set.add("SCONJ")
 
     # KM initialization
     def init_param(self, data):
@@ -180,6 +190,9 @@ class ldmv_model(nn.Module):
         batch_score[:, :, 0, :, :, :] = -np.inf
         if self.specify_splitting:
             batch_score, batch_decision_score = self.mask_scores(batch_score, batch_decision_score, batch_pos)
+        if self.function_mask:
+            batch_score = self.function_to_mask(batch_score,batch_pos)
+
         best_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, self.dvalency, self.cvalency)
         batch_likelihood = self.update_counter(best_parse, trans_counter, decision_counter, lex_counter, batch_pos,
                                                batch_words)
@@ -191,11 +204,13 @@ class ldmv_model(nn.Module):
         batch_score, batch_decision_score = self.evaluate_batch_score(batch_words, batch_pos)
         batch_score = np.array(batch_score)
         batch_decision_score = np.array(batch_decision_score)
-        #if self.specified_splitting:
-            #batch_score, batch_decision_score = self.mask_scores(batch_score, batch_decision_score, batch_pos)
+        # if self.specified_splitting:
+        # batch_score, batch_decision_score = self.mask_scores(batch_score, batch_decision_score, batch_pos)
         batch_score[:, :, 0, :, :, :] = -np.inf
         if self.tag_num > 1:
             batch_score[:, 0, :, 1:, :, :] = -np.inf
+        if self.function_mask:
+            batch_score = self.function_to_mask(batch_score,batch_pos)
         inside_complete_table, inside_incomplete_table, sentence_prob = \
             eisner_for_dmv.batch_inside(batch_score, batch_decision_score, self.dvalency, self.cvalency)
         outside_complete_table, outside_incomplete_table = \
@@ -462,7 +477,7 @@ class ldmv_model(nn.Module):
     def mask_scores(self, batch_scores, batch_decision_scores, batch_pos):
         batch_size, sentence_length, _, _, _, _ = batch_scores.shape
         score_mask = np.zeros((batch_size, sentence_length, sentence_length, self.tag_num, self.tag_num, self.cvalency))
-        decision_mask = np.zeros((batch_size, sentence_length, self.tag_num, 2,self.dvalency,2))
+        decision_mask = np.zeros((batch_size, sentence_length, self.tag_num, 2, self.dvalency, 2))
         for s in range(batch_size):
             for i in range(sentence_length):
                 if self.id_to_pos[batch_pos[s, i]] not in self.specify_list:
@@ -470,17 +485,31 @@ class ldmv_model(nn.Module):
                 for j in range(sentence_length):
                     if self.id_to_pos[batch_pos[s, i]] not in self.specify_list and self.id_to_pos[
                         batch_pos[s, j]] not in self.specify_list:
-                        score_mask[s,i,j,:,:,:] = -np.inf
-                        score_mask[s,i,j,0,0,:] = 0
+                        score_mask[s, i, j, :, :, :] = -np.inf
+                        score_mask[s, i, j, 0, 0, :] = 0
                     if self.id_to_pos[batch_pos[s, i]] not in self.specify_list and self.id_to_pos[
-                        batch_pos[s, j]]  in self.specify_list:
-                        score_mask[s,i,j,1:,:,:] = -np.inf
+                        batch_pos[s, j]] in self.specify_list:
+                        score_mask[s, i, j, 1:, :, :] = -np.inf
                     if self.id_to_pos[batch_pos[s, i]] in self.specify_list and self.id_to_pos[
                         batch_pos[s, j]] not in self.specify_list:
                         score_mask[s, i, j, :, 1:, :] = -np.inf
         batch_scores = batch_scores + score_mask
         batch_decision_scores = batch_decision_scores + decision_mask
         return batch_scores, batch_decision_scores
+
+    def function_to_mask(self, batch_score,batch_pos):
+        batch_size, sentence_length, _, _, _, _ = batch_score.shape
+        function_score_mask = np.zeros(
+            (batch_size, sentence_length, sentence_length, self.tag_num, self.tag_num, self.cvalency))
+        for s in range(batch_size):
+            for i in range(sentence_length):
+                pos_id = batch_pos[s,i]
+                pos = self.id_to_pos[pos_id]
+                if pos in self.function_set:
+                    function_score_mask[s,i,:,:,:] = -np.inf
+        batch_score = batch_score + function_score_mask
+        return batch_score
+
 
     def apply_prior(self, trans_counter, lex_counter, prior_alpha, prior_epsilon, lex_prior_alpha, lex_epsilon):
         if self.trans_alpha is None:
