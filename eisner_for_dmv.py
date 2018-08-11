@@ -1,7 +1,8 @@
 import numpy as np
 
 import utils
-from scipy.special import logsumexp
+# from scipy.special import logsumexp
+from scipy.misc import logsumexp
 
 
 def batch_parse(batch_scores, batch_decision_score, valency_num, cvalency_num):

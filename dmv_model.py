@@ -7,6 +7,7 @@ import torch.nn as nn
 import eisner_for_dmv
 import utils
 import m_dir
+from torch_model.NN_trainer import *
 
 
 class ldmv_model(nn.Module):
@@ -20,6 +21,7 @@ class ldmv_model(nn.Module):
         self.pos = pos
         self.decision_pos = {}
         self.to_decision = {}
+        self.from_decision = {}
         self.id_to_pos = {}
         self.use_lex = options.use_lex
         self.split_factor = options.split_factor
@@ -28,6 +30,9 @@ class ldmv_model(nn.Module):
         self.lex_counter = None
         self.specify_splitting = options.specify_splitting
         self.function_mask = options.function_mask
+        self.use_neural = options.use_neural
+        self.unified_network = options.unified_network
+
         p_counter = 0
         for p in pos.keys():
             self.id_to_pos[self.pos[p]] = p
@@ -37,6 +42,7 @@ class ldmv_model(nn.Module):
                 p_id = self.pos[p]
                 self.decision_pos[p] = p_counter
                 self.to_decision[p_id] = p_counter
+                self.from_decision[p_counter] = p_id
                 p_counter += 1
         self.dvalency = options.d_valency
         self.cvalency = options.c_valency
@@ -67,6 +73,10 @@ class ldmv_model(nn.Module):
             self.function_set.add("DET")
             self.function_set.add("PART")
             self.function_set.add("SCONJ")
+
+        if self.use_neural:
+            self.rule_samples = list()
+            self.decision_samples = list()
 
     # KM initialization
     def init_param(self, data):
@@ -184,6 +194,7 @@ class ldmv_model(nn.Module):
         return batch_likelihood
 
     def run_viterbi_estep(self, batch_pos, batch_words, batch_sen, trans_counter, decision_counter, lex_counter):
+        batch_size = len(batch_pos)
         batch_score, batch_decision_score = self.evaluate_batch_score(batch_words, batch_pos)
         batch_score = np.array(batch_score)
         batch_decision_score = np.array(batch_decision_score)
@@ -191,11 +202,13 @@ class ldmv_model(nn.Module):
         if self.specify_splitting:
             batch_score, batch_decision_score = self.mask_scores(batch_score, batch_decision_score, batch_pos)
         if self.function_mask:
-            batch_score = self.function_to_mask(batch_score,batch_pos)
+            batch_score = self.function_to_mask(batch_score, batch_pos)
 
         best_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, self.dvalency, self.cvalency)
+
         batch_likelihood = self.update_counter(best_parse, trans_counter, decision_counter, lex_counter, batch_pos,
                                                batch_words)
+
         self.trans_counter = trans_counter
         self.lex_counter = lex_counter
         return batch_likelihood
@@ -210,7 +223,7 @@ class ldmv_model(nn.Module):
         if self.tag_num > 1:
             batch_score[:, 0, :, 1:, :, :] = -np.inf
         if self.function_mask:
-            batch_score = self.function_to_mask(batch_score,batch_pos)
+            batch_score = self.function_to_mask(batch_score, batch_pos)
         inside_complete_table, inside_incomplete_table, sentence_prob = \
             eisner_for_dmv.batch_inside(batch_score, batch_decision_score, self.dvalency, self.cvalency)
         outside_complete_table, outside_incomplete_table = \
@@ -293,8 +306,17 @@ class ldmv_model(nn.Module):
                 h_tag_id = int(tags[h])
                 trans_counter[h_pos, m_pos, h_tag_id, m_tag_id, dir, m_child_valence] += 1.
                 batch_likelihood += np.log(self.trans_param[h_pos, m_pos, h_tag_id, m_tag_id, dir, m_child_valence])
+                if self.use_neural:
+                    self.rule_samples.append(list([h_pos, m_pos, h_tag_id, m_tag_id, dir, m_child_valence]))
                 decision_counter[m_dec_pos, m_tag_id, 0, int(m_valence[0]), 0] += 1.
                 decision_counter[m_dec_pos, m_tag_id, 1, int(m_valence[1]), 0] += 1.
+                if self.use_neural:
+                    if not self.unified_network:
+                        self.decision_samples.append(list([m_dec_pos, m_tag_id, 0, int(m_valence[0]), 0]))
+                        self.decision_samples.append(list([m_dec_pos, m_tag_id, 1, int(m_valence[1]), 0]))
+                    else:
+                        self.decision_samples.append(list([m_pos, m_tag_id, 0, int(m_valence[0]), 0]))
+                        self.decision_samples.append(list([m_pos, m_tag_id, 1, int(m_valence[1]), 0]))
                 # lexicon count
                 if (self.use_lex):
                     lex_counter[m_pos, m_tag_id, m_word] += 1
@@ -302,13 +324,18 @@ class ldmv_model(nn.Module):
                 if h > 0:
                     h_dec_pos = self.to_decision[h_pos]
                     decision_counter[h_dec_pos, h_tag_id, dir, m_head_valence, 1] += 1.
+                    if self.use_neural:
+                        if not self.unified_network:
+                            self.decision_samples.append(list([h_dec_pos, h_tag_id, dir, m_head_valence, 1]))
+                        else:
+                            self.decision_samples.append(list([h_pos, h_tag_id, dir, m_head_valence, 1]))
                     batch_likelihood += np.log(self.decision_param[h_dec_pos, h_tag_id, dir, m_head_valence, 1])
                 batch_likelihood += np.log(self.decision_param[m_dec_pos, m_tag_id, 0, int(m_valence[0]), 0])
                 batch_likelihood += np.log(self.decision_param[m_dec_pos, m_tag_id, 1, int(m_valence[1]), 0])
 
         return batch_likelihood
 
-    def em_m(self, trans_counter, decision_counter, lex_counter):
+    def em_m(self, trans_counter, decision_counter, lex_counter, child_model, decision_model):
         root_idx = self.pos['ROOT-POS']
         if self.tag_num > 1:
             self.param_smoothing = 1e-8
@@ -320,7 +347,6 @@ class ldmv_model(nn.Module):
         child_sum = np.sum(trans_counter, axis=(1, 3)).reshape(len(self.pos), 1, self.tag_num, 1, 2, self.cvalency)
         decision_sum = np.sum(decision_counter, axis=4).reshape(len(self.decision_pos), self.tag_num,
                                                                 2, self.dvalency, 1)
-        # do normalization
         self.trans_param = trans_counter / child_sum
         self.decision_param = decision_counter / decision_sum
         if self.use_lex:
@@ -497,19 +523,18 @@ class ldmv_model(nn.Module):
         batch_decision_scores = batch_decision_scores + decision_mask
         return batch_scores, batch_decision_scores
 
-    def function_to_mask(self, batch_score,batch_pos):
+    def function_to_mask(self, batch_score, batch_pos):
         batch_size, sentence_length, _, _, _, _ = batch_score.shape
         function_score_mask = np.zeros(
             (batch_size, sentence_length, sentence_length, self.tag_num, self.tag_num, self.cvalency))
         for s in range(batch_size):
             for i in range(sentence_length):
-                pos_id = batch_pos[s,i]
+                pos_id = batch_pos[s, i]
                 pos = self.id_to_pos[pos_id]
                 if pos in self.function_set:
-                    function_score_mask[s,i,:,:,:] = -np.inf
+                    function_score_mask[s, i, :, :, :] = -np.inf
         batch_score = batch_score + function_score_mask
         return batch_score
-
 
     def apply_prior(self, trans_counter, lex_counter, prior_alpha, prior_epsilon, lex_prior_alpha, lex_epsilon):
         if self.trans_alpha is None:

@@ -3,6 +3,7 @@ import random
 from collections import Counter
 from itertools import groupby
 import numpy as np
+import torch
 
 
 class ConllEntry:
@@ -29,11 +30,13 @@ class ConllEntry:
                   self.misc]
         return '\t'.join(['_' if v is None else v for v in values])
 
+
 numberRegex = re.compile("[0-9]+|[0-9]+\\.[0-9]+|[0-9]+[0-9,]+");
 
 
 def normalize(word):
     return 'NUM' if numberRegex.match(word) else word.lower()
+
 
 def memoize(func):
     mem = {}
@@ -46,8 +49,9 @@ def memoize(func):
 
     return helper
 
-def construct_update_batch_data(data_list,batch_size):
-    random.shuffle(data_list)
+
+def construct_update_batch_data(data_list, batch_size):
+    #random.shuffle(data_list)
     batch_data = []
     len_datas = len(data_list)
     num_batch = len_datas // batch_size
@@ -58,6 +62,7 @@ def construct_update_batch_data(data_list,batch_size):
         end_idx = min(len_datas, (i + 1) * batch_size)
         batch_data.append(data_list[start_idx:end_idx])
     return batch_data
+
 
 @memoize
 def constituent_index(sentence_length, multiroot):
@@ -122,6 +127,7 @@ def constituent_index(sentence_length, multiroot):
 
     return span_2_id, id_2_span, ijss, ikcs, ikis, kjcs, kjis, basic_span
 
+
 class data_sentence:
     def __init__(self, id, entry_list):
         self.id = id
@@ -145,6 +151,7 @@ class data_sentence:
     def __str__(self):
         return '\t'.join([e for e in self.entries])
 
+
 def read_conll(fh):
     root = ConllEntry(0, '*root*', '*root*', 'ROOT-CPOS', 'ROOT-POS', '_', -1, 'rroot', '_', '_')
     tokens = [root]
@@ -164,6 +171,7 @@ def read_conll(fh):
     if len(tokens) > 1:
         yield tokens
 
+
 def read_data(conll_path, isPredict):
     sentences = []
     if not isPredict:
@@ -178,7 +186,7 @@ def read_data(conll_path, isPredict):
                 sentences.append(ds)
                 s_counter += 1
         wordsCount['<UNKNOWN>'] = 0
-        #posCount['<UNKNOWN-POS>'] = 0
+        # posCount['<UNKNOWN-POS>'] = 0
         return {w: i for i, w in enumerate(wordsCount.keys())}, {p: i for i, p in enumerate(
             posCount.keys())}, sentences
     else:
@@ -189,6 +197,7 @@ def read_data(conll_path, isPredict):
                 sentences.append(ds)
                 s_counter += 1
         return sentences
+
 
 def construct_batch_data(data_list, batch_size):
     data_list.sort(key=lambda x: len(x[0]))
@@ -213,10 +222,12 @@ def get_batch_data(grouped_data, batch_size):
         batch_data.append(grouped_data[start_idx:end_idx])
     return batch_data
 
+
 def get_index(b, id):
     id_a = id // b
     id_b = id % b
     return (id_a, id_b)
+
 
 def eval(predicted, gold, test_path, log_path, epoch):
     correct_counter = 0
@@ -275,18 +286,18 @@ def write_distribution(dmv_model):
     for t in range(dmv_model.tag_num):
         log_path = path + str(t)
         head_idx = dmv_model.pos["VB"]
-        writer = open(log_path,'w')
-        dist = dmv_model.trans_param[head_idx,:,t,:,:,:]
+        writer = open(log_path, 'w')
+        dist = dmv_model.trans_param[head_idx, :, t, :, :, :]
         for c in range(len(dmv_model.pos)):
             for ct in range(dmv_model.tag_num):
                 for dir in range(2):
                     for cv in range(dmv_model.cvalency):
-                        writer.write(str(dist[c,ct,dir,cv]))
+                        writer.write(str(dist[c, ct, dir, cv]))
                         writer.write('\n')
         if dmv_model.tag_num > 1:
             lex_log_path = lex_path + str(t)
-            lex_writer = open(lex_log_path,'w')
-            lex_dist = dmv_model.lex_param[head_idx,t,:]
+            lex_writer = open(lex_log_path, 'w')
+            lex_dist = dmv_model.lex_param[head_idx, t, :]
             min = np.min(np.array(lex_dist))
             for w in range(len(dmv_model.vocab)):
                 if lex_dist[w] > min:
@@ -294,3 +305,51 @@ def write_distribution(dmv_model):
                     lex_writer.write('\n')
 
 
+def construct_input_data(rule_samples, decision_samples, batch_size):
+    batch_input_data = {}
+    batch_target_data = {}
+    batch_decision_data = {}
+    batch_target_decision_data = {}
+
+    batch_rule_samples = construct_update_batch_data(rule_samples, batch_size)
+    batch_decision_samples = construct_update_batch_data(decision_samples, batch_size)
+    batch_input_pos_list = list()
+    batch_input_dir_list = list()
+    batch_cvalency_list = list()
+    batch_dvalency_list = list()
+    batch_target_pos_list = list()
+    batch_decision_pos_list = list()
+    batch_decision_dir_list = list()
+    batch_target_decision_list = list()
+
+    for i in range(len(batch_rule_samples)):
+        one_batch = np.array(batch_rule_samples[i])
+        one_batch_input_pos = one_batch[:, 0]
+        one_batch_input_dir = one_batch[:, 4]
+        one_batch_cvalency = one_batch[:, 5]
+        one_batch_target_pos = one_batch[:, 1]
+        batch_input_pos_list.append(one_batch_input_pos)
+        batch_input_dir_list.append(one_batch_input_dir)
+        batch_cvalency_list.append(one_batch_cvalency)
+        batch_target_pos_list.append(one_batch_target_pos)
+    batch_input_data['input_pos'] = batch_input_pos_list
+    batch_input_data['input_dir'] = batch_input_dir_list
+    batch_input_data['cvalency'] = batch_cvalency_list
+    batch_target_data['target_pos'] = batch_target_pos_list
+
+    for i in range(len(batch_decision_samples)):
+        one_batch = np.array(batch_decision_samples[i])
+        one_batch_decision_pos = one_batch[:, 0]
+        one_batch_decision_dir = one_batch[:, 2]
+        one_batch_dvalency = one_batch[:, 3]
+        one_batch_target_decision = one_batch[:, 4]
+        batch_decision_pos_list.append(one_batch_decision_pos)
+        batch_decision_dir_list.append(one_batch_decision_dir)
+        batch_dvalency_list.append(one_batch_dvalency)
+        batch_target_decision_list.append(one_batch_target_decision)
+    batch_decision_data['decision_pos'] = batch_decision_pos_list
+    batch_decision_data['dvalency'] = batch_dvalency_list
+    batch_decision_data['decision_dir'] = batch_decision_dir_list
+    batch_target_decision_data['decision_target'] = batch_target_decision_list
+
+    return batch_input_data, batch_target_data, batch_decision_data, batch_target_decision_data
