@@ -23,6 +23,7 @@ if __name__ == '__main__':
 
     parser.add_option("--extrn", dest="external_embedding", help="External embeddings", metavar="FILE")
     parser.add_option("--batch", type="int", dest="batchsize", default=100)
+    parser.add_option("--sample_batch", type="int", dest="sample_batch_size", default=1000)
 
     parser.add_option("--params", dest="params", help="Parameters file", metavar="FILE", default="params.pickle")
     parser.add_option("--model", dest="model", help="Load/Save model file", metavar="FILE",
@@ -46,7 +47,7 @@ if __name__ == '__main__':
     parser.add_option("--multi_split", action="store_true", dest="multi_split", default=False)
     parser.add_option("--em_after_split", action="store_true", dest="em_after_split", default=False)
 
-    parser.add_option("--optim", type="string", dest="optim", default='adam')
+    parser.add_option("--optim", type="string", dest="optim_type", default='adam')
     parser.add_option("--lr", type="float", dest="learning_rate", default=0.001)
     parser.add_option("--outdir", type="string", dest="output", default="output")
     parser.add_option("--l2", type="float", dest="l2", default=0.0)
@@ -84,9 +85,12 @@ if __name__ == '__main__':
     parser.add_option("--valency_dim", type="int", dest="valency_dim", default=5)
     parser.add_option("--hid_dim", type="int", dest="hid_dim", default=10)
     parser.add_option("--pre_ouput_dim", type="int", dest="pre_output_dim", default=15)
+    parser.add_option("--decision_pre_output_dim", type="int", dest="decision_pre_output_dim", default=5)
     parser.add_option("--neural_epoch", type="int", dest="neural_epoch", default=1)
     parser.add_option("--unified_network", action="store_true", dest="unified_network", default=False)
-
+    parser.add_option("--reset_weight", action="store_true", dest="reset_weight", default=False)
+    parser.add_option("--dir_embed", action="store_true", dest="dir_embed", default=False)
+    parser.add_option("--dir_dim", type="int", dest="dir_dim", default=1)
     parser.add_option("--use_neural", action="store_true", dest="use_neural", default=False)
 
     (options, args) = parser.parse_args()
@@ -232,13 +236,16 @@ if __name__ == '__main__':
                                          options.lex_prior_alpha, options.lex_epsilon)
             # Using neural networks to update DMV parameters
             if options.use_neural:
+                if options.reset_weight:
+                    m_model.apply(utils.init_weight)
                 for e in range(options.neural_epoch):
 
                     iter_loss = 0.0
                     # Put training samples in batches
+
                     batch_input_data, batch_target_data, batch_decision_data, batch_target_decision_data \
                         = utils.construct_input_data(lv_dmv_model.rule_samples, lv_dmv_model.decision_samples,
-                                                     options.batchsize)
+                                                     options.sample_batch_size, options.em_type)
                     batch_num = len(batch_input_data['input_pos'])
                     tot_batch = batch_num
                     for batch_id in tqdm(range(batch_num), mininterval=2, desc=' -Tot it %d (iter %d)' % (tot_batch, 0),
@@ -248,12 +255,17 @@ if __name__ == '__main__':
                         batch_input_dir_v = torch.LongTensor(batch_input_data['input_dir'][batch_id])
                         batch_cvalency_v = torch.LongTensor(batch_input_data['cvalency'][batch_id])
                         batch_target_pos_v = torch.LongTensor(batch_target_data['target_pos'][batch_id])
+                        if options.em_type == 'em':
+                            batch_target_pos_count_v = torch.FloatTensor(batch_target_data['target_count'][batch_id])
+                        else:
+                            batch_target_pos_count_v = None
                         batch_loss = m_model.forward_(batch_input_pos_v, batch_input_dir_v, batch_cvalency_v,
-                                                      batch_target_pos_v, None, False, 'child')
+                                                      batch_target_pos_v, batch_target_pos_count_v, False, 'child',
+                                                      options.em_type)
                         iter_loss += batch_loss
                         batch_loss.backward()
-                        m_model.optimizer.step()
-                        m_model.optimizer.zero_grad()
+                        m_model.optim.step()
+                        m_model.optim.zero_grad()
                     print "child loss for this iteration is " + str(iter_loss.detach().data.numpy() / batch_num)
                     # Network for decision distribution
                     if not options.child_only:
@@ -269,31 +281,39 @@ if __name__ == '__main__':
                             batch_decision_dir_v = torch.LongTensor(batch_decision_data['decision_dir'][batch_id])
                             batch_target_decision_v = torch.LongTensor(
                                 batch_target_decision_data['decision_target'][batch_id])
+                            if options.em_type == 'em':
+                                batch_target_decision_count_v = torch.FloatTensor(
+                                    batch_target_decision_data['decision_target_count'][batch_id])
+                            else:
+                                batch_target_decision_count_v = None
                             if options.unified_network:
                                 batch_decision_loss = m_model.forward_(batch_decision_pos_v, batch_decision_dir_v,
-                                                                       batch_dvalency_v, None, batch_target_decision_v,
-                                                                       False, 'decision')
+                                                                       batch_dvalency_v, batch_target_decision_v,
+                                                                       batch_target_decision_count_v, False, 'decision',
+                                                                       options.em_type)
                             else:
                                 batch_decision_loss = m_model.forward_decision(batch_decision_pos_v,
                                                                                batch_decision_dir_v, batch_dvalency_v,
-                                                                               batch_target_decision_v, False)
+                                                                               batch_target_decision_v,
+                                                                               batch_target_decision_count_v, False,
+                                                                               options.em_type)
                             iter_decision_loss += batch_decision_loss
                             batch_decision_loss.backward()
-                            m_model.optimizer.step()
-                            m_model.optimizer.zero_grad()
+                            m_model.optim.step()
+                            m_model.optim.zero_grad()
                         print "decision loss for this iteration is " + str(
                             iter_decision_loss.detach().data.numpy() / batch_num)
-                    copy_trans_param = lv_dmv_model.trans_param.copy()
-                    copy_decision_param = lv_dmv_model.decision_param.copy()
-                    to_decision = lv_dmv_model.to_decision
-                    from_decision = lv_dmv_model.from_decision
-                    #Predict model parameters by network
-                    trans_param, decision_param = m_model.predict(copy_trans_param, copy_decision_param,
-                                                                  options.batchsize, batch_target_decision_data,
-                                                                  trans_counter, decision_counter, from_decision,
-                                                                  to_decision, options.child_only)
-                    lv_dmv_model.trans_param = trans_param.copy()
-                    lv_dmv_model.decision_param = decision_param.copy()
+                copy_trans_param = lv_dmv_model.trans_param.copy()
+                copy_decision_param = lv_dmv_model.decision_param.copy()
+                to_decision = lv_dmv_model.to_decision
+                from_decision = lv_dmv_model.from_decision
+                # Predict model parameters by network
+                trans_param, decision_param = m_model.predict(copy_trans_param, copy_decision_param,
+                                                              options.sample_batch_size, decision_counter,
+                                                              from_decision, to_decision, options.child_only,
+                                                              trans_counter)
+                lv_dmv_model.trans_param = trans_param.copy()
+                lv_dmv_model.decision_param = decision_param.copy()
             else:
                 lv_dmv_model.em_m(trans_counter, decision_counter, lex_counter, None, None)
         if options.do_eval:

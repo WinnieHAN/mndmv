@@ -483,9 +483,24 @@ class ldmv_model(nn.Module):
                         trans_counter[h_pos, m_pos, :, :, dir, 0] += np.sum(np.exp(dep_count), axis=2)
                     else:
                         trans_counter[h_pos, m_pos, :, :, dir, :] += np.exp(dep_count)
+                    if self.use_neural:
+                        for h_tag_id in range(self.tag_num):
+                            for m_tag_id in range(self.tag_num):
+                                for v in range(self.cvalency):
+                                    count = np.exp(dep_count[h_tag_id, m_tag_id, v])
+                                    self.rule_samples.append(list([h_pos, m_pos, h_tag_id, m_tag_id, dir, v, count]))
                     if h > 0:
                         h_dec_pos = self.to_decision[h_pos]
                         decision_counter[h_dec_pos, :, dir, :, 1] += np.sum(np.exp(dep_count), axis=1)
+                        if self.use_neural:
+                            summed_count = np.sum(np.exp(dep_count), axis=1)
+                            for h_tag_id in range(self.tag_num):
+                                for v in range(self.dvalency):
+                                    count = summed_count[h_tag_id, v]
+                                    if not self.unified_network:
+                                        self.decision_samples.append(list([h_dec_pos, h_tag_id, dir, v, 1, count]))
+                                    else:
+                                        self.decision_samples.append(list([h_pos, h_tag_id, dir, v, 1, count]))
                     if self.use_lex:
                         lex_counter[m_pos, :, m_word] += np.sum(np.exp(dep_count), axis=(0, 2))
             for m in range(1, sentence_length):
@@ -497,6 +512,15 @@ class ldmv_model(nn.Module):
                     stop_count = inside_complete_table[sen_id, m_span_id, :, :] + \
                                  outside_complete_table[sen_id, m_span_id, :, :] - sentence_prob[sen_id]
                     decision_counter[m_dec_pos, :, d, :, 0] += np.exp(stop_count)
+                    if self.use_neural:
+                        for m_tag_id in range(self.tag_num):
+                            for v in range(self.dvalency):
+                                count = np.exp(stop_count[m_tag_id, v])
+                                if not self.unified_network:
+                                    self.decision_samples.append(list([m_dec_pos, m_tag_id, d, v, 0, count]))
+                                else:
+                                    self.decision_samples.append(list([m_pos, m_tag_id, d, v, 0, count]))
+
             batch_likelihood += sentence_prob[sen_id]
         return batch_likelihood
 

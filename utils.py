@@ -4,6 +4,8 @@ from collections import Counter
 from itertools import groupby
 import numpy as np
 import torch
+import torch.nn as nn
+from torch.nn.init import *
 
 
 class ConllEntry:
@@ -229,6 +231,20 @@ def get_index(b, id):
     return (id_a, id_b)
 
 
+def init_weight(layer):
+    if isinstance(layer, nn.Linear):
+        xavier_uniform_(layer.weight.data)
+        constant_(layer.bias, 0)
+    if isinstance(layer, nn.Embedding):
+        xavier_uniform_(layer.weight.data)
+    if isinstance(layer, nn.LSTM):
+        for p in layer.parameters():
+            if len(p.data.shape) > 1:
+                xavier_uniform_(p.data)
+            else:
+                constant_(p, 0)
+
+
 def eval(predicted, gold, test_path, log_path, epoch):
     correct_counter = 0
     total_counter = 0
@@ -305,7 +321,7 @@ def write_distribution(dmv_model):
                     lex_writer.write('\n')
 
 
-def construct_input_data(rule_samples, decision_samples, batch_size):
+def construct_input_data(rule_samples, decision_samples, batch_size, em_type):
     batch_input_data = {}
     batch_target_data = {}
     batch_decision_data = {}
@@ -321,6 +337,9 @@ def construct_input_data(rule_samples, decision_samples, batch_size):
     batch_decision_pos_list = list()
     batch_decision_dir_list = list()
     batch_target_decision_list = list()
+    if em_type == 'em':
+        batch_target_count_list = list()
+        batch_target_decision_count_list = list()
 
     for i in range(len(batch_rule_samples)):
         one_batch = np.array(batch_rule_samples[i])
@@ -332,10 +351,15 @@ def construct_input_data(rule_samples, decision_samples, batch_size):
         batch_input_dir_list.append(one_batch_input_dir)
         batch_cvalency_list.append(one_batch_cvalency)
         batch_target_pos_list.append(one_batch_target_pos)
+        if em_type == 'em':
+            one_batch_target_count = one_batch[:, 6]
+            batch_target_count_list.append(one_batch_target_count)
     batch_input_data['input_pos'] = batch_input_pos_list
     batch_input_data['input_dir'] = batch_input_dir_list
     batch_input_data['cvalency'] = batch_cvalency_list
     batch_target_data['target_pos'] = batch_target_pos_list
+    if em_type == 'em':
+        batch_target_data['target_count'] = batch_target_count_list
 
     for i in range(len(batch_decision_samples)):
         one_batch = np.array(batch_decision_samples[i])
@@ -347,9 +371,14 @@ def construct_input_data(rule_samples, decision_samples, batch_size):
         batch_decision_dir_list.append(one_batch_decision_dir)
         batch_dvalency_list.append(one_batch_dvalency)
         batch_target_decision_list.append(one_batch_target_decision)
+        if em_type == 'em':
+            one_batch_target_decision_count = one_batch[:, 5]
+            batch_target_decision_count_list.append(one_batch_target_decision_count)
     batch_decision_data['decision_pos'] = batch_decision_pos_list
     batch_decision_data['dvalency'] = batch_dvalency_list
     batch_decision_data['decision_dir'] = batch_decision_dir_list
     batch_target_decision_data['decision_target'] = batch_target_decision_list
+    if em_type == 'em':
+        batch_target_decision_data['decision_target_count'] = batch_target_decision_count_list
 
     return batch_input_data, batch_target_data, batch_decision_data, batch_target_decision_data

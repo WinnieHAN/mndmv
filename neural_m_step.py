@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from torch import optim
 import utils
 import numpy as np
+from numpy import linalg as LA
 
 
 class m_step_model(nn.Module):
@@ -21,80 +22,126 @@ class m_step_model(nn.Module):
         self.hid_dim = options.hid_dim
         self.pre_output_dim = options.pre_output_dim
         self.unified_network = options.unified_network
+        self.decision_pre_output_dim = options.decision_pre_output_dim
+        self.drop_out = options.drop_out
 
         self.plookup = nn.Embedding(self.tag_num, self.pembedding_dim)
         self.dplookup = nn.Embedding(self.tag_num, self.pembedding_dim)
         self.vlookup = nn.Embedding(self.cvalency, self.valency_dim)
         self.dvlookup = nn.Embedding(self.dvalency, self.valency_dim)
 
-        self.left_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
-        self.right_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
+        self.dropout_layer = nn.Dropout(p=self.drop_out)
+
+        self.dir_embed = options.dir_embed
+        self.dir_dim = options.dir_dim
+        if self.dir_embed:
+            self.dlookup = nn.Embedding(2, self.dir_dim)
+        if not self.dir_embed:
+            self.left_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
+            self.right_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
+        else:
+            self.hid = nn.Linear((self.pembedding_dim + self.valency_dim + self.dir_dim), self.hid_dim)
         self.linear_chd_hid = nn.Linear(self.hid_dim, self.pre_output_dim)
         self.pre_output = nn.Linear(self.pre_output_dim, self.tag_num)
 
-        self.left_decision_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
-        self.right_decision_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
-        self.linear_decision_hid = nn.Linear(self.hid_dim, self.pre_output_dim)
-        self.decision_pre_output = nn.Linear(self.pre_output_dim, 2)
+        if not self.dir_embed:
+            self.left_decision_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
+            self.right_decision_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
+        else:
+            self.decision_hid = nn.Linear((self.pembedding_dim + self.valency_dim + self.dir_dim), self.hid_dim)
+        self.linear_decision_hid = nn.Linear(self.hid_dim, self.decision_pre_output_dim)
+        self.decision_pre_output = nn.Linear(self.decision_pre_output_dim, 2)
         # self.decision_pre_output = nn.Linear(self.hid_dim, 2)
+        self.em_type = options.em_type
+        self.param_smoothing = options.param_smoothing
 
-        self.optim = options.optim
+        self.optim_type = options.optim_type
         self.lr = options.learning_rate
-        if self.optim == 'sgd':
-            self.optimizer = optim.SGD(self.parameters(), lr=self.lr)
-        elif self.optim == 'adam':
-            self.optimizer = optim.Adam(self.parameters(), lr=self.lr)
+        if self.optim_type == 'sgd':
+            self.optim = optim.SGD(self.parameters(), lr=self.lr)
+        elif self.optim_type == 'adam':
+            self.optim = optim.Adam(self.parameters(), lr=self.lr)
+        elif self.optim_type == 'adagrad':
+            self.optim = optim.Adagrad(self.parameters(), lr=self.lr)
 
-    def forward_(self, batch_pos, batch_dir, batch_valence, batch_target_pos, batch_target_decision, is_prediction,
-                 type):
+    def forward_(self, batch_pos, batch_dir, batch_valence, batch_target, batch_target_count,
+                 is_prediction, type, em_type):
         p_embeds = self.plookup(batch_pos)
-        v_embeds = self.dvlookup(batch_valence)
-        left_mask, right_mask = self.construct_mask(batch_dir)
-        input_embeds = torch.cat((p_embeds, v_embeds), 1)
-        left_v = self.left_hid(input_embeds)
-        left_v = F.relu(left_v)
-        right_v = self.right_hid(input_embeds)
-        right_v = F.relu(right_v)
-        left_v = left_v.masked_fill(left_mask, 0.0)
-        right_v = right_v.masked_fill(right_mask, 0.0)
-        hidden_v = left_v + right_v
+        if type == 'child':
+            v_embeds = self.vlookup(batch_valence)
+        else:
+            v_embeds = self.dvlookup(batch_valence)
+        if self.dir_embed:
+            d_embeds = self.dlookup(batch_dir)
+        if not self.dir_embed:
+            left_mask, right_mask = self.construct_mask(batch_dir)
+            input_embeds = torch.cat((p_embeds, v_embeds), 1)
+            input_embeds = self.dropout_layer(input_embeds)
+            left_v = self.left_hid(input_embeds)
+            left_v = F.relu(left_v)
+            right_v = self.right_hid(input_embeds)
+            right_v = F.relu(right_v)
+            left_v = left_v.masked_fill(left_mask, 0.0)
+            right_v = right_v.masked_fill(right_mask, 0.0)
+            hidden_v = left_v + right_v
+        else:
+            input_embeds = torch.cat((p_embeds, v_embeds, d_embeds), 1)
+            hidden_v = self.hid(input_embeds)
         if type == 'child':
             pre_output_v = self.pre_output(F.relu(self.linear_chd_hid(hidden_v)))
         else:
             pre_output_v = self.decision_pre_output(F.relu(self.linear_decision_hid(hidden_v)))
-        if not is_prediction and type == 'child':
-            loss = torch.nn.CrossEntropyLoss()
-            batch_loss = loss(pre_output_v, batch_target_pos)
-            return batch_loss
-        elif is_prediction and type == 'child':
-            predicted_param = F.softmax(pre_output_v, dim=1)
-            return predicted_param
-        elif not is_prediction and type == 'decision':
-            loss = torch.nn.CrossEntropyLoss()
-            batch_loss = loss(pre_output_v, batch_target_decision)
-            return batch_loss
-        elif is_prediction and type == 'decision':
+        if not is_prediction:
+            if em_type == 'viterbi':
+                loss = torch.nn.CrossEntropyLoss()
+                batch_loss = loss(pre_output_v, batch_target)
+                return batch_loss
+            else:
+                predicted_prob = F.log_softmax(pre_output_v, dim=1)
+                batch_target = batch_target.view(len(batch_target), 1)
+                target_prob = torch.gather(predicted_prob, 1, batch_target)
+                batch_target_count = batch_target_count.view(len(batch_target_count), 1)
+                batch_loss = -torch.sum(batch_target_count * target_prob)
+                return batch_loss
+        else:
             predicted_param = F.softmax(pre_output_v, dim=1)
             return predicted_param
 
     def forward_decision(self, batch_decision_pos, batch_decision_dir, batch_dvalence, batch_target_decision,
-                         is_prediction):
+                         batch_target_decision_count, is_prediction, em_type):
         p_embeds = self.dplookup(batch_decision_pos)
         v_embeds = self.dvlookup(batch_dvalence)
-        left_mask, right_mask = self.construct_mask(batch_decision_dir)
-        input_embeds = torch.cat((p_embeds, v_embeds), 1)
-        left_v = self.left_decision_hid(input_embeds)
-        left_v = F.relu(left_v)
-        right_v = self.right_decision_hid(input_embeds)
-        right_v = F.relu(right_v)
-        left_v = left_v.masked_fill(left_mask, 0.0)
-        right_v = right_v.masked_fill(right_mask, 0.0)
-        hidden_v = left_v + right_v
+
+        if self.dir_embed:
+            d_embeds = self.dlookup(batch_decision_dir)
+        if not self.dir_embed:
+
+            left_mask, right_mask = self.construct_mask(batch_decision_dir)
+            input_embeds = torch.cat((p_embeds, v_embeds), 1)
+
+            left_v = self.left_decision_hid(input_embeds)
+            left_v = F.relu(left_v)
+            right_v = self.right_decision_hid(input_embeds)
+            right_v = F.relu(right_v)
+            left_v = left_v.masked_fill(left_mask, 0.0)
+            right_v = right_v.masked_fill(right_mask, 0.0)
+            hidden_v = left_v + right_v
+        else:
+            input_embeds = torch.cat((p_embeds, v_embeds, d_embeds), 1)
+            hidden_v = self.decision_hid(input_embeds)
         pre_output_v = self.decision_pre_output(F.relu(self.linear_decision_hid(hidden_v)))
         if not is_prediction:
-            loss = torch.nn.CrossEntropyLoss()
-            batch_loss = loss(pre_output_v, batch_target_decision)
-            return batch_loss
+            if em_type == 'viterbi':
+                loss = torch.nn.CrossEntropyLoss()
+                batch_loss = loss(pre_output_v, batch_target_decision)
+                return batch_loss
+            else:
+                predicted_prob = F.log_softmax(pre_output_v, dim=1)
+                batch_target = batch_target_decision.view(len(batch_target_decision), 1)
+                target_prob = torch.gather(predicted_prob, 1, batch_target)
+                batch_target_count = batch_target_decision_count.view(len(batch_target_decision_count), 1)
+                batch_loss = -torch.sum(batch_target_count * target_prob)
+                return batch_loss
         else:
             predicted_param = F.softmax(pre_output_v, dim=1)
             return predicted_param
@@ -111,8 +158,8 @@ class m_step_model(nn.Module):
         right_mask = right_mask.expand(-1, self.hid_dim)
         return left_mask, right_mask
 
-    def predict(self, trans_param, decision_param, batch_size, batch_target_decision_data, trans_counter,
-                decision_counter, from_decision, to_decision, child_only):
+    def predict(self, trans_param, decision_param, batch_size, decision_counter, from_decision, to_decision,
+                child_only,trans_counter):
         input_pos_num, target_pos_num, _, _, dir_num, cvalency = trans_param.shape
         input_decision_pos_num, _, decision_dir_num, dvalency, target_decision_num = decision_param.shape
         input_trans_list = [[p, d, cv] for p in range(input_pos_num) for d in range(dir_num) for cv in range(cvalency)]
@@ -134,7 +181,7 @@ class m_step_model(nn.Module):
             one_batch_dir_index = np.array(batched_input_trans[i])[:, 1]
             one_batch_cvalency_index = np.array(batched_input_trans[i])[:, 2]
             predicted_trans_param = self.forward_(one_batch_input_pos, one_batch_dir, one_batch_cvalency, None, None,
-                                                  True, 'child')
+                                                  True, 'child', self.em_type)
             trans_param[one_batch_input_pos_index, :, :, :, one_batch_dir_index,
             one_batch_cvalency_index] = predicted_trans_param.detach().numpy().reshape(one_batch_size, target_pos_num,
                                                                                        1, 1)
@@ -159,19 +206,28 @@ class m_step_model(nn.Module):
                 one_batch_dvalency_index = np.array(batched_input_decision[i])[:, 2]
                 if self.unified_network:
                     predicted_decision_param = self.forward_(one_batch_input_decision_pos, one_batch_decision_dir,
-                                                             one_batch_dvalency, None, None, True, 'decision')
+                                                             one_batch_dvalency, None, None, True, 'decision',
+                                                             self.em_type)
                 else:
                     predicted_decision_param = self.forward_decision(one_batch_input_decision_pos,
-                                                                     one_batch_decision_dir,one_batch_dvalency,
-                                                                     None, True)
+                                                                     one_batch_decision_dir, one_batch_dvalency,
+                                                                     None, None, True, self.em_type)
                 decision_param[one_batch_input_decision_pos_index, :, one_batch_decision_dir_index,
                 one_batch_dvalency_index, :] = predicted_decision_param.detach().numpy().reshape(one_batch_size, 1,
                                                                                                  target_decision_num)
         if child_only:
-            decision_counter = decision_counter + 0.1
+            decision_counter = decision_counter + self.param_smoothing
             decision_sum = np.sum(decision_counter, axis=4, keepdims=True)
             decision_param = decision_counter / decision_sum
-        # trans_counter = trans_counter + 0.1
-        # child_sum = np.sum(trans_counter, axis=(1, 3), keepdims=True)
-        # trans_param = trans_counter / child_sum
+        decision_counter = decision_counter + self.param_smoothing
+        decision_sum = np.sum(decision_counter, axis=4, keepdims=True)
+        decision_param_compare = decision_counter / decision_sum
+        decision_difference = decision_param_compare - decision_param
+        if not self.child_only:
+            print 'distance for decision in this iteration '+str(LA.norm(decision_difference))
+        trans_counter = trans_counter + self.param_smoothing
+        child_sum = np.sum(trans_counter, axis=(1, 3), keepdims=True)
+        trans_param = trans_counter / child_sum
+        #trans_difference = trans_param_compare - trans_param
+        #print 'distance for trans in this iteration ' + str(LA.norm(trans_difference))
         return trans_param, decision_param
