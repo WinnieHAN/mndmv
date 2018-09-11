@@ -227,7 +227,7 @@ class m_step_model(nn.Module):
             print 'distance for decision in this iteration '+str(LA.norm(decision_difference))
         trans_counter = trans_counter + self.param_smoothing
         child_sum = np.sum(trans_counter, axis=(1, 3), keepdims=True)
-        trans_param = trans_counter / child_sum
+        trans_param_compare = trans_counter / child_sum
         #trans_difference = trans_param_compare - trans_param
         #print 'distance for trans in this iteration ' + str(LA.norm(trans_difference))
         return trans_param, decision_param
