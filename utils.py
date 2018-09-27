@@ -53,7 +53,7 @@ def memoize(func):
 
 
 def construct_update_batch_data(data_list, batch_size):
-    #random.shuffle(data_list)
+    # random.shuffle(data_list)
     batch_data = []
     len_datas = len(data_list)
     num_batch = len_datas // batch_size
@@ -140,10 +140,11 @@ class data_sentence:
         word_list = list()
         pos_list = list()
         for entry in self.entries:
-            if entry.norm in words.keys():
-                word_list.append(words[entry.norm])
-            else:
-                word_list.append(words['<UNKNOWN>'])
+            if words is not None:
+                if entry.norm in words.keys():
+                    word_list.append(words[entry.norm])
+                else:
+                    word_list.append(words['<UNKNOWN>'])
             if entry.pos in pos.keys():
                 pos_list.append(pos[entry.pos])
             else:
@@ -377,6 +378,165 @@ def construct_input_data(rule_samples, decision_samples, batch_size, em_type):
     batch_decision_data['decision_pos'] = batch_decision_pos_list
     batch_decision_data['dvalency'] = batch_dvalency_list
     batch_decision_data['decision_dir'] = batch_decision_dir_list
+    batch_target_decision_data['decision_target'] = batch_target_decision_list
+    if em_type == 'em':
+        batch_target_decision_data['decision_target_count'] = batch_target_decision_count_list
+
+    return batch_input_data, batch_target_data, batch_decision_data, batch_target_decision_data
+
+
+def read_language_list(language_path):
+    ll = open(language_path, 'r')
+    language_set = set()
+    for l in ll:
+        l = l[:-1]
+        language_set.add(l)
+    return language_set
+
+
+def get_file_set(file_list, language_set, is_train):
+    file_set = set()
+    for file in file_list:
+        if not file[0].isalpha():
+            continue
+        language_key, counter = get_language_key(file)
+        function_key = file[counter + 5]
+        if is_train and function_key == "r" and language_key in language_set:
+            file_set.add(file)
+    return file_set
+
+
+def get_language_key(file):
+    key = ""
+    counter = 0
+    for c in file:
+        if c == "-":
+            break
+        key += c
+        counter += 1
+    return key, counter
+
+
+def read_multiple_data(data_path, file_set, isPredict):
+    sentences = []
+    if not isPredict:
+        posCount = Counter()
+        lanCounter = Counter()
+        language_map = {}
+        s_counter = 0
+        for file in file_set:
+            one_data_path = data_path + "/" + file
+            language_key, _ = get_language_key(file)
+            with open(one_data_path, 'r') as conllFP:
+                for sentence in read_conll(conllFP):
+                    # wordsCount.update([node.norm for node in sentence if isinstance(node, ConllEntry)])
+                    posCount.update([node.pos for node in sentence if isinstance(node, ConllEntry)])
+                    ds = data_sentence(s_counter, sentence)
+                    sentences.append(ds)
+                    language_map[s_counter] = language_key
+                    lanCounter.update([language_key])
+                    s_counter += 1
+        # wordsCount['<UNKNOWN>'] = 0
+        # posCount['<UNKNOWN-POS>'] = 0
+        # return {w: i for i, w in enumerate(wordsCount.keys())}, {p: i for i, p in enumerate(
+        return {p: i for i, p in enumerate(posCount.keys())}, sentences, {l: i for i, l in
+                                                                          enumerate(lanCounter.keys())}, language_map
+    else:
+        for file in file_set:
+            one_data_path = data_path + "/" + file
+            one_file_sentences = []
+            with open(one_data_path, 'r') as conllFP:
+                s_counter = 0
+                for sentence in read_conll(conllFP):
+                    ds = data_sentence(s_counter, sentence)
+                    one_file_sentences.append(ds)
+                    s_counter += 1
+            sentences.append(one_file_sentences)
+        return sentences
+
+
+def construct_ml_batch_data(data_list, sentence_map, batch_size):
+    data_list.sort(key=lambda x: len(sentence_map[x[4]]))
+    grouped = [list(g) for k, g in groupby(data_list, lambda s: len(sentence_map[s[4]]))]
+    batch_data = []
+    for group in grouped:
+        sub_batch_data = get_batch_data(group, batch_size)
+        batch_data.extend(sub_batch_data)
+    random.shuffle(batch_data)
+    return batch_data
+
+
+def construct_ml_input_data(rule_samples, decision_samples, sentence_map, sample_batch_size, em_type):
+    batch_input_data = {}
+    batch_target_data = {}
+    batch_decision_data = {}
+    batch_target_decision_data = {}
+    batch_rule_samples = construct_ml_batch_data(rule_samples, sentence_map, sample_batch_size)
+    batch_decision_samples = construct_ml_batch_data(decision_samples, sentence_map, sample_batch_size)
+    batch_input_pos_list = list()
+    batch_input_dir_list = list()
+    batch_input_sen_list = list()
+    batch_cvalency_list = list()
+    batch_dvalency_list = list()
+    batch_lan_list = list()
+    batch_target_pos_list = list()
+    batch_decision_pos_list = list()
+    batch_decision_dir_list = list()
+    batch_decision_sen_list = list()
+    batch_decision_lan_list = list()
+    batch_target_decision_list = list()
+    if em_type == 'em':
+        batch_target_count_list = list()
+        batch_target_decision_count_list = list()
+
+    for i in range(len(batch_rule_samples)):
+        one_batch = np.array(batch_rule_samples[i])
+        one_batch_input_pos = one_batch[:, 0]
+        one_batch_input_dir = one_batch[:, 2]
+        one_batch_cvalency = one_batch[:, 3]
+        one_batch_sentence = one_batch[:, 4]
+        one_batch_target_pos = one_batch[:, 1]
+        one_batch_target_lan = one_batch[:, 5]
+        batch_input_pos_list.append(one_batch_input_pos)
+        batch_input_dir_list.append(one_batch_input_dir)
+        batch_cvalency_list.append(one_batch_cvalency)
+        batch_input_sen_list.append(one_batch_sentence)
+        batch_target_pos_list.append(one_batch_target_pos)
+        batch_lan_list.append(one_batch_target_lan)
+        if em_type == 'em':
+            one_batch_target_count = one_batch[:, 6]
+            batch_target_count_list.append(one_batch_target_count)
+    batch_input_data['input_pos'] = batch_input_pos_list
+    batch_input_data['input_dir'] = batch_input_dir_list
+    batch_input_data['cvalency'] = batch_cvalency_list
+    batch_input_data['sentence'] = batch_input_sen_list
+    batch_target_data['target_pos'] = batch_target_pos_list
+    batch_target_data['target_lan'] = batch_lan_list
+    if em_type == 'em':
+        batch_target_data['target_count'] = batch_target_count_list
+
+    for i in range(len(batch_decision_samples)):
+        one_batch = np.array(batch_decision_samples[i])
+        one_batch_decision_pos = one_batch[:, 0]
+        one_batch_decision_dir = one_batch[:, 1]
+        one_batch_dvalency = one_batch[:, 2]
+        one_batch_decision_sentence = one_batch[:, 3]
+        one_batch_decision_lan = one_batch[:, 4]
+        one_batch_target_decision = one_batch[:, 5]
+        batch_decision_pos_list.append(one_batch_decision_pos)
+        batch_decision_dir_list.append(one_batch_decision_dir)
+        batch_dvalency_list.append(one_batch_dvalency)
+        batch_decision_sen_list.append(one_batch_decision_sentence)
+        batch_decision_lan_list.append(one_batch_decision_lan)
+        batch_target_decision_list.append(one_batch_target_decision)
+        if em_type == 'em':
+            one_batch_target_decision_count = one_batch[:, 6]
+            batch_target_decision_count_list.append(one_batch_target_decision_count)
+    batch_decision_data['decision_pos'] = batch_decision_pos_list
+    batch_decision_data['dvalency'] = batch_dvalency_list
+    batch_decision_data['decision_dir'] = batch_decision_dir_list
+    batch_decision_data['decision_sentence'] = batch_decision_sen_list
+    batch_decision_data['decision_language'] = batch_decision_lan_list
     batch_target_decision_data['decision_target'] = batch_target_decision_list
     if em_type == 'em':
         batch_target_decision_data['decision_target_count'] = batch_target_decision_count_list

@@ -5,10 +5,11 @@ from torch import optim
 import utils
 import numpy as np
 from numpy import linalg as LA
+from torch.nn.utils.rnn import pad_packed_sequence, pack_padded_sequence
 
 
 class m_step_model(nn.Module):
-    def __init__(self, tag_num, options):
+    def __init__(self, tag_num, lan_num, options):
         super(m_step_model, self).__init__()
         self.tag_num = tag_num
         self.options = options
@@ -23,11 +24,35 @@ class m_step_model(nn.Module):
         self.pre_output_dim = options.pre_output_dim
         self.unified_network = options.unified_network
         self.decision_pre_output_dim = options.decision_pre_output_dim
+        self.drop_out = options.drop_out
+        self.lan_num = lan_num
+        self.ml_comb_type = options.ml_comb_type  # options.ml_comb_type = 0(no_lang_id)/1(id embeddings)/2(adversarial-tag)
+        self.stc_model_type = 1  # 1  lstm   2 lstm with atten   3 variational
+        if self.ml_comb_type == 1:
+            self.lang_dim = options.lang_dim  # options.lang_dim = 10(default)
 
+        elif self.ml_comb_type == 2:
+            self.lang_dim = options.lang_dim
+            self.lstm_layer_num = options.lstm_layer_num  # 1
+            self.lstm_hidden_dim = options.lstm_hidden_dim  # 10
+            self.bidirectional = options.bidirectional  # True
+            self.lstm_direct = 2 if self.bidirectional else 1
+            self.hidden = self.init_hidden(1)  # 1 here is just for init, will be changed in forward process
+            self.lstm = nn.LSTM(self.pembedding_dim, self.lstm_hidden_dim, num_layers=self.lstm_layer_num,
+                                bidirectional=self.bidirectional,
+                                batch_first=True)  # hidden_dim // 2, num_layers=1, bidirectional=True
+            self.lang_classifier = nn.Linear(self.lstm_direct * self.lstm_hidden_dim, self.lan_num)
+            if self.stc_model_type == 2:
+                self.variational_mu = nn.Linear(self.lstm_hidden_dim * self.lstm_direct * self.lstm_layer_num, 10)
+                self.variational_logvar = nn.Linear(self.lstm_hidden_dim * self.lstm_direct * self.lstm_layer_num,
+                                                    10)  # log var.pow(2)
         self.plookup = nn.Embedding(self.tag_num, self.pembedding_dim)
         self.dplookup = nn.Embedding(self.tag_num, self.pembedding_dim)
         self.vlookup = nn.Embedding(self.cvalency, self.valency_dim)
         self.dvlookup = nn.Embedding(self.dvalency, self.valency_dim)
+        self.head_lstm_embeddings = self.plookup
+        if options.ml_comb_type == 1:
+            self.llookup = nn.Embedding(self.lan_num, self.lang_dim)
 
         self.dropout_layer = nn.Dropout(p=self.drop_out)
 
@@ -36,8 +61,20 @@ class m_step_model(nn.Module):
         if self.dir_embed:
             self.dlookup = nn.Embedding(2, self.dir_dim)
         if not self.dir_embed:
-            self.left_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
-            self.right_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
+            if options.ml_comb_type == 0:
+                self.left_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
+                self.right_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
+            elif options.ml_comb_type == 1:
+                self.left_hid = nn.Linear((self.pembedding_dim + self.valency_dim + self.lang_dim), self.hid_dim)
+                self.right_hid = nn.Linear((self.pembedding_dim + self.valency_dim + self.lang_dim), self.hid_dim)
+            elif options.ml_comb_type == 2:
+                self.left_hid = nn.Linear(
+                    (self.pembedding_dim + self.valency_dim + self.lstm_direct * self.lstm_hidden_dim), self.hid_dim)
+                self.right_hid = nn.Linear(
+                    (self.pembedding_dim + self.valency_dim + self.lstm_direct * self.lstm_hidden_dim),
+                    self.hid_dim)
+
+
         else:
             self.hid = nn.Linear((self.pembedding_dim + self.valency_dim + self.dir_dim), self.hid_dim)
         self.linear_chd_hid = nn.Linear(self.hid_dim, self.pre_output_dim)
@@ -63,12 +100,66 @@ class m_step_model(nn.Module):
         elif self.optim_type == 'adagrad':
             self.optim = optim.Adagrad(self.parameters(), lr=self.lr)
 
-        #self.apply(utils.init_weight)
+    def init_hidden(self, batch_init):
+        return (
+            torch.zeros(self.lstm_layer_num * self.lstm_direct, batch_init, self.lstm_hidden_dim),
+            # num_layers * bi-direction
+            torch.zeros(2 * 1, batch_init, self.lstm_hidden_dim))
 
+    def reparameterize(self, training, mu, logvar):
+        if training:
+            std = torch.exp(0.5 * logvar)
+            eps = torch.autograd.Variable(torch.randn(std.size()), requires_grad=False)  # torch.randn_like(std)
+            temp = torch.mul(std, eps) + mu
+            return temp  # eps.mul(std).add_(mu)
+        else:
+            return mu
 
+    def lang_loss(self, stc_representation, batch_target):
+        loss = torch.nn.CrossEntropyLoss()
+        lang_output = self.lang_classifier(stc_representation)
+        lang_loss = loss(lang_output, batch_target)
+        return lang_loss
+
+    def stc_representation(self, sentences, sentences_len, hid_tensor):
+        batch_size = len(sentences)
+        sentences_maxlen = len(sentences[0])
+        if self.stc_model_type == 1:
+            embeds = self.head_lstm_embeddings(sentences)
+            lstm_out, self.hidden = self.lstm(embeds)
+            sentences_all_lstm = torch.transpose(self.hidden[0], 0, 1)
+            sentences_all_lstm = sentences_all_lstm.contiguous().view(sentences_all_lstm.size()[0], -1)
+            return self.dropout_layer(sentences_all_lstm)
+        elif self.stc_model_type == 2:
+            self.hidden = self.init_hidden(batch_size)  # sts batch
+            embeds = self.head_lstm_embeddings(torch.autograd.Variable(torch.LongTensor(sentences)))
+            sts_packed = torch.nn.utils.rnn.PackedSequence(embeds, batch_sizes=sentences_len)
+            sentence_in = pad_packed_sequence(sts_packed, batch_first=True)
+            lstm_out, self.hidden = self.lstm(sentence_in[0],
+                                              self.hidden)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
+            sentences_lstm = torch.transpose(self.hidden[0], 0, 1).contiguous().view(batch_size,
+                                                                                     -1)  # batch_size* (num_layer*direct*hiddensize) #use h not c
+            sentences_all_lstm = torch.transpose(lstm_out, 0, 1)
+            atten_weight = F.softmax(self.linear_hvds(torch.cat((hid_tensor, sentences_lstm), 1)))[:,
+                           0:sentences_maxlen]
+            attn_applied = torch.bmm(torch.transpose(atten_weight.unsqueeze(2), 1, 2), sentences_all_lstm)  # 1*1*6
+            return attn_applied.squeeze(1)
+        elif self.stc_model_type == 3:
+            self.hidden = self.init_hidden(batch_size)  # sts batch
+            embeds = self.dropout(self.head_lstm_embeddings(torch.autograd.Variable(torch.LongTensor(sentences))))
+            sts_packed = torch.nn.utils.rnn.PackedSequence(embeds, sentences_len)  # batch_sizes=
+            sentence_in = pad_packed_sequence(sts_packed, batch_first=True)
+            lstm_out, self.hidden = self.lstm(sentence_in[0],
+                                              self.hidden)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
+            sentences_all_lstm = torch.transpose(self.hidden[0], 0, 1)
+            sentences_all_lstm = sentences_all_lstm.contiguous().view(sentences_all_lstm.size()[0], -1)
+            mu = self.variational_mu(sentences_all_lstm)
+            logvar = self.variational_logvar(sentences_all_lstm)
+            var_out = self.reparameterize(self.training, mu, logvar)
+            return var_out, -0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
 
     def forward_(self, batch_pos, batch_dir, batch_valence, batch_target, batch_target_count,
-                 is_prediction, type, em_type):
+                 is_prediction, type, em_type, batch_lang_id, sentences, sentences_len):
         p_embeds = self.plookup(batch_pos)
         if type == 'child':
             v_embeds = self.vlookup(batch_valence)
@@ -78,7 +169,19 @@ class m_step_model(nn.Module):
             d_embeds = self.dlookup(batch_dir)
         if not self.dir_embed:
             left_mask, right_mask = self.construct_mask(batch_dir)
-            input_embeds = torch.cat((p_embeds, v_embeds), 1)
+            if self.ml_comb_type == 0:
+                input_embeds = torch.cat((p_embeds, v_embeds), 1)
+            elif self.ml_comb_type == 1:
+                lang_embeds = self.llookup(batch_lang_id)
+                input_embeds = torch.cat((p_embeds, v_embeds, lang_embeds), 1)
+            elif self.ml_comb_type == 2:
+                stc_representation_and_vae_loss = self.stc_representation(sentences, sentences_len, p_embeds)
+                stc_representation = stc_representation_and_vae_loss[0] if isinstance(stc_representation_and_vae_loss,
+                                                                                      tuple) else stc_representation_and_vae_loss
+                vae_loss = stc_representation_and_vae_loss[1] if isinstance(stc_representation_and_vae_loss,
+                                                                            tuple) else 0
+                input_embeds = torch.cat((p_embeds, v_embeds, stc_representation), 1)
+                lang_cls_loss = self.lang_loss(stc_representation, batch_lang_id)
             input_embeds = self.dropout_layer(input_embeds)
             left_v = self.left_hid(input_embeds)
             left_v = F.relu(left_v)
@@ -105,6 +208,10 @@ class m_step_model(nn.Module):
                 target_prob = torch.gather(predicted_prob, 1, batch_target)
                 batch_target_count = batch_target_count.view(len(batch_target_count), 1)
                 batch_loss = -torch.sum(batch_target_count * target_prob)
+                if self.ml_comb_type == 2:
+                    batch_loss += lang_cls_loss
+                if self.stc_model_type == 3:
+                    batch_loss += vae_loss
                 return batch_loss
         else:
             predicted_param = F.softmax(pre_output_v, dim=1)
@@ -161,10 +268,9 @@ class m_step_model(nn.Module):
         right_mask = right_mask.expand(-1, self.hid_dim)
         return left_mask, right_mask
 
-    def predict(self, trans_param, decision_param, batch_size, decision_counter, from_decision, to_decision,
-                child_only,trans_counter):
-        input_pos_num, target_pos_num, _, _, dir_num, cvalency = trans_param.shape
-        input_decision_pos_num, _, decision_dir_num, dvalency, target_decision_num = decision_param.shape
+    def predict(self, sentence_trans_param, decision_param, batch_size, decision_counter, from_decision, to_decision,
+                child_only):
+    
         input_trans_list = [[p, d, cv] for p in range(input_pos_num) for d in range(dir_num) for cv in range(cvalency)]
         input_decision_list = [[p, d, dv] for p in range(input_decision_pos_num) for d in range(dir_num) for dv in
                                range(dvalency)]
@@ -215,8 +321,6 @@ class m_step_model(nn.Module):
                     predicted_decision_param = self.forward_decision(one_batch_input_decision_pos,
                                                                      one_batch_decision_dir, one_batch_dvalency,
                                                                      None, None, True, self.em_type)
-                to_predict = decision_param[one_batch_input_decision_pos_index, :, one_batch_decision_dir_index,
-                one_batch_dvalency_index, :]
                 decision_param[one_batch_input_decision_pos_index, :, one_batch_decision_dir_index,
                 one_batch_dvalency_index, :] = predicted_decision_param.detach().numpy().reshape(one_batch_size, 1,
                                                                                                  target_decision_num)
@@ -229,10 +333,10 @@ class m_step_model(nn.Module):
         decision_param_compare = decision_counter / decision_sum
         decision_difference = decision_param_compare - decision_param
         if not self.child_only:
-            print 'distance for decision in this iteration '+str(LA.norm(decision_difference))
+            print 'distance for decision in this iteration ' + str(LA.norm(decision_difference))
         trans_counter = trans_counter + self.param_smoothing
         child_sum = np.sum(trans_counter, axis=(1, 3), keepdims=True)
         trans_param_compare = trans_counter / child_sum
-        #trans_difference = trans_param_compare - trans_param
-        #print 'distance for trans in this iteration ' + str(LA.norm(trans_difference))
+        # trans_difference = trans_param_compare - trans_param
+        # print 'distance for trans in this iteration ' + str(LA.norm(trans_difference))
         return trans_param, decision_param

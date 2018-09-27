@@ -1,6 +1,7 @@
 import sys
 import utils
 
+
 file_path = sys.argv[1]
 target_path = sys.argv[2]
 length = int(sys.argv[3])
@@ -10,6 +11,7 @@ for s in sentences:
     if s.size-1<length+1:
         filtered_sentences.append(s)
 fw = open(target_path,"w")
+
 for s in filtered_sentences:
     for t in s.entries:
         if t.id == 0:
