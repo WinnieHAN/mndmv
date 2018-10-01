@@ -12,7 +12,7 @@ import utils
 from dmv_model import ldmv_model as LDMV
 from neural_m_step import m_step_model as MMODEL
 
-from torch_model.NN_module import *
+# from torch_model.NN_module import *
 
 # from torch_model.NN_trainer import *
 

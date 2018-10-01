@@ -136,20 +136,32 @@ class data_sentence:
         self.entries = entry_list
         self.size = len(entry_list)
 
-    def set_data_list(self, words, pos):
-        word_list = list()
+    # def set_data_list(self, words, pos):
+    #     word_list = list()
+    #     pos_list = list()
+    #     for entry in self.entries:
+    #         if words is not None:
+    #             if entry.norm in words.keys():
+    #                 word_list.append(words[entry.norm])
+    #             else:
+    #                 word_list.append(words['<UNKNOWN>'])
+    #         if entry.pos in pos.keys():
+    #             pos_list.append(pos[entry.pos])
+    #         else:
+    #             pos_list.append(pos['<UNKNOWN-POS>'])
+    #     return word_list, pos_list
+
+    def set_data_list(self, pos):
         pos_list = list()
         for entry in self.entries:
-            if words is not None:
-                if entry.norm in words.keys():
-                    word_list.append(words[entry.norm])
-                else:
-                    word_list.append(words['<UNKNOWN>'])
             if entry.pos in pos.keys():
                 pos_list.append(pos[entry.pos])
+            elif entry.pos == 'PRP':
+                pos_list.append(pos['PRON'])
             else:
+                print('some pos tag i  dont know:  ' + entry.pos)
                 pos_list.append(pos['<UNKNOWN-POS>'])
-        return word_list, pos_list
+        return pos_list
 
     def __str__(self):
         return '\t'.join([e for e in self.entries])

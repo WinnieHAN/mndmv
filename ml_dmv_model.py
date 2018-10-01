@@ -7,7 +7,7 @@ import torch.nn as nn
 import eisner_for_dmv
 import utils
 import m_dir
-from torch_model.NN_trainer import *
+# from torch_model.NN_trainer import *
 
 
 class ml_dmv_model(nn.Module):
@@ -247,7 +247,7 @@ class ml_dmv_model(nn.Module):
                         scores[s, i, j, :] = np.log(self.trans_param[h_pos_id, m_pos_id, dir, :])
                     else:
                         scores[s, i, j, :] = np.log(self.sentence_trans_param[sentence_id, h_pos_id, m_pos_id, dir, :])
-        return scores, decision_scores
+        return scores, decision_scores  # scores: batch, h, c, v  ;decision_scores: batch, h d v stop
 
     def update_counter(self, best_parse, trans_counter, decision_counter, lex_counter, batch_pos, batch_words):
         batch_likelihood = 0.0

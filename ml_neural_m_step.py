@@ -269,74 +269,80 @@ class m_step_model(nn.Module):
         return left_mask, right_mask
 
     def predict(self, sentence_trans_param, decision_param, batch_size, decision_counter, from_decision, to_decision,
-                child_only):
-    
+                child_only, sentence_map, language_map, languages):
+        _, input_pos_num, target_pos_num, dir_num, cvalency = sentence_trans_param.shape
+        input_decision_pos_num, decision_dir_num, dvalency, target_decision_num = decision_param.shape
         input_trans_list = [[p, d, cv] for p in range(input_pos_num) for d in range(dir_num) for cv in range(cvalency)]
         input_decision_list = [[p, d, dv] for p in range(input_decision_pos_num) for d in range(dir_num) for dv in
                                range(dvalency)]
 
         batched_input_trans = utils.construct_update_batch_data(input_trans_list, batch_size)
         batched_input_decision = utils.construct_update_batch_data(input_decision_list, batch_size)
-
         trans_batch_num = len(batched_input_trans)
         decision_batch_num = len(batched_input_decision)
-        for i in range(trans_batch_num):
-            # Update transition parameters
-            one_batch_size = len(batched_input_trans[i])
-            one_batch_input_pos = torch.LongTensor(batched_input_trans[i])[:, 0]
-            one_batch_dir = torch.LongTensor(batched_input_trans[i])[:, 1]
-            one_batch_cvalency = torch.LongTensor(batched_input_trans[i])[:, 2]
-            one_batch_input_pos_index = np.array(batched_input_trans[i])[:, 0]
-            one_batch_dir_index = np.array(batched_input_trans[i])[:, 1]
-            one_batch_cvalency_index = np.array(batched_input_trans[i])[:, 2]
-            predicted_trans_param = self.forward_(one_batch_input_pos, one_batch_dir, one_batch_cvalency, None, None,
-                                                  True, 'child', self.em_type)
-            trans_param[one_batch_input_pos_index, :, :, :, one_batch_dir_index,
-            one_batch_cvalency_index] = predicted_trans_param.detach().numpy().reshape(one_batch_size, target_pos_num,
-                                                                                       1, 1)
-        if not child_only:
-            for i in range(decision_batch_num):
-                # Update decision parameters
-                one_batch_size = len(batched_input_decision[i])
-                if self.unified_network:
-                    one_batch_input_decision_pos = torch.LongTensor(
-                        map(lambda p: from_decision[p], np.array(batched_input_decision[i])[:, 0]))
-                else:
-                    one_batch_input_decision_pos = torch.LongTensor(batched_input_decision[i])[:, 0]
-                one_batch_decision_dir = torch.LongTensor(batched_input_decision[i])[:, 1]
-                one_batch_dvalency = torch.LongTensor(batched_input_decision[i])[:, 2]
-                if self.unified_network:
-                    one_batch_input_decision_pos_index = np.array(one_batch_input_decision_pos).tolist()
-                    one_batch_input_decision_pos_index = np.array(
-                        map(lambda p: to_decision[p], one_batch_input_decision_pos_index))
-                else:
-                    one_batch_input_decision_pos_index = np.array(batched_input_decision[i])[:, 0]
-                one_batch_decision_dir_index = np.array(batched_input_decision[i])[:, 1]
-                one_batch_dvalency_index = np.array(batched_input_decision[i])[:, 2]
-                if self.unified_network:
-                    predicted_decision_param = self.forward_(one_batch_input_decision_pos, one_batch_decision_dir,
-                                                             one_batch_dvalency, None, None, True, 'decision',
-                                                             self.em_type)
-                else:
-                    predicted_decision_param = self.forward_decision(one_batch_input_decision_pos,
-                                                                     one_batch_decision_dir, one_batch_dvalency,
-                                                                     None, None, True, self.em_type)
-                decision_param[one_batch_input_decision_pos_index, :, one_batch_decision_dir_index,
-                one_batch_dvalency_index, :] = predicted_decision_param.detach().numpy().reshape(one_batch_size, 1,
-                                                                                                 target_decision_num)
+        for s in range(len(sentence_map)):
+            for i in range(trans_batch_num):
+                # Update transition parameters
+                one_batch_size = len(batched_input_trans[i])
+                batch_target_lan_v = torch.LongTensor([languages[language_map[s]]]).expand(one_batch_size)  # TODO hanwj
+                batch_input_len = torch.LongTensor([len(sentence_map[s])]).expand(one_batch_size)
+                batch_input_sen_v = torch.LongTensor([sentence_map[s]]).expand(one_batch_size, len(sentence_map[s]))
+                one_batch_input_pos = torch.LongTensor(batched_input_trans[i])[:, 0]
+                one_batch_dir = torch.LongTensor(batched_input_trans[i])[:, 1]
+                one_batch_cvalency = torch.LongTensor(batched_input_trans[i])[:, 2]
+                one_batch_input_pos_index = np.array(batched_input_trans[i])[:, 0]
+                one_batch_dir_index = np.array(batched_input_trans[i])[:, 1]
+                one_batch_cvalency_index = np.array(batched_input_trans[i])[:, 2]
+                predicted_trans_param = self.forward_(one_batch_input_pos, one_batch_dir, one_batch_cvalency,
+                                                      None, None, True, 'child',
+                                                      self.em_type, batch_target_lan_v, batch_input_sen_v,
+                                                      batch_input_len)
+                sentence_trans_param[s][one_batch_input_pos_index, :, one_batch_dir_index, \
+                one_batch_cvalency_index] = predicted_trans_param.detach().numpy()#.reshape(one_batch_size, target_pos_num, 1, 1)
+        # TODO:
+        # if not child_only:
+        #     for i in range(decision_batch_num):
+        #         # Update decision parameters
+        #         one_batch_size = len(batched_input_decision[i])
+        #         if self.unified_network:
+        #             one_batch_input_decision_pos = torch.LongTensor(
+        #                 map(lambda p: from_decision[p], np.array(batched_input_decision[i])[:, 0]))
+        #         else:
+        #             one_batch_input_decision_pos = torch.LongTensor(batched_input_decision[i])[:, 0]
+        #         one_batch_decision_dir = torch.LongTensor(batched_input_decision[i])[:, 1]
+        #         one_batch_dvalency = torch.LongTensor(batched_input_decision[i])[:, 2]
+        #         if self.unified_network:
+        #             one_batch_input_decision_pos_index = np.array(one_batch_input_decision_pos).tolist()
+        #             one_batch_input_decision_pos_index = np.array(
+        #                 map(lambda p: to_decision[p], one_batch_input_decision_pos_index))
+        #         else:
+        #             one_batch_input_decision_pos_index = np.array(batched_input_decision[i])[:, 0]
+        #         one_batch_decision_dir_index = np.array(batched_input_decision[i])[:, 1]
+        #         one_batch_dvalency_index = np.array(batched_input_decision[i])[:, 2]
+        #         if self.unified_network:
+        #             predicted_decision_param = self.forward_(one_batch_input_decision_pos, one_batch_decision_dir,
+        #                                                      one_batch_dvalency, None, None, True, 'decision',
+        #                                                      self.em_type)
+        #         else:
+        #             predicted_decision_param = self.forward_decision(one_batch_input_decision_pos,
+        #                                                              one_batch_decision_dir, one_batch_dvalency,
+        #                                                              None, None, True, self.em_type)
+        #         decision_param[one_batch_input_decision_pos_index, :, one_batch_decision_dir_index,
+        #         one_batch_dvalency_index, :] = predicted_decision_param.detach().numpy().reshape(one_batch_size, 1,
+        #                                                                                          target_decision_num)
         if child_only:
             decision_counter = decision_counter + self.param_smoothing
-            decision_sum = np.sum(decision_counter, axis=4, keepdims=True)
+            decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
             decision_param = decision_counter / decision_sum
         decision_counter = decision_counter + self.param_smoothing
-        decision_sum = np.sum(decision_counter, axis=4, keepdims=True)
+        decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
         decision_param_compare = decision_counter / decision_sum
         decision_difference = decision_param_compare - decision_param
         if not self.child_only:
             print 'distance for decision in this iteration ' + str(LA.norm(decision_difference))
-        trans_counter = trans_counter + self.param_smoothing
-        child_sum = np.sum(trans_counter, axis=(1, 3), keepdims=True)
-        trans_param_compare = trans_counter / child_sum
+        # trans_counter = trans_counter + self.param_smoothing
+        # child_sum = np.sum(trans_counter, axis=(1, 3), keepdims=True)
+        # trans_param_compare = trans_counter / child_sum
         # trans_difference = trans_param_compare - trans_param
         # print 'distance for trans in this iteration ' + str(LA.norm(trans_difference))
-        return trans_param, decision_param
+        return sentence_trans_param, decision_param

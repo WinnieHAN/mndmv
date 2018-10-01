@@ -7,7 +7,7 @@ import torch.nn as nn
 import eisner_for_dmv
 import utils
 import m_dir
-from torch_model.NN_trainer import *
+# from torch_model.NN_trainer import *
 
 
 class ldmv_model(nn.Module):

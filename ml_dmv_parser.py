@@ -12,14 +12,14 @@ import utils
 from ml_dmv_model import ml_dmv_model as MLDMV
 from ml_neural_m_step import m_step_model as MMODEL
 
-from torch_model.NN_module import *
-
+# from torch_model.NN_module import *
+import random
 # from torch_model.NN_trainer import *
 
 if __name__ == '__main__':
     parser = OptionParser()
     parser.add_option("--train", dest="train", help="train file", metavar="FILE", default="data/ud_file")
-    parser.add_option("--dev", dest="dev", help="dev file", metavar="FILE", default="data/wsj10_d")
+    parser.add_option("--dev", dest="dev", help="dev file", metavar="FILE", default="data/ud_file/en-ud-test-nopunct-len40.conllu")
 
     parser.add_option("--batch", type="int", dest="batchsize", default=1000)
     parser.add_option("--sample_batch", type="int", dest="sample_batch_size", default=10000)
@@ -90,7 +90,7 @@ if __name__ == '__main__':
         print 'To use gpu' + str(options.gpu)
 
 
-    def do_eval(dmv_model, w2i, pos, options):
+    def do_eval(dmv_model, pos, options):
         print "===================================="
         print 'Do evaluation on development set'
         eval_sentences = utils.read_data(options.dev, True)
@@ -99,9 +99,8 @@ if __name__ == '__main__':
         eval_data_list = list()
         devpath = os.path.join(options.output, 'eval_pred' + str(epoch + 1) + '_' + str(options.sample_idx))
         for s in eval_sentences:
-            s_word, s_pos = s.set_data_list(w2i, pos)
+            s_pos = s.set_data_list(pos)
             s_data_list = list()
-            s_data_list.append(s_word)
             s_data_list.append(s_pos)
             s_data_list.append([eval_sen_idx])
             eval_data_list.append(s_data_list)
@@ -109,11 +108,14 @@ if __name__ == '__main__':
         eval_batch_data = utils.construct_batch_data(eval_data_list, options.batchsize)
         parse_results = {}
         for batch_id, one_batch in enumerate(eval_batch_data):
-            eval_batch_words, eval_batch_pos, eval_batch_sen = [s[0] for s in one_batch], [s[1] for s in one_batch], \
-                                                               [s[2][0] for s in one_batch]
-            eval_batch_words = np.array(eval_batch_words)
+            eval_batch_pos, eval_batch_sen = [s[0] for s in one_batch], [s[1][0] for s in one_batch]
+            eval_batch_sen = np.array(eval_batch_sen)
             eval_batch_pos = np.array(eval_batch_pos)
-            batch_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_words, eval_batch_pos)
+            # scores: batch, h, c, v  ;decision_scores: batch, h v stop
+            batch_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_pos, eval_batch_sen)
+            batch_score = batch_score.reshape(batch_score.shape[0], batch_score.shape[1], batch_score.shape[2], 1, 1, batch_score.shape[3])
+            batch_decision_score = batch_decision_score.reshape(batch_decision_score.shape[0], batch_decision_score.shape[1], 1, batch_decision_score.shape[2], batch_decision_score.shape[3],
+                                      batch_decision_score.shape[4])
             batch_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, dmv_model.dvalency,
                                                      dmv_model.cvalency)
             for i in range(len(eval_batch_pos)):
@@ -138,7 +140,7 @@ if __name__ == '__main__':
     sentence_map = {}
     data_pos = []
     for s in sentences:
-        _, s_pos = s.set_data_list(None, pos)
+        s_pos = s.set_data_list(pos)
         s_data_list = list()
         s_data_list.append(s_pos)
         data_pos.append(s_pos)
@@ -176,9 +178,9 @@ if __name__ == '__main__':
             training_likelihood = 0.0
 
             trans_counter = np.zeros(
-                (len(pos.keys()), len(pos.keys()), 2, options.c_valency))
+                (len(pos.keys()), len(pos.keys()), 2, options.c_valency))  # p c d v
             # head_pos,head_tag,direction,decision_valence,decision
-            decision_counter = np.zeros((len(pos.keys()) - 1, 2, options.d_valency, 2))
+            decision_counter = np.zeros((len(pos.keys()) - 1, 2, options.d_valency, 2))  # p d v stop
             random.shuffle(batch_data)
             tot_batch = len(batch_data)
             ml_dmv_model.rule_samples = []
@@ -281,22 +283,27 @@ if __name__ == '__main__':
                 to_decision = ml_dmv_model.to_decision
                 from_decision = ml_dmv_model.from_decision
                 # Predict model parameters by network
-                sentence_trans_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_decision_param,
-                                                              options.sample_batch_size, decision_counter,
-                                                              from_decision, to_decision, options.child_only)
-                lv_dmv_model.sentence_trans_param = trans_param.copy()
-                lv_dmv_model.decision_param = decision_param.copy()
+                # sentence_trans_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_decision_param,
+                #                                               options.sample_batch_size, decision_counter,
+                #                                               from_decision, to_decision, options.child_only)
+                sentence_child_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_decision_param,
+                                       options.sample_batch_size, decision_counter,
+                                       from_decision, to_decision, options.child_only, sentence_map, language_map, languages)
+
+                ml_dmv_model.sentence_trans_param = sentence_child_param.copy()
+                ml_dmv_model.decision_param = decision_param.copy()
+                print('PREDICT DONE ......')
             else:
-                lv_dmv_model.em_m(trans_counter, decision_counter, lex_counter, None, None)
+                ml_dmv_model.em_m(trans_counter, decision_counter, lex_counter, None, None)  # TODO:
         if options.do_eval:
-            do_eval(lv_dmv_model, w2i, pos, options)
+            do_eval(ml_dmv_model, pos, options)
             # Save model parameters
-        with open(os.path.join(options.output, options.paramem) + str(epoch + 1) + '_' + str(options.sample_idx),
-                  'w') as paramem:
-            pickle.dump(
-                (lv_dmv_model.trans_param, lv_dmv_model.decision_param, lv_dmv_model.lex_param, lv_dmv_model.tag_num),
-                paramem)
-        lv_dmv_model.save(os.path.join(options.output, os.path.basename(options.model) + str(epoch + 1) + '_' + str(
+        # with open(os.path.join(options.output, options.paramem) + str(epoch + 1) + '_' + str(options.sample_idx),
+        #           'w') as paramem:
+        #     pickle.dump(
+        #         (ml_dmv_model.trans_param, ml_dmv_model.decision_param, ml_dmv_model.lex_param, ml_dmv_model.tag_num),
+        #         paramem)
+        ml_dmv_model.save(os.path.join(options.output, os.path.basename(options.model) + str(epoch + 1) + '_' + str(
             options.sample_idx)))
 
     print 'Training finished'
