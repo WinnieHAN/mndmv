@@ -225,7 +225,7 @@ class ml_dmv_model(nn.Module):
                 pos_id = batch_pos[s][i]
                 if i > 0:
                     dec_pos_id = self.to_decision[pos_id]
-                    if self.initial_flag:
+                    if True:   # TODO: hanwj self.initial_flag
                         decision_scores[s, i, :, :, :] = np.log(self.decision_param[dec_pos_id, :, :, :])
                     else:
                         decision_scores[s, i, :, :, :] = np.log(
