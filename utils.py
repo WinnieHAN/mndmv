@@ -136,32 +136,32 @@ class data_sentence:
         self.entries = entry_list
         self.size = len(entry_list)
 
-    # def set_data_list(self, words, pos):
-    #     word_list = list()
-    #     pos_list = list()
-    #     for entry in self.entries:
-    #         if words is not None:
-    #             if entry.norm in words.keys():
-    #                 word_list.append(words[entry.norm])
-    #             else:
-    #                 word_list.append(words['<UNKNOWN>'])
-    #         if entry.pos in pos.keys():
-    #             pos_list.append(pos[entry.pos])
-    #         else:
-    #             pos_list.append(pos['<UNKNOWN-POS>'])
-    #     return word_list, pos_list
-
-    def set_data_list(self, pos):
+    def set_data_list(self, words, pos):
+        word_list = list()
         pos_list = list()
         for entry in self.entries:
+            if words is not None:
+                if entry.norm in words.keys():
+                    word_list.append(words[entry.norm])
+                else:
+                    word_list.append(words['<UNKNOWN>'])
             if entry.pos in pos.keys():
                 pos_list.append(pos[entry.pos])
-            elif entry.pos == 'PRP':
-                pos_list.append(pos['PRON'])
-            else:
-                print('some pos tag i  dont know:  ' + entry.pos)
-                pos_list.append(pos['<UNKNOWN-POS>'])
-        return pos_list
+                # else:
+                #     pos_list.append(pos['<UNKNOWN-POS>'])
+        return word_list, pos_list
+
+    # def set_data_list(self, pos):
+    #     pos_list = list()
+    #     for entry in self.entries:
+    #         if entry.pos in pos.keys():
+    #             pos_list.append(pos[entry.pos])
+    #         elif entry.pos == 'PRP':
+    #             pos_list.append(pos['PRON'])
+    #         else:
+    #             print('some pos tag i  dont know:  ' + entry.pos)
+    #             pos_list.append(pos['<UNKNOWN-POS>'])
+    #     return pos_list
 
     def __str__(self):
         return '\t'.join([e for e in self.entries])
@@ -467,9 +467,9 @@ def read_multiple_data(data_path, file_set, isPredict):
         return sentences
 
 
-def construct_ml_batch_data(data_list, sentence_map, batch_size):
-    data_list.sort(key=lambda x: len(sentence_map[x[4]]))
-    grouped = [list(g) for k, g in groupby(data_list, lambda s: len(sentence_map[s[4]]))]
+def construct_ml_batch_data(data_list, sentence_map, batch_size, sen_dim):
+    data_list.sort(key=lambda x: len(sentence_map[x[sen_dim]]))
+    grouped = [list(g) for k, g in groupby(data_list, lambda s: len(sentence_map[s[sen_dim]]))]
     batch_data = []
     for group in grouped:
         sub_batch_data = get_batch_data(group, batch_size)
@@ -483,8 +483,8 @@ def construct_ml_input_data(rule_samples, decision_samples, sentence_map, sample
     batch_target_data = {}
     batch_decision_data = {}
     batch_target_decision_data = {}
-    batch_rule_samples = construct_ml_batch_data(rule_samples, sentence_map, sample_batch_size)
-    batch_decision_samples = construct_ml_batch_data(decision_samples, sentence_map, sample_batch_size)
+    batch_rule_samples = construct_ml_batch_data(rule_samples, sentence_map, sample_batch_size, 4)
+    batch_decision_samples = construct_ml_batch_data(decision_samples, sentence_map, sample_batch_size, 4)
     batch_input_pos_list = list()
     batch_input_dir_list = list()
     batch_input_sen_list = list()
@@ -554,3 +554,17 @@ def construct_ml_input_data(rule_samples, decision_samples, sentence_map, sample
         batch_target_decision_data['decision_target_count'] = batch_target_decision_count_list
 
     return batch_input_data, batch_target_data, batch_decision_data, batch_target_decision_data
+
+
+def construct_ml_predict_data(rule_samples):
+    batch_predict_data = {}
+    batch_input_pos_list = rule_samples[:, 0]
+    batch_input_dir_list = rule_samples[:, 1]
+    batch_cvalency_list = rule_samples[:, 2]
+    batch_input_sen_list = rule_samples[:, 3]
+    batch_predict_data['pos'] = batch_input_pos_list
+    batch_predict_data['dir'] = batch_input_dir_list
+    batch_predict_data['cvalency'] = batch_cvalency_list
+    batch_predict_data['sentence'] = batch_input_sen_list
+
+    return batch_predict_data

@@ -116,10 +116,12 @@ class m_step_model(nn.Module):
             return mu
 
     def lang_loss(self, stc_representation, batch_target):
+
         loss = torch.nn.CrossEntropyLoss()
         lang_output = self.lang_classifier(stc_representation)
         lang_loss = loss(lang_output, batch_target)
         return lang_loss
+
 
     def stc_representation(self, sentences, sentences_len, hid_tensor):
         batch_size = len(sentences)
@@ -181,7 +183,8 @@ class m_step_model(nn.Module):
                 vae_loss = stc_representation_and_vae_loss[1] if isinstance(stc_representation_and_vae_loss,
                                                                             tuple) else 0
                 input_embeds = torch.cat((p_embeds, v_embeds, stc_representation), 1)
-                lang_cls_loss = self.lang_loss(stc_representation, batch_lang_id)
+                if not is_prediction:
+                    lang_cls_loss = self.lang_loss(stc_representation, batch_lang_id)
             input_embeds = self.dropout_layer(input_embeds)
             left_v = self.left_hid(input_embeds)
             left_v = F.relu(left_v)
@@ -334,12 +337,12 @@ class m_step_model(nn.Module):
             decision_counter = decision_counter + self.param_smoothing
             decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
             decision_param = decision_counter / decision_sum
-        decision_counter = decision_counter + self.param_smoothing
-        decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
-        decision_param_compare = decision_counter / decision_sum
-        decision_difference = decision_param_compare - decision_param
-        if not self.child_only:
-            print 'distance for decision in this iteration ' + str(LA.norm(decision_difference))
+        # decision_counter = decision_counter + self.param_smoothing
+        # decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
+        # decision_param_compare = decision_counter / decision_sum
+        # decision_difference = decision_param_compare - decision_param
+        # if not self.child_only:
+        #     print 'distance for decision in this iteration ' + str(LA.norm(decision_difference))
         # trans_counter = trans_counter + self.param_smoothing
         # child_sum = np.sum(trans_counter, axis=(1, 3), keepdims=True)
         # trans_param_compare = trans_counter / child_sum

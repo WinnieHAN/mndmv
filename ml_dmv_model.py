@@ -7,6 +7,8 @@ import torch.nn as nn
 import eisner_for_dmv
 import utils
 import m_dir
+
+
 # from torch_model.NN_trainer import *
 
 
@@ -191,7 +193,7 @@ class ml_dmv_model(nn.Module):
         return batch_likelihood
 
     def run_em_estep(self, batch_pos, batch_lan, batch_sen, trans_counter, decision_counter):
-        batch_score, batch_decision_score = self.evaluate_batch_score(batch_pos, batch_sen)
+        batch_score, batch_decision_score = self.evaluate_batch_score(batch_pos, batch_sen, self.sentence_trans_param)
         batch_score = np.array(batch_score)
         batch_decision_score = np.array(batch_decision_score)
         batch_score[:, :, 0, :] = -np.inf
@@ -211,7 +213,7 @@ class ml_dmv_model(nn.Module):
         self.trans_counter = trans_counter
         return batch_likelihood
 
-    def evaluate_batch_score(self, batch_pos, batch_sen):
+    def evaluate_batch_score(self, batch_pos, batch_sen, sentence_trans_param):
         batch_size, sentence_length = batch_pos.shape
         # batch,head,child,head_tag,child_tag
         scores = np.zeros((batch_size, sentence_length, sentence_length, self.cvalency))
@@ -225,11 +227,7 @@ class ml_dmv_model(nn.Module):
                 pos_id = batch_pos[s][i]
                 if i > 0:
                     dec_pos_id = self.to_decision[pos_id]
-                    if True:   # TODO: hanwj self.initial_flag
-                        decision_scores[s, i, :, :, :] = np.log(self.decision_param[dec_pos_id, :, :, :])
-                    else:
-                        decision_scores[s, i, :, :, :] = np.log(
-                            self.sentence_decision_param[sentence_id, dec_pos_id, :, :, :])
+                    decision_scores[s, i, :, :, :] = np.log(self.decision_param[dec_pos_id, :, :, :])
                 else:
                     decision_scores[s, i, :, :, :] = 0
                 for j in range(sentence_length):
@@ -246,7 +244,7 @@ class ml_dmv_model(nn.Module):
                     if self.initial_flag:
                         scores[s, i, j, :] = np.log(self.trans_param[h_pos_id, m_pos_id, dir, :])
                     else:
-                        scores[s, i, j, :] = np.log(self.sentence_trans_param[sentence_id, h_pos_id, m_pos_id, dir, :])
+                        scores[s, i, j, :] = np.log(sentence_trans_param[sentence_id, h_pos_id, m_pos_id, dir, :])
         return scores, decision_scores  # scores: batch, h, c, v  ;decision_scores: batch, h d v stop
 
     def update_counter(self, best_parse, trans_counter, decision_counter, lex_counter, batch_pos, batch_words):
@@ -405,6 +403,25 @@ class ml_dmv_model(nn.Module):
             self.sentence_counter[sentence_id] = one_sentence_count
             self.sentence_decision_counter[sentence_id] = one_sentence_decision_count
         return batch_likelihood
+
+    def find_predict_samples(self, batch_pos, batch_sen):
+        batch_size, sentence_length = batch_pos.shape
+        predict_rule_samples = []
+        rule_involved = set()
+        for s in range(batch_size):
+            pos_sentence = batch_pos[s]
+            sentence_id = batch_sen[s]
+            for h in range(sentence_length):
+                for dir in range(2):
+                    if h == 0 and dir == 0:
+                        continue
+                    h_pos = pos_sentence[h]
+                    for v in range(self.cvalency):
+                        rule_tuple = (h_pos, dir, v, sentence_id)
+                        if rule_tuple not in rule_involved:
+                            rule_involved.add(rule_tuple)
+                            predict_rule_samples.append(list([h_pos, dir, v, sentence_id]))
+        return np.array(predict_rule_samples)
 
     def mask_scores(self, batch_scores, batch_decision_scores, batch_pos):
         batch_size, sentence_length, _, _, _, _ = batch_scores.shape
