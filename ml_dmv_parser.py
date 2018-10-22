@@ -18,6 +18,7 @@ import random
 # from torch_model.NN_trainer import *
 
 if __name__ == '__main__':
+    # torch.manual_seed(1)
     parser = OptionParser()
     parser.add_option("--train", dest="train", help="train file", metavar="FILE", default="data/ud_file")
     parser.add_option("--dev", dest="dev", help="dev file", metavar="FILE",
@@ -76,7 +77,11 @@ if __name__ == '__main__':
     parser.add_option("--reset_weight", action="store_true", dest="reset_weight", default=False)
     parser.add_option("--dir_embed", action="store_true", dest="dir_embed", default=False)
     parser.add_option("--dir_dim", type="int", dest="dir_dim", default=1)
-    parser.add_option("--use_neural", action="store_true", dest="use_neural", default=False)
+    # parser.add_option("--use_neural", action="store_true", dest="use_neural", default=False)
+
+    parser.add_option("--child_neural", action="store_true", dest="child_neural", default=False)
+    parser.add_option("--root_neural", action="store_true", dest="root_neural", default=False)
+    parser.add_option("--decision_neural", action="store_true", dest="decision_neural", default=False)
 
     parser.add_option("--language_path", type="string", dest="language_path", default="data/language_list")
     parser.add_option("--ml_comb_type", type="int", dest="ml_comb_type", default=1)
@@ -117,26 +122,42 @@ if __name__ == '__main__':
             eval_batch_pos, eval_batch_sen = [s[0] for s in one_batch], [s[1][0] for s in one_batch]
             eval_batch_sen = np.array(eval_batch_sen)
             eval_batch_pos = np.array(eval_batch_pos)
-            batch_rule_samples = dmv_model.find_predict_samples(eval_batch_pos, eval_batch_sen)
-            batch_predict_data = utils.construct_ml_predict_data(batch_rule_samples)
-            batch_predict_pos_v = torch.LongTensor(batch_predict_data['pos'])
-            batch_predict_pos_index = np.array(batch_predict_data['pos'])
-            batch_predict_dir_v = torch.LongTensor(batch_predict_data['dir'])
-            batch_predict_dir_index = np.array(batch_predict_data['dir'])
-            batch_predict_cvalency_v = torch.LongTensor(batch_predict_data['cvalency'])
-            batch_predict_cvalency_index = np.array(batch_predict_data['cvalency'])
-            batch_predict_sen_v = []
-            for sentence_id in batch_predict_data['sentence']:
-                batch_predict_sen_v.append(eval_sentence_map[sentence_id])
-            batch_predict_sen_index = np.array(batch_predict_data['sentence'])
-            batch_predict_sen_v = torch.LongTensor(batch_predict_sen_v)
-            batch_predicted = m_model.forward_(batch_predict_pos_v, batch_predict_dir_v, batch_predict_cvalency_v,
-                                               None, None, True, 'child', options.em_type, None, batch_predict_sen_v,
-                                               None)
-            eval_sentence_trans_param[batch_predict_sen_index, batch_predict_pos_index, :, batch_predict_dir_index,
-            batch_predict_cvalency_index] = batch_predicted.detach().numpy()
-            batch_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_pos, eval_batch_sen,
-                                                                               eval_sentence_trans_param)
+            if dmv_model.initial_flag:
+                batch_score, batch_root_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_pos, eval_batch_sen, None)
+            else:
+                batch_rule_samples = dmv_model.find_predict_samples(eval_batch_pos, eval_batch_sen)
+                batch_predict_data = utils.construct_ml_predict_data(batch_rule_samples)
+                batch_predict_pos_v = torch.LongTensor(batch_predict_data['pos'])
+                batch_predict_pos_index = np.array(batch_predict_data['pos'])
+                batch_predict_dir_v = torch.LongTensor(batch_predict_data['dir'])
+                batch_predict_dir_index = np.array(batch_predict_data['dir'])
+                batch_predict_cvalency_v = torch.LongTensor(batch_predict_data['cvalency'])
+                batch_predict_cvalency_index = np.array(batch_predict_data['cvalency'])
+                batch_predict_sen_v = []
+                for sentence_id in batch_predict_data['sentence']:
+                    batch_predict_sen_v.append(eval_sentence_map[sentence_id])
+                batch_predict_sen_index = np.array(batch_predict_data['sentence'])
+                batch_predict_sen_v = torch.LongTensor(batch_predict_sen_v)
+                batch_predict_sen_len = torch.LongTensor(np.array([len(i) for i in batch_predict_sen_v]))
+                batch_predict_lan_v = torch.LongTensor(np.array([0 for _ in batch_predict_sen_v]))  # TODO
+                batch_predicted = m_model.forward_(batch_predict_pos_v, batch_predict_dir_v, batch_predict_cvalency_v,
+                                                   None, None, True, 'child', options.em_type, batch_predict_lan_v, batch_predict_sen_v,
+                                                   batch_predict_sen_len)
+
+                eval_sentence_trans_param[batch_predict_sen_index, batch_predict_pos_index, :, batch_predict_dir_index,
+                batch_predict_cvalency_index] = batch_predicted.detach().numpy()
+                batch_score, batch_root_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_pos, eval_batch_sen, eval_sentence_trans_param)
+            batch_size, sentence_length, _, v_c_num = batch_score.shape
+            _, _, _, v_d_num, _ = batch_decision_score.shape
+
+            batch_score = np.concatenate((np.full((batch_size, 1, sentence_length, v_c_num), -np.inf), batch_score),
+                                         axis=1)  # for eisner
+            batch_score = np.concatenate((np.full((batch_size, sentence_length + 1, 1, v_c_num), -np.inf), batch_score),
+                                         axis=2)  # for eisner
+            batch_score[:, 0, 1:, 0] = batch_root_score
+            batch_decision_score = np.concatenate((np.zeros((batch_size, 1, 2, v_d_num, 2)), batch_decision_score),
+                                                  axis=1)
+
             batch_score = np.expand_dims(batch_score,3)
             batch_score = np.expand_dims(batch_score,4)
             batch_decision_score = np.expand_dims(batch_decision_score,2)
@@ -152,7 +173,7 @@ if __name__ == '__main__':
     language_set = utils.read_language_list(options.language_path)
     file_list = os.listdir(options.train)
     file_set = utils.get_file_set(file_list, language_set, True)
-    pos, sentences, languages, language_map = utils.read_multiple_data(options.train, file_set, False)
+    pos, sentences, languages, language_map = utils.read_multiple_data(options.train, file_set, False)  # pos: str 2 id, sentences, languages: lang 2 id, language_map: id 2 lang
     sentence_language_map = {}
     print 'Data read'
     with open(os.path.join(options.output, options.params + '_' + str(options.sample_idx)), 'w') as paramsfp:
@@ -161,7 +182,7 @@ if __name__ == '__main__':
 
     data_list = list()
     sen_idx = 0
-    sentence_map = {}
+    sentence_map = {} # id 2 pos_seq
     data_pos = []
     for s in sentences:
         _, s_pos = s.set_data_list(None, pos)
@@ -173,23 +194,25 @@ if __name__ == '__main__':
         data_list.append(s_data_list)
         sentence_map[sen_idx] = s_pos
         sen_idx += 1
-    data_pos = np.array(data_pos)
-    batch_data = utils.construct_update_batch_data(data_list, options.batchsize)
+    data_pos = np.array(data_pos)  # list of sentences with only tags
+    batch_data = utils.construct_update_batch_data(data_list, options.batchsize)  # data_list: tag_seq, lang_id, stc_id
     print 'Batch data constructed'
     data_size = len(data_list)
 
     ml_dmv_model = MLDMV(pos, sentence_map, language_map, data_size, options)
 
     print 'Model constructed'
-
+    # ml_dmv_model.init_expert('data/ud_file/en-ud-train-nopunct-len15.conllu', pos)
     ml_dmv_model.init_param(sentences)
+    epoch = -1
+    do_eval(ml_dmv_model, None, pos, options)
 
     print 'Decoder parameters initialized'
     if options.gpu >= 0 and torch.cuda.is_available():
         torch.cuda.set_device(options.gpu)
         ml_dmv_model.cuda(options.gpu)
 
-    if options.use_neural:
+    if options.child_neural or options.decision_neural:
         m_model = MMODEL(len(pos), len(languages), options)
 
     for epoch in range(options.epochs):
@@ -201,12 +224,17 @@ if __name__ == '__main__':
             print 'em iteration ', n
             training_likelihood = 0.0
 
-            trans_counter = np.zeros(
-                (len(pos.keys()), len(pos.keys()), 2, options.c_valency))  # p c d v
-            # head_pos,head_tag,direction,decision_valence,decision
-            decision_counter = np.zeros((len(pos.keys()) - 1, 2, options.d_valency, 2))  # p d v stop
-            random.shuffle(batch_data)
+            # trans_counter = np.zeros(
+            #     (len(pos.keys()), len(pos.keys()), 2, options.c_valency))  # p c d v
+            # # head_pos,head_tag,direction,decision_valence,decision
+            # root_counter = np.zeros(len(pos.keys()))
+            # decision_counter = np.zeros((len(pos.keys()), 2, options.d_valency, 2))  # p d v stop
+
+            random.shuffle(batch_data) #TODO hanwj
             tot_batch = len(batch_data)
+            ml_dmv_model.root_counter.fill(0)
+            ml_dmv_model.trans_counter.fill(0)
+            ml_dmv_model.decision_counter.fill(0)
             ml_dmv_model.rule_samples = []
             ml_dmv_model.decision_samples = []
             for batch_id, one_batch in tqdm(
@@ -220,15 +248,16 @@ if __name__ == '__main__':
                                                                   [s[1] for s in one_sub_batch], \
                                                                   [s[2][0] for s in one_sub_batch]
                     # E-step
-                    sub_batch_likelihood = ml_dmv_model.em_e(sub_batch_pos, sub_batch_lan, sub_batch_sen,
-                                                             trans_counter, decision_counter, ml_dmv_model.em_type)
+                    sub_batch_likelihood = ml_dmv_model.em_e(sub_batch_pos, sub_batch_lan, sub_batch_sen, ml_dmv_model.em_type)
                     batch_likelihood += sub_batch_likelihood
                 training_likelihood += batch_likelihood
+                # print(batch_id)
+                # print(batch_likelihood)
             ml_dmv_model.initial_flag = False
             print 'Likelihood for this iteration', training_likelihood
             # M-step
             # Using neural networks to update DMV parameters
-            if options.use_neural:
+            if options.child_neural or options.decision_neural:
                 for e in range(options.neural_epoch):
 
                     iter_loss = 0.0
@@ -303,22 +332,18 @@ if __name__ == '__main__':
                             iter_decision_loss.detach().data.numpy() / batch_num)
                 copy_sentence_trans_param = ml_dmv_model.sentence_trans_param.copy()
                 copy_decision_param = ml_dmv_model.decision_param.copy()
-                to_decision = ml_dmv_model.to_decision
-                from_decision = ml_dmv_model.from_decision
+                copy_root_param = ml_dmv_model.root_param.copy()
                 # Predict model parameters by network
-                sentence_trans_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_decision_param,
-                                                                       options.sample_batch_size, decision_counter,
-                                                                       from_decision, to_decision, options.child_only,
+                sentence_trans_param, root_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_root_param, copy_decision_param,
+                                                                       options.sample_batch_size, ml_dmv_model.root_counter, ml_dmv_model.decision_counter,
+                                                                       options.child_only,
                                                                        sentence_map, language_map, languages)
-                # sentence_child_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_decision_param,
-                #                        options.sample_batch_size, decision_counter,
-                #                        from_decision, to_decision, options.child_only, sentence_map, language_map, languages)
-
                 ml_dmv_model.sentence_trans_param = sentence_trans_param.copy()
                 ml_dmv_model.decision_param = decision_param.copy()
+                ml_dmv_model.root_param = root_param.copy()
                 print('PREDICT DONE ......')
             else:
-                ml_dmv_model.em_m(trans_counter, decision_counter, lex_counter, None, None)  # TODO:
+                ml_dmv_model.em_m(ml_dmv_model.trans_counter, ml_dmv_model.root_counter, ml_dmv_model.decision_counter, None, None, None)  # TODO:
         if options.do_eval:
             do_eval(ml_dmv_model, m_model, pos, options)
             # Save model parameters

@@ -26,7 +26,7 @@ class m_step_model(nn.Module):
         self.decision_pre_output_dim = options.decision_pre_output_dim
         self.drop_out = options.drop_out
         self.lan_num = lan_num
-        self.ml_comb_type = options.ml_comb_type  # options.ml_comb_type = 0(no_lang_id)/1(id embeddings)/2(adversarial-tag)
+        self.ml_comb_type = 2  #options.ml_comb_type  # options.ml_comb_type = 0(no_lang_id)/1(id embeddings)/2(classify-tags)
         self.stc_model_type = 1  # 1  lstm   2 lstm with atten   3 variational
         if self.ml_comb_type == 1:
             self.lang_dim = options.lang_dim  # options.lang_dim = 10(default)
@@ -51,7 +51,7 @@ class m_step_model(nn.Module):
         self.vlookup = nn.Embedding(self.cvalency, self.valency_dim)
         self.dvlookup = nn.Embedding(self.dvalency, self.valency_dim)
         self.head_lstm_embeddings = self.plookup
-        if options.ml_comb_type == 1:
+        if self.ml_comb_type == 1:
             self.llookup = nn.Embedding(self.lan_num, self.lang_dim)
 
         self.dropout_layer = nn.Dropout(p=self.drop_out)
@@ -61,13 +61,13 @@ class m_step_model(nn.Module):
         if self.dir_embed:
             self.dlookup = nn.Embedding(2, self.dir_dim)
         if not self.dir_embed:
-            if options.ml_comb_type == 0:
+            if self.ml_comb_type == 0:
                 self.left_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
                 self.right_hid = nn.Linear((self.pembedding_dim + self.valency_dim), self.hid_dim)
-            elif options.ml_comb_type == 1:
+            elif self.ml_comb_type == 1:
                 self.left_hid = nn.Linear((self.pembedding_dim + self.valency_dim + self.lang_dim), self.hid_dim)
                 self.right_hid = nn.Linear((self.pembedding_dim + self.valency_dim + self.lang_dim), self.hid_dim)
-            elif options.ml_comb_type == 2:
+            elif self.ml_comb_type == 2:
                 self.left_hid = nn.Linear(
                     (self.pembedding_dim + self.valency_dim + self.lstm_direct * self.lstm_hidden_dim), self.hid_dim)
                 self.right_hid = nn.Linear(
@@ -271,7 +271,7 @@ class m_step_model(nn.Module):
         right_mask = right_mask.expand(-1, self.hid_dim)
         return left_mask, right_mask
 
-    def predict(self, sentence_trans_param, decision_param, batch_size, decision_counter, from_decision, to_decision,
+    def predict(self, sentence_trans_param, root_param, decision_param, batch_size, root_counnter, decision_counter,
                 child_only, sentence_map, language_map, languages):
         _, input_pos_num, target_pos_num, dir_num, cvalency = sentence_trans_param.shape
         input_decision_pos_num, decision_dir_num, dvalency, target_decision_num = decision_param.shape
@@ -337,6 +337,12 @@ class m_step_model(nn.Module):
             decision_counter = decision_counter + self.param_smoothing
             decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
             decision_param = decision_counter / decision_sum
+
+            root_counnter = root_counnter + self.param_smoothing
+            root_sum = np.sum(root_counnter)
+            root_param = root_counnter / root_sum
+
+
         # decision_counter = decision_counter + self.param_smoothing
         # decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
         # decision_param_compare = decision_counter / decision_sum
@@ -348,4 +354,4 @@ class m_step_model(nn.Module):
         # trans_param_compare = trans_counter / child_sum
         # trans_difference = trans_param_compare - trans_param
         # print 'distance for trans in this iteration ' + str(LA.norm(trans_difference))
-        return sentence_trans_param, decision_param
+        return sentence_trans_param, root_param, decision_param

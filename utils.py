@@ -151,6 +151,15 @@ class data_sentence:
                 #     pos_list.append(pos['<UNKNOWN-POS>'])
         return word_list, pos_list
 
+    def set_data_tag_parse_list(self, pos):
+        pos_list = list()
+        parse_list = list()
+        for entry in self.entries:
+            if entry.pos in pos.keys():
+                pos_list.append(pos[entry.pos])
+                parse_list.append(entry.parent_id)
+        return pos_list, parse_list
+
     # def set_data_list(self, pos):
     #     pos_list = list()
     #     for entry in self.entries:
@@ -168,13 +177,14 @@ class data_sentence:
 
 
 def read_conll(fh):
-    root = ConllEntry(0, '*root*', '*root*', 'ROOT-CPOS', 'ROOT-POS', '_', -1, 'rroot', '_', '_')
-    tokens = [root]
+    # root = ConllEntry(0, '*root*', '*root*', 'ROOT-CPOS', 'ROOT-POS', '_', -1, 'rroot', '_', '_')
+    # tokens = [root]
+    tokens = []
     for line in fh:
         tok = line.strip().split('\t')
         if not tok or line.strip() == '':
-            if len(tokens) > 1: yield tokens
-            tokens = [root]
+            if len(tokens) > 0: yield tokens
+            tokens = []
         else:
             if line[0] == '#' or '-' in tok[0] or '.' in tok[0]:
                 tokens.append(line.strip())
@@ -183,7 +193,7 @@ def read_conll(fh):
                 #    tok[3] = "V"
                 tokens.append(ConllEntry(int(tok[0]), tok[1], tok[2], tok[4], tok[3], tok[5],
                                          int(tok[6]) if tok[6] != '_' else -1, tok[7], tok[8], tok[9]))
-    if len(tokens) > 1:
+    if len(tokens) > 0:
         yield tokens
 
 
@@ -265,9 +275,7 @@ def eval(predicted, gold, test_path, log_path, epoch):
         ps = predicted[s][0]
         gs = gold[s]
         for i, e in enumerate(gs.entries):
-            if i == 0:
-                continue
-            if ps[i] == e.parent_id:
+            if ps[i+1] == e.parent_id:
                 correct_counter += 1
             total_counter += 1
     accuracy = float(correct_counter) / total_counter
@@ -448,9 +456,6 @@ def read_multiple_data(data_path, file_set, isPredict):
                     language_map[s_counter] = language_key
                     lanCounter.update([language_key])
                     s_counter += 1
-        # wordsCount['<UNKNOWN>'] = 0
-        # posCount['<UNKNOWN-POS>'] = 0
-        # return {w: i for i, w in enumerate(wordsCount.keys())}, {p: i for i, p in enumerate(
         return {p: i for i, p in enumerate(posCount.keys())}, sentences, {l: i for i, l in
                                                                           enumerate(lanCounter.keys())}, language_map
     else:
@@ -474,7 +479,7 @@ def construct_ml_batch_data(data_list, sentence_map, batch_size, sen_dim):
     for group in grouped:
         sub_batch_data = get_batch_data(group, batch_size)
         batch_data.extend(sub_batch_data)
-    random.shuffle(batch_data)
+    random.shuffle(batch_data) #TODO hanwj
     return batch_data
 
 
