@@ -1,3 +1,6 @@
+# 
+line 142  (ml_dmv_parser.py )   batch_predict_lan_v should be manually  given a value. I will revise it later.
+
 # lv_dmv_parser
 Dependency parser using DMV model with latent variables
 Parameters with best performance using vanilla DMV:
