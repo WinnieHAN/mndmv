@@ -20,9 +20,9 @@ import random
 if __name__ == '__main__':
     # torch.manual_seed(1)
     parser = OptionParser()
-    parser.add_option("--train", dest="train", help="train file", metavar="FILE", default="data/ud_file")
+    parser.add_option("--train", dest="train", help="train file", metavar="FILE", default="en") # data/ud_file
     parser.add_option("--dev", dest="dev", help="dev file", metavar="FILE",
-                      default="data/ud40_test")
+                      default="en") # data/ud40_test
 
     parser.add_option("--batch", type="int", dest="batchsize", default=1000)
     parser.add_option("--sample_batch", type="int", dest="sample_batch_size", default=10000)
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     parser.add_option("--root_neural", action="store_true", dest="root_neural", default=False)
     parser.add_option("--decision_neural", action="store_true", dest="decision_neural", default=False)
 
-    parser.add_option("--language_path", type="string", dest="language_path", default="data/language_list")
+    parser.add_option("--language_path", type="string", dest="language_path", default="data/ud-treebanks-v1.4") # data/language_list
     parser.add_option("--ml_comb_type", type="int", dest="ml_comb_type", default=1) # options.ml_comb_type = 0(no_lang_id)/1(id embeddings)/2(classify-tags
     parser.add_option("--stc_model_type", type="int", dest="stc_model_type", default=1) # 1  lstm   2 lstm with atten   3 variational
     parser.add_option("--lang_dim", type="int", dest="lang_dim", default=5)
@@ -97,17 +97,22 @@ if __name__ == '__main__':
     if options.gpu >= 0 and torch.cuda.is_available():
         torch.cuda.set_device(options.gpu)
         print 'To use gpu' + str(options.gpu)
+    else:
+        torch.set_num_threads(5)
 
 
     def do_eval(dmv_model, m_model, pos, options, epoch):
         print "===================================="
         print 'Do evaluation on development set'
-        eval_sentences = utils.read_data(options.dev, True)
+        # eval_sentences = utils.read_data(options.dev, True)
+        ml_sentences = utils.read_ml_corpus(options.language_path, options.dev, stc_length=40, isPredict=True)
+        eval_sentences = ml_sentences[0]
         dmv_model.eval()
         eval_sentence_map = {}
         eval_sen_idx = 0
         eval_data_list = list()
         devpath = os.path.join(options.output, 'eval_pred' + str(epoch + 1) + '_' + str(options.sample_idx))
+        lang_id = languages[options.dev] if options.dev in languages else 0  # 0 is manually specified (when dev_lang is not trained before)
         for s in eval_sentences:
             _, s_pos = s.set_data_list(None, pos)
             s_data_list = list()
@@ -141,7 +146,7 @@ if __name__ == '__main__':
                 batch_predict_sen_index = np.array(batch_predict_data['sentence'])
                 batch_predict_sen_v = torch.LongTensor(batch_predict_sen_v)
                 batch_predict_sen_len = torch.LongTensor(np.array([len(i) for i in batch_predict_sen_v]))
-                batch_predict_lan_v = torch.LongTensor(np.array([0 for _ in batch_predict_sen_v]))  # TODO
+                batch_predict_lan_v = torch.LongTensor(np.array([lang_id for _ in batch_predict_sen_v]))  # TODO
                 batch_predicted = m_model.forward_(batch_predict_pos_v, batch_predict_dir_v, batch_predict_cvalency_v,
                                                    None, None, True, 'child', options.em_type, batch_predict_lan_v, batch_predict_sen_v,
                                                    batch_predict_sen_len)
@@ -172,10 +177,12 @@ if __name__ == '__main__':
         print "===================================="
 
 
-    language_set = utils.read_language_list(options.language_path)
-    file_list = os.listdir(options.train)
-    file_set = utils.get_file_set(file_list, language_set, True)
-    pos, sentences, languages, language_map = utils.read_multiple_data(options.train, file_set, False)  # pos: str 2 id, sentences, languages: lang 2 id, language_map: id 2 lang
+    # language_set = utils.read_language_list(options.language_path)
+    # file_list = os.listdir(options.train)
+    # file_set = utils.get_file_set(file_list, language_set, True)
+    # utils.read_multiple_data(options.train, file_set, False)  # pos: str 2 id, sentences, languages: lang 2 id, language_map: id 2 lang
+    # train='data/ud-treebanks-v1.4/' names='en-fr'
+    pos, sentences, languages, language_map = utils.read_ml_corpus(options.language_path, options.train, stc_length=15, isPredict=False)
     sentence_language_map = {}
     print 'Data read'
     with open(os.path.join(options.output, options.params + '_' + str(options.sample_idx)), 'w') as paramsfp:
