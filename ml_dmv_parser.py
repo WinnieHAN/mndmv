@@ -33,6 +33,7 @@ if __name__ == '__main__':
 
     parser.add_option("--pembedding", type="int", dest="pembedding_dim", default=10)
     parser.add_option("--epochs", type="int", dest="epochs", default=50)
+    parser.add_option("--non_neural_iter", type="int", dest="non_neural_iter", default=20)  # if non_neural_iter>epochs, then it is DMV.
     parser.add_option("--tag_num", type="int", dest="tag_num", default=1)
 
     parser.add_option("--dvalency", type="int", dest="d_valency", default=2)
@@ -84,7 +85,8 @@ if __name__ == '__main__':
     parser.add_option("--decision_neural", action="store_true", dest="decision_neural", default=False)
 
     parser.add_option("--language_path", type="string", dest="language_path", default="data/language_list")
-    parser.add_option("--ml_comb_type", type="int", dest="ml_comb_type", default=1)
+    parser.add_option("--ml_comb_type", type="int", dest="ml_comb_type", default=1) # options.ml_comb_type = 0(no_lang_id)/1(id embeddings)/2(classify-tags
+    parser.add_option("--stc_model_type", type="int", dest="stc_model_type", default=1) # 1  lstm   2 lstm with atten   3 variational
     parser.add_option("--lang_dim", type="int", dest="lang_dim", default=5)
     parser.add_option("--lstm_layer_num", type="int", dest="lstm_layer_num", default=1)
     parser.add_option("--lstm_hidden_dim", type="int", dest="lstm_hidden_dim", default=10)
@@ -97,7 +99,7 @@ if __name__ == '__main__':
         print 'To use gpu' + str(options.gpu)
 
 
-    def do_eval(dmv_model, m_model, pos, options):
+    def do_eval(dmv_model, m_model, pos, options, epoch):
         print "===================================="
         print 'Do evaluation on development set'
         eval_sentences = utils.read_data(options.dev, True)
@@ -123,7 +125,7 @@ if __name__ == '__main__':
             eval_batch_sen = np.array(eval_batch_sen)
             eval_batch_pos = np.array(eval_batch_pos)
             if dmv_model.initial_flag:
-                batch_score, batch_root_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_pos, eval_batch_sen, None)
+                batch_score, batch_root_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_pos, eval_batch_sen, None, epoch)
             else:
                 batch_rule_samples = dmv_model.find_predict_samples(eval_batch_pos, eval_batch_sen)
                 batch_predict_data = utils.construct_ml_predict_data(batch_rule_samples)
@@ -146,7 +148,7 @@ if __name__ == '__main__':
 
                 eval_sentence_trans_param[batch_predict_sen_index, batch_predict_pos_index, :, batch_predict_dir_index,
                 batch_predict_cvalency_index] = batch_predicted.detach().numpy()
-                batch_score, batch_root_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_pos, eval_batch_sen, eval_sentence_trans_param)
+                batch_score, batch_root_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_pos, eval_batch_sen, eval_sentence_trans_param, epoch)
             batch_size, sentence_length, _, v_c_num = batch_score.shape
             _, _, _, v_d_num, _ = batch_decision_score.shape
 
@@ -205,7 +207,7 @@ if __name__ == '__main__':
     # ml_dmv_model.init_expert('data/ud_file/en-ud-train-nopunct-len15.conllu', pos)
     ml_dmv_model.init_param(sentences)
     epoch = -1
-    do_eval(ml_dmv_model, None, pos, options)
+    do_eval(ml_dmv_model, None, pos, options, epoch)
 
     print 'Decoder parameters initialized'
     if options.gpu >= 0 and torch.cuda.is_available():
@@ -248,7 +250,7 @@ if __name__ == '__main__':
                                                                   [s[1] for s in one_sub_batch], \
                                                                   [s[2][0] for s in one_sub_batch]
                     # E-step
-                    sub_batch_likelihood = ml_dmv_model.em_e(sub_batch_pos, sub_batch_lan, sub_batch_sen, ml_dmv_model.em_type)
+                    sub_batch_likelihood = ml_dmv_model.em_e(sub_batch_pos, sub_batch_lan, sub_batch_sen, ml_dmv_model.em_type, epoch)
                     batch_likelihood += sub_batch_likelihood
                 training_likelihood += batch_likelihood
                 # print(batch_id)
@@ -345,7 +347,7 @@ if __name__ == '__main__':
             else:
                 ml_dmv_model.em_m(ml_dmv_model.trans_counter, ml_dmv_model.root_counter, ml_dmv_model.decision_counter, None, None, None)  # TODO:
         if options.do_eval:
-            do_eval(ml_dmv_model, m_model, pos, options)
+            do_eval(ml_dmv_model, m_model, pos, options, epoch)
             # Save model parameters
         # with open(os.path.join(options.output, options.paramem) + str(epoch + 1) + '_' + str(options.sample_idx),
         #           'w') as paramem:

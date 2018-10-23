@@ -26,8 +26,8 @@ class m_step_model(nn.Module):
         self.decision_pre_output_dim = options.decision_pre_output_dim
         self.drop_out = options.drop_out
         self.lan_num = lan_num
-        self.ml_comb_type = 2  #options.ml_comb_type  # options.ml_comb_type = 0(no_lang_id)/1(id embeddings)/2(classify-tags)
-        self.stc_model_type = 1  # 1  lstm   2 lstm with atten   3 variational
+        self.ml_comb_type = options.ml_comb_type  # options.ml_comb_type = 0(no_lang_id)/1(id embeddings)/2(classify-tags)
+        self.stc_model_type = options.stc_model_type  # 1  lstm   2 lstm with atten   3 variational
         if self.ml_comb_type == 1:
             self.lang_dim = options.lang_dim  # options.lang_dim = 10(default)
 

@@ -35,6 +35,7 @@ class ml_dmv_model(nn.Module):
         self.data_size = data_size
         self.cvalency = options.c_valency
         self.dvalency = options.d_valency
+        self.non_neural_iter = options.non_neural_iter
 
         self.sentence_decision_counter = {}
 
@@ -214,14 +215,14 @@ class ml_dmv_model(nn.Module):
                     es = ratio
         return es
 
-    def em_e(self, batch_pos, batch_lan, batch_sen, em_type):
+    def em_e(self, batch_pos, batch_lan, batch_sen, em_type, epoch):
         batch_pos = np.array(batch_pos)
         if em_type == 'viterbi':
             # batch_likelihood = self.run_viterbi_estep(batch_pos, batch_lan, batch_sen, trans_counter,
             #                                           decision_counter)
             pass
         elif em_type == 'em':
-            batch_likelihood = self.run_em_estep(batch_pos, batch_lan, batch_sen)
+            batch_likelihood = self.run_em_estep(batch_pos, batch_lan, batch_sen, epoch)
 
         return batch_likelihood
 
@@ -244,8 +245,8 @@ class ml_dmv_model(nn.Module):
         self.trans_counter = trans_counter
         return batch_likelihood
 
-    def run_em_estep(self, batch_pos, batch_lan, batch_sen):
-        batch_score, batch_root_score, batch_decision_score = self.evaluate_batch_score(batch_pos, batch_sen, self.sentence_trans_param)
+    def run_em_estep(self, batch_pos, batch_lan, batch_sen, epoch):
+        batch_score, batch_root_score, batch_decision_score = self.evaluate_batch_score(batch_pos, batch_sen, self.sentence_trans_param, epoch)
         batch_score = np.array(batch_score)  # log p : batch_size, sentence_length, _, v_c_num
         batch_root_score = np.array(batch_root_score)
         batch_decision_score = np.array(batch_decision_score)
@@ -280,7 +281,7 @@ class ml_dmv_model(nn.Module):
         # self.trans_counter += trans_counter_temp[1:, 1:, :, :]
         return batch_likelihood
 
-    def evaluate_batch_score(self, batch_pos, batch_sen, sentence_trans_param):
+    def evaluate_batch_score(self, batch_pos, batch_sen, sentence_trans_param, epoch):
         batch_size, sentence_length = batch_pos.shape
         # batch,head,child,head_tag,child_tag
         scores = np.zeros((batch_size, sentence_length, sentence_length, self.cvalency))
@@ -305,7 +306,7 @@ class ml_dmv_model(nn.Module):
                         dir = 0
                     else:
                         dir = 1
-                    if self.initial_flag:  #TODO True: #
+                    if self.initial_flag or epoch < self.non_neural_iter:  #TODO True: #
                         scores[s, i, j, :] = np.log(self.trans_param[h_pos_id, m_pos_id, dir, :])
                     else:
                         scores[s, i, j, :] = np.log(sentence_trans_param[sentence_id, h_pos_id, m_pos_id, dir, :])
