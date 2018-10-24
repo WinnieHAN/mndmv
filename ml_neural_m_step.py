@@ -43,9 +43,15 @@ class m_step_model(nn.Module):
                                 batch_first=True)  # hidden_dim // 2, num_layers=1, bidirectional=True
             self.lang_classifier = nn.Linear(self.lstm_direct * self.lstm_hidden_dim, self.lan_num)
             if self.stc_model_type == 2:
-                self.variational_mu = nn.Linear(self.lstm_hidden_dim * self.lstm_direct * self.lstm_layer_num, 10)
+                self.max_length = 40  # TODO, we train or test on len40
+                self.nhid = self.pembedding_dim # for attention
+                self.hvds_dim = self.nhid + self.lstm_hidden_dim * self.lstm_direct * self.lstm_layer_num  # for sts
+                self.linear_hvds = nn.Linear(self.hvds_dim, self.max_length)
+
+            if self.stc_model_type == 3:
+                self.variational_mu = nn.Linear(self.lstm_hidden_dim * self.lstm_direct * self.lstm_layer_num, self.lstm_direct * self.lstm_hidden_dim)
                 self.variational_logvar = nn.Linear(self.lstm_hidden_dim * self.lstm_direct * self.lstm_layer_num,
-                                                    10)  # log var.pow(2)
+                                                    self.lstm_direct * self.lstm_hidden_dim)  # log var.pow(2)
         self.plookup = nn.Embedding(self.tag_num, self.pembedding_dim)
         self.dplookup = nn.Embedding(self.tag_num, self.pembedding_dim)
         self.vlookup = nn.Embedding(self.cvalency, self.valency_dim)
@@ -133,26 +139,25 @@ class m_step_model(nn.Module):
             sentences_all_lstm = sentences_all_lstm.contiguous().view(sentences_all_lstm.size()[0], -1)
             return self.dropout_layer(sentences_all_lstm)
         elif self.stc_model_type == 2:
-            self.hidden = self.init_hidden(batch_size)  # sts batch
+            # self.hidden = self.init_hidden(batch_size)  # sts batch
             embeds = self.head_lstm_embeddings(torch.autograd.Variable(torch.LongTensor(sentences)))
-            sts_packed = torch.nn.utils.rnn.PackedSequence(embeds, batch_sizes=sentences_len)
-            sentence_in = pad_packed_sequence(sts_packed, batch_first=True)
-            lstm_out, self.hidden = self.lstm(sentence_in[0],
-                                              self.hidden)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
+            # sts_packed = torch.nn.utils.rnn.PackedSequence(embeds, batch_sizes=sentences_len)
+            # sentence_in = pad_packed_sequence(sts_packed, batch_first=True)
+            # lstm_out, self.hidden = self.lstm(sentence_in[0], self.hidden)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
+            lstm_out, self.hidden = self.lstm(embeds)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
             sentences_lstm = torch.transpose(self.hidden[0], 0, 1).contiguous().view(batch_size,
                                                                                      -1)  # batch_size* (num_layer*direct*hiddensize) #use h not c
-            sentences_all_lstm = torch.transpose(lstm_out, 0, 1)
-            atten_weight = F.softmax(self.linear_hvds(torch.cat((hid_tensor, sentences_lstm), 1)))[:,
-                           0:sentences_maxlen]
-            attn_applied = torch.bmm(torch.transpose(atten_weight.unsqueeze(2), 1, 2), sentences_all_lstm)  # 1*1*6
+            # sentences_all_lstm = torch.transpose(lstm_out, 0, 1)
+            atten_weight = F.softmax(self.linear_hvds(torch.cat((hid_tensor, sentences_lstm), 1)))[:, 0:sentences_maxlen]
+            attn_applied = torch.bmm(torch.transpose(atten_weight.unsqueeze(2), 1, 2), lstm_out)  # 1*1*6
             return attn_applied.squeeze(1)
         elif self.stc_model_type == 3:
-            self.hidden = self.init_hidden(batch_size)  # sts batch
-            embeds = self.dropout(self.head_lstm_embeddings(torch.autograd.Variable(torch.LongTensor(sentences))))
-            sts_packed = torch.nn.utils.rnn.PackedSequence(embeds, sentences_len)  # batch_sizes=
-            sentence_in = pad_packed_sequence(sts_packed, batch_first=True)
-            lstm_out, self.hidden = self.lstm(sentence_in[0],
-                                              self.hidden)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
+            # self.hidden = self.init_hidden(batch_size)  # sts batch
+            embeds = self.dropout_layer(self.head_lstm_embeddings(torch.autograd.Variable(torch.LongTensor(sentences))))
+            # sts_packed = torch.nn.utils.rnn.PackedSequence(embeds, sentences_len)  # batch_sizes=
+            # sentence_in = pad_packed_sequence(sts_packed, batch_first=True)
+            # lstm_out, self.hidden = self.lstm(sentence_in[0], self.hidden)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
+            lstm_out, self.hidden = self.lstm(embeds)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
             sentences_all_lstm = torch.transpose(self.hidden[0], 0, 1)
             sentences_all_lstm = sentences_all_lstm.contiguous().view(sentences_all_lstm.size()[0], -1)
             mu = self.variational_mu(sentences_all_lstm)
