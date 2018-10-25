@@ -7,6 +7,9 @@ if set non_neural_iter>epochs, then it is DMV model.
 
 python src/ml_dmv_parser.py --train en-fr --dev en --child_neural --em_type em --cvalency 2 --do_eval --ml_comb_type 1 --bidirectional --child_only --em_iter 1 --function_mask
 
+---10.25 for ML-CLS2-1---
+python src/ml_dmv_parser.py --train en --child_neural --em_type em --cvalency 2 --do_eval --ml_comb_type 2 --stc_model_type 1 --child_only --em_iter 1 --function_mask --non_dscrm_iter 20 --epochs 70
+
 # lv_dmv_parser
 Dependency parser using DMV model with latent variables
 Parameters with best performance using vanilla DMV:
