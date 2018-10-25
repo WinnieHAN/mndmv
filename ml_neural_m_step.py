@@ -28,6 +28,7 @@ class m_step_model(nn.Module):
         self.lan_num = lan_num
         self.ml_comb_type = options.ml_comb_type  # options.ml_comb_type = 0(no_lang_id)/1(id embeddings)/2(classify-tags)
         self.stc_model_type = options.stc_model_type  # 1  lstm   2 lstm with atten   3 variational
+        self.non_dscrm_iter = options.non_dscrm_iter
         if self.ml_comb_type == 1:
             self.lang_dim = options.lang_dim  # options.lang_dim = 10(default)
 
@@ -139,24 +140,15 @@ class m_step_model(nn.Module):
             sentences_all_lstm = sentences_all_lstm.contiguous().view(sentences_all_lstm.size()[0], -1)
             return self.dropout_layer(sentences_all_lstm)
         elif self.stc_model_type == 2:
-            # self.hidden = self.init_hidden(batch_size)  # sts batch
             embeds = self.head_lstm_embeddings(torch.autograd.Variable(torch.LongTensor(sentences)))
-            # sts_packed = torch.nn.utils.rnn.PackedSequence(embeds, batch_sizes=sentences_len)
-            # sentence_in = pad_packed_sequence(sts_packed, batch_first=True)
-            # lstm_out, self.hidden = self.lstm(sentence_in[0], self.hidden)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
             lstm_out, self.hidden = self.lstm(embeds)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
             sentences_lstm = torch.transpose(self.hidden[0], 0, 1).contiguous().view(batch_size,
                                                                                      -1)  # batch_size* (num_layer*direct*hiddensize) #use h not c
-            # sentences_all_lstm = torch.transpose(lstm_out, 0, 1)
             atten_weight = F.softmax(self.linear_hvds(torch.cat((hid_tensor, sentences_lstm), 1)))[:, 0:sentences_maxlen]
             attn_applied = torch.bmm(torch.transpose(atten_weight.unsqueeze(2), 1, 2), lstm_out)  # 1*1*6
             return attn_applied.squeeze(1)
         elif self.stc_model_type == 3:
-            # self.hidden = self.init_hidden(batch_size)  # sts batch
             embeds = self.dropout_layer(self.head_lstm_embeddings(torch.autograd.Variable(torch.LongTensor(sentences))))
-            # sts_packed = torch.nn.utils.rnn.PackedSequence(embeds, sentences_len)  # batch_sizes=
-            # sentence_in = pad_packed_sequence(sts_packed, batch_first=True)
-            # lstm_out, self.hidden = self.lstm(sentence_in[0], self.hidden)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
             lstm_out, self.hidden = self.lstm(embeds)  # [0]# sentence_in.view(BATCH_SIZE, BATCH_SIZE, -1)
             sentences_all_lstm = torch.transpose(self.hidden[0], 0, 1)
             sentences_all_lstm = sentences_all_lstm.contiguous().view(sentences_all_lstm.size()[0], -1)
@@ -166,7 +158,7 @@ class m_step_model(nn.Module):
             return var_out, -0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp())
 
     def forward_(self, batch_pos, batch_dir, batch_valence, batch_target, batch_target_count,
-                 is_prediction, type, em_type, batch_lang_id, sentences, sentences_len):
+                 is_prediction, type, em_type, batch_lang_id, sentences, sentences_len, epoch):
         p_embeds = self.plookup(batch_pos)
         if type == 'child':
             v_embeds = self.vlookup(batch_valence)
@@ -187,6 +179,8 @@ class m_step_model(nn.Module):
                                                                                       tuple) else stc_representation_and_vae_loss
                 vae_loss = stc_representation_and_vae_loss[1] if isinstance(stc_representation_and_vae_loss,
                                                                             tuple) else 0
+                stc_representation = stc_representation * 0 if epoch < self.non_dscrm_iter else stc_representation
+                vae_loss = vae_loss * 0 if epoch < self.non_dscrm_iter else vae_loss
                 input_embeds = torch.cat((p_embeds, v_embeds, stc_representation), 1)
                 if not is_prediction:
                     lang_cls_loss = self.lang_loss(stc_representation, batch_lang_id)
@@ -277,7 +271,7 @@ class m_step_model(nn.Module):
         return left_mask, right_mask
 
     def predict(self, sentence_trans_param, root_param, decision_param, batch_size, root_counnter, decision_counter,
-                child_only, sentence_map, language_map, languages):
+                child_only, sentence_map, language_map, languages, epoch):
         _, input_pos_num, target_pos_num, dir_num, cvalency = sentence_trans_param.shape
         input_decision_pos_num, decision_dir_num, dvalency, target_decision_num = decision_param.shape
         input_trans_list = [[p, d, cv] for p in range(input_pos_num) for d in range(dir_num) for cv in range(cvalency)]
@@ -304,7 +298,7 @@ class m_step_model(nn.Module):
                 predicted_trans_param = self.forward_(one_batch_input_pos, one_batch_dir, one_batch_cvalency,
                                                       None, None, True, 'child',
                                                       self.em_type, batch_target_lan_v, batch_input_sen_v,
-                                                      batch_input_len)
+                                                      batch_input_len, epoch=epoch)
                 sentence_trans_param[s][one_batch_input_pos_index, :, one_batch_dir_index, \
                 one_batch_cvalency_index] = predicted_trans_param.detach().numpy()#.reshape(one_batch_size, target_pos_num, 1, 1)
         # TODO:

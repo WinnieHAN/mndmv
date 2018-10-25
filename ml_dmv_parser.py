@@ -34,6 +34,7 @@ if __name__ == '__main__':
     parser.add_option("--pembedding", type="int", dest="pembedding_dim", default=10)
     parser.add_option("--epochs", type="int", dest="epochs", default=50)
     parser.add_option("--non_neural_iter", type="int", dest="non_neural_iter", default=20)  # if non_neural_iter>epochs, then it is DMV.
+    parser.add_option("--non_dscrm_iter", type="int", dest="non_dscrm_iter", default=40)  # if non_neural_iter>epochs, then it is DMV.
     parser.add_option("--tag_num", type="int", dest="tag_num", default=1)
 
     parser.add_option("--dvalency", type="int", dest="d_valency", default=2)
@@ -149,7 +150,7 @@ if __name__ == '__main__':
                 batch_predict_lan_v = torch.LongTensor(np.array([lang_id for _ in batch_predict_sen_v]))  # TODO
                 batch_predicted = m_model.forward_(batch_predict_pos_v, batch_predict_dir_v, batch_predict_cvalency_v,
                                                    None, None, True, 'child', options.em_type, batch_predict_lan_v, batch_predict_sen_v,
-                                                   batch_predict_sen_len)
+                                                   batch_predict_sen_len, epoch=epoch)
 
                 eval_sentence_trans_param[batch_predict_sen_index, batch_predict_pos_index, :, batch_predict_dir_index,
                 batch_predict_cvalency_index] = batch_predicted.detach().numpy()
@@ -297,7 +298,7 @@ if __name__ == '__main__':
                         batch_loss = m_model.forward_(batch_input_pos_v, batch_input_dir_v, batch_cvalency_v,
                                                       batch_target_pos_v, batch_target_pos_count_v, False, 'child',
                                                       options.em_type, batch_target_lan_v, batch_input_sen_v,
-                                                      batch_input_len)
+                                                      batch_input_len, epoch=epoch)
                         iter_loss += batch_loss
                         batch_loss.backward()
                         m_model.optim.step()
@@ -305,40 +306,41 @@ if __name__ == '__main__':
                     print "child loss for this iteration is " + str(iter_loss.detach().data.numpy() / batch_num)
                     # Network for decision distribution
                     if not options.child_only:
-                        batch_num = len(batch_decision_data['decision_pos'])
-                        tot_batch = batch_num
-                        iter_decision_loss = 0.0
-                        for decision_batch_id in tqdm(
-                                range(batch_num), mininterval=2,
-                                desc=' -Tot it %d (iter %d)' % (tot_batch, 0), leave=False, file=sys.stdout):
-                            # Input for decision network: pos,direction,decision_valency
-                            batch_decision_pos_v = torch.LongTensor(batch_decision_data['decision_pos'][batch_id])
-                            batch_dvalency_v = torch.LongTensor(batch_decision_data['dvalency'][batch_id])
-                            batch_decision_dir_v = torch.LongTensor(batch_decision_data['decision_dir'][batch_id])
-                            batch_target_decision_v = torch.LongTensor(
-                                batch_target_decision_data['decision_target'][batch_id])
-                            if options.em_type == 'em':
-                                batch_target_decision_count_v = torch.FloatTensor(
-                                    batch_target_decision_data['decision_target_count'][batch_id])
-                            else:
-                                batch_target_decision_count_v = None
-                            if options.unified_network:
-                                batch_decision_loss = m_model.forward_(batch_decision_pos_v, batch_decision_dir_v,
-                                                                       batch_dvalency_v, batch_target_decision_v,
-                                                                       batch_target_decision_count_v, False, 'decision',
-                                                                       options.em_type)
-                            else:
-                                batch_decision_loss = m_model.forward_decision(batch_decision_pos_v,
-                                                                               batch_decision_dir_v, batch_dvalency_v,
-                                                                               batch_target_decision_v,
-                                                                               batch_target_decision_count_v, False,
-                                                                               options.em_type)
-                            iter_decision_loss += batch_decision_loss
-                            batch_decision_loss.backward()
-                            m_model.optim.step()
-                            m_model.optim.zero_grad()
-                        print "decision loss for this iteration is " + str(
-                            iter_decision_loss.detach().data.numpy() / batch_num)
+                        pass
+                        # batch_num = len(batch_decision_data['decision_pos'])
+                        # tot_batch = batch_num
+                        # iter_decision_loss = 0.0
+                        # for decision_batch_id in tqdm(
+                        #         range(batch_num), mininterval=2,
+                        #         desc=' -Tot it %d (iter %d)' % (tot_batch, 0), leave=False, file=sys.stdout):
+                        #     # Input for decision network: pos,direction,decision_valency
+                        #     batch_decision_pos_v = torch.LongTensor(batch_decision_data['decision_pos'][batch_id])
+                        #     batch_dvalency_v = torch.LongTensor(batch_decision_data['dvalency'][batch_id])
+                        #     batch_decision_dir_v = torch.LongTensor(batch_decision_data['decision_dir'][batch_id])
+                        #     batch_target_decision_v = torch.LongTensor(
+                        #         batch_target_decision_data['decision_target'][batch_id])
+                        #     if options.em_type == 'em':
+                        #         batch_target_decision_count_v = torch.FloatTensor(
+                        #             batch_target_decision_data['decision_target_count'][batch_id])
+                        #     else:
+                        #         batch_target_decision_count_v = None
+                        #     if options.unified_network:
+                        #         batch_decision_loss = m_model.forward_(batch_decision_pos_v, batch_decision_dir_v,
+                        #                                                batch_dvalency_v, batch_target_decision_v,
+                        #                                                batch_target_decision_count_v, False, 'decision',
+                        #                                                options.em_type)
+                        #     else:
+                        #         batch_decision_loss = m_model.forward_decision(batch_decision_pos_v,
+                        #                                                        batch_decision_dir_v, batch_dvalency_v,
+                        #                                                        batch_target_decision_v,
+                        #                                                        batch_target_decision_count_v, False,
+                        #                                                        options.em_type)
+                        #     iter_decision_loss += batch_decision_loss
+                        #     batch_decision_loss.backward()
+                        #     m_model.optim.step()
+                        #     m_model.optim.zero_grad()
+                        # print "decision loss for this iteration is " + str(
+                        #     iter_decision_loss.detach().data.numpy() / batch_num)
                 copy_sentence_trans_param = ml_dmv_model.sentence_trans_param.copy()
                 copy_decision_param = ml_dmv_model.decision_param.copy()
                 copy_root_param = ml_dmv_model.root_param.copy()
@@ -346,7 +348,7 @@ if __name__ == '__main__':
                 sentence_trans_param, root_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_root_param, copy_decision_param,
                                                                        options.sample_batch_size, ml_dmv_model.root_counter, ml_dmv_model.decision_counter,
                                                                        options.child_only,
-                                                                       sentence_map, language_map, languages)
+                                                                       sentence_map, language_map, languages, epoch=epoch)
                 ml_dmv_model.sentence_trans_param = sentence_trans_param.copy()
                 ml_dmv_model.decision_param = decision_param.copy()
                 ml_dmv_model.root_param = root_param.copy()
