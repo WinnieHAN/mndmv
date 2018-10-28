@@ -473,7 +473,19 @@ def get_language_key(file):
 #             sentences.append(one_file_sentences)
 #         return sentences
 
-def read_multiple_data(file_set, isPredict):
+def read_multiple_data(file_set, isPredict, isadd):
+    if isadd:
+        langs = np.array(
+            ['grc', 'grc_proiel', 'ar', 'eu', 'bg', 'ca', 'zh', 'cop', 'hr', 'cs', 'cs_cac', 'cs_cltt', 'da',
+             'nl', 'nl_lassysmall', 'en', 'en_esl', 'en_lines', 'et', 'fi', 'fi_ftb', 'fr', 'gl', 'gl_treegal',
+             'de', 'got', 'el', 'he', 'hi', 'hu', 'id', 'ga', 'it', 'ja', 'ja_ktc', 'kk', 'la', 'la_ittb',
+             'la_proiel',
+             'lv', 'no', 'cu', 'fa', 'pl', 'pt', 'pt_bosque', 'pt_br', 'ro', 'ru', 'ru_syntagrus', 'sa', 'sk',
+             'sl',
+             'sl_sst', 'es', 'es_ancora', 'sv', 'sv_lines', 'swl', 'ta', 'tr', 'uk', 'ug', 'vi'])
+        langs2i = {i: j for j, i in enumerate(langs)}
+        i2langs = {i: j for j, i in langs2i.items()}
+
     sentences = []
     if not isPredict:
         posCount = Counter()
@@ -485,15 +497,16 @@ def read_multiple_data(file_set, isPredict):
             language_key, _ = get_language_key(file)
             with open(one_data_path, 'r') as conllFP:
                 for sentence in read_conll(conllFP):
-                    # wordsCount.update([node.norm for node in sentence if isinstance(node, ConllEntry)])
                     posCount.update([node.pos for node in sentence if isinstance(node, ConllEntry)])
                     ds = data_sentence(s_counter, sentence)
                     sentences.append(ds)
                     language_map[s_counter] = language_key
-                    lanCounter.update([language_key])
+                    lanCounter.update([language_key])  # lang2i
                     s_counter += 1
-        return {p: i for i, p in enumerate(posCount.keys())}, sentences, {l: i for i, l in
-                                                                          enumerate(lanCounter.keys())}, language_map
+        if not isadd:
+            return {p: i for i, p in enumerate(posCount.keys())}, sentences, {l: i for i, l in enumerate(lanCounter.keys())}, language_map  # pos: str 2 id, sentences, languages: lang 2 id, language_map: id 2 lang
+        else:
+            return {p: i for i, p in enumerate(posCount.keys())}, sentences, langs2i, language_map
     else:
         for file in file_set:
             one_data_path = file
@@ -618,11 +631,11 @@ def construct_ml_predict_data(rule_samples):
 
     return batch_predict_data
 
-def read_ml_corpus(currPath, names, stc_length, isPredict):
+
+def read_ml_corpus(currPath, names, stc_length, isPredict, isadd):
     names = names.split('-')
     full_names = language_bank(currPath, names, stc_length, isPredict)
-    return read_multiple_data(full_names, isPredict=isPredict)
-
+    return read_multiple_data(full_names, isPredict=isPredict, isadd=isadd)
 
 
 def language_bank(currPath, names, stc_length, isPredict):

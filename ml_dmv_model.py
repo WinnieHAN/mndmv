@@ -379,18 +379,12 @@ class ml_dmv_model(nn.Module):
         trans_counter = trans_counter + self.param_smoothing
         root_counter = root_counter + self.param_smoothing
         decision_counter = decision_counter + self.param_smoothing
-        # if self.use_lex:
-        #     lex_counter = lex_counter + self.param_smoothing
         child_sum = np.sum(trans_counter, axis=1, keepdims=True)#np.sum(trans_counter, axis=(1, 3)).reshape(len(self.pos), 1, self.tag_num, 1, 2, self.cvalency)
         decision_sum = np.sum(decision_counter, axis=3, keepdims=True)#np.sum(decision_counter, axis=4).reshape(len(self.pos), self.tag_num, 2, self.dvalency, 1)
         root_sum = np.sum(root_counter)
         self.trans_param = trans_counter / child_sum
         self.decision_param = decision_counter / decision_sum
         self.root_param = root_counter / root_sum
-        # if self.use_lex:
-        #     pass
-            # lex_sum = np.sum(lex_counter, axis=2).reshape(len(self.pos), self.tag_num, 1)
-            # self.lex_param = lex_counter / lex_sum
         return
 
     def update_pseudo_count(self, inside_incomplete_table, inside_complete_table, sentence_prob,

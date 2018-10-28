@@ -270,8 +270,8 @@ class m_step_model(nn.Module):
         right_mask = right_mask.expand(-1, self.hid_dim)
         return left_mask, right_mask
 
-    def predict(self, sentence_trans_param, root_param, decision_param, batch_size, root_counnter, decision_counter,
-                child_only, sentence_map, language_map, languages, epoch):
+    def predict(self, sentence_trans_param, root_param, decision_param, batch_size, trans_counter, root_counnter, decision_counter,
+                sentence_map, language_map, languages, epoch):
         _, input_pos_num, target_pos_num, dir_num, cvalency = sentence_trans_param.shape
         input_decision_pos_num, decision_dir_num, dvalency, target_decision_num = decision_param.shape
         input_trans_list = [[p, d, cv] for p in range(input_pos_num) for d in range(dir_num) for cv in range(cvalency)]
@@ -332,15 +332,18 @@ class m_step_model(nn.Module):
         #         decision_param[one_batch_input_decision_pos_index, :, one_batch_decision_dir_index,
         #         one_batch_dvalency_index, :] = predicted_decision_param.detach().numpy().reshape(one_batch_size, 1,
         #                                                                                          target_decision_num)
-        if child_only:
-            decision_counter = decision_counter + self.param_smoothing
-            decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
-            decision_param = decision_counter / decision_sum
+        # if child_only:
+        decision_counter = decision_counter + self.param_smoothing
+        decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
+        decision_param = decision_counter / decision_sum
 
-            root_counnter = root_counnter + self.param_smoothing
-            root_sum = np.sum(root_counnter)
-            root_param = root_counnter / root_sum
+        root_counnter = root_counnter + self.param_smoothing
+        root_sum = np.sum(root_counnter)
+        root_param = root_counnter / root_sum
 
+        trans_counter = trans_counter + self.param_smoothing
+        child_sum = np.sum(trans_counter, axis=1, keepdims=True)
+        trans_param = trans_counter / child_sum
 
         # decision_counter = decision_counter + self.param_smoothing
         # decision_sum = np.sum(decision_counter, axis=3, keepdims=True)
@@ -353,4 +356,4 @@ class m_step_model(nn.Module):
         # trans_param_compare = trans_counter / child_sum
         # trans_difference = trans_param_compare - trans_param
         # print 'distance for trans in this iteration ' + str(LA.norm(trans_difference))
-        return sentence_trans_param, root_param, decision_param
+        return sentence_trans_param, trans_param, root_param, decision_param

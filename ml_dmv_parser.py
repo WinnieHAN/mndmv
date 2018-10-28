@@ -69,7 +69,7 @@ if __name__ == '__main__':
     parser.add_option("--seed", type="int", dest="seed", default=0)
     parser.add_option("--drop_out", type="float", dest="drop_out", default=0.25)
 
-    parser.add_option("--child_only", action="store_true", dest="child_only", default=False)
+    parser.add_option("--child_only", action="store_true", dest="child_only", default=False)  # TODO True
     parser.add_option("--valency_dim", type="int", dest="valency_dim", default=5)
     parser.add_option("--hid_dim", type="int", dest="hid_dim", default=10)
     parser.add_option("--pre_ouput_dim", type="int", dest="pre_output_dim", default=15)
@@ -93,6 +93,9 @@ if __name__ == '__main__':
     parser.add_option("--lstm_hidden_dim", type="int", dest="lstm_hidden_dim", default=10)
     parser.add_option("--bidirectional", action="store_true", dest="bidirectional", default=False)
 
+    parser.add_option("--load_model", action="store_true", dest="load_model", default=False)
+    parser.add_option("--loaded_model_idx", type="int", dest="loaded_model_idx", default=1000)
+
     (options, args) = parser.parse_args()
 
     if options.gpu >= 0 and torch.cuda.is_available():
@@ -106,7 +109,10 @@ if __name__ == '__main__':
         print "===================================="
         print 'Do evaluation on development set'
         # eval_sentences = utils.read_data(options.dev, True)
-        ml_sentences = utils.read_ml_corpus(options.language_path, options.dev, stc_length=40, isPredict=True)
+        if not options.load_model:
+            ml_sentences = utils.read_ml_corpus(options.language_path, options.dev, stc_length=40, isPredict=True, isadd=False)
+        else:
+            ml_sentences = utils.read_ml_corpus(options.language_path, options.dev, stc_length=40, isPredict=True, isadd=True)
         eval_sentences = ml_sentences[0]
         dmv_model.eval()
         eval_sentence_map = {}
@@ -177,18 +183,16 @@ if __name__ == '__main__':
         # utils.write_distribution(dmv_model)
         print "===================================="
 
+    if not options.load_model:
+        pos, sentences, languages, language_map = utils.read_ml_corpus(options.language_path, options.train, stc_length=15, isPredict=False, isadd=False) # pos: str 2 id, sentences, languages: lang 2 id, language_map: stc_id 2 lang
+    else:
+        pos, sentences, languages, language_map = utils.read_ml_corpus(options.language_path, options.train, stc_length=15, isPredict=False, isadd=True)  # language: lang2i
 
-    # language_set = utils.read_language_list(options.language_path)
-    # file_list = os.listdir(options.train)
-    # file_set = utils.get_file_set(file_list, language_set, True)
-    # utils.read_multiple_data(options.train, file_set, False)  # pos: str 2 id, sentences, languages: lang 2 id, language_map: id 2 lang
-    # train='data/ud-treebanks-v1.4/' names='en-fr'
-    pos, sentences, languages, language_map = utils.read_ml_corpus(options.language_path, options.train, stc_length=15, isPredict=False)
     sentence_language_map = {}
-    print 'Data read'
-    with open(os.path.join(options.output, options.params + '_' + str(options.sample_idx)), 'w') as paramsfp:
-        pickle.dump((pos, options), paramsfp)
-    print 'Parameters saved'
+    # print 'Data read'
+    # with open(os.path.join(options.output, options.params + '_' + str(options.sample_idx)), 'w') as paramsfp:
+    #     pickle.dump((pos, options), paramsfp)
+    # print 'Parameters saved'
 
     data_list = list()
     sen_idx = 0
@@ -209,11 +213,13 @@ if __name__ == '__main__':
     print 'Batch data constructed'
     data_size = len(data_list)
 
-    ml_dmv_model = MLDMV(pos, sentence_map, language_map, data_size, options)
-
     print 'Model constructed'
-    # ml_dmv_model.init_expert('data/ud_file/en-ud-train-nopunct-len15.conllu', pos)
-    ml_dmv_model.init_param(sentences)
+    load_file = os.path.join(options.output, options.paramem) + '_' + str(options.sample_idx)
+    ml_dmv_model = MLDMV(pos, sentence_map, language_map, data_size, options)
+    if (not options.load_model) or (not os.path.exists(load_file)):
+        ml_dmv_model.init_param(sentences)
+    else:
+        ml_dmv_model.trans_param, ml_dmv_model.root_param, ml_dmv_model.decision_param, ml_dmv_model.sentence_trans_param = pickle.load(open(load_file, 'r'))
     epoch = -1
     do_eval(ml_dmv_model, None, pos, options, epoch)
 
@@ -222,8 +228,13 @@ if __name__ == '__main__':
         torch.cuda.set_device(options.gpu)
         ml_dmv_model.cuda(options.gpu)
 
-    if options.child_neural or options.decision_neural:
+    loaded_file = os.path.join(options.output, os.path.basename(options.model) + '_' + str(options.loaded_model_idx))
+    if (not options.load_model) or (not os.path.exists(loaded_file)):
+        # if options.child_neural or options.decision_neural:
         m_model = MMODEL(len(pos), len(languages), options)
+    else:
+        m_model = torch.load(loaded_file)
+
 
     for epoch in range(options.epochs):
         print "\n"
@@ -343,13 +354,14 @@ if __name__ == '__main__':
                         #     iter_decision_loss.detach().data.numpy() / batch_num)
                 copy_sentence_trans_param = ml_dmv_model.sentence_trans_param.copy()
                 copy_decision_param = ml_dmv_model.decision_param.copy()
+                # copy_trans_param = ml_dmv_model.trans_param.copy()
                 copy_root_param = ml_dmv_model.root_param.copy()
                 # Predict model parameters by network
-                sentence_trans_param, root_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_root_param, copy_decision_param,
-                                                                       options.sample_batch_size, ml_dmv_model.root_counter, ml_dmv_model.decision_counter,
-                                                                       options.child_only,
-                                                                       sentence_map, language_map, languages, epoch=epoch)
+                sentence_trans_param, trans_param, root_param, decision_param = m_model.predict(copy_sentence_trans_param, copy_root_param, copy_decision_param,
+                                                                                   options.sample_batch_size, ml_dmv_model.trans_counter, ml_dmv_model.root_counter, ml_dmv_model.decision_counter,
+                                                                                   sentence_map, language_map, languages, epoch=epoch)
                 ml_dmv_model.sentence_trans_param = sentence_trans_param.copy()
+                ml_dmv_model.trans_param = trans_param.copy()
                 ml_dmv_model.decision_param = decision_param.copy()
                 ml_dmv_model.root_param = root_param.copy()
                 print('PREDICT DONE ......')
@@ -358,12 +370,9 @@ if __name__ == '__main__':
         if options.do_eval:
             do_eval(ml_dmv_model, m_model, pos, options, epoch)
             # Save model parameters
-        # with open(os.path.join(options.output, options.paramem) + str(epoch + 1) + '_' + str(options.sample_idx),
-        #           'w') as paramem:
-        #     pickle.dump(
-        #         (ml_dmv_model.trans_param, ml_dmv_model.decision_param, ml_dmv_model.lex_param, ml_dmv_model.tag_num),
-        #         paramem)
-        ml_dmv_model.save(os.path.join(options.output, os.path.basename(options.model) + str(epoch + 1) + '_' + str(
-            options.sample_idx)))
+        with open(os.path.join(options.output, options.paramem) + '_' + str(options.sample_idx), 'w') as paramem:
+            pickle.dump((ml_dmv_model.trans_param, ml_dmv_model.root_param, ml_dmv_model.decision_param, ml_dmv_model.sentence_trans_param), paramem)
+        # ml_dmv_model.save(os.path.join(options.output, os.path.basename(options.model) + '_' + str(options.sample_idx)))
+        torch.save(m_model, os.path.join(options.output, os.path.basename(options.model) + '_' + str(options.sample_idx)))
 
     print 'Training finished'
