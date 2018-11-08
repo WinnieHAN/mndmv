@@ -214,7 +214,7 @@ if __name__ == '__main__':
     data_size = len(data_list)
 
     print 'Model constructed'
-    load_file = os.path.join(options.output, options.paramem) + '_' + str(options.sample_idx)
+    load_file = os.path.join(options.output, options.paramem) + '_' + str(options.loaded_model_idx)
     ml_dmv_model = MLDMV(pos, sentence_map, language_map, data_size, options)
     if (not options.load_model) or (not os.path.exists(load_file)):
         ml_dmv_model.init_param(sentences)
