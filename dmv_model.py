@@ -81,7 +81,7 @@ class ldmv_model(nn.Module):
     # KM initialization
     def init_param(self, data):
         root_idx = self.pos['ROOT-POS']
-        count_smoothing = 0.1
+        #count_smoothing = 0.1
         norm_counter = np.zeros((len(self.decision_pos), 2, self.dvalency, 2))  # pos_tag,direction,valence,decision
         for sentence in data:
             word_num = sentence.size - 1
@@ -108,8 +108,8 @@ class ldmv_model(nn.Module):
                 m_pos = m_entry.pos
                 m_word = m_entry.norm
                 m_pos_id = self.pos[m_pos]
-                m_word_id = self.vocab[m_word]
                 if self.use_lex:
+                    m_word_id = self.vocab[m_word]
                     self.lex_param[m_pos_id, :, m_word_id] += 1.
                 for i, h_entry in enumerate(sentence.entries):
                     if i == j:
@@ -126,16 +126,17 @@ class ldmv_model(nn.Module):
                     word = m_entry.norm
                     h_pos_id = self.pos.get(h_pos)
                     m_pos_id = self.pos.get(m_pos)
-                    word_id = self.vocab.get(word)
+
                     # if self.use_lex:
+                    #     word_id = self.vocab.get(word)
                     #     self.lex_param[m_pos_id, :, word_id] += 1. / span * scale
                     self.trans_param[h_pos_id, m_pos_id, :, :, dir, :] += 1. / span * scale
                     change[i - 1, dir] += 1. / span * scale
             self.update_decision(change, norm_counter, sentence.entries)
-        self.trans_param += count_smoothing
-        self.decision_param += count_smoothing
+        self.trans_param += self.count_smoothing
+        self.decision_param += self.count_smoothing
         if self.use_lex:
-            self.lex_param += count_smoothing
+            self.lex_param += self.count_smoothing
         es = self.first_child_update(norm_counter)
         pr_first_kid = 0.9 * es
         norm_counter = norm_counter * pr_first_kid
@@ -237,7 +238,7 @@ class ldmv_model(nn.Module):
         return batch_likelihood
 
     def evaluate_batch_score(self, batch_words, batch_pos):
-        batch_size, sentence_length = batch_words.shape
+        batch_size, sentence_length = batch_pos.shape
         # batch,head,child,head_tag,child_tag
         scores = np.zeros((batch_size, sentence_length, sentence_length, self.tag_num, self.tag_num, self.cvalency))
         # batch,position,tag,direction,valency,decision
@@ -258,7 +259,8 @@ class ldmv_model(nn.Module):
                 for j in range(sentence_length):
                     h_pos_id = batch_pos[sentence_id][i]
                     m_pos_id = batch_pos[sentence_id][j]
-                    m_word_id = batch_words[sentence_id][j]
+                    if self.use_lex:
+                        m_word_id = batch_words[sentence_id][j]
                     if j == 0:
                         continue
                     if i == j:
@@ -295,7 +297,8 @@ class ldmv_model(nn.Module):
                     m_child_valence = m_head_valence
                 else:
                     m_child_valence = 0
-                m_word = word_sentence[i]
+                if self.use_lex:
+                    m_word = word_sentence[i]
                 h = int(h)
                 h_pos = pos_sentence[h]
 
@@ -470,7 +473,8 @@ class ldmv_model(nn.Module):
 
                     m_pos = pos_sentence[m]
                     m_dec_pos = self.to_decision[m_pos]
-                    m_word = word_sentence[m]
+                    if self.use_lex:
+                        m_word = word_sentence[m]
                     if dir == 0:
                         span_id = span_2_id[(m, h, dir)]
                     else:
@@ -506,7 +510,8 @@ class ldmv_model(nn.Module):
             for m in range(1, sentence_length):
                 m_pos = pos_sentence[m]
                 m_dec_pos = self.to_decision[m_pos]
-                m_word = word_sentence[m]
+                if self.use_lex:
+                    m_word = word_sentence[m]
                 for d in range(2):
                     m_span_id = span_2_id[(m, m, d)]
                     stop_count = inside_complete_table[sen_id, m_span_id, :, :] + \
@@ -552,11 +557,15 @@ class ldmv_model(nn.Module):
         function_score_mask = np.zeros(
             (batch_size, sentence_length, sentence_length, self.tag_num, self.tag_num, self.cvalency))
         for s in range(batch_size):
+            function_count = 0
             for i in range(sentence_length):
                 pos_id = batch_pos[s, i]
                 pos = self.id_to_pos[pos_id]
                 if pos in self.function_set:
                     function_score_mask[s, i, :, :, :] = -np.inf
+                    function_count += 1
+            if function_count == sentence_length - 1:
+                function_score_mask[s, :, :, :] = 1e-30
         batch_score = batch_score + function_score_mask
         return batch_score
 

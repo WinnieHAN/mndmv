@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser.add_option("--dev", dest="dev", help="dev file", metavar="FILE", default="data/wsj10_d")
 
     parser.add_option("--extrn", dest="external_embedding", help="External embeddings", metavar="FILE")
-    parser.add_option("--batch", type="int", dest="batchsize", default=100)
+    parser.add_option("--batch", type="int", dest="batchsize", default=50000)
     parser.add_option("--sample_batch", type="int", dest="sample_batch_size", default=1000)
 
     parser.add_option("--params", dest="params", help="Parameters file", metavar="FILE", default="params.pickle")
@@ -54,10 +54,10 @@ if __name__ == '__main__':
     parser.add_option("--sample_idx", type="int", dest="sample_idx", default=1000)
 
     parser.add_option("--use_lex", action="store_true", dest="use_lex", default=False)
-    parser.add_option("--prior_alpha", type="float", dest="prior_alpha", default=0.0)
+    parser.add_option("--prior_alpha", type="float", dest="prior_alpha", default=-10)
     parser.add_option("--do_eval", action="store_true", dest="do_eval", default=False)
     parser.add_option("--log", dest="log", help="log file", metavar="FILE", default="output/log")
-    parser.add_option("--sub_batch", type="int", dest="sub_batch_size", default=100)
+    parser.add_option("--sub_batch", type="int", dest="sub_batch_size", default=50000)
     parser.add_option("--use_prior", action="store_true", dest="use_prior", default=False)
     parser.add_option("--prior_epsilon", type="float", dest="prior_epsilon", default=1)
     parser.add_option("--lex_epsilon", type="float", dest="lex_epsilon", default=1e-4)
@@ -111,19 +111,21 @@ if __name__ == '__main__':
         for s in eval_sentences:
             s_word, s_pos = s.set_data_list(w2i, pos)
             s_data_list = list()
-            s_data_list.append(s_word)
             s_data_list.append(s_pos)
+            s_data_list.append(s_word)
             s_data_list.append([eval_sen_idx])
             eval_data_list.append(s_data_list)
             eval_sen_idx += 1
         eval_batch_data = utils.construct_batch_data(eval_data_list, options.batchsize)
         parse_results = {}
         for batch_id, one_batch in enumerate(eval_batch_data):
-            eval_batch_words, eval_batch_pos, eval_batch_sen = [s[0] for s in one_batch], [s[1] for s in one_batch], \
+            eval_batch_pos,eval_batch_words, eval_batch_sen = [s[0] for s in one_batch], [s[1] for s in one_batch], \
                                                                [s[2][0] for s in one_batch]
             eval_batch_words = np.array(eval_batch_words)
             eval_batch_pos = np.array(eval_batch_pos)
             batch_score, batch_decision_score = dmv_model.evaluate_batch_score(eval_batch_words, eval_batch_pos)
+            if options.function_mask:
+                batch_score = dmv_model.function_to_mask(batch_score,eval_batch_pos)
             batch_parse = eisner_for_dmv.batch_parse(batch_score, batch_decision_score, dmv_model.dvalency,
                                                      dmv_model.cvalency)
             for i in range(len(eval_batch_pos)):
@@ -141,14 +143,17 @@ if __name__ == '__main__':
     data_list = list()
     sen_idx = 0
     # torch.manual_seed(options.seed)
+    if not options.use_lex:
+        w2i = None
     for s in sentences:
         s_word, s_pos = s.set_data_list(w2i, pos)
         s_data_list = list()
-        s_data_list.append(s_word)
         s_data_list.append(s_pos)
+        s_data_list.append(s_word)
         s_data_list.append([sen_idx])
         data_list.append(s_data_list)
         sen_idx += 1
+
     batch_data = utils.construct_update_batch_data(data_list, options.batchsize)
     print 'Batch data constructed'
 
@@ -220,7 +225,7 @@ if __name__ == '__main__':
                 sub_batch_data = utils.construct_batch_data(one_batch, options.sub_batch_size)
                 # For each batch,put all sentences with the same length to one sub-batch
                 for one_sub_batch in sub_batch_data:
-                    sub_batch_words, sub_batch_pos, sub_batch_sen = [s[0] for s in one_sub_batch], \
+                    sub_batch_pos, sub_batch_words, sub_batch_sen = [s[0] for s in one_sub_batch], \
                                                                     [s[1] for s in one_sub_batch], \
                                                                     [s[2][0] for s in one_sub_batch]
                     # E-step

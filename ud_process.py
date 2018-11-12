@@ -16,7 +16,7 @@ for dir in os.listdir(dir_path):
         last_last_key = file[leng - 18]
         train_key = file[leng - 8]
         if (key == 'v' and last_key == 'e') or (
-                    key == 't' and last_key == 's' and last_last_key == 'e') or train_key == '0':
+                    key == 't' and last_key == 's' and last_last_key == 'e') or train_key == '5':
             _, _, sentences = utils.read_data(dir_path + '/' + dir + '/' + file, False)
             filtered_sentences = []
             for s in sentences:

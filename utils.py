@@ -6,7 +6,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.nn.init import *
-import os
 
 
 class ConllEntry:
@@ -54,7 +53,7 @@ def memoize(func):
 
 
 def construct_update_batch_data(data_list, batch_size):
-    # random.shuffle(data_list)
+    random.shuffle(data_list)
     batch_data = []
     len_datas = len(data_list)
     num_batch = len_datas // batch_size
@@ -152,15 +151,6 @@ class data_sentence:
                 #     pos_list.append(pos['<UNKNOWN-POS>'])
         return word_list, pos_list
 
-    def set_data_tag_parse_list(self, pos):
-        pos_list = list()
-        parse_list = list()
-        for entry in self.entries:
-            if entry.pos in pos.keys():
-                pos_list.append(pos[entry.pos])
-                parse_list.append(entry.parent_id)
-        return pos_list, parse_list
-
     # def set_data_list(self, pos):
     #     pos_list = list()
     #     for entry in self.entries:
@@ -178,14 +168,13 @@ class data_sentence:
 
 
 def read_conll(fh):
-    # root = ConllEntry(0, '*root*', '*root*', 'ROOT-CPOS', 'ROOT-POS', '_', -1, 'rroot', '_', '_')
-    # tokens = [root]
-    tokens = []
+    root = ConllEntry(0, '*root*', '*root*', 'ROOT-CPOS', 'ROOT-POS', '_', -1, 'rroot', '_', '_')
+    tokens = [root]
     for line in fh:
         tok = line.strip().split('\t')
         if not tok or line.strip() == '':
-            if len(tokens) > 0: yield tokens
-            tokens = []
+            if len(tokens) > 1: yield tokens
+            tokens = [root]
         else:
             if line[0] == '#' or '-' in tok[0] or '.' in tok[0]:
                 tokens.append(line.strip())
@@ -194,7 +183,7 @@ def read_conll(fh):
                 #    tok[3] = "V"
                 tokens.append(ConllEntry(int(tok[0]), tok[1], tok[2], tok[4], tok[3], tok[5],
                                          int(tok[6]) if tok[6] != '_' else -1, tok[7], tok[8], tok[9]))
-    if len(tokens) > 0:
+    if len(tokens) > 1:
         yield tokens
 
 
@@ -212,7 +201,7 @@ def read_data(conll_path, isPredict):
                 sentences.append(ds)
                 s_counter += 1
         wordsCount['<UNKNOWN>'] = 0
-        # posCount['<UNKNOWN-POS>'] = 0
+        posCount['<UNKNOWN-POS>'] = 0
         return {w: i for i, w in enumerate(wordsCount.keys())}, {p: i for i, p in enumerate(
             posCount.keys())}, sentences
     else:
@@ -276,7 +265,9 @@ def eval(predicted, gold, test_path, log_path, epoch):
         ps = predicted[s][0]
         gs = gold[s]
         for i, e in enumerate(gs.entries):
-            if ps[i+1] == e.parent_id:
+            if i == 0:
+                continue
+            if ps[i] == e.parent_id:
                 correct_counter += 1
             total_counter += 1
     accuracy = float(correct_counter) / total_counter
@@ -421,17 +412,20 @@ def get_file_set(file_list, language_set, is_train):
         if not file[0].isalpha():
             continue
         language_key, counter = get_language_key(file)
-        function_key = file[counter + 5]
-        if is_train and function_key == "r" and language_key in language_set:
+        function_key = file[counter + 6]
+        if is_train and function_key == "a" and language_key in language_set:
+            file_set.add(file)
+        elif not is_train and function_key == "s" and language_key in language_set:
             file_set.add(file)
     return file_set
 
 
 def get_language_key(file):
-    file = file.split('/')[-1]
     key = ""
     counter = 0
     for c in file:
+        if c == "/":
+            key = ""
         if c == "-":
             break
         key += c
@@ -439,94 +433,41 @@ def get_language_key(file):
     return key, counter
 
 
-# def read_multiple_data(data_path, file_set, isPredict):
-#     sentences = []
-#     if not isPredict:
-#         posCount = Counter()
-#         lanCounter = Counter()
-#         language_map = {}
-#         s_counter = 0
-#         for file in file_set:
-#             one_data_path = data_path + "/" + file
-#             language_key, _ = get_language_key(file)
-#             with open(one_data_path, 'r') as conllFP:
-#                 for sentence in read_conll(conllFP):
-#                     # wordsCount.update([node.norm for node in sentence if isinstance(node, ConllEntry)])
-#                     posCount.update([node.pos for node in sentence if isinstance(node, ConllEntry)])
-#                     ds = data_sentence(s_counter, sentence)
-#                     sentences.append(ds)
-#                     language_map[s_counter] = language_key
-#                     lanCounter.update([language_key])
-#                     s_counter += 1
-#         return {p: i for i, p in enumerate(posCount.keys())}, sentences, {l: i for i, l in
-#                                                                           enumerate(lanCounter.keys())}, language_map
-#     else:
-#         for file in file_set:
-#             one_data_path = data_path + "/" + file
-#             one_file_sentences = []
-#             with open(one_data_path, 'r') as conllFP:
-#                 s_counter = 0
-#                 for sentence in read_conll(conllFP):
-#                     ds = data_sentence(s_counter, sentence)
-#                     one_file_sentences.append(ds)
-#                     s_counter += 1
-#             sentences.append(one_file_sentences)
-#         return sentences
-
-def read_multiple_data(file_set, isPredict, isadd):
-    if isadd:
-        langs = np.array(
-            ['grc', 'grc_proiel', 'ar', 'eu', 'bg', 'ca', 'zh', 'cop', 'hr', 'cs', 'cs_cac', 'cs_cltt', 'da',
-             'nl', 'nl_lassysmall', 'en', 'en_esl', 'en_lines', 'et', 'fi', 'fi_ftb', 'fr', 'gl', 'gl_treegal',
-             'de', 'got', 'el', 'he', 'hi', 'hu', 'id', 'ga', 'it', 'ja', 'ja_ktc', 'kk', 'la', 'la_ittb',
-             'la_proiel',
-             'lv', 'no', 'cu', 'fa', 'pl', 'pt', 'pt_bosque', 'pt_br', 'ro', 'ru', 'ru_syntagrus', 'sa', 'sk',
-             'sl',
-             'sl_sst', 'es', 'es_ancora', 'sv', 'sv_lines', 'swl', 'ta', 'tr', 'uk', 'ug', 'vi'])
-        langs2i = {i: j for j, i in enumerate(langs)}
-        i2langs = {i: j for j, i in langs2i.items()}
-
+def read_multiple_data(data_path, file_set, isPredict):
     sentences = []
+    language_map = {}
+    s_counter = 0
     if not isPredict:
         posCount = Counter()
         lanCounter = Counter()
-        language_map = {}
-        s_counter = 0
         for file in file_set:
-            one_data_path = file
+            one_data_path = data_path + "/" + file
             language_key, _ = get_language_key(file)
             with open(one_data_path, 'r') as conllFP:
                 for sentence in read_conll(conllFP):
+                    # wordsCount.update([node.norm for node in sentence if isinstance(node, ConllEntry)])
                     posCount.update([node.pos for node in sentence if isinstance(node, ConllEntry)])
                     ds = data_sentence(s_counter, sentence)
                     sentences.append(ds)
                     language_map[s_counter] = language_key
-                    lanCounter.update([language_key])  # lang2i
+                    lanCounter.update([language_key])
                     s_counter += 1
-        if not isadd:
-            return {p: i for i, p in enumerate(posCount.keys())}, sentences, {l: i for i, l in enumerate(lanCounter.keys())}, language_map  # pos: str 2 id, sentences, languages: lang 2 id, language_map: id 2 lang
-        else:
-            return {p: i for i, p in enumerate(posCount.keys())}, sentences, langs2i, language_map
+        # wordsCount['<UNKNOWN>'] = 0
+        # posCount['<UNKNOWN-POS>'] = 0
+        # return {w: i for i, w in enumerate(wordsCount.keys())}, {p: i for i, p in enumerate(
+        return {p: i for i, p in enumerate(posCount.keys())}, sentences, {l: i for i, l in
+                                                                          enumerate(lanCounter.keys())}, language_map
     else:
         for file in file_set:
-            one_data_path = file
-            one_file_sentences = []
+            one_data_path = data_path + "/" + file
+            language_key, _ = get_language_key(file)
             with open(one_data_path, 'r') as conllFP:
-                s_counter = 0
                 for sentence in read_conll(conllFP):
                     ds = data_sentence(s_counter, sentence)
-                    one_file_sentences.append(ds)
+                    sentences.append(ds)
+                    language_map[s_counter] = language_key
                     s_counter += 1
-            sentences.append(one_file_sentences)
-        return sentences
-
-    # with open(conll_path, 'r') as conllFP:
-    #     s_counter = 0
-    #     for sentence in read_conll(conllFP):
-    #         ds = data_sentence(s_counter, sentence)
-    #         sentences.append(ds)
-    #         s_counter += 1
-    # return sentences
+        return sentences, language_map
 
 
 def construct_ml_batch_data(data_list, sentence_map, batch_size, sen_dim):
@@ -536,7 +477,7 @@ def construct_ml_batch_data(data_list, sentence_map, batch_size, sen_dim):
     for group in grouped:
         sub_batch_data = get_batch_data(group, batch_size)
         batch_data.extend(sub_batch_data)
-    random.shuffle(batch_data) #TODO hanwj
+    random.shuffle(batch_data)
     return batch_data
 
 
@@ -623,50 +564,90 @@ def construct_ml_predict_data(rule_samples):
     batch_input_pos_list = rule_samples[:, 0]
     batch_input_dir_list = rule_samples[:, 1]
     batch_cvalency_list = rule_samples[:, 2]
-    batch_input_sen_list = rule_samples[:, 3]
+    batch_lan_list = rule_samples[:, 3]
+    batch_input_sen_list = rule_samples[:, 4]
     batch_predict_data['pos'] = batch_input_pos_list
     batch_predict_data['dir'] = batch_input_dir_list
     batch_predict_data['cvalency'] = batch_cvalency_list
+    batch_predict_data['languages'] = batch_lan_list
     batch_predict_data['sentence'] = batch_input_sen_list
 
     return batch_predict_data
 
 
-def read_ml_corpus(currPath, names, stc_length, isPredict, isadd):
-    names = names.split('-')
-    full_names = language_bank(currPath, names, stc_length, isPredict)
-    return read_multiple_data(full_names, isPredict=isPredict, isadd=isadd)
+def construct_ml_pos_data(sentences, pos, languages, language_map):
+    data_list = list()
+    sen_idx = 0
+    sentence_map = {}
+    data_pos = []
+    for s in sentences:
+        _, s_pos = s.set_data_list(None, pos)
+        s_data_list = list()
+        s_data_list.append(s_pos)
+        data_pos.append(s_pos)
+        s_data_list.append(languages[language_map[sen_idx]])
+        s_data_list.append([sen_idx])
+        data_list.append(s_data_list)
+        sentence_map[sen_idx] = s_pos
+        sen_idx += 1
+    data_pos = np.array(data_pos)
+    return data_list, data_pos, sentence_map
 
 
-def language_bank(currPath, names, stc_length, isPredict):
-    langsPathes = np.array(['UD_Ancient_Greek', 'UD_Ancient_Greek-PROIEL', 'UD_Arabic', 'UD_Basque', 'UD_Bulgarian',
-                            'UD_Catalan', 'UD_Chinese', 'UD_Coptic', 'UD_Croatian', 'UD_Czech', 'UD_Czech-CAC',
-                            'UD_Czech-CLTT', 'UD_Danish', 'UD_Dutch', 'UD_Dutch-LassySmall', 'UD_English',
-                            'UD_English-ESL', 'UD_English-LinES', 'UD_Estonian', 'UD_Finnish', 'UD_Finnish-FTB',
-                            'UD_French', 'UD_Galician', 'UD_Galician-TreeGal', 'UD_German', 'UD_Gothic', 'UD_Greek',
-                            'UD_Hebrew', 'UD_Hindi', 'UD_Hungarian', 'UD_Indonesian', 'UD_Irish', 'UD_Italian',
-                            'UD_Japanese', 'UD_Japanese-KTC', 'UD_Kazakh', 'UD_Latin', 'UD_Latin-ITTB',
-                            'UD_Latin-PROIEL',
-                            'UD_Latvian', 'UD_Norwegian', 'UD_Old_Church_Slavonic', 'UD_Persian', 'UD_Polish',
-                            'UD_Portuguese',
-                            'UD_Portuguese-Bosque', 'UD_Portuguese-BR', 'UD_Romanian', 'UD_Russian',
-                            'UD_Russian-SynTagRus',
-                            'UD_Sanskrit', 'UD_Slovak', 'UD_Slovenian', 'UD_Slovenian-SST', 'UD_Spanish',
-                            'UD_Spanish-AnCora',
-                            'UD_Swedish', 'UD_Swedish-LinES', 'UD_Swedish_Sign_Language', 'UD_Tamil', 'UD_Turkish',
-                            'UD_Ukrainian', 'UD_Uyghur', 'UD_Vietnamese'])
-    langs = np.array(['grc', 'grc_proiel', 'ar', 'eu', 'bg', 'ca', 'zh', 'cop', 'hr', 'cs', 'cs_cac', 'cs_cltt', 'da',
-                      'nl', 'nl_lassysmall', 'en', 'en_esl', 'en_lines', 'et', 'fi', 'fi_ftb', 'fr', 'gl', 'gl_treegal',
-                      'de', 'got', 'el', 'he', 'hi', 'hu', 'id', 'ga', 'it', 'ja', 'ja_ktc', 'kk', 'la', 'la_ittb',
-                      'la_proiel',
-                      'lv', 'no', 'cu', 'fa', 'pl', 'pt', 'pt_bosque', 'pt_br', 'ro', 'ru', 'ru_syntagrus', 'sa', 'sk',
-                      'sl',
-                      'sl_sst', 'es', 'es_ancora', 'sv', 'sv_lines', 'swl', 'ta', 'tr', 'uk', 'ug', 'vi'])
-    train_or_test = 'test' if isPredict else 'train'
-    langs2i = {i:j for j,i in enumerate(langs)}
-    for i in names:
-        if i not in langs:
-            assert 'Langue '+i+' not in the corpus !'
-    lan = [os.path.join(os.path.join(currPath, langsPathes[langs2i[i]]), i+'-ud-'+train_or_test+'-nopunct-len'+str(stc_length)+'.conllu') for i in names]
-    # currPath = 'data/ud-treebanks-v1.4/'
-    return lan
+def eval_ml(predicted, gold, test_path, log_path, language_map, languages, epoch):
+    correct_counter = np.zeros(len(languages))
+    total_counter = np.zeros(len(languages))
+    for s in range(len(gold)):
+        ps = predicted[s][0]
+        gs = gold[s]
+        lan_id = languages[language_map[s]]
+        for i, e in enumerate(gs.entries):
+            if i == 0:
+                continue
+            if ps[i] == e.parent_id:
+                correct_counter[lan_id] += 1
+            total_counter[lan_id] += 1
+    accuracy = correct_counter / total_counter
+    for l in languages.keys():
+        print 'UAS is ' + str(accuracy[languages[l]] * 100) + '% for ' + l
+    print 'UAS is '+ str(np.mean(accuracy)*100)+ '% for average'
+    # f_w = open(test_path, 'w')
+    # for s, sentence in enumerate(gold):
+    #     for entry in sentence.entries:
+    #         f_w.write(str(entry.norm) + ' ')
+    #     f_w.write('\n')
+    #     for entry in sentence.entries:
+    #         f_w.write(str(entry.pos) + ' ')
+    #     f_w.write('\n')
+    #     for i in range(len(sentence.entries)):
+    #         f_w.write(str(sentence.entries[i].parent_id) + ' ')
+    #     f_w.write('\n')
+    #     for i in range(len(sentence.entries)):
+    #         f_w.write(str(int(predicted[s][1][i])) + ' ')
+    #     f_w.write('\n')
+    #     for i in range(len(sentence.entries)):
+    #         f_w.write(str(int(predicted[s][0][i])) + ' ')
+    #     f_w.write('\n')
+    #     f_w.write('\n')
+    # f_w.close()
+    if epoch == 0:
+        log = open(log_path, 'w')
+        log.write("UAS for epoch " + str(epoch))
+        log.write('\n')
+        for l in languages.keys():
+            log.write('\n')
+            log.write(str(accuracy[languages[l]])+" "+l)
+            log.write('\n')
+        log.write('\n')
+        log.write(str(np.mean(accuracy))+" average")
+        log.write('\n')
+    else:
+        log = open(log_path, 'a')
+        log.write("UAS for epoch " + str(epoch))
+        log.write('\n')
+        for l in languages.keys():
+            log.write('\n')
+            log.write(str(accuracy[languages[l]])+" "+l)
+            log.write('\n')
+        log.write(str(np.mean(accuracy)) + " average")
+        log.write('\n')
