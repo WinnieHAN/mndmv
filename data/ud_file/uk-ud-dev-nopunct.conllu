@@ -1,0 +1,204 @@
+1	Не	не	PART	PART	_	2	neg	_	_
+2	забуваймо	забувати	VERB	VERB:IMPERF:IMPR:P:1	Aspect=Imp|Mood=Imp|Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	це	це	PRON	NOUN:INANIM:N:V_NAZ:&PRON:DEM	Animacy=Inan|Case=Nom|Gender=Neut|PronType=Dem	6	nsubj	_	_
+4	ще	ще	ADV	ADV	_	6	advmod	_	_
+5	не	не	PART	PART	_	6	neg	_	_
+6	все	все	PRON	NOUN:INANIM:N:V_NAZ:&PRON:GEN:V-U	Animacy=Inan|Case=Nom|Gender=Neut|PronType=Tot	2	parataxis	_	SpaceAfter=No
+
+1	Хлопець	хлопець	NOUN	NOUN:ANIM:M:V_NAZ	Animacy=Anim|Case=Nom|Gender=Masc	4	nsubj	_	SpaceAfter=No
+2	сказав	сказати	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	4	parataxis	_	_
+3	Микола	Микола	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME	Animacy=Anim|Case=Nom|Gender=Masc	2	nsubj	_	SpaceAfter=No
+4	пішов	піти	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+5	собі	себе	PRON	NOUN:V_DAV:&PRON:REFL	Case=Dat|PronType=Prs|Reflex=Yes	4	expl	_	_
+6	раніше	раніше	ADV	ADV:COMPR	Degree=Cmp	4	advmod	_	SpaceAfter=No
+
+1	Микола	Микола	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME	Animacy=Anim|Case=Nom|Gender=Masc	2	nsubj	_	_
+2	сказав	сказати	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	Хлопець	хлопець	NOUN	NOUN:ANIM:M:V_NAZ	Animacy=Anim|Case=Nom|Gender=Masc	4	nsubj	_	_
+4	пішов	піти	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	2	ccomp	_	_
+5	раніше	раніше	ADV	ADV:COMPR	Degree=Cmp	4	advmod	_	SpaceAfter=No
+
+1	Микола	Микола	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME	Animacy=Anim|Case=Nom|Gender=Masc	2	nsubj	_	_
+2	сказав	сказати	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	що	що	SCONJ	CONJ:SUBORD	_	5	mark	_	_
+4	Хлопець	хлопець	NOUN	NOUN:ANIM:M:V_NAZ	Animacy=Anim|Case=Nom|Gender=Masc	5	nsubj	_	_
+5	пішов	піти	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	2	ccomp	_	_
+6	раніше	раніше	ADV	ADV:COMPR	Degree=Cmp	5	advmod	_	SpaceAfter=No
+
+1	Хлопець	хлопець	NOUN	NOUN:ANIM:M:V_NAZ	Animacy=Anim|Case=Nom|Gender=Masc	3	nsubj	_	_
+2	пішов	піти	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	раніше	раніше	ADV	ADV:COMPR	Degree=Cmp	2	advmod	_	SpaceAfter=No
+4	сказав	сказати	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	2	parataxis	_	_
+5	Микола	Микола	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME	Animacy=Anim|Case=Nom|Gender=Masc	4	nsubj	_	SpaceAfter=No
+
+1	Бородаті	бородатий	ADJ	ADJ:P:V_NAZ	Case=Nom|Number=Plur	2	amod	_	_
+2	дракони	дракон	NOUN	NOUN:ANIM:P:M:V_NAZ	Animacy=Anim|Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	_
+3	полюють	полювати	VERB	VERB:IMPERF:PRES:P:3	Aspect=Imp|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	зором	зір	NOUN	NOUN:INANIM:M:V_ORU	Animacy=Inan|Case=Ins|Gender=Masc	3	nmod	_	SpaceAfter=No
+5	їм	вони	PRON	NOUN:P:V_DAV:&PRON:PERS:3	Case=Dat|Number=Plur|Person=3|PronType=Prs	6	iobj	_	_
+6	потрібно	потрібно	ADV	ADV:COMPB	Degree=Pos	3	parataxis	_	_
+7	бачити	бачити	VERB	VERB:IMPERF:INF	Aspect=Imp|VerbForm=Inf	6	xcomp	_	SpaceAfter=No
+8	як	як	SCONJ	CONJ:SUBORD	_	9	mark	_	_
+9	рухається	рухатися	VERB	VERB:REV:IMPERF:PRES:S:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
+10	їжа	їжа	NOUN	NOUN:INANIM:F:V_NAZ	Animacy=Inan|Case=Nom|Gender=Fem	9	nsubj	_	SpaceAfter=No
+
+1	Богдан	Богдан	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME:XP1	Animacy=Anim|Case=Nom|Gender=Masc	2	nsubj	_	_
+2	живе	жити	VERB	VERB:IMPERF:PRES:S:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	у	у	ADP	PREP:RV_MIS:V-U	Case=Loc	4	case	_	_
+4	Києві	Київ	PROPN	NOUN:INANIM:M:V_MIS:PROP	Animacy=Inan|Case=Loc|Gender=Masc	2	nmod	_	SpaceAfter=No
+5	а	а	CONJ	CONJ:COORD	_	2	cc	_	_
+6	Ніна	Ніна	PROPN	NOUN:ANIM:F:V_NAZ:PROP:FNAME	Animacy=Anim|Case=Nom|Gender=Fem	1	remnant	_	_
+7	у	у	ADP	PREP:RV_MIS:V-U	Case=Loc	8	case	_	_
+8	Сумах	сума	NOUN	NOUN:INANIM:P:F:V_MIS	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	4	remnant	_	SpaceAfter=No
+
+1	Павло	Павло	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME	Animacy=Anim|Case=Nom|Gender=Masc	2	nsubj	_	_
+2	виграв	виграти	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	золоту	золотий	ADJ	ADJ:F:V_ZNA	Case=Acc|Gender=Fem	4	amod	_	_
+4	медаль	медаль	NOUN	NOUN:INANIM:F:V_ZNA	Animacy=Inan|Case=Acc|Gender=Fem	2	dobj	_	SpaceAfter=No
+5	Тарас	Тарас	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME	Animacy=Anim|Case=Nom|Gender=Masc	1	remnant	_	_
+6	срібну	срібний	ADJ	ADJ:F:V_ZNA	Case=Acc|Gender=Fem	3	remnant	_	SpaceAfter=No
+7	а	а	CONJ	CONJ:COORD	_	9	discourse	_	_
+8	Петро	Петро	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME	Animacy=Anim|Case=Nom|Gender=Masc	5	remnant	_	_
+9	бронзову	бронзовий	ADJ	ADJ:F:V_ZNA	Case=Acc|Gender=Fem	6	remnant	_	SpaceAfter=No
+
+1	Іди	іти	VERB	VERB:IMPERF:IMPR:S:2	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+2	напра	напра	X	X	_	3	reparandum	_	SpaceAfter=No
+3	наліво	наліво	ADV	ADV	_	1	advmod	_	_
+
+1	Маріє	Марія	PROPN	NOUN:ANIM:F:V_KLY:PROP:FNAME	Animacy=Anim|Case=Voc|Gender=Fem	4	vocative	_	SpaceAfter=No
+2	як	як	ADV	ADV:&PRON:INT	PronType=Int	4	advmod	_	_
+3	Ваші	ваш	DET	ADJ:P:V_NAZ:POSS:&PRON:PERS:2	Case=Nom|Number=Plur|Person=2|Poss=Yes|PronType=Prs	4	det	_	_
+4	справи	справа	NOUN	NOUN:INANIM:P:F:V_NAZ	Animacy=Inan|Case=Nom|Gender=Fem|Number=Plur	0	root	_	SpaceAfter=No
+
+1	С’юзі	С’юзі	PROPN	NOUN:ANIM:F:V_KLY:PROP:FNAME	Animacy=Anim|Case=Voc|Gender=Fem	6	vocative	_	SpaceAfter=No
+2	мила	милий	ADJ	ADJ:F:V_KLY:COMPB	Case=Voc|Degree=Pos|Gender=Fem	4	amod	_	_
+3	моя	мій	DET	ADJ:F:V_KLY:POSS:&PRON:PERS:1	Case=Voc|Gender=Fem|Person=1|Poss=Yes|PronType=Prs	4	det	_	_
+4	С’юзі	С’юзі	PROPN	NOUN:ANIM:F:V_KLY:PROP:FNAME	Animacy=Anim|Case=Voc|Gender=Fem	1	appos	_	SpaceAfter=No
+5	не	не	PART	PART	_	6	neg	_	_
+6	втікай	втікати	VERB	VERB:IMPERF:IMPR:S:2:V-U	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+7	від	від	ADP	PREP:RV_ROD	Case=Gen	8	case	_	_
+8	мене	я	PRON	NOUN:ANIM:S:V_ROD:&PRON:PERS:1	Animacy=Anim|Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nmod	_	_
+9	в	в	ADP	PREP:RV_ZNA:V-U	Case=Acc	10	case	_	_
+10	світ	світ	NOUN	NOUN:INANIM:M:V_ZNA	Animacy=Inan|Case=Acc|Gender=Masc	6	nmod	_	_
+11	своїх	свій	DET	ADJ:P:V_ROD:POSS:&PRON:REFL	Case=Gen|Number=Plur|Poss=Yes|PronType=Prs|Reflex=Yes	12	det	_	_
+12	ілюзій	ілюзія	NOUN	NOUN:INANIM:P:F:V_ROD	Animacy=Inan|Case=Gen|Gender=Fem|Number=Plur	10	nmod	_	SpaceAfter=No
+
+1	Василю	Василь	PROPN	NOUN:ANIM:M:V_KLY:PROP:FNAME	Animacy=Anim|Case=Voc|Gender=Masc	6	vocative	_	_
+2	Петровичу	Петрович	PROPN	NOUN:ANIM:M:V_KLY:PROP:PATR	Animacy=Anim|Case=Voc|Gender=Masc	1	name	_	SpaceAfter=No
+3	ну	ну	PART	PART	_	4	discourse	_	_
+4	що	що	PRON	NOUN:INANIM:N:V_NAZ:&PRON:INT	Animacy=Inan|Case=Nom|Gender=Neut|PronType=Int	0	root	_	_
+5	це	це	PART	PART	_	4	discourse	_	_
+6	Ви	ви	PRON	NOUN:ANIM:P:V_KLY:&PRON:PERS:2	Animacy=Anim|Case=Voc|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	SpaceAfter=No
+
+1	Боже	бог	NOUN	NOUN:ANIM:M:V_KLY	Animacy=Anim|Case=Voc|Gender=Masc	4	vocative	_	SpaceAfter=No
+2	як	як	ADV	ADV:&PRON:INT	PronType=Int	4	advmod	_	_
+3	далі	далі	ADV	ADV	_	4	advmod	_	_
+4	жити	жити	VERB	VERB:IMPERF:INF	Aspect=Imp|VerbForm=Inf	0	root	_	SpaceAfter=No
+
+1	Пане	пан	NOUN	NOUN:ANIM:M:V_KLY	Animacy=Anim|Case=Voc|Gender=Masc	2	nmod	_	_
+2	Президенте	президент	NOUN	NOUN:ANIM:M:V_KLY	Animacy=Anim|Case=Voc|Gender=Masc	4	vocative	_	SpaceAfter=No
+3	скільки	скільки	ADV	ADV:&PRON:INT	Case=Nom|Number=Plur|NumType=Card|PronType=Int	4	advmod	_	_
+4	можна	можна	ADV	ADV	_	0	root	_	SpaceAfter=No
+
+1	Громадяни	громадянин	NOUN	NOUN:ANIM:P:M:V_KLY	Animacy=Anim|Case=Voc|Gender=Masc|Number=Plur	4	vocative	_	SpaceAfter=No
+2	ану	ану	INTJ	INTJ	_	4	discourse	_	_
+3	в	в	ADP	PREP:RV_ZNA:V-U	Case=Acc	4	case	_	_
+4	чергу	черга	NOUN	NOUN:INANIM:F:V_ZNA	Animacy=Inan|Case=Acc|Gender=Fem	0	root	_	SpaceAfter=No
+
+1	Привіт	привіт	NOUN	NOUN:INANIM:M:V_NAZ	Animacy=Inan|Case=Nom|Gender=Masc	0	root	_	_
+
+1	Чи	чи	CONJ	CONJ:COORD	_	3	mark	_	_
+2	я	я	PRON	NOUN:ANIM:S:V_NAZ:&PRON:PERS:1	Animacy=Anim|Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	сплю	спати	VERB	VERB:IMPERF:PRES:S:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	чи	чи	CONJ	CONJ:COORD	_	6	mark	_	_
+5	то	то	PRON	NOUN:INANIM:N:V_NAZ:&PRON:DEM	Animacy=Inan|Case=Nom|Gender=Neut|PronType=Dem	6	discourse	_	_
+6	сниться	снитися	VERB	VERB:REV:IMPERF:PRES:S:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+7	мені	я	PRON	NOUN:ANIM:S:V_DAV:&PRON:PERS:1	Animacy=Anim|Case=Dat|Number=Sing|Person=1|PronType=Prs	6	iobj	_	SpaceAfter=No
+
+1	Ой	ой	INTJ	INTJ	_	9	discourse	_	SpaceAfter=No
+2	говорила	говорити	VERB	VERB:IMPERF:PAST:F	Aspect=Imp|Gender=Fem|Mood=Ind|Tense=Past|VerbForm=Fin	9	parataxis	_	_
+3	чиста	чистий	ADJ	ADJ:F:V_NAZ:COMPB	Case=Nom|Degree=Pos|Gender=Fem	4	amod	_	_
+4	вода	вода	NOUN	NOUN:INANIM:F:V_NAZ	Animacy=Inan|Case=Nom|Gender=Fem	2	nsubj	_	SpaceAfter=No
+5	чому	чому	ADV	ADV:&PRON:INT	PronType=Int	9	advmod	_	_
+6	я	я	PRON	NOUN:ANIM:S:V_NAZ:&PRON:PERS:1	Animacy=Anim|Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+7	ніченьки	ніченька	NOUN	NOUN:INANIM:F:V_ROD	Animacy=Inan|Case=Gen|Gender=Fem	9	nmod	_	_
+8	не	не	PART	PART	_	9	neg	_	_
+9	сплю	спати	VERB	VERB:IMPERF:PRES:S:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+
+1	Сиджу	сидіти	VERB	VERB:IMPERF:PRES:S:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	на	на	ADP	PREP:RV_MIS	Case=Loc	3	case	_	_
+3	парах	пара	NOUN	NOUN:INANIM:P:F:V_MIS	Animacy=Inan|Case=Loc|Gender=Fem|Number=Plur	1	nmod	_	_
+4	і	і	CONJ	CONJ:COORD	_	1	cc	_	_
+5	не	не	PART	PART	_	6	neg	_	_
+6	знаю	знати	VERB	VERB:IMPERF:PRES:S:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	_	SpaceAfter=No
+7	чи	чи	CONJ	CONJ:COORD	_	10	mark	_	_
+8	то	то	PART	PART	_	10	discourse	_	_
+9	я	я	PRON	NOUN:ANIM:S:V_NAZ:&PRON:PERS:1	Animacy=Anim|Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_
+10	сплю	спати	VERB	VERB:IMPERF:PRES:S:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	ccomp	_	SpaceAfter=No
+11	чи	чи	CONJ	CONJ:COORD	_	13	mark	_	_
+12	то	то	PART	PART	_	13	discourse	_	_
+13	дрімаю	дрімати	VERB	VERB:IMPERF:PRES:S:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	parataxis	_	SpaceAfter=No
+
+1	Ото	ото	PART	PART	_	4	discourse	_	_
+2	б	б	PART	PART	_	4	discourse	_	_
+3	ти	ти	PRON	NOUN:ANIM:S:V_NAZ:&PRON:PERS:2	Animacy=Anim|Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	здивувався	здивуватися	VERB	VERB:REV:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+
+1	Так	так	PART	PART	_	2	mark	_	_
+2	як	як	ADV	ADV:&PRON:INT	PronType=Int	4	advmod	_	_
+3	же	же	PART	PART	_	2	mark	_	_
+4	інакше	інакше	ADV	ADV:&PRON:IND	PronType=Ind	0	root	_	SpaceAfter=No
+
+1	Що	що	PRON	NOUN:INANIM:N:V_NAZ:&PRON:INT	Animacy=Inan|Case=Nom|Gender=Neut|PronType=Int	4	nsubj	_	_
+2	то	то	PART	PART	_	1	mark	_	_
+3	за	за	PART	PART	_	4	discourse	_	_
+4	звір	звір	NOUN	NOUN:ANIM:M:V_NAZ:XP1	Animacy=Anim|Case=Nom|Gender=Masc	0	root	_	_
+5	такий	такий	DET	ADJ:M:V_NAZ:&PRON:DEM	Case=Nom|Gender=Masc|PronType=Dem	4	det	_	SpaceAfter=No
+6	теорема	теорема	NOUN	NOUN:INANIM:F:V_NAZ	Animacy=Inan|Case=Nom|Gender=Fem	4	appos	_	_
+7	Піфагора	Піфагор	PROPN	NOUN:ANIM:M:V_ROD:PROP:FNAME	Animacy=Anim|Case=Gen|Gender=Masc	6	nmod	_	SpaceAfter=No
+
+1	Нічого	ніщо	PRON	NOUN:INANIM:V_ROD:&PRON:NEG	Animacy=Inan|Case=Gen|PronType=Neg	3	dobj	_	_
+2	не	не	PART	PART	_	3	neg	_	_
+3	пригадую	пригадувати	VERB	VERB:IMPERF:PRES:S:1	Aspect=Imp|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+
+1	Мартин	Мартин	PROPN	NOUN:ANIM:M:V_NAZ:PROP:FNAME:XP1	Animacy=Anim|Case=Nom|Gender=Masc	3	nsubj	_	_
+2	ся	ся	PART	PART:RARE	_	3	expl	_	_
+3	боїть	боїть	VERB	VERB:REV:IMPERF:PRES:S:3	Aspect=Imp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	собак	собака	NOUN	NOUN:ANIM:P:M:V_ROD:XP2	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	3	dobj	_	SpaceAfter=No
+
+1	Піду	піти	VERB	VERB:PERF:FUTR:S:1	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
+2	собі	себе	PRON	NOUN:V_DAV:&PRON:REFL	Case=Dat|PronType=Prs|Reflex=Yes	1	nmod	_	_
+3	в	в	ADP	PREP:RV_ZNA:V-U	Case=Acc	4	case	_	_
+4	садочок	садочок	NOUN	NOUN:INANIM:M:V_ZNA	Animacy=Inan|Case=Acc|Gender=Masc	1	nmod	_	SpaceAfter=No
+5	наїмся	наїстися	VERB	VERB:REV:PERF:FUTR:S:1	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	1	parataxis	_	_
+6	хробачків	хробачок	NOUN	NOUN:ANIM:P:M:V_ROD	Animacy=Anim|Case=Gen|Gender=Masc|Number=Plur	5	dobj	_	SpaceAfter=No
+
+1	Сиди	сидіти	VERB	VERB:IMPERF:IMPR:S:2	Aspect=Imp|Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+2	собі	себе	PRON	NOUN:V_DAV:&PRON:REFL	Case=Dat|PronType=Prs|Reflex=Yes	1	nmod	_	_
+3	тихо	тихо	ADV	ADV:COMPB	Degree=Pos	1	advmod	_	SpaceAfter=No
+
+1	Він	він	PRON	NOUN:M:V_NAZ:&PRON:PERS:3	Case=Nom|Gender=Masc|Person=3|PronType=Prs	3	nsubj	_	_
+2	був	бути	VERB	VERB:IMPERF:PAST:M	Aspect=Imp|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	3	aux	_	_
+3	пішов	піти	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	але	але	CONJ	CONJ:COORD	_	3	cc	_	_
+5	повернувся	повернутися	VERB	VERB:REV:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	3	parataxis	_	SpaceAfter=No
+
+1	Він	він	PRON	NOUN:M:V_NAZ:&PRON:PERS:3	Case=Nom|Gender=Masc|Person=3|PronType=Prs	2	nsubj	_	_
+2	пішов	піти	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+3	був	бути	VERB	VERB:IMPERF:PAST:M	Aspect=Imp|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	2	aux	_	SpaceAfter=No
+4	але	але	CONJ	CONJ:COORD	_	2	cc	_	_
+5	повернувся	повернутися	VERB	VERB:REV:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	2	parataxis	_	SpaceAfter=No
+
+1	Вже	вже	ADV	ADV:V-U	_	4	advmod	_	_
+2	бим	бим	PART	PART	_	4	aux	_	_
+3	була	бути	VERB	VERB:IMPERF:PAST:F	Aspect=Imp|Gender=Fem|Mood=Ind|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	їхала	їхати	VERB	VERB:IMPERF:PAST:F	Aspect=Imp|Gender=Fem|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	вже	вже	ADV	ADV:V-U	_	8	advmod	_	_
+6	бим	бим	PART	PART	_	8	aux	_	_
+7	була	бути	VERB	VERB:IMPERF:PAST:F	Aspect=Imp|Gender=Fem|Mood=Ind|Tense=Past|VerbForm=Fin	8	aux	_	_
+8	йшла	йти	VERB	VERB:IMPERF:PAST:F	Aspect=Imp|Gender=Fem|Mood=Ind|Tense=Past|VerbForm=Fin	4	parataxis	_	SpaceAfter=No
+
+1	Пішов	піти	VERB	VERB:PERF:PAST:M	Aspect=Perf|Gender=Masc|Mood=Ind|Tense=Past|VerbForm=Fin	0	root	_	_
+2	би	би	PART	PART	_	1	aux	_	_
+3	вже	вже	ADV	ADV:V-U	_	1	advmod	_	SpaceAfter=No
+

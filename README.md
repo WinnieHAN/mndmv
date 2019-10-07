@@ -1,81 +1,38 @@
-# DONE: line 142  (ml_dmv_parser.py )   batch_predict_lan_v should be manually  given a value. I will revise it later.
+# multi-lingual grammar induction
 
-# DONE: line 308 (def evaluate_batch_score of ml_dmv_model.py) no use neural:
-# if self.initial_flag: ---> if True:
+This is PyTorch implementation of the [paper](http://faculty.sist.shanghaitech.edu.cn/faculty/tukw/emnlp19mult.pdf):
+```
+Multilingual Grammar Induction with Continuous Language Identification
+Wenjuan Han, Ge Wang, Yong Jiang, Kewei Tu
+EMNLP 2019
+```
 
-if set non_neural_iter>epochs, then it is DMV model.
+The code performs unsupervised grammar learning in the dataset of 15 languages selected from UD treebanks v1.4.
 
-python src/ml_dmv_parser.py --train en-fr --dev en --child_neural --em_type em --cvalency 2 --do_eval --ml_comb_type 1 --bidirectional --child_only --em_iter 1 --function_mask
+Please concact hanwj@shanghaitech.edu.cn or wangge@shanghaitech.edu.cn if you have any questions.
 
----10.25 for ML-CLS2-1---
-python src/ml_dmv_parser.py --train en --child_neural --em_type em --cvalency 2 --do_eval --ml_comb_type 2 --stc_model_type 1 --child_only --em_iter 1 --function_mask --non_dscrm_iter 20 --epochs 70
+## Environments
 
-# lv_dmv_parser
-Dependency parser using DMV model with latent variables
-Parameters with best performance using vanilla DMV:
---train
-data/wsj10_tr
---dev
-data/wsj10_d
---epoch
-25
---split_epoch
-4
---param_smoothing
-0.1
---split_factor
-2
---cvalency
-1
---em_type
-viterbi
---batch
-1000
---sub_batch
-1000
---do_eval
+- Python 2.7
+- PyTorch >=1.0
+- Numpy  1.15.4
 
-Parameters with best performance using split-DMV(viterbi):
---train
-data/wsj10_tr
---dev
-data/wsj10_d
---epoch
-25
---do_eval
---use_lex
---split_epoch
-4
---param_smoothing
-0.1
---split_factor
-2
---cvalency
-1
---do_split
---em_type
-viterbi
+## Data
 
-Parameters with best performance using split-DMV(lateen):
---train
-data/wsj10_tr
---dev
-data/wsj10_d
---epoch
-25
---do_eval
---use_lex
---split_epoch
-4
---param_smoothing
-0.1
---split_factor
-2
---cvalency
-2
---do_split
---em_type
-viterbi
---em_after_split
+run:
+```shell
+python ml_dmv_parser.py --cvalency 2 --do_eval --neural_epoch 1 --function_mask --lr 0.001 --epoch 70 --use_neural --embed_languages --em_type em --child_only
+```
+The grammar induction is by default set to be performed on 15 selected languages, you can customize your own language selection by changing the contents in the language_list file
 
+
+## Reference
+```
+@inproceedings{hwjt2019multi,
+    title = {Multilingual Grammar Induction with Continuous Language Identification},
+    author = {Wenjuan Han and Ge Wang and Yong Jiang and Kewei Tu },
+    booktitle = {Proceedings of EMNLP},
+    year = {2019}
+}
+```
 

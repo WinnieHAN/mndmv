@@ -1,0 +1,61 @@
+1	AA	aa	PROPN	NP00000	_	0	root	_	Treeler:sentence
+
+1	Ningunha	ningún	DET	DI0FS0	_	5	det	_	Treeler:spec
+2	de	de	ADP	SPS00	_	1	case	_	Treeler:s
+3	elas	el	PRON	PP3FP000	_	2	nmod	_	Treeler:sn
+4	se	se	PRON	PP3CN000	_	5	dobj	_	Treeler:cd
+5	chegou	chegar	VERB	VMIS3S0	_	0	root	_	Treeler:sentence
+6	a	a	ADP	SPS00	_	5	case	_	Treeler:creg
+7	instalar	instalar	VERB	VMN0000	_	6	ccomp	_	Treeler:S
+8	por	por	ADP	SPS00	_	7	case	_	Treeler:cc
+9	a	o	DET	DA0FS0	_	10	det	_	Treeler:spec
+10	oposición	oposición	NOUN	NCFS000	_	8	nmod	_	Treeler:sn
+11	directa	directo	ADJ	AQ0FS0	_	10	amod	_	Treeler:s.a
+12	de	de	ADP	SPS00	_	10	case	_	Treeler:sp
+13	a	o	DET	DA0FS0	_	14	det	_	Treeler:spec
+14	poboación	poboación	NOUN	NCFS000	_	12	nmod	_	Treeler:sn
+
+1	Táboa	táboa	NOUN	NCFS000	_	0	root	_	Treeler:sentence
+2	44	44	NUM	Z	_	1	amod	_	Treeler:s.a
+
+1	En	en	ADP	SPS00	_	0	root	_	Treeler:sentence
+2	1985	1985	NUM	Z	_	1	nmod	_	Treeler:sn
+3	a	o	DET	DA0FS0	_	4	det	_	Treeler:spec
+4	Administración	administración	NOUN	NCFS000	_	1	nmod	_	Treeler:sn
+5	de	de	ADP	SPS00	_	4	case	_	Treeler:sp
+6	St	st	PROPN	NP00000	_	5	nmod	_	Treeler:sn
+
+1	Artigo	artigo	NOUN	NCMS000	_	0	root	_	Treeler:sentence
+2	61	61	NUM	Z	_	1	nmod	_	Treeler:sn
+
+1	Táboa	táboa	NOUN	NCFS000	_	0	root	_	Treeler:sentence
+2	156	156	NUM	Z	_	1	nmod	_	Treeler:sn
+
+1	Así	así	ADV	RG	_	2	det	_	Treeler:spec
+2	mesmo	mesmo	ADV	RG	_	4	case	_	Treeler:cc
+3	serán	ser	VERB	VSIF3P0	_	4	aux	_	Treeler:v
+4	publicados	publicar	VERB	VMP00PM	_	0	root	_	Treeler:sentence
+5	en	en	ADP	SPS00	_	4	case	_	Treeler:cc
+6	o	o	DET	DA0MS0	_	7	det	_	Treeler:spec
+7	Boletín	boletín	NOUN	NCMS000	_	5	nmod	_	Treeler:sn
+8	Oficial	oficial	ADJ	AQ0CS0	_	7	amod	_	Treeler:s.a
+9	de	de	ADP	SPS00	_	7	case	_	Treeler:sp
+10	el	el	PRON	PP3MS000	_	9	nmod	_	Treeler:sn
+11	Estado	estado	NOUN	NCMS000	_	9	nmod	_	Treeler:sn
+
+1	Teñen	ter	VERB	VMIP3P0	_	0	root	_	Treeler:sentence
+2	moitas	moito	DET	DI0FP0	_	3	det	_	Treeler:spec
+3	razóns	razón	NOUN	NCFP000	_	1	nsubj	_	Treeler:suj
+4	históricas	histórico	ADJ	AQ0FP0	_	3	amod	_	Treeler:s.a
+5	en	en	ADP	SPS00	_	1	case	_	Treeler:cc
+6	común	común	ADJ	AQ0CS0	_	5	amod	_	Treeler:s.a
+7	pero	pero	CONJ	CC	_	1	cc	_	Treeler:coord
+8	os	o	DET	DA0MP0	_	9	det	_	Treeler:spec
+9	espazos	espazo	NOUN	NCMP000	_	13	nsubj	_	Treeler:suj
+10	de	de	ADP	SPS00	_	9	case	_	Treeler:sp
+11	actuación	actuación	NOUN	NCFS000	_	10	nmod	_	Treeler:sn
+12	non	non	PART	RN	_	13	advmod	_	Treeler:mod
+13	son	ser	VERB	VSIP1S0	_	1	ccomp	_	Treeler:S
+14	necesariamente	necesariamente	ADV	RG	_	15	det	_	Treeler:spec
+15	unívocos	unívoco	ADJ	AQ0MP0	_	13	cop	_	Treeler:atr
+

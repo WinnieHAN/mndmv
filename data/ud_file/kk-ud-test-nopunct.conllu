@@ -1,0 +1,572 @@
+1	Бразилия	Бразилия	PROPN	NP	_	9	nsubj	_	top|nom
+2	өз	өз	DET	DET	_	3	det	_	ref
+3	жерінде	жер	NOUN	N	_	7	nmod	_	px3sp|loc
+4	чемпионатты	чемпионат	NOUN	N	_	7	dobj	_	acc
+5	екі	екі	NUM	NUM	_	6	nummod	_	_
+6	рет	рет	NOUN	N	_	7	nmod	_	nom
+7	өткізген	өткіз	VERB	V	_	9	acl:relcl	_	tv|gpr_past
+8	бесінші	бес	NUM	NUM	_	9	amod	_	ord
+9	ел	ел	NOUN	N	_	0	root	_	nom
+10	болды	бол	VERB	V	_	9	cop	_	iv|ifi|p3|sg
+11	Мексика	Мексика	PROPN	NP	_	15	conj	_	top|nom
+12	Италия	Италия	PROPN	NP	_	15	conj	_	top|nom
+13	Франция	Франция	PROPN	NP	_	15	conj	_	top|nom
+14	және	және	CONJ	CNJCOO	_	15	cc	_	_
+15	Германиядан	Германия	PROPN	NP	_	9	nmod	_	top|abl
+16	кейін	кейін	ADP	POST	_	15	case	_	_
+
+1	1941	1941	NUM	NUM	_	2	amod	_	_
+2	ж.	ж.	NOUN	ABBR	_	4	nmod	_	_
+3	16	16	NUM	NUM	_	4	amod	_	_
+4	қыркүйекте	қыркүйек	NOUN	N	_	10	nmod	_	loc
+5	Реза	Реза	PROPN	NP	_	6	name	_	ant|m|attr
+6	шаһ	шаһ	NOUN	N	_	10	nsubj	_	nom
+7	тақтан	тақ	NOUN	N	_	10	nmod	_	abl
+8	өз	өз	DET	DET	_	10	det	_	ref
+9	еркімен	еркімен	ADJ	ADJ	_	10	amod	_	_
+10	бас	бас	NOUN	N	_	11	dobj	_	nom
+11	тартып	тарт	VERB	V	_	17	advcl	_	tv|gna_perf
+12	орнына	орын	NOUN	N	_	17	nmod	_	px3sp|dat
+13	баласы	бала	NOUN	N	_	17	nsubj	_	px3sp|nom
+14	Мұхаммед	Мұхаммед	PROPN	NP	_	16	name	_	ant|m|attr
+15	Реза	Реза	PROPN	NP	_	16	name	_	ant|m|attr
+16	Пехлеви	Пехлеви	PROPN	NP	_	17	name	_	cog|mf|nom
+17	шаһ	шаһ	NOUN	N	_	0	root	_	nom
+18	болды	бол	VERB	V	_	17	cop	_	iv|ifi|p3|sg
+
+1	Сөйтіп	сөйт	VERB	V	_	6	advcl	_	iv|gna_perf
+2	Алашордасының	Алашорда	PROPN	NP	_	3	nmod:poss	_	top|px3sp|gen
+3	бастығына	бастық	NOUN	N	_	6	nmod	_	px3sp|dat
+4	Ғ.	Ғ.	NOUN	ABBR	_	5	name	_	_
+5	Бөкейхан	Бөкейхан	PROPN	NP	_	6	nsubj	_	ant|m|nom
+6	сайланды	сайла	VERB	V	_	0	root	_	tv|pass|ifi|p3|sg
+
+1	Қожа	Қожа	PROPN	NP	_	3	nsubj	_	ant|m|nom
+2	етті	ет	NOUN	N	_	3	dobj	_	acc
+3	жемей	же	VERB	V	_	12	advcl	_	tv|neg|gna_perf
+4	табаққа	табақ	NOUN	N	_	7	nmod	_	dat
+5	шапанының	шапан	NOUN	N	_	6	nmod:poss	_	px3sp|gen
+6	жеңін	жең	NOUN	N	_	7	dobj	_	px3sp|acc
+7	малып	мал	VERB	V	_	12	advcl	_	tv|gna_perf
+8	Же	же	VERB	V	_	10	conj	_	tv|imp|p2|sg
+9	шапаным	шапан	NOUN	N	_	10	vocative	_	px1sg|nom
+10	же	же	VERB	V	_	11	ccomp	_	tv|imp|p2|sg
+11	деп	де	VERB	V	_	12	advcl	_	tv|gna_perf
+12	отыра	отыр	VERB	V	_	0	root	_	iv|prc_impf
+13	береді	бер	AUX	VAUX	_	12	aux	_	aor|p3|sg
+
+1	_	ешкім	PRON	PRN	_	9	dobj	_	neg|acc
+2	_	да	PART	POSTADV	_	1	advmod	_	_
+3	азаматтығынан	азаматтық	NOUN	N	_	7	conj	_	px3sp|abl
+4	немесе	немесе	CONJ	CNJCOO	_	7	cc	_	_
+5	азаматтығын	азаматтық	NOUN	N	_	6	dobj	_	px3sp|acc
+6	өзгерту	өзгерт	VERB	V	_	7	acl	_	tv|ger|nom
+7	құқығынан	құқық	NOUN	N	_	9	nmod	_	px3sp|abl
+8	еріксіз	еріксіз	ADJ	ADJ	_	9	advmod	_	advl
+9	айыруға	айыр	VERB	V	_	10	ccomp	_	tv|ger|dat
+10	болмайды	бол	VERB	V	_	0	root	_	iv|neg|aor|p3|sg
+
+1	Сондай	сондай	DET	DET	_	2	det	_	ind
+2	әмірліктердің	әмірлік	NOUN	N	_	3	nmod:poss	_	pl|gen
+3	бірі	бір	NUM	NUM	_	7	nsubj	_	subst|px3sp|nom
+4	Самани	Самани	PROPN	NP	_	5	nmod:poss	_	al|nom
+5	әулеті	әулет	NOUN	N	_	3	appos	_	px3sp|nom
+6	биліктен	билік	NOUN	N	_	7	nmod	_	abl
+7	кеткеннен	кет	VERB	V	_	25	advcl	_	iv|ger_past|abl
+8	кейін	кейін	ADP	POST	_	7	case	_	_
+9	Шығыс	шығыс	ADJ	ADJ	_	10	amod	_	_
+10	Иран	Иран	PROPN	NP	_	25	nsubj	_	top|nom
+11	Ауғанстанмен	Ауғанстан	PROPN	NP	_	15	conj	_	top|ins
+12	және	және	CONJ	CNJCOO	_	15	cc	_	_
+13	Орта__Азияның	Орта__Азия	PROPN	NP	_	15	nmod:poss	_	top|gen
+14	бір	бір	NUM	NUM	_	15	nummod	_	_
+15	бөлігімен	бөлік	NOUN	N	_	25	nmod	_	px3sp|ins
+16	бірге	бірге	ADP	POST	_	15	case	_	_
+17	түркі	түркі	ADJ	ADJ	_	18	amod	_	_
+18	_	тек	NOUN	N	_	21	nmod	_	_
+19	_	лы	ADP	POST	_	18	case	_	_
+20	Ғазнауи	Ғазнауи	PROPN	NP	_	21	nmod:poss	_	al|nom
+21	әулеті	әулет	NOUN	N	_	22	nsubj	_	px3sp|nom
+22	билеген	биле	VERB	V	_	23	acl:relcl	_	tv|gpr_past
+23	мемлекеттің	мемлекет	NOUN	N	_	25	nmod:poss	_	gen
+24	құрамына	құрам	NOUN	N	_	25	nmod	_	px3sp|dat
+25	кірді	кір	VERB	V	_	0	root	_	iv|ifi|p3|sg
+
+1	Несиенің	несие	NOUN	N	_	5	nmod:poss	_	gen
+2	шамасымен	шама	NOUN	N	_	5	conj	_	px3sp|ins
+3	сипатымен	сипат	NOUN	N	_	5	conj	_	px3sp|ins
+4	және	және	CONJ	CNJCOO	_	5	cc	_	_
+5	мерзімімен	мерзім	NOUN	N	_	6	nmod	_	px3sp|ins
+6	айқындалады	айқында	VERB	V	_	0	root	_	tv|pass|aor|p3|sg
+
+1	Айгүл	Айгүл	PROPN	NP	_	5	nsubj	_	ant|f|nom
+2	бақшаның	бақша	NOUN	N	_	3	nmod:poss	_	gen
+3	ішінде	іш	NOUN	N	_	5	nmod	_	px3sp|loc
+4	ақырын	ақырын	ADJ	ADJ	_	5	advmod	_	advl
+5	басып	бас	VERB	V	_	0	root	_	iv|prc_perf
+6	жүр	жүр	AUX	VAUX	_	5	aux	_	pres|p3|sg
+
+1	Радианның	радиан	NOUN	N	_	7	nmod:poss	_	gen
+2	_	басқа	ADJ	ADJ	_	6	amod	_	_
+3	_	да	PART	POSTADV	_	2	advmod	_	_
+4	бұрышты	бұрыш	NOUN	N	_	5	dobj	_	acc
+5	өлшеу	өлше	VERB	V	_	6	acl	_	tv|ger|nom
+6	бірліктерімен	бірлік	NOUN	N	_	7	nmod	_	pl|px3sp|ins
+7	арақатынасы	арақатынас	NOUN	N	_	10	nsubj	_	px3sp|nom
+8	мына	мына	DET	DET	_	9	det	_	dem
+9	формуламен	формула	NOUN	N	_	10	nmod	_	ins
+10	сипатталады	сипатта	VERB	V	_	0	root	_	tv|pass|aor|p3|sg
+
+1	Барлық	барлық	DET	DET	_	2	det	_	qnt
+2	адамдар	адам	NOUN	N	_	12	nsubj	_	pl|nom
+3	тумысынан	тумысынан	ADV	ADV	_	12	advmod	_	_
+4	азат	азат	ADJ	ADJ	_	9	conj	_	_
+5	және	және	CONJ	CNJCOO	_	9	cc	_	_
+6	қадір-қасиеті	қадір-қасиет	NOUN	N	_	8	conj	_	px3sp|nom
+7	мен	мен	CONJ	CNJCOO	_	8	cc	_	_
+8	құқықтары	құқық	NOUN	N	_	9	nsubj	_	pl|px3sp|nom
+9	тең	тең	ADJ	ADJ	_	12	advcl	_	_
+10	болып	бол	VERB	V	_	9	cop	_	iv|gna_perf
+11	дүниеге	дүние	NOUN	N	_	12	nmod	_	dat
+12	келеді	кел	VERB	V	_	0	root	_	iv|aor|p3|sg
+
+1	Құлдық	құлдық	NOUN	N	_	4	conj	_	nom
+2	пен	мен	CONJ	CNJCOO	_	4	cc	_	_
+3	құл	құл	NOUN	N	_	4	nmod:poss	_	nom
+4	саудасына	сауда	NOUN	N	_	10	nmod	_	px3sp|dat
+5	қандай	қандай	DET	DET	_	6	det	_	itg
+6	түрде	түр	NOUN	N	_	4	acl	_	loc
+7	_	бол	VERB	V	_	6	cop	_	iv|gna_cond|p3|sg
+8	_	да	PART	POSTADV	_	7	advmod	_	_
+9	тыйым	тыйым	NOUN	N	_	10	dobj	_	nom
+10	салынады	сал	VERB	V	_	0	root	_	tv|pass|aor|p3|sg
+
+1	_	ешкім	PRON	PRN	_	10	nsubj	_	neg|nom
+2	_	да	PART	POSTADV	_	1	advmod	_	_
+3	_	негіз	NOUN	N	_	5	nmod	_	_
+4	_	сыз	ADP	POST	_	3	case	_	_
+5	тұтқындалуға	тұтқында	VERB	V	_	10	conj	_	tv|pass|ger|dat
+6	қамауда	қама	NOUN	N	_	7	nmod	_	loc
+7	ұсталуға	ұста	VERB	V	_	10	conj	_	tv|pass|ger|dat
+8	немесе	немесе	CONJ	CNJCOO	_	10	cc	_	_
+9	қуғынға	қуғын	NOUN	N	_	10	nmod	_	dat
+10	ұшыратылуға	ұшыратыл	VERB	V	_	11	advcl	_	iv|ger|dat
+11	тиіс	тиіс	ADJ	ADJ	_	0	root	_	_
+12	емес	е	AUX	COP	_	11	cop	_	neg|aor|p3|sg
+
+1	Қалыңыз	қал	NOUN	N	_	2	nsubj	_	px2sg|frm|nom
+2	_	қалай	ADV	ADV	_	0	root	_	itg
+3	_	е	AUX	COP	_	2	cop	_	aor|p3|sg
+
+1	Астанаға	Астана	PROPN	NP	_	2	nmod	_	top|dat
+2	билет	билет	NOUN	N	_	4	dobj	_	nom
+3	қанша	қанша	PRON	PRN	_	4	nsubj	_	itg|nom
+4	тұрады	тұр	VERB	V	_	0	root	_	iv|aor|p3|sg
+
+1	Сіз	сіз	PRON	PRN	_	4	nsubj	_	pers|p2|sg|frm|nom
+2	кітапхананы	кітапхана	NOUN	N	_	4	dobj	_	acc
+3	картадан	карта	NOUN	N	_	4	nmod	_	abl
+4	көрсете	көрсет	VERB	V	_	0	root	_	tv|prc_impf
+5	_	ал	AUX	VAUX	_	4	aux	_	aor|p2|frm|sg
+6	_	ма	PART	QST	_	4	discourse	_	_
+
+1	Өтінемін	өтін	VERB	V	_	4	discourse	_	tv|aor|p1|sg
+2	менің	мен	PRON	PRN	_	3	nmod:poss	_	pers|p1|sg|gen
+3	бөлмемді	бөлме	NOUN	N	_	4	dobj	_	px1sg|acc
+4	жинаңыз	жина	VERB	V	_	0	root	_	tv|imp|p2|frm|sg
+
+1	Мал	мал	NOUN	N	_	2	dobj	_	nom
+2	тапса	тап	VERB	V	_	4	advcl	_	tv|gna_cond|p3|sg
+3	қарын	қарын	NOUN	N	_	4	nsubj	_	nom
+4	тояды	той	VERB	V	_	0	root	_	iv|ifi|p3|sg
+
+1	Жоқ	жоқ	INTJ	IJ	_	4	discourse	_	_
+2	олай	ол	PRON	PRN	_	4	advmod	_	dem|adv
+3	ниет	ниет	NOUN	N	_	4	nsubj	_	nom
+4	керек	керек	ADJ	ADJ	_	0	root	_	_
+5	емес	е	AUX	COP	_	4	cop	_	neg|aor|p3|sg
+
+1	Сөйтсе__де	сөйтсе__де	SCONJ	CNJADV	_	10	advmod	_	_
+2	осы	осы	DET	DET	_	4	det	_	dem
+3	оқыған	оқы	VERB	V	_	4	acl:relcl	_	iv|gpr_past
+4	балалар	бала	NOUN	N	_	10	nsubj	_	pl|nom
+5	ана	ана	DET	DET	_	8	det	_	dem
+6	оқымаған	оқы	VERB	V	_	8	acl:relcl	_	iv|neg|gpr_past
+7	қазақ	қазақ	NOUN	N	_	8	nmod:poss	_	nom
+8	балаларынан	бала	NOUN	N	_	10	advcl	_	pl|px3sp|abl
+9	үздік	үздік	ADJ	ADJ	_	10	conj	_	_
+10	_	озық	ADJ	ADJ	_	0	root	_	_
+11	_	е	AUX	COP	_	10	cop	_	aor|p3|sg
+
+1	Осындай	осы	DET	DET	_	3	det	_	ind
+2	жаман	жаман	ADJ	ADJ	_	3	amod	_	_
+3	сөзді	сөз	NOUN	N	_	8	dobj	_	acc
+4	Құдайдан	Құдай	NOUN	N	_	5	nmod	_	abl
+5	қорықпай	қорық	VERB	V	_	8	advcl	_	iv|neg|gna_perf
+6	пендеден	пенде	NOUN	N	_	7	nmod	_	abl
+7	ұялмай	ұял	VERB	V	_	8	advcl	_	iv|neg|gna_perf
+8	айтқан	айт	VERB	V	_	9	acl:relcl	_	tv|gpr_past
+9	қазақтардың	қазақ	NOUN	N	_	10	nmod:poss	_	pl|gen
+10	баласы	бала	NOUN	N	_	12	nsubj	_	px3sp|nom
+11	оқығанменен	оқы	VERB	V	_	12	advcl	_	iv|ger_past|ins
+12	не	не	PRON	PRN	_	0	root	_	itg|nom
+13	бола	бол	VERB	V	_	12	cop	_	iv|prc_impf
+14	қойсын	қой	AUX	VAUX	_	13	aux	_	opt|p3|sg
+
+1	Қала	қала	NOUN	N	_	2	nmod:poss	_	nom
+2	халқы	халық	NOUN	N	_	3	nsubj	_	px3sp|nom
+3	_	58,3	NUM	NUM	_	0	root	_	percent|nom
+4	_	е	AUX	COP	_	3	cop	_	aor|p3|sg
+
+1	Одан	ол	PRON	PRN	_	18	nmod	_	dem|abl
+2	басқа	басқа	ADP	POST	_	1	case	_	_
+3	Мешхед	Мешхед	PROPN	NP	_	12	conj	_	top|nom
+4	1,5	1,5	NUM	NUM	_	5	nummod	_	_
+5	млн.	млн.	NUM	NUM	_	3	appos	_	_
+6	Исфаһан	Исфаһан	PROPN	NP	_	12	conj	_	top|nom
+7	1	1	NUM	NUM	_	8	nummod	_	_
+8	млн.	млн.	NUM	NUM	_	6	appos	_	_
+9	Тебриз	Тебриз	PROPN	NP	_	12	conj	_	top|nom
+10	852	852	NUM	NUM	_	11	nummod	_	_
+11	мың	мың	NUM	NUM	_	9	appos	_	_
+12	Шираз	Шираз	PROPN	NP	_	17	nmod	_	top|nom
+13	800	800	NUM	NUM	_	14	nummod	_	_
+14	мың	мың	NUM	NUM	_	12	appos	_	_
+15	сияқты	сияқты	ADP	POST	_	12	case	_	_
+16	ірі	ірі	ADJ	ADJ	_	17	amod	_	_
+17	қалалар	қала	NOUN	N	_	18	nsubj	_	pl|nom
+18	_	бар	ADJ	ADJ	_	0	root	_	_
+19	_	е	AUX	COP	_	18	cop	_	aor|p3|sg
+
+1	Жоғарғы	жоғары	ADV	ADV	_	4	amod	_	attr
+2	заң	заң	NOUN	N	_	3	dobj	_	nom
+3	шығарушы	шығар	VERB	V	_	4	acl	_	tv|gpr_pot
+4	орган	орган	NOUN	N	_	20	nsubj	_	nom
+5	бір	бір	NUM	NUM	_	6	nummod	_	_
+6	_	палата	NOUN	N	_	8	nmod	_	nom
+7	_	лы	ADP	POST	_	6	case	_	_
+8	парламент	парламент	NOUN	N	_	4	appos	_	nom
+9	Ислам	Ислам	NOUN	N	_	10	nmod:poss	_	nom
+10	кеңесі	кеңес	NOUN	N	_	11	nmod:poss	_	px3sp|nom
+11	жиналысы	жиналыс	NOUN	N	_	4	appos	_	px3sp|nom
+12	меджлис	меджлис	NOUN	N	_	11	appos	_	nom
+13	4	4	NUM	NUM	_	14	nummod	_	_
+14	жыл	жыл	NOUN	N	_	16	nmod	_	nom
+15	сайын	сайын	ADP	POST	_	14	case	_	_
+16	сайланып	сайла	VERB	V	_	19	acl:relcl	_	tv|pass|prc_perf
+17	отыратын	отыр	AUX	VAUX	_	16	aux	_	gpr_impf
+18	290	290	NUM	NUM	_	19	nummod	_	_
+19	депутаттан	депутат	NOUN	N	_	20	nmod	_	abl
+20	тұрады	тұр	VERB	V	_	0	root	_	iv|aor|p3|sg
+
+1	Б.з.б.	б.з.б.	NOUN	ABBR	_	3	compound	_	_
+2	3	3	NUM	NUM	_	3	amod	_	_
+3	мыңжылдықта	мыңжылдық	NOUN	N	_	9	nmod	_	loc
+4	қазіргі	қазір	ADV	ADV	_	5	amod	_	attr
+5	Иранның	Иран	PROPN	NP	_	6	nmod:poss	_	top|gen
+6	оңтүстік-батысында	оңтүстік-батыс	NOUN	N	_	9	nmod	_	px3sp|loc
+7	алғашқы	алғашқы	ADJ	ADJ	_	8	amod	_	_
+8	мемлекеттер	мемлекет	NOUN	N	_	9	nsubj	_	pl|nom
+9	құрыла	құр	VERB	V	_	0	root	_	tv|pass|prc_impf
+10	бастады	баста	AUX	VAUX	_	9	aux	_	ifi|p3|sg
+
+1	Елдің	ел	NOUN	N	_	2	nmod:poss	_	gen
+2	солтүстігіне	солтүстік	NOUN	N	_	4	remnant	_	px3sp|dat
+3	Ресей	Ресей	PROPN	NP	_	5	remnant	_	top|nom
+4	оңтүстігіне	оңтүстік	NOUN	N	_	7	nmod	_	px3sp|dat
+5	Ұлыбритания	Ұлыбритания	PROPN	NP	_	7	nsubj	_	top|nom
+6	қожалық	қожалық	NOUN	N	_	7	dobj	_	nom
+7	ете	ет	VERB	V	_	0	root	_	tv|prc_impf
+8	бастады	баста	AUX	VAUX	_	7	aux	_	ifi|p3|sg
+
+1	Оның	ол	PRON	PRN	_	2	nmod:poss	_	pers|p3|sg|gen
+2	барысында	барыс	NOUN	N	_	4	nmod	_	px3sp|loc
+3	конституция	конституция	NOUN	N	_	4	dobj	_	nom
+4	жарияланып	жарияла	VERB	V	_	9	advcl	_	tv|pass|gna_perf
+5	меджлис	меджлис	NOUN	N	_	6	nsubj	_	nom
+6	шақырылды	шақыр	VERB	V	_	9	conj	_	tv|pass|ifi|p3|sg
+7	ақсүйектік	ақсүйектік	ADJ	ADJ	_	8	amod	_	_
+8	дәрежелер	дәреже	NOUN	N	_	9	nsubj	_	pl|nom
+9	жойылды	жой	VERB	V	_	0	root	_	tv|pass|ifi|p3|pl
+
+1	Армияға	армия	NOUN	N	_	2	nmod	_	dat
+2	сүйенген	сүйен	VERB	V	_	4	acl:relcl	_	iv|gpr_past
+3	Реза	Реза	PROPN	NP	_	4	name	_	ant|m|attr
+4	хан	хан	NOUN	N	_	15	nsubj	_	nom
+5	Орталықтың	орталық	NOUN	N	_	6	nmod:poss	_	gen
+6	билігін	билік	NOUN	N	_	7	dobj	_	px3sp|acc
+7	күшейту	күшейт	VERB	V	_	15	advcl	_	tv|ger|nom
+8	үшін	үшін	ADP	POST	_	7	case	_	_
+9	сепаратистік	сепаратистік	ADJ	ADJ	_	10	amod	_	_
+10	пиғылдағы	пиғыл	NOUN	N	_	11	amod	_	loc|attr
+11	Иран	Иран	PROPN	NP	_	12	nmod:poss	_	top|nom
+12	ақсүйектерімен	ақсүйек	NOUN	N	_	15	nmod	_	pl|px3sp|ins
+13	үздіксіз	үздіксіз	ADJ	ADJ	_	14	amod	_	_
+14	күрес	күрес	NOUN	N	_	15	dobj	_	nom
+15	жүргізді	жүргіз	VERB	V	_	0	root	_	tv|ifi|p3|sg
+
+1	Ұлттық	ұлттық	ADJ	ADJ	_	2	amod	_	_
+2	табыс	табыс	NOUN	N	_	12	nsubj	_	nom
+3	75	75	NUM	NUM	_	4	compound	_	_
+4	млрд.	млрд.	NOUN	ABBR	_	6	nummod	_	_
+5	АҚШ	АҚШ	PROPN	NP	_	6	compound	_	top|attr
+6	доллар	доллар	NOUN	N	_	7	nmod:poss	_	nom
+7	көлемінде	көлем	NOUN	N	_	12	conj	_	px3sp|loc
+8	жан__басына	жан__басы	NOUN	N	_	9	nmod	_	dat
+9	шаққанда	шақ	VERB	V	_	12	advcl	_	tv|ger_past|loc
+10	1250	1250	NUM	NUM	_	11	nummod	_	_
+11	долл.	долл.	NOUN	ABBR	_	12	nmod	_	_
+12	_	шама	NOUN	N	_	0	root	_	px3sp|loc
+13	_	е	AUX	COP	_	12	cop	_	aor|p3|pl
+
+1	Негізгі	негізгі	ADJ	ADJ	_	2	amod	_	_
+2	сауда	сауда	NOUN	N	_	3	nmod:poss	_	nom
+3	серіктестері	серіктес	NOUN	N	_	11	appos	_	pl|px3sp|nom
+4	Германия	Германия	PROPN	NP	_	11	conj	_	top|nom
+5	Жапония	Жапония	PROPN	NP	_	11	conj	_	top|nom
+6	Ұлыбритания	Ұлыбритания	PROPN	NP	_	11	conj	_	top|nom
+7	Италия	Италия	PROPN	NP	_	11	conj	_	top|nom
+8	араб	араб	NOUN	N	_	9	nmod:poss	_	nom
+9	елдері	ел	NOUN	N	_	11	conj	_	pl|px3sp|nom
+10	Түркия	Түркия	PROPN	NP	_	11	conj	_	top|nom
+11	Қазақстанмен	Қазақстан	PROPN	NP	_	18	nmod	_	top|ins
+12	дипломатиялық	дипломатиялық	ADJ	ADJ	_	14	conj	_	_
+13	және	және	CONJ	CNJCOO	_	14	cc	_	_
+14	экономикалық	экономикалық	ADJ	ADJ	_	15	amod	_	_
+15	байланыс	байланыс	NOUN	N	_	18	nsubj	_	nom
+16	1992	1992	NUM	NUM	_	17	amod	_	_
+17	ж.	ж.	NOUN	ABBR	_	18	nmod	_	_
+18	орнады	орна	VERB	V	_	0	root	_	iv|ifi|p3|pl
+
+1	10	10	NUM	NUM	_	2	amod	_	_
+2	ғасырда	ғасыр	NOUN	N	_	3	nmod	_	loc
+3	пайда__болған	пайда__бол	VERB	V	_	4	acl:relcl	_	iv|gpr_past
+4	мистерия	мистерия	NOUN	N	_	6	compound	_	attr
+5	діни	діни	ADJ	ADJ	_	6	amod	_	_
+6	ғұрып	ғұрып	NOUN	N	_	9	nsubj	_	nom
+7	шахсей-вахсейдің	шахсей-вахсей	NOUN	N	_	8	nmod:poss	_	gen
+8	құрамына	құрам	NOUN	N	_	9	nmod	_	px3sp|dat
+9	енді	ен	VERB	V	_	0	root	_	iv|ifi|p3|sg
+
+1	Абонемент	абонемент	NOUN	N	_	2	nmod:poss	_	nom
+2	бөлімі	бөлім	NOUN	N	_	8	nsubj	_	px3sp|nom
+3	кітаптар	кітап	NOUN	N	_	5	conj	_	pl|nom
+4	мен	мен	CONJ	CNJCOO	_	5	cc	_	_
+5	журналдарды	журнал	NOUN	N	_	8	dobj	_	pl|acc
+6	үйге	үй	NOUN	N	_	8	nmod	_	dat
+7	тегін	тегін	ADJ	ADJ	_	8	advmod	_	advl
+8	береді	бер	VERB	V	_	0	root	_	tv|aor|p3|sg
+
+1	Еуропаның	Еуропа	PROPN	NP	_	4	nmod:poss	_	top|gen
+2	тұщы	тұщы	ADJ	ADJ	_	3	amod	_	_
+3	су	су	NOUN	N	_	4	nmod:poss	_	nom
+4	қоймаларында	қойма	NOUN	N	_	5	nmod	_	pl|px3sp|loc
+5	таралған	тара	VERB	V	_	0	root	_	tv|pass|past|p3|sg
+
+1	Ұлы	ұлы	ADJ	ADJ	_	3	amod	_	_
+2	Отан	отан	NOUN	N	_	3	nmod:poss	_	nom
+3	соғысында	соғыс	NOUN	N	_	5	nmod	_	px3sp|loc
+4	ерлікпен	ерлік	NOUN	N	_	5	nmod	_	ins
+5	қаза__тапқан	қаза__тап	VERB	V	_	0	root	_	iv|past|p3|sg
+
+1	Намыс	намыс	NOUN	N	_	2	dobj	_	nom
+2	қылып	қыл	VERB	V	_	5	advcl	_	tv|gna_perf
+3	балаға	бала	NOUN	N	_	5	nmod	_	dat
+4	мойын	мойын	NOUN	N	_	5	dobj	_	nom
+5	бұрды	бұр	VERB	V	_	0	root	_	tv|ifi|p3|sg
+
+1	Сөйтіп	сөйт	VERB	V	_	8	advcl	_	iv|gna_perf
+2	практикалық	практикалық	ADJ	ADJ	_	3	amod	_	_
+3	қажеттілік	қажеттілік	NOUN	N	_	8	nsubj	_	nom
+4	астрономия	астрономия	NOUN	N	_	5	nmod:poss	_	nom
+5	ғылымының	ғылым	NOUN	N	_	6	nsubj	_	px3sp|gen
+6	тууына	ту	VERB	V	_	8	advcl	_	iv|ger|px3sp|dat
+7	ең__басты	ең__басты	ADV	ADV	_	8	advmod	_	_
+8	түрткі	түрткі	NOUN	N	_	0	root	_	nom
+9	болды	бол	VERB	V	_	8	cop	_	iv|ifi|p3|sg
+
+1	Баяғыда	баяғыда	ADV	ADV	_	4	advmod	_	_
+2	біреу	біреу	PRON	PRN	_	4	nsubj	_	ind|nom
+3	той	той	NOUN	N	_	4	dobj	_	nom
+4	жасапты	жаса	VERB	V	_	11	conj	_	tv|ifi|evid|p3|sg
+5	тойға	той	NOUN	N	_	8	nmod	_	dat
+6	көп	көп	DET	DET	_	7	det	_	qnt
+7	кісі	кісі	NOUN	N	_	8	nsubj	_	nom
+8	жиналыпты	жина	VERB	V	_	11	conj	_	tv|pass|ifi|evid|p3|sg
+9	_	Қожа	PROPN	NP	_	11	nsubj	_	ant|m|nom
+10	_	да	PART	POSTADV	_	9	advmod	_	_
+11	келіпті	кел	VERB	V	_	0	root	_	iv|ifi|evid|p3|sg
+
+1	Төрге	төр	NOUN	N	_	2	nmod	_	dat
+2	шық	шық	VERB	V	_	4	conj	_	iv|imp|p2|sg
+3	тамақ	тамақ	NOUN	N	_	4	dobj	_	nom
+4	іш	іш	VERB	V	_	5	ccomp	_	tv|imp|p2|sg
+5	демепті	де	VERB	V	_	0	root	_	tv|neg|ifi|evid|p3|pl
+
+1	Ол	ол	PRON	PRN	_	7	nsubj	_	pers|p3|sg|nom
+2	Азаматтың	Азамат	PROPN	NP	_	3	nsubj	_	ant|m|gen
+3	қайда	қайда	ADV	ADV	_	5	ccomp	_	itg
+4	екенін	е	AUX	COP	_	3	cop	_	ger_past|px3sp|acc
+5	_	біл	VERB	V	_	7	advcl	_	tv|gna_cond|p3|sg
+6	_	да	PART	POSTADV	_	5	advmod	_	_
+7	айтқысы	айт	VERB	V	_	0	root	_	tv|prc_vol|p3|sg
+8	келген__жоқ	кел	AUX	VAUX	_	7	aux	_	neg|ifi|p3|sg
+
+1	Бұл	бұл	PRON	PRN	_	2	nsubj	_	dem|nom
+2	Азамат	Азамат	PROPN	NP	_	4	nsubj	_	ant|m|nom
+3	болу	бол	VERB	V	_	2	cop	_	iv|ger|nom
+4	_	керек	ADJ	ADJ	_	0	root	_	_
+5	_	е	AUX	COP	_	4	cop	_	aor|p3|sg
+
+1	Оған	ол	PRON	PRN	_	12	nmod	_	pers|p3|sg|dat
+2	ежелгі	ежел	ADV	ADV	_	3	amod	_	attr
+3	қоныстарға	қоныс	NOUN	N	_	4	nmod	_	pl|dat
+4	жүргізілген	жүргіз	VERB	V	_	7	acl:relcl	_	tv|pass|gpr_past
+5	археологиялық	археологиялық	ADJ	ADJ	_	7	amod	_	_
+6	қазба	қазба	NOUN	N	_	7	compound	_	attr
+7	жұмыстары	жұмыс	NOUN	N	_	8	nmod:poss	_	pl|px3sp|nom
+8	кезінде	кез	NOUN	N	_	9	nmod	_	px3sp|loc
+9	табылған	тап	VERB	V	_	11	acl:relcl	_	tv|pass|gpr_past
+10	мәдениет	мәдениет	NOUN	N	_	11	nmod:poss	_	nom
+11	мұралары	мұра	NOUN	N	_	12	nsubj	_	pl|px3sp|nom
+12	дәлел	дәлел	NOUN	N	_	0	root	_	nom
+13	бола	бол	VERB	V	_	12	cop	_	iv|prc_impf
+14	алады	ал	AUX	VAUX	_	13	aux	_	aor|p3|sg
+
+1	1932	1932	NUM	NUM	_	2	amod	_	_
+2	жылы	жыл	NOUN	N	_	11	nmod	_	px3sp|nom
+3	ауылшаруашылық	ауылшаруашылық	ADJ	ADJ	_	4	amod	_	_
+4	авиациясының	авиация	NOUN	N	_	5	nmod:poss	_	px3sp|gen
+5	базасы	база	NOUN	N	_	6	nsubj	_	px3sp|nom
+6	құрылып	құр	VERB	V	_	11	advcl	_	tv|pass|gna_perf
+7	бұл	бұл	PRON	PRN	_	11	nsubj	_	dem|nom
+8	Шымкент	Шымкент	PROPN	NP	_	9	nmod:poss	_	top|nom
+9	әуежайының	әуежай	NOUN	N	_	10	nmod:poss	_	px3sp|gen
+10	негізін	негіз	NOUN	N	_	11	dobj	_	px3sp|acc
+11	қалады	қала	VERB	V	_	0	root	_	tv|ifi|p3|sg
+
+1	Қора	қора	NOUN	N	_	2	nsubj	_	nom
+2	толған	тол	VERB	V	_	3	acl:relcl	_	iv|gpr_past
+3	қойлары	қой	NOUN	N	_	4	nsubj	_	pl|px3sp|nom
+4	болыпты	бол	VERB	V	_	0	root	_	iv|ifi|evid|p3|sg
+
+1	Ендеше	ендеше	INTJ	IJ	_	5	discourse	_	_
+2	артық	артық	ADJ	ADJ	_	3	amod	_	_
+3	жеріңді	жер	NOUN	N	_	4	dobj	_	px2sg|acc
+4	алғанға	ал	VERB	V	_	5	ccomp	_	tv|ger_past|dat
+5	өкпелеме	өкпеле	VERB	V	_	0	root	_	neg|imp|p2|sg
+
+1	Қандай	қандай	DET	DET	_	2	det	_	itg
+2	кісіге	кісі	NOUN	N	_	0	root	_	dat
+
+1	Бұл	бұл	DET	DET	_	2	det	_	dem
+2	жауыздың	жауыз	NOUN	N	_	3	nmod:poss	_	gen
+3	көзінде	көз	NOUN	N	_	6	nmod	_	px3sp|loc
+4	не	не	DET	DET	_	5	det	_	itg|nom
+5	сиқыр	сиқыр	NOUN	N	_	6	nsubj	_	nom
+6	_	бар	ADJ	ADJ	_	8	ccomp	_	_
+7	_	е	AUX	COP	_	6	cop	_	aor|p3|sg
+8	деп	де	VERB	V	_	10	advcl	_	tv|gna_perf
+9	ішінен	іш	NOUN	N	_	10	nmod	_	px3sp|loc
+10	таң__қалды	таң__қал	VERB	V	_	0	root	_	iv|ifi|p3|sg
+
+1	Ажал	ажал	NOUN	N	Case=Nom	2	nsubj	_	ажал|n|nom
+2	түрткен	түрт	VERB	V	Tense=Past|VerbForm=Part	3	acl:relcl	_	түрт|v|tv|gprpast
+3	мал	мал	NOUN	N	Case=Nom	7	conj	_	мал|n|nom
+4	болмаса	бол	VERB	V	Mood=Cond|Number=Sing|Person=3|Polarity=Neg|VerbForm=Trans	3	cop	_	бол|v|iv|neg|gnacond|p3|sg
+5	мал	мал	NOUN	N	Case=Nom	6	dobj	_	мал|n|nom
+6	алдырған	алдыр	VERB	V	Tense=Past|VerbForm=Part	7	acl:relcl	_	алдыр|v|tv|gprpast
+7	жан	жан	NOUN	N	Case=Nom	11	advcl	_	жан|n|nom
+8	болмаса	бол	VERB	V	Mood=Cond|Number=Sing|Person=3|Polarity=Neg|VerbForm=Trans	7	cop	_	бол|v|iv|neg|gnacond|p3|sg
+9	тереңге	терең	ADJ	ADJ	Case=Dat	11	nmod	_	терең|adj|subst|dat
+10	кім	кім	PRON	PRN	Case=Nom|PronType=Itg	11	nsubj	_	кім|prn|itg|nom
+11	барған	бар	VERB	V	Number=Sing|Person=3|Tense=Past	0	root	_	бар|v|iv|past|p3|sg
+
+1	Жанына	жан	NOUN	N	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod	_	жан|n|px3sp|dat
+2	мылтық	мылтық	NOUN	N	Case=Nom	3	nsubj	_	мылтық|n|nom
+3	батқанда	бат	VERB	V	Case=Loc|Tense=Past|VerbForm=Ger	8	advcl	_	бат|v|iv|gerpast|loc
+4	анасы	ана	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	ана|n|px3sp|nom
+5	қызын	қыз	NOUN	N	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	dobj	_	қыз|n|px3sp|acc
+6	тастай	таста	VERB	V	Aspect=Impf|VerbForm=Coverb	8	advcl	_	таста|v|tv|prcimpf
+7	беріп	бер	AUX	VAUX	Aspect=Perf|VerbForm=Trans	6	aux	_	бер|vaux|gnaperf
+8	алыса	ал	VERB	V	Aspect=Impf|VerbForm=Coverb|Voice=Coop	0	root	_	ал|v|tv|coop|prcimpf
+9	кетті	кет	AUX	VAUX	Number=Sing|Person=3|Tense=Past	8	aux	_	кет|vaux|ifi|p3|sg
+
+1	Бірақ	бірақ	CONJ	CNJCOO	_	4	cc	_	бірақ|cnjcoo
+2	оған	ол	PRON	PRN	Case=Dat|PronType=Dem	4	nmod	_	ол|prn|dem|dat
+3	артық	артық	ADV	ADV	_	4	advmod	_	артық|adv
+4	араласпаймын	аралас	VERB	V	Number=Sing|Person=1|Polarity=Neg|Tense=Aor	0	root	_	аралас|v|iv|neg|aor|p1|sg
+
+1	Не	не	PRON	PRN	Case=Nom|PronType=Itg	3	ccomp	_	не|prn|itg|nom
+2	болғанымды	бол	VERB	V	Case=Acc|Number[psor]=Sing|Person[psor]=1|Tense=Past|VerbForm=Ger	1	cop	_	бол|v|iv|gerpast|px1sg|acc
+3	білмедім	біл	VERB	V	Number=Sing|Person=1|Polarity=Neg|Tense=Past	0	root	_	біл|v|tv|neg|ifi|p1|sg
+
+1	Қазақ	қазақ	NOUN	N	Case=Nom	2	compound	_	қазақ|n|attr
+2	солдаттан	солдат	NOUN	N	Case=Abl	4	nmod	_	солдат|n|abl
+3	өлгенше	өл	VERB	V	VerbForm=Trans	4	advcl	_	өл|v|iv|gnauntil
+4	қорқады	қорық	VERB	V	Number=Sing|Person=3|Tense=Aor	0	root	_	қорық|v|iv|aor|p3|sg
+
+1	Ендеше	ендеше	ADV	ADV	_	4	discourse	_	ендеше|adv
+2	біз	біз	PRON	PRN	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	біз|prn|pers|p1|pl|nom
+3	тіршілік	тіршілік	NOUN	N	Case=Nom	4	dobj	_	тіршілік|n|nom
+4	қып	қыл	VERB	V	Aspect=Perf|VerbForm=Coverb	0	root	_	қыл|v|tv|prcperf
+5	жүрміз	жүр	AUX	VAUX	Number=Plur|Person=1|Tense=Prs	4	aux	_	жүр|vaux|pres|p1|pl
+
+1	Жасым	жас	NOUN	N	Case=Nom|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	жас|n|px1sg|nom
+2	_	35	NUM	NUM	Case=Loc	0	root	_	35|num|subst|loc
+3	_	е	AUX	COP	Number=Sing|Person=3|Tense=Aor	2	cop	_	е|cop|aor|p3|sg
+
+1	Байдың	бай	NOUN	N	Case=Gen	5	nmod:poss	_	бай|n|gen
+2	малын	мал	NOUN	N	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	5	conj	_	мал|n|px3sp|acc
+3	артық	артық	ADJ	ADJ	_	4	amod	_	артық|adj
+4	қатынын	қатын	NOUN	N	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	5	conj	_	қатын|n|px3sp|acc
+5	жерін	жер	NOUN	N	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	dobj	_	жер|n|px3sp|acc
+6	кедейге	кедей	NOUN	N	Case=Dat	8	iobj	_	кедей|n|dat
+7	тартып	тарт	VERB	V	Aspect=Perf|VerbForm=Trans	8	advcl	_	тарт|v|tv|gnaperf
+8	әпереді	әпер	VERB	V	Number=Sing|Person=3|Tense=Aor	9	ccomp	_	әпер|v|tv|aor|p3|sg
+9	деген	де	VERB	V	Tense=Past|VerbForm=Part	10	acl:relcl	_	де|v|tv|gprpast
+10	лақаптар	лақап	ADJ	ADJ	Case=Nom|Number=Plur	11	nsubj	_	лақап|adj|subst|pl|nom
+11	шыққан	шық	VERB	V	Case=Nom|Tense=Past|VerbForm=Ger	17	advcl	_	шық|v|tv|gerpast|nom
+12	соң	соң	ADP	POST	_	11	case	_	соң|post
+13	жатсам	жат	VERB	V	Mood=Cond|Number=Sing|Person=1|VerbForm=Trans	15	remnant	_	жат|v|iv|gnacond|p1|sg
+14	ұйқым	ұйқы	NOUN	N	Case=Nom|Number[psor]=Sing|Person[psor]=1	16	remnant	_	ұйқы|n|px1sg|nom
+15	тұрсам	тұр	VERB	V	Mood=Cond|Number=Sing|Person=1|VerbForm=Trans	17	advcl	_	тұр|v|iv|gnacond|p1|sg
+16	күлкім	күлкі	NOUN	N	Case=Nom|Number[psor]=Sing|Person[psor]=1	17	nsubj	_	күлкі|n|px1sg|nom
+17	келмейді	кел	VERB	V	Number=Sing|Person=3|Polarity=Neg|Tense=Aor	0	root	_	кел|v|iv|neg|aor|p3|sg
+
+1	Сен	сен	PRON	PRN	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	сен|prn|pers|p2|sg|nom
+2	қорықпа	қорық	VERB	V	Mood=Imper|Number=Sing|Person=2|Polarity=Neg	0	root	_	қорық|v|iv|neg|imp|p2|sg
+
+1	Ел	ел	NOUN	N	Case=Nom	2	nsubj	_	ел|n|nom
+2	_	қайда	ADV	ADV	PronType=Itg	0	root	_	қайда|adv|itg
+3	_	е	AUX	COP	Number=Sing|Person=3|Tense=Aor	2	cop	_	е|cop|aor|p3|sg
+
+1	Бай	бай	NOUN	N	Case=Nom	3	nsubj	_	бай|n|nom
+2	неліктен	неліктен	ADV	ADV	PronType=Itg	3	advmod	_	неліктен|adv|itg
+3	бай	бай	NOUN	N	Case=Nom	0	root	_	бай|n|nom
+4	болады	бол	VERB	V	Number=Sing|Person=3|Tense=Aor	3	cop	_	бол|v|iv|aor|p3|sg
+
+1	Өйткені	өйткені	SCONJ	CNJSUB	_	10	cc	_	өйткені|cnjsub
+2	ол	ол	DET	DET	PronType=Dem	3	det	_	ол|det|dem
+3	жара	жара	NOUN	N	Case=Nom	10	nsubj	_	жара|n|nom
+4	атын	ат	NOUN	N	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	5	dobj	_	ат|n|px3sp|acc
+5	атауға	ата	VERB	V	Case=Dat|VerbForm=Ger	9	advcl	_	ата|v|tv|ger|dat
+6	—	—	PART	GUIO	_	9	punct	_	—|guio
+7	адамның	адам	NOUN	N	Case=Gen	8	nmod:poss	_	адам|n|gen
+8	аузы	ауыз	NOUN	N	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	ауыз|n|px3sp|nom
+9	жиренетін	жирен	VERB	V	Aspect=Impf|VerbForm=Part	10	acl:relcl	_	жирен|v|iv|gprimpf
+10	жара	жара	NOUN	N	Case=Nom	0	root	_	жара|n|nom
+11	еді	е	AUX	COP	Number=Sing|Person=3|Tense=Past	10	cop	_	е|cop|ifi|p3|sg
+
+1	—	—	PART	GUIO	_	2	punct	_	—|guio
+2	_	немене	PRON	PRN	Case=Nom|PronType=Itg	0	root	_	немене|prn|itg|nom
+3	_	е	AUX	COP	Number=Sing|Person=3|Tense=Aor	2	cop	_	е|cop|aor|p3|sg
+4	жаным	жан	NOUN	N	Case=Nom|Number[psor]=Sing|Person[psor]=1	2	vocative	_	жан|n|px1sg|nom
+
+1	Қаш	қаш	VERB	V	Mood=Imper|Number=Sing|Person=2	0	root	_	қаш|v|iv|imp|p2|sg
+2	маңыма	маң	NOUN	N	Case=Dat|Number[psor]=Sing|Person[psor]=1	3	nmod	_	маң|n|px1sg|dat
+3	жолама	жола	VERB	V	Mood=Imper|Number=Sing|Person=2|Polarity=Neg	1	parataxis	_	жола|v|iv|neg|imp|p2|sg
+
+1	Құдай	Құдай	NOUN	N	Case=Nom	2	nsubj	_	Құдай|n|nom
+2	жарылқады	жарылқа	VERB	V	Number=Sing|Person=3|Tense=Past	0	root	_	жарылқа|v|tv|ifi|p3|sg
+

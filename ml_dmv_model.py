@@ -6,7 +6,7 @@ import torch.nn as nn
 
 import eisner_for_dmv
 import utils
-import m_dir
+
 
 
 # from torch_model.NN_trainer import *
@@ -48,9 +48,6 @@ class ml_dmv_model(nn.Module):
         self.trans_param = np.zeros((len(pos), len(pos), 2, self.cvalency, len(languages)))
         # head_pos,direction,valence,decision,languages
         self.decision_param = np.zeros((len(pos), 2, self.dvalency, 2, len(languages)))
-
-        self.trans_alpha = None
-        self.use_prior = options.use_prior
 
         if self.function_mask:
             self.function_set = set()
@@ -162,9 +159,11 @@ class ml_dmv_model(nn.Module):
 
     def em_e(self, batch_pos, batch_lan, batch_sen, trans_counter, decision_counter, em_type):
         batch_pos = np.array(batch_pos)
+        # viterbi implementation is in fact not included
         if em_type == 'viterbi':
-            batch_likelihood = self.run_viterbi_estep(batch_pos, batch_lan, batch_sen, trans_counter,
-                                                      decision_counter)
+            #batch_likelihood = self.run_viterbi_estep(batch_pos, batch_lan, batch_sen, trans_counter,
+                                                      #decision_counter)
+            pass
         elif em_type == 'em':
             batch_likelihood, en_like = self.run_em_estep(batch_pos, batch_lan, batch_sen, trans_counter,
                                                           decision_counter)
@@ -463,35 +462,6 @@ class ml_dmv_model(nn.Module):
         batch_score = batch_score + function_score_mask
         return batch_score
 
-    def apply_prior(self, trans_counter, lex_counter, prior_alpha, prior_epsilon, lex_prior_alpha, lex_epsilon):
-        if self.trans_alpha is None:
-            child_mean = np.average(trans_counter, axis=(1, 3)).reshape(len(self.pos), 1, self.tag_num, 1, 2,
-                                                                        self.cvalency)
-            self.trans_alpha = -child_mean * prior_alpha
-        if self.tag_num > 1:
-            prior_epsilon = 1e-3
-        for h in range(len(self.pos)):
-            for t in range(self.tag_num):
-                for dir in range(2):
-                    for c in range(self.cvalency):
-                        dir_trans_alpha = trans_counter[h, :, t, :, dir, c] + self.trans_alpha[h, :, t, :, dir, c]
-                        dim = self.tag_num * len(self.pos)
-                        dir_trans_alpha = dir_trans_alpha.reshape(dim, 1)
-                        md = m_dir.modified_dir(dim, dir_trans_alpha, prior_epsilon)
-                        posterior_counts = md.get_mode()
-                        trans_counter[h, :, t, :, dir, c] = posterior_counts.reshape(len(self.pos), self.tag_num)
-
-        if self.use_lex and self.tag_num > 1:
-            if self.lex_alpha is None:
-                lex_mean = np.average(lex_counter, axis=2).reshape(len(self.pos), self.tag_num, 1)
-                self.lex_alpha = -lex_mean * lex_prior_alpha
-            for p in range(len(self.pos)):
-                for t in range(self.tag_num):
-                    dir_lex_alpha = lex_counter[p, t, :] + self.lex_alpha[p, t, :]
-                    dim = len(self.vocab)
-                    md = m_dir.modified_dir(dim, dir_lex_alpha, lex_epsilon)
-                    posterior_counts = md.get_mode()
-                    lex_counter[p, t, :] = posterior_counts
 
     def save(self, fn):
         tmp = fn + '.tmp'

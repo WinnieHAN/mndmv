@@ -1,0 +1,778 @@
+1	सकल	सकल	ADJ	_	Case=Acc|Number=Sing	3	amod	_	Translit=sakala|LTranslit=sakala
+2	अर्थशास्त्र	अर्थअर्थशास्त्र	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	3	nmod	_	Translit=arthaśāstra|LTranslit=arthaarthaśāstra
+3	सारम्	सार	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	5	dobj	_	Translit=sāram|LTranslit=sāra
+4	जगति	जगत्	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	3	nmod	_	Translit=jagati|LTranslit=jagat
+5	समालोक्य	समालोक्य	VERB	_	Case=Voc|Gender=Masc|Number=Sing|VerbForm=Part	11	advcl	_	Translit=samālokya|LTranslit=samālokya
+6	विष्णुशर्मा	विष्णुशर्मन्	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	11	nsubj	_	Translit=viṣṇuśarmā|LTranslit=viṣṇuśarman
+7	इदम्	इदम्	PRON	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	6	det	_	Translit=idam|LTranslit=idam
+8	तन्त्रैः	तन्त्र	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	11	nmod	_	Translit=tantraiḥ|LTranslit=tantra
+9	पञ्चभिः	पञ्चन्	NUM	_	Case=Ins|Number=Plur|NumType=Card	8	nummod	_	Translit=pañcabhiḥ|LTranslit=pañcan
+10	एतत्	एतद्	PRON	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	13	det	_	Translit=etat|LTranslit=etad
+11	चकार	कृ	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	Translit=cakāra|LTranslit=kr̥
+12	सुमनोहरं	सुमनोहर्	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	13	amod	_	Translit=sumanoharaṁ|LTranslit=sumanohar
+13	शास्त्रम्	शास्त्र	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	11	dobj	_	Translit=śāstram|LTranslit=śāstra
+
+1	तत्	तद्	DET	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	3	dobj	_	Translit=tat|LTranslit=tad
+2	यथा	यथा	ADV	_	_	3	advmod	_	Translit=yathā|LTranslit=yathā
+3	अनुश्रूयते	अनु-श्रु	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=anuśrūyate|LTranslit=anu-śru
+
+1	अस्ति	अस्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	Translit=asti|LTranslit=as_1|LId=अस्-१
+2	दाक्षिणात्ये	दाक्षिण	ADJ	_	Case=Loc|Gender=Neut|Number=Sing	3	amod	_	Translit=dākṣiṇātye|LTranslit=dākṣiṇa
+3	जनपदे	जनपदे	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	6	nmod	_	Translit=janapade|LTranslit=janapade
+4	महिलारोप्यं	महिलारोप्य	PROPN	_	Case=Nom|Gender=Neut|Number=Sing	6	nsubj	_	Translit=mahilāropyaṁ|LTranslit=mahilāropya
+5	नाम	नामन्	NOUN	_	Case=Voc|Gender=Neut|Number=Sing	6	nmod	_	Translit=nāma|LTranslit=nāman
+6	नगरम्	नगर	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	0	root	_	Translit=nagaram|LTranslit=nagara
+
+1	तत्र	तत्र	ADV	_	_	5	advmod	_	Translit=tatra|LTranslit=tatra
+2	अमरशक्तिर्	अमरशक्ति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	Translit=amaraśaktir|LTranslit=amaraśakti
+3	नाम्नः	नामन्	NOUN	_	Case=Gen|Gender=Neut|Number=Sing	4	nmod	_	Translit=nāmnaḥ|LTranslit=nāman
+4	राजा	राजन्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	Translit=rājā|LTranslit=rājan
+5	बभूव	भू	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	Translit=babhūva|LTranslit=bhū_1|LId=भू-१
+
+1	तस्य	तद्	DET	_	Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Dem	3	det	_	Translit=tasya|LTranslit=tad
+2	त्रयः	त्रि	NUM	_	Case=Nom|Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	Translit=trayaḥ|LTranslit=tri
+3	पुत्राः	पुत्र	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	11	nsubj	_	Translit=putrāḥ|LTranslit=putra
+4	परम	परम	ADV	_	_	3	advmod	_	Translit=parama|LTranslit=parama
+5	दुर्मेधसः	दुर्मेधस्	ADJ	_	Case=Acc|Gender=Masc|Number=Plur	3	amod	_	Translit=durmedhasaḥ|LTranslit=durmedhas
+6	वसुशक्तिः	वसुशक्ति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	3	nmod	_	Translit=vasuśaktiḥ|LTranslit=vasuśakti
+7	उग्रशक्तिः	उग्रशक्ति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	6	conj	_	Translit=ugraśaktiḥ|LTranslit=ugraśakti
+8	अनन्तशक्तिश्	अनन्तशक्ति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	6	conj	_	Translit=anantaśaktiś|LTranslit=anantaśakti
+9	च	च	CONJ	_	_	6	cc	_	Translit=ca|LTranslit=ca
+10	इति	इति	ADV	_	_	11	advmod	_	Translit=iti|LTranslit=iti
+11	बभूवुः	भू	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	Translit=babhūvuḥ|LTranslit=bhū_1|LId=भू-१
+
+1	अथ	अथ	ADV	_	_	9	advmod	_	Translit=atha|LTranslit=atha
+2	तान्	तद्	PRON	_	Case=Abl|Gender=Masc|Number=Plur|PronType=Dem	4	dobj	_	Translit=tān|LTranslit=tad
+3	शास्त्रविमुखान्	शास्त्रविमुख	NOUN	_	Case=Abl|Gender=Masc|Number=Plur	4	nmod	_	Translit=śāstravimukhān|LTranslit=śāstravimukha
+4	समालोक्य	समालोक्य	VERB	_	Case=Voc|Gender=Masc|Number=Sing|VerbForm=Part	9	advcl	_	Translit=samālokya|LTranslit=samālokya
+5	स	तद्	DET	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	6	det	_	Translit=sa|LTranslit=tad
+6	राजा	राजन्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	9	nsubj	_	Translit=rājā|LTranslit=rājan
+7	सचिवान्	सचिव	NOUN	_	Case=Abl|Gender=Masc|Number=Plur	8	dobj	_	Translit=sacivān|LTranslit=saciva
+8	आहूय	आहूय	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=āhūya|LTranslit=āhūya
+9	प्रोवाच	प्रो-वच्	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	8	conj	_	Translit=provāca|LTranslit=pro-vac
+
+1	तत्	तद्	ADV	_	Case=Nom	10	advmod	_	Translit=tat|LTranslit=tad
+2	एतान्	एतद्	PRON	_	Case=Abl|Gender=Masc|Number=Plur|PronType=Dem	3	dobj	_	Translit=etān|LTranslit=etad
+3	पश्यतः	पश्यत्	VERB	_	Case=Gen|Gender=Masc|Number=Sing|VerbForm=Ger	10	advcl	_	Translit=paśyataḥ|LTranslit=paśyat
+4	मे	अहम्	PRON	_	Case=Gen|Number=Sing|Person=1|PronType=Prs	10	nmod	_	Translit=me|LTranslit=aham
+5	महत्	महत्	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	7	amod	_	Translit=mahat|LTranslit=mahat
+6	अपि	अपि	ADV	_	_	10	advmod	_	Translit=api|LTranslit=api
+7	राज्यम्	राज्य	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	10	nsubj	_	Translit=rājyam|LTranslit=rājya
+8	न	न	PART	_	_	9	neg	_	Translit=na|LTranslit=na
+9	सौख्यम्	सौख्य	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	10	dobj	_	Translit=saukhyam|LTranslit=saukhya
+10	आवहति	आ-वह्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=āvahati|LTranslit=ā-vah_1|LId=आ-वह्-१
+
+1	अथवा	अथVअ	ADV	_	_	4	advmod	_	Translit=athavā|LTranslit=athaVa
+2	साधू	साधु	ADV	_	Case=Acc	4	advmod	_	Translit=sādhū|LTranslit=sādhu
+3	इदम्	इदम्	PRON	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	nsubjpass	_	Translit=idam|LTranslit=idam
+4	उच्यते	वच्	VERB	_	Aspect=Perf|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=ucyate|LTranslit=vac
+
+1	किम्	क	DET	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Int	3	nsubjpass	_	Translit=kim|LTranslit=ka|LId=क-१
+2	तया	तद्	DET	_	Case=Ins|Gender=Fem|Number=Sing|PronType=Dem	4	det	_	Translit=tayā|LTranslit=tad
+3	क्रियते	कृ	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=kriyate|LTranslit=kr̥_1|LId=कृ-१
+4	धेन्वा	धेनु	NOUN	_	Case=Ins|Gender=Fem|Number=Sing	3	nmod	_	Translit=dhenvā|LTranslit=dhenu
+5	या	यद्	PRON	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Rel	7	nsubj	_	Translit=yā|LTranslit=yad
+6	न	न	PART	_	_	7	neg	_	Translit=na|LTranslit=na
+7	सूते	सू	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	Translit=sūte|LTranslit=sū
+8	न	न	PART	_	_	10	neg	_	Translit=na|LTranslit=na
+9	क्षीरम्	क्षीर	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	10	dobj	_	Translit=kṣīram|LTranslit=kṣīra
+10	ददाति	दा	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	Translit=dadāti|LTranslit=dā
+
+1	कः	क	DET	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Int	2	det	_	Translit=kaḥ|LTranslit=ka
+2	अर्थः	अर्थ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	Translit=arthaḥ|LTranslit=artha
+3	पुत्रेण	पुत्र	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	4	nmod	_	Translit=putreṇa|LTranslit=putra
+4	जातेन	जात	VERB	_	Case=Ins|Gender=Masc|Number=Sing|VerbForm=Ger	0	root	_	Translit=jātena|LTranslit=jāta
+5	यः	यद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	7	nsubj	_	Translit=yaḥ|LTranslit=yad
+6	न	न	PART	_	_	7	neg	_	Translit=na|LTranslit=na
+7	विद्वान्	विद्वस्	X	_	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	Translit=vidvān|LTranslit=vidvas
+8	न	न	PART	_	_	7	neg	_	Translit=na|LTranslit=na
+9	भक्तिमान्	भक्तिमत्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	7	conj	_	Translit=bhaktimān|LTranslit=bhaktimat
+10	अस्ति	अस्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	Translit=asti|LTranslit=as_1|LId=अस्-१
+
+1	तत्र	तत्र	ADV	_	_	4	advmod	_	Translit=tatra|LTranslit=tatra_1|LId=तत्र-१
+2	एकः	एक्	NUM	_	Case=Nom|Gender=Neut|Number=Sing|NumType=Card	4	nummod	_	Translit=ekaḥ|LTranslit=ek
+3	सचिवः	सचिव	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	Translit=sacivaḥ|LTranslit=saciva
+4	प्रोचुः	प्र-वच्	VERB	_	Aspect=Perf|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=procuḥ|LTranslit=pra-vac
+
+1	देव	देव	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	Translit=deva|LTranslit=deva
+2	द्वादशभिर्	द्वादशभि	NUM	_	Case=Ins|Gender=Masc|Number=Sing|NumType=Card	3	nummod	_	Translit=dvādaśabhir|LTranslit=dvādaśabhi
+3	वर्षैः	वर्ष	NOUN	_	Case=Ins|Number=Plur	1	nmod	_	Translit=varṣaiḥ|LTranslit=varṣa
+4	व्याकरणम्	व्याकरण	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	5	dobj	_	Translit=vyākaraṇam|LTranslit=vyākaraṇa
+5	श्रूयते	श्रु	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=śrūyate|LTranslit=śru
+
+1	ततः	ततः	ADV	_	_	4	advmod	_	Translit=tataḥ|LTranslit=tataḥ
+2	बुद्धि	बुद्धि	NOUN	_	_	3	compound	_	Translit=buddhi|LTranslit=buddhi
+3	प्रबोधनः	प्रबोधन	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	4	nsubj	_	Translit=prabodhanaḥ|LTranslit=prabodhana
+4	भवति	भू	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=bhavati|LTranslit=bhū_1|LId=भू-१
+
+1	अथ	अथ	ADV	_	_	7	advmod	_	Translit=atha|LTranslit=atha
+2	तत्	तद्	PRON	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	7	nmod	_	Translit=tat|LTranslit=tad
+3	मध्यतः	मध्यतः	ADV	_	_	2	advmod	_	Translit=madhyataḥ|LTranslit=madhyataḥ
+4	सुमति	सुमति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	Translit=sumati|LTranslit=sumati
+5	नाम	नामन्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	Translit=nāma|LTranslit=nāman
+6	अमात्यः	अमात्य	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	Translit=amātyaḥ|LTranslit=amātya
+7	प्राह	प्राह्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=prāha|LTranslit=prāh
+
+1	प्रभूत	प्र-भूत	ADJ	_	Case=Acc|Gender=Masc|Number=Sing	2	amod	_	Translit=prabhūta|LTranslit=pra-bhūta
+2	काल	काल	NOUN	_	Case=Acc|Gender=Neut|Number=Plur	3	nmod	_	Translit=kāla|LTranslit=kāla_1|LId=काल-१
+3	ज्ञेयानि	ज्ञेय	VERB	_	Case=Acc|Gender=Neut|Number=Plur|VerbForm=Ger	0	root	_	Translit=jñeyāni|LTranslit=jñeya
+4	शब्द	शब्द	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	5	compound	_	Translit=śabda|LTranslit=śabda
+5	शास्त्राणि	शास्त्र	X	_	Case=Nom|Gender=Neut|Number=Plur	3	nsubj	_	Translit=śāstrāṇi|LTranslit=śāstra
+
+1	तत्	तद्	ADV	_	Case=Nom	8	advmod	_	Translit=tat|LTranslit=tad
+2	सङ्क्षेपमात्रम्	सङ्क्षेपमत्र	ADJ	_	Case=Acc|Gender=Masc|Number=Sing	3	amod	_	Translit=saṅkṣepamātram|LTranslit=saṅkṣepamatra
+3	शास्त्रम्	शस्त्र	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	Translit=śāstram|LTranslit=śastra
+4	किंचिद्	किंचिद्	DET	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	3	det	_	Translit=kiṁcid|LTranslit=kiṁcid
+5	एतेषाम्	एतद्	PRON	_	Case=Gen|Gender=Masc|Number=Plur|PronType=Dem	6	nmod	_	Translit=eteṣām|LTranslit=etad
+6	प्रबोधन	प्रबोधन	NOUN	_	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Ger	8	nmod	_	Translit=prabodhana|LTranslit=prabodhana
+7	अर्थम्	अर्थ	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	8	dobj	_	Translit=artham|LTranslit=artha
+8	चिन्त्यताम्	चिन्त्	VERB	_	Mood=Imp|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=cintyatām|LTranslit=cint
+
+1	अत्र	अत्र	ADV	_	_	2	advmod	_	Translit=atra|LTranslit=atra
+2	अस्ति	अस्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=asti|LTranslit=as
+3	विष्णुशर्मा	विष्णुशर्म	X	_	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	Translit=viṣṇuśarmā|LTranslit=viṣṇuśarma
+4	नाम	नामन्	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	5	nmod	_	Translit=nāma|LTranslit=nāman
+5	ब्राह्मणḥ	ब्राह्मण	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	Translit=brāhmaṇaḥ|LTranslit=brāhmaṇa
+6	सकल	सकल	ADJ	_	Case=Acc|Number=Sing	7	amod	_	Translit=sakala|LTranslit=sakala
+7	शास्त्र	सास्त्र	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	8	nmod	_	Translit=śāstra|LTranslit=sāstra
+8	पारङ्गत	परङ्गत्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	5	nmod	_	Translit=pāraṅgata|LTranslit=paraṅgat
+9	च	च	CONJ	_	_	8	cc	_	Translit=ca|LTranslit=ca
+10	अत्र	अत्र	ADV	_	_	11	advmod	_	Translit=atra|LTranslit=atra
+11	संसदि	संसदि	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	12	nmod	_	Translit=saṁsadi|LTranslit=saṁsadi
+12	लब्धकीर्तिः	लब्धकीर्ति	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	8	conj	_	Translit=labdhakīrtiḥ|LTranslit=labdhakīrti
+
+1	तस्मै	तद्	PRON	_	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	2	nmod	_	Translit=tasmai|LTranslit=tad
+2	समर्पय	समर्पय	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=samarpaya|LTranslit=samarpaya
+3	एतान्	एतद्	PRON	_	Case=Abl|Gender=Masc|Number=Plur|PronType=Dem	2	dobj	_	Translit=etān|LTranslit=etad
+
+1	सः	तद्	DET	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	Translit=saḥ|LTranslit=tad
+2	राजा	राजन्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	7	nsubj	_	Translit=rājā|LTranslit=rājan
+3	तत्	तद्	ADV	_	Case=Nom	4	advmod	_	Translit=tat|LTranslit=tad
+4	आकर्ण्य	आकर्न्य	VERB	_	Case=Voc|Gender=Neut|Number=Sing|VerbForm=Part	6	advcl	_	Translit=ākarṇya|LTranslit=ākarnya
+5	विष्णुशर्माणम्	विष्णुशर्माण	PROPN	_	Case=Acc|Gender=Masc|Number=Sing	6	dobj	_	Translit=viṣṇuśarmāṇam|LTranslit=viṣṇuśarmāṇa
+6	आहूय	आहूय	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=āhūya|LTranslit=āhūya
+7	प्रोवाच	प्र-वच्	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	Translit=provāca|LTranslit=pra-vac
+
+1	अहम्	अहम्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	Translit=aham|LTranslit=aham
+2	त्वाम्	त्वद्	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=2|PronType=Prs	5	iobj	_	Translit=tvām|LTranslit=tvad
+3	शासन	शासन	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	5	dobj	_	Translit=śāsana|LTranslit=śāsana
+4	शतेन	शत	NUM	_	Case=Ins|Gender=Masc|Number=Sing|NumType=Card	3	nummod	_	Translit=śatena|LTranslit=śata
+5	नियोजयिष्यामि	नि-युज्	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	Translit=niyojayiṣyāmi|LTranslit=ni-yuj
+
+1	अथ	अथ	ADV	_	_	5	advmod	_	Translit=atha|LTranslit=atha
+2	विष्णुशर्म	विष्णुशर्मा	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	Translit=viṣṇuśarma|LTranslit=viṣṇuśarmā
+3	तम्	तद्	DET	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	4	det	_	Translit=tam|LTranslit=tad
+4	राजानम्	राजन्	X	_	Case=Acc|Gender=Masc|Number=Sing	5	dobj	_	Translit=rājānam|LTranslit=rājan
+5	उच्यते	वच्	VERB	_	Aspect=Perf|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Translit=ucyate|LTranslit=vac
+
+1	देव	देव	NOUN	_	Case=Voc|Gender=Masc|Number=Sing	2	nsubj	_	Translit=deva|LTranslit=deva
+2	श्रूयताम्	श्रु	VERB	_	Mood=Imp|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=śrūyatām|LTranslit=śru
+3	मे	अहम्	PRON	_	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod	_	Translit=me|LTranslit=aham
+4	तथ्य	तथ्य	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	5	amod	_	Translit=tathya|LTranslit=tathya
+5	वचनम्	वचन	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	2	nmod	_	Translit=vacanam|LTranslit=vacana
+
+1	न	न	PART	_	_	4	neg	_	Translit=na|LTranslit=na
+2	अहम्	अहम्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	Translit=aham|LTranslit=aham
+3	विद्याविक्रयं	विद्यविक्रय	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	4	dobj	_	Translit=vidyāvikrayaṁ|LTranslit=vidyavikraya
+4	करोमि	कृ	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=karomi|LTranslit=kr̥_1|LId=कृ-१
+5	शासन	शासन	NOUN	_	Case=Voc|Gender=Neut|Number=Sing	4	nmod	_	Translit=śāsana|LTranslit=śāsana
+6	शतेन	शत	NUM	_	Case=Ins|Gender=Masc|Number=Sing|NumType=Card	5	nummod	_	Translit=śatena|LTranslit=śata
+
+1	तत्	तद्	ADV	_	Case=Nom	2	advmod	_	Translit=tat|LTranslit=tad
+2	लिख्यताम्	लिख्	VERB	_	Mood=Imp|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=likhyatām|LTranslit=likh
+3	अद्यतनः	अद्यतन	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	Translit=adyatanaḥ|LTranslit=adyatana
+4	दिवसः	दिवस	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	Translit=divasaḥ|LTranslit=divasa
+
+1	ते	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Plur|PronType=Dem	9	nsubj	_	Translit=te|LTranslit=tad
+2	अपि	अपि	ADV	_	_	1	advmod	_	Translit=api|LTranslit=api
+3	तानि	तद्	PRON	_	Case=Acc|Gender=Neut|Number=Plur|PronType=Dem	4	nmod	_	Translit=tāni|LTranslit=tad
+4	अधीत्य	अ-धि	VERB	_	Tense=Past|VerbForm=Part	9	advcl	_	Translit=adhītya|LTranslit=a-dhi
+5	मास	मास	NUM	_	Case=Voc|Gender=Neut|Number=Sing|NumType=Card	6	nummod	_	Translit=māsa|LTranslit=māsa
+6	षट्केन	षट्क	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	4	nmod	_	Translit=ṣaṭkena|LTranslit=ṣaṭka
+7	यथा	यथा	ADV	_	_	9	advmod	_	Translit=yathā|LTranslit=yathā
+8	उक्तह्	उच्	VERB	_	Case=Acc|Gender=Masc|Number=Plur|VerbForm=Part	9	advcl	_	Translit=uktah|LTranslit=uc
+9	संवृत्ताḥ	सम्-जन्	VERB	_	Case=Acc|Gender=Masc|Number=Plur|VerbForm=Part	0	root	_	Translit=saṁvr̥ttāḥ|LTranslit=sam-jan
+
+1	ततः	ततः	ADV	_	_	2	advmod	_	Translit=tataḥ|LTranslit=tataḥ
+2	प्रभृती	प्रभृति	NOUN	_	Case=Acc|Gender=Masc|Number=Dual	11	nmod	_	Translit=prabhr̥tī|LTranslit=prabhr̥ti
+3	एतत्	एतद्	DET	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	6	det	_	Translit=etat|LTranslit=etad
+4	पञ्चतन्त्रकम्	पञ्चतन्त्रक	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	6	nmod	_	Translit=pañcatantrakam|LTranslit=pañcatantraka
+5	नाम	नामन्	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	6	nmod	_	Translit=nāma|LTranslit=nāman
+6	नीतिशास्त्रं	नीतिशास्त्र	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	11	nsubj	_	Translit=nītiśāstraṁ|LTranslit=nītiśāstra
+7	बाल	बाल	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	8	nmod	_	Translit=bāla|LTranslit=bāla
+8	अवबोधन्	अव-बोधन्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	6	nmod	_	Translit=avabodhan|LTranslit=ava-bodhan
+9	अर्थम्	अर्थ	ADV	_	_	8	advmod	_	Translit=artham|LTranslit=artha
+10	भूतले	भू	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	11	nmod	_	Translit=bhūtale|LTranslit=bhū
+11	प्रवृत्तम्	प्र-ऋत्त्	VERB	_	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Ger	0	root	_	Translit=pravr̥ttam|LTranslit=pra-r̥tt
+
+1	अधीते	अधी	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Translit=adhīte|LTranslit=adhī
+2	य	यद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	Translit=ya|LTranslit=yad
+3	इदम्	इदम्	DET	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	5	det	_	Translit=idam|LTranslit=idam
+4	नित्यम्	नित्य	ADV	_	Case=Nom	6	advmod	_	Translit=nityam|LTranslit=nitya
+5	नीतिशस्त्रम्	नीतिशस्त्र	PROPN	_	Case=Acc|Gender=Neut|Number=Sing	6	dobj	_	Translit=nītiśastram|LTranslit=nītiśastra
+6	शृणोति	श्रु	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	Translit=śr̥ṇoti|LTranslit=śru
+7	च	च	CONJ	_	_	1	cc	_	Translit=ca|LTranslit=ca
+
+1	सः	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	_	Translit=saḥ|LTranslit=tad
+2	न	न	PART	_	_	4	neg	_	Translit=na|LTranslit=na
+3	पराभवम्	प्राभवम्	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	4	nmod	_	Translit=parābhavam|LTranslit=prābhavam
+4	आप्नोति	आप्	X	_	Number=Sing|Person=3|Voice=Act	0	root	_	Translit=āpnoti|LTranslit=āp
+5	स	तद्	DET	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	6	det	_	Translit=sa|LTranslit=tad
+6	शक्रात्	शक्र	PROPN	_	Case=Abl|Gender=Masc|Number=Sing	3	nmod	_	Translit=śakrāt|LTranslit=śakra
+7	अपि	अपि	ADV	_	_	8	advmod	_	Translit=api|LTranslit=api
+8	कर्हिचित्	कर्हिचिद्	ADV	_	_	6	advmod	_	Translit=karhicit|LTranslit=karhicid
+
+1	अथातः	अथात	ADV	_	_	2	advmod	_	Translit=athātaḥ|LTranslit=athāta
+2	प्रारभ्यते	प्रा-रभ्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=prārabhyate|LTranslit=prā-rabh
+3	मित्रभेदो	मित्रभेद	PRON	_	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	Translit=mitrabhedo|LTranslit=mitrabheda
+4	नाम	नामन्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	6	nmod	_	Translit=nāma|LTranslit=nāman
+5	प्रथमम्	प्रथम	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	6	amod	_	Translit=prathamam|LTranslit=prathama
+6	तन्त्र	तन्त्र	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	Translit=tantra|LTranslit=tantra
+
+1	यस्य	यद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	4	nmod	_	Translit=yasya|LTranslit=yad
+2	अयम्	इदम्	DET	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	0	root	_	Translit=ayam|LTranslit=idam
+3	आद्यः	आद्य	ADJ	_	Case=Nom|Gender=Neut|Number=Sing	4	amod	_	Translit=ādyaḥ|LTranslit=ādya
+4	श्लोकः	श्लोक	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	2	nsubj	_	Translit=ślokaḥ|LTranslit=śloka
+
+1	वर्धमानो	वर्धमन्	ADJ	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part	3	amod	_	Translit=vardhamāno|LTranslit=vardhaman
+2	महान्	महत्	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	3	amod	_	Translit=mahān|LTranslit=mahat
+3	स्नेहः	स्नेह	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	11	nsubj	_	Translit=snehaḥ|LTranslit=sneha
+4	सिंह	सिंह	NOUN	_	_	5	compound	_	Translit=siṁha|LTranslit=siṁha
+5	गोवृषयोः	गोवृष	NOUN	_	Case=Gen|Gender=Masc|Number=Dual	3	nmod	_	Translit=govr̥ṣayoḥ|LTranslit=govr̥ṣa
+6	वने	वन	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	3	nmod	_	Translit=vane|LTranslit=vana
+7	जम्बुकेन	जम्बुक	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	11	nmod	_	Translit=jambukena|LTranslit=jambuka
+8	अति	अति	ADV	_	_	9	advmod	_	Translit=ati|LTranslit=ati
+9	लुब्धेन	लुब्ध	ADJ	_	Case=Ins|Gender=Masc|Number=Sing	7	amod	_	Translit=lubdhena|LTranslit=lubdha
+10	पिशुनेन	पिशुन	ADJ	_	Case=Ins|Gender=Masc|Number=Sing	7	amod	_	Translit=piśunena|LTranslit=piśuna
+11	विनाशितः	विनासित्	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	0	root	_	Translit=vināśitaḥ|LTranslit=vināsit
+
+1	तत्	तद्	PRON	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	dobj	_	Translit=tat|LTranslit=tad
+2	यथा	यथा	ADV	_	_	3	advmod	_	Translit=yathā|LTranslit=yathā
+3	श्रूयते	श्रु	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=śrūyate|LTranslit=śru
+
+1	तत्र	तत्र	PRON	_	PronType=Dem	2	expl	_	Translit=tatra|LTranslit=tatra
+2	बभूवुः	भू	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	Translit=babhūvuḥ|LTranslit=bhū
+3	धर्म	धर्म	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	4	nmod	_	Translit=dharma|LTranslit=dharma
+4	उपार्जित	उप-र्ज्	VERB	_	Case=Voc|Gender=Neut|Number=Sing|VerbForm=Part	2	advcl	_	Translit=upārjita|LTranslit=upa-rj
+5	भुरि	भुरि	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	6	amod	_	Translit=bhuri|LTranslit=bhuri
+6	विभवः	विभव	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	4	dobj	_	Translit=vibhavaḥ|LTranslit=vibhava
+7	वर्ध्दमान	वर्ध्दमान	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	10	nmod	_	Translit=vardhdamāna|LTranslit=vardhdamāna
+8	नाम	नाम	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	10	nmod	_	Translit=nāma|LTranslit=nāma
+9	वणिक्	वणिक्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	10	compound	_	Translit=vaṇik|LTranslit=vaṇik
+10	पुत्रः	पुत्र	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	Translit=putraḥ|LTranslit=putra
+
+1	तस्मै	तद्	PRON	_	Case=Dat|Gender=Masc|Number=Sing|PronType=Dem	7	nmod	_	Translit=tasmai|LTranslit=tad
+2	कदाचिद्	कधाचिद्	DET	_	PronType=Int	3	det	_	Translit=kadācid|LTranslit=kadhācid
+3	रात्रौ	रत्रि	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	5	nmod	_	Translit=rātrau|LTranslit=ratri
+4	शय्या	शय्या	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	5	nmod	_	Translit=śayyā|LTranslit=śayyā
+5	आरूढस्य	अअ-रुह्	VERB	_	Case=Gen|Gender=Masc|Number=Sing|VerbForm=Ger	7	advcl	_	Translit=ārūḍhasya|LTranslit=aa-ruh
+6	चिन्ता	चिन्ता	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	Translit=cintā|LTranslit=cintā
+7	समुत्पन्ना	समुत्पन्न	X	_	Case=Nom|Gender=Fem|Number=Sing|VerbForm=Ger	0	root	_	Translit=samutpannā|LTranslit=samutpanna
+
+1	यत्नेन	यत्न	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	6	nmod	_	Translit=yatnena|LTranslit=yatna
+2	मतिमान्	मतिमात्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	Translit=matimān|LTranslit=matimāt
+3	तस्मात्	तद्	PRON	_	Case=Abl|Gender=Masc|Number=Sing|PronType=Dem	4	nmod	_	Translit=tasmāt|LTranslit=tad
+4	अर्थम्	अर्थ	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	6	dobj	_	Translit=artham|LTranslit=artha
+5	एकम्	एक	ADV	_	Case=Acc	6	advmod	_	Translit=ekam|LTranslit=eka
+6	प्रसाधयेत्	प्र-सिध्	VERB	_	Mood=Opt|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=prasādhayet|LTranslit=pra-sidh
+
+1	यस्या	यद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Rel	2	nmod	_	Translit=yasyā|LTranslit=yad
+2	अर्थः	अर्थ	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	acl	_	Translit=arthaḥ|LTranslit=artha
+3	तस्य	तद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	4	nmod	_	Translit=tasya|LTranslit=tad
+4	मित्रणि	मित्र्	NOUN	_	Case=Acc|Gender=Masc|Number=Plur	0	root	_	Translit=mitraṇi|LTranslit=mitr
+5	यस्या	यद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|PronType=Rel	6	nmod	_	Translit=yasyā|LTranslit=yad
+6	अर्थः	अर्थ	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	7	acl	_	Translit=arthaḥ|LTranslit=artha
+7	तस्य	तद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	8	nmod	_	Translit=tasya|LTranslit=tad
+8	बान्धवाः	बान्धव	NOUN	_	Case=Acc|Gender=Masc|Number=Plur	4	conj	_	Translit=bāndhavāḥ|LTranslit=bāndhava
+
+1	यस्या	यद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Rel	2	nmod	_	Translit=yasyā|LTranslit=yad
+2	अर्थः	अर्थ	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	acl	_	Translit=arthaḥ|LTranslit=artha
+3	स	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	_	Translit=sa|LTranslit=tad
+4	पुमान्	पुंस्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	Translit=pumān|LTranslit=puṁs
+5	लोके	लोक्	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	4	nmod	_	Translit=loke|LTranslit=lok
+6	यस्य	यद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Rel	2	nmod	_	Translit=yasya|LTranslit=yad
+7	अर्थाः	अर्थ	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	6	acl	_	Translit=arthāḥ|LTranslit=artha
+8	स	तद्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	Translit=sa|LTranslit=tad
+9	च	च	CONJ	_	_	4	cc	_	Translit=ca|LTranslit=ca
+10	पण्डितः	पण्डितः	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	conj	_	Translit=paṇḍitaḥ|LTranslit=paṇḍitaḥ
+
+1	स्वल्पम्	स्वल्प	ADJ	_	Case=Nom|Gender=Masc|Number=Sing	3	dobj	_	Translit=svalpam|LTranslit=svalpa
+2	अपि	अपि	ADV	_	_	3	advmod	_	Translit=api|LTranslit=api
+3	संचीयमानः	संचियमान	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	5	advcl	_	Translit=saṁcīyamānaḥ|LTranslit=saṁciyamāna
+4	वल्मीकवत्	वल्मीकवत्	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	5	nsubjpass	_	Translit=valmīkavat|LTranslit=valmīkavat
+5	वर्धते	वृध्	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=vardhate|LTranslit=vr̥dh
+
+1	अतः	अतस्	ADV	_	_	7	advmod	_	Translit=ataḥ|LTranslit=atas
+2	प्रभूना	प्रभु	ADJ	_	Case=Ins|Gender=Masc|Number=Sing	3	amod	_	Translit=prabhūnā|LTranslit=prabhu
+3	द्रव्येण	द्रव्य	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	7	nsubj	_	Translit=dravyeṇa|LTranslit=dravya_2|LId=द्रव्य-२
+4	तस्य	तद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|PronType=Dem	7	nmod	_	Translit=tasya|LTranslit=tad
+5	एव	एव	ADV	_	_	4	advmod	_	Translit=eva|LTranslit=eva
+6	वृद्धिः	वृद्धि	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	7	dobj	_	Translit=vr̥ddhiḥ|LTranslit=vr̥ddhi
+7	करणीया	करणीय	VERB	_	Case=Acc|Gender=Neut|Number=Sing|VerbForm=Ger	0	root	_	Translit=karaṇīyā|LTranslit=karaṇīya
+
+1	स	तद्	DET	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	Translit=sa|LTranslit=tad
+2	अर्थः	अर्थ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	Translit=arthaḥ|LTranslit=artha
+3	पुरुषाणाम्	पुरुष	NOUN	_	Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	Translit=puruṣāṇām|LTranslit=puruṣa
+4	षड्भिḥ	षष्	NUM	_	Case=Ins|Number=Plur|NumType=Card	5	nummod	_	Translit=ṣaḍbhiḥ|LTranslit=ṣaṣ
+5	उपायैः	उपाय	NOUN	_	Case=Ins|Number=Plur	6	nmod	_	Translit=upāyaiḥ|LTranslit=upāya
+6	भवति	भु	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=bhavati|LTranslit=bhu
+7	भिक्षया	भिक्षा	NOUN	_	Case=Ins|Gender=Fem|Number=Plur	5	nmod	_	Translit=bhikṣayā|LTranslit=bhikṣā
+8	नृपसेवया	नृपसेव	NOUN	_	Case=Ins|Gender=Fem|Number=Plur	7	conj	_	Translit=nr̥pasevayā|LTranslit=nr̥paseva
+9	कृषिकर्मणा	कृषिकर्म	NOUN	_	Case=Ins|Gender=Neut|Number=Sing	7	conj	_	Translit=kr̥ṣikarmaṇā|LTranslit=kr̥ṣikarma
+10	विद्योपार्जनेन	विद्यओपार्जन्	NOUN	_	Case=Ins|Gender=Neut|Number=Sing	7	conj	_	Translit=vidyopārjanena|LTranslit=vidyaopārjan
+11	व्यवहारेण	व्यवहार	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	7	conj	_	Translit=vyavahāreṇa|LTranslit=vyavahāra
+12	वणिक्कर्मणा	वणिक्कर्म	NOUN	_	Case=Ins|Gender=Neut|Number=Sing	7	conj	_	Translit=vaṇikkarmaṇā|LTranslit=vaṇikkarma
+13	वा	वा	CONJ	_	_	7	cc	_	Translit=vā|LTranslit=vā
+
+1	सर्वेषाम्	सर्व	NOUN	_	Case=Gen|Gender=Neut|Number=Plur	8	nmod	_	Translit=sarveṣām|LTranslit=sarva
+2	अपि	अपि	ADV	_	_	3	advmod	_	Translit=api|LTranslit=api
+3	तेषाम्	तद्	PRON	_	Case=Gen|Gender=Neut|Number=Plur|PronType=Dem	1	nmod	_	Translit=teṣām|LTranslit=tad
+4	वाणिज्येना	वारिज्य	NOUN	_	Case=Ins|Gender=Neut|Number=Sing	8	nmod	_	Translit=vāṇijyenā|LTranslit=vārijya
+5	अतिरस्कृतः	अतिरस्कृ	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	7	amod	_	Translit=atiraskr̥taḥ|LTranslit=atiraskr̥
+6	अर्थ	अर्थ	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	7	compound	_	Translit=artha|LTranslit=artha
+7	लाभः	लाभः	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	8	nsubj	_	Translit=lābhaḥ|LTranslit=lābhaḥ
+8	स्यात्	अस्	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=syāt|LTranslit=as
+
+1	तत्	तद्	DET	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	2	det	_	Translit=tat|LTranslit=tad
+2	वाणिज्यम्	वणिज्य	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	7	nsubj	_	Translit=vāṇijyam|LTranslit=vaṇijya
+3	सप्त	सप्तन्	NUM	_	Case=Nom|Gender=Neut|Number=Sing|NumType=Card	6	nummod	_	Translit=sapta|LTranslit=saptan
+4	विधम्	विध	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	3	dobj	_	Translit=vidham|LTranslit=vidha
+5	अर्था	अर्थ	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	6	compound	_	Translit=arthā|LTranslit=artha
+6	आगमाय	आगम्य	NOUN	_	Case=Dat|Gender=Masc|Number=Sing	7	nmod	_	Translit=āgamāya|LTranslit=āgamya
+7	स्यात्	अस्	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=syāt|LTranslit=as
+
+1	एवम्	एवम्	ADV	_	_	12	advmod	_	Translit=evam|LTranslit=evam
+2	मथुरा	मथुरा	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	3	compound	_	Translit=mathurā|LTranslit=mathurā
+3	अगामीनि	अगमिन्	ADJ	_	Case=Acc|Gender=Neut|Number=Plur	4	amod	_	Translit=agāmīni|LTranslit=agamin
+4	भाण्डानि	भाण्डा	NOUN	_	Case=Acc|Gender=Neut|Number=Plur	5	dobj	_	Translit=bhāṇḍāni|LTranslit=bhāṇḍā
+5	आदाय	आद	VERB	_	Case=Dat|Gender=Neut|Number=Sing|VerbForm=Ger	12	advcl	_	Translit=ādāya|LTranslit=āda
+6	शुभायाम्	सुभ	ADJ	_	Case=Loc|Gender=Fem|Number=Sing	7	amod	_	Translit=śubhāyām|LTranslit=subha
+7	तिथौ	तिथ	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	12	nmod	_	Translit=tithau|LTranslit=titha
+8	गुरुजन	गुरुजन	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	9	nmod	_	Translit=gurujana|LTranslit=gurujana
+9	अनुज्ञातः	अनु-ज्ञ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	12	nmod	_	Translit=anujñātaḥ|LTranslit=anu-jña
+10	सुरथ	सुरथ	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	11	dobj	_	Translit=suratha|LTranslit=suratha
+11	अधिरूढः	अधि-रुह्	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	12	advcl	_	Translit=adhirūḍhaḥ|LTranslit=adhi-ruh
+12	प्रस्थितः	प्र-स्थित	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	Translit=prasthitaḥ|LTranslit=pra-sthita
+
+1	तस्य	तद्	PRON	_	Case=Gen|Gender=Masc|Number=Sing|Poss=Yes|PronType=Dem	3	nmod	_	Translit=tasya|LTranslit=tad
+2	मङ्गल	मङ्गल	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	3	amod	_	Translit=maṅgala|LTranslit=maṅgala
+3	वृषभौ	वृषभ	NOUN	_	Case=Nom|Gender=Masc|Number=Dual	10	nsubj	_	Translit=vr̥ṣabhau|LTranslit=vr̥ṣabha
+4	सञ्जीवक	सञ्जीवक	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	3	nmod	_	Translit=sañjīvaka|LTranslit=sañjīvaka
+5	नन्दक	नन्दक	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	4	conj	_	Translit=nandaka|LTranslit=nandaka
+6	नामानौ	नामन्	NOUN	_	Case=Acc|Gender=Masc|Number=Dual	4	nmod	_	Translit=nāmānau|LTranslit=nāman
+7	गृह	गृह	NOUN	_	_	8	compound	_	Translit=gr̥ha|LTranslit=gr̥ha
+8	उत्पन्नौ	उत्-पन्न	ADJ	_	Case=Acc|Gender=Masc|Number=Dual	3	amod	_	Translit=utpannau|LTranslit=ut-panna
+9	धूः	धुर्	NOUN	_	Case=Acc|Gender=Fem|Number=Sing	10	dobj	_	Translit=dhūḥ|LTranslit=dhur
+10	वोढारौ	वह्	VERB	_	Number=Dual|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	11	advcl	_	Translit=voḍhārau|LTranslit=vah
+11	स्थितौ	स्थिति	NOUN	_	Case=Acc|Gender=Masc|Number=Dual|VerbForm=Part	0	root	_	Translit=sthitau|LTranslit=sthiti
+
+1	अथ	अथ	ADV	_	_	4	advmod	_	Translit=atha|LTranslit=atha
+2	तत्	तद्	DET	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	3	det	_	Translit=tat|LTranslit=tad
+3	अवस्थम्	अवस्था	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	4	dobj	_	Translit=avastham|LTranslit=avasthā
+4	आलोक्य	अअ-लोक्	VERB	_	VerbForm=Ger	8	advcl	_	Translit=ālokya|LTranslit=aa-lok
+5	वर्धमानः	वर्धमान	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	Translit=vardhamānaḥ|LTranslit=vardhamāna
+6	परम्	परम्	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	7	amod	_	Translit=param|LTranslit=param
+7	विषाद	विषाद	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	8	dobj	_	Translit=viṣāda|LTranslit=viṣāda
+8	अगमत्	अग-मत्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=agamat|LTranslit=aga-mat
+
+1	तत्	तद्	PRON	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	2	nmod	_	Translit=tat|LTranslit=tad
+2	अर्थम्	अर्थ	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	9	nmod	_	Translit=artham|LTranslit=artha
+3	स्नेहाद्र	स्नेहाद्र	ADJ	_	Case=Acc|Gender=Masc|Number=Sing	4	amod	_	Translit=snehādra|LTranslit=snehādra
+4	हृदयः	हृदयः	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	9	nmod	_	Translit=hr̥dayaḥ|LTranslit=hr̥dayaḥ
+5	त्रि	त्रि	NUM	_	NumType=Card	6	nummod	_	Translit=tri|LTranslit=tri
+6	रात्रम्	रात्रि	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	9	nmod	_	Translit=rātram|LTranslit=rātri
+7	प्रयाणम्	प्रयाण	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	8	compound	_	Translit=prayāṇam|LTranslit=prayāṇa
+8	भङ्गम्	भङ्गम्	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	9	dobj	_	Translit=bhaṅgam|LTranslit=bhaṅgam
+9	अकरोत्	क्र्	VERB	_	Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=akarot|LTranslit=kr
+
+1	अथ	अथ	ADV	_	_	6	advmod	_	Translit=atha|LTranslit=atha
+2	तम्	तद्	PRON	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	4	nsubj	_	Translit=tam|LTranslit=tad
+3	विषण्णम्	विषण्ण	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	2	nmod	_	Translit=viṣaṇṇam|LTranslit=viṣaṇṇa
+4	आलोक्य	आ-लोक्	VERB	_	VerbForm=Ger	6	advcl	_	Translit=ālokya|LTranslit=ā-lok
+5	सार्थिकैः	सार्थिक्	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	6	nsubj	_	Translit=sārthikaiḥ|LTranslit=sārthik
+6	अभिहितम्	अभि-हित	VERB	_	Case=Acc|Gender=Neut|Number=Sing|VerbForm=Ger	0	root	_	Translit=abhihitam|LTranslit=abhi-hita
+
+1	अथ	अथ	ADV	_	_	10	advmod	_	Translit=atha|LTranslit=atha
+2	तत्	तद्	DET	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	3	dobj	_	Translit=tat|LTranslit=tad
+3	अवधार्य	अव-धार्य	X	_	Case=Voc|Gender=Masc|Number=Sing|VerbForm=Part	10	advcl	_	Translit=avadhārya|LTranslit=ava-dhārya
+4	सञ्जीवकस्य	सञ्जीवक	X	_	Case=Gen|Gender=Masc|Number=Sing	10	nmod	_	Translit=sañjīvakasya|LTranslit=sañjīvaka
+5	रक्षापुरुषान्	रक्षापुरुष्	X	_	Case=Abl|Gender=Masc|Number=Sing	6	nmod	_	Translit=rakṣāpuruṣān|LTranslit=rakṣāpuruṣ
+6	निरूप्या	नि-रूप्	NOUN	_	Case=Nom|Gender=Fem|Number=Sing|VerbForm=Ger	4	nmod	_	Translit=nirūpyā|LTranslit=ni-rūp
+7	शेष	शेष	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	8	compound	_	Translit=śeṣa|LTranslit=śeṣa
+8	सार्थम्	सार्थ	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	10	dobj	_	Translit=sārtham|LTranslit=sārtha
+9	स	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	10	nsubj	_	Translit=sa|LTranslit=tad
+10	प्रस्थितḥ	प्र-स्था	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	0	root	_	Translit=prasthitaḥ|LTranslit=pra-sthā
+
+1	अस्माभिः	अहम्	PRON	_	Case=Ins|Number=Plur|Person=1|PronType=Prs	8	nmod	_	Translit=asmābhiḥ|LTranslit=aham
+2	तु	तु	ADV	_	_	8	advmod	_	Translit=tu|LTranslit=tu
+3	सार्थवाहस्य	सार्थवाह्स्य	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	6	nmod	_	Translit=sārthavāhasya|LTranslit=sārthavāhsya
+4	अभीष्ट	अभीष्ट	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	Translit=abhīṣṭa|LTranslit=abhīṣṭa
+5	इति	इति	ADV	_	_	6	advmod	_	Translit=iti|LTranslit=iti
+6	मत्वा	मत्वा	VERB	_	Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	advcl	_	Translit=matvā|LTranslit=matvā
+7	वनिना	वनिन्	NOUN	_	Case=Ins|Gender=Neut|Number=Sing	8	nmod	_	Translit=vaninā|LTranslit=vanin
+8	संस्कृत	सं-कृत	VERB	_	Case=Nom|Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	Translit=saṁskr̥ta|LTranslit=saṁ-kr̥ta
+
+1	अथ	अथ	ADV	_	_	5	advmod	_	Translit=atha|LTranslit=atha
+2	कदाचित्	कदाचित्	DET	_	PronType=Int	5	det	_	Translit=kadācit|LTranslit=kadācit
+3	पिङ्गलकः	पिङ्गलक	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	Translit=piṅgalakaḥ|LTranslit=piṅgalaka
+4	नाम	नम	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	5	nmod	_	Translit=nāma|LTranslit=nama
+5	सिंहḥ	सिंह	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	15	nsubj	_	Translit=siṁhaḥ|LTranslit=siṁha
+6	सर्व	सर्व	DET	_	Case=Acc|Gender=Neut|Number=Sing	7	det	_	Translit=sarva|LTranslit=sarva
+7	मृग	मृग	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	8	dobj	_	Translit=mr̥ga|LTranslit=mr̥ga
+8	परिवृतः	परि-वृ	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part	15	advcl	_	Translit=parivr̥taḥ|LTranslit=pari-vr̥
+9	पिपासाकुल	पिपासाकुल	ADV	_	Case=Nom	15	advmod	_	Translit=pipāsākula|LTranslit=pipāsākula
+10	उदक	उदक	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	11	compound	_	Translit=udaka|LTranslit=udaka
+11	पान	पान	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	15	nmod	_	Translit=pāna|LTranslit=pāna
+12	अर्थम्	अर्थ	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	11	nmod	_	Translit=artham|LTranslit=artha
+13	यमुन	यमुन	PROPN	_	Case=Nom|Gender=Fem|Number=Sing	14	compound	_	Translit=yamuna|LTranslit=yamuna
+14	तटम्	तट्	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	15	dobj	_	Translit=taṭam|LTranslit=taṭ
+15	अवत्र्णः	अवत्र्णः	X	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	Translit=avatrṇaḥ|LTranslit=avatrṇaḥ
+
+1	सञ्जीवकस्य	सञ्जिवक	PROPN	_	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	Translit=sañjīvakasya|LTranslit=sañjivaka
+2	गम्भीर	गम्भीर	ADJ	_	Case=Nom|Gender=Neut|Number=Sing	4	amod	_	Translit=gambhīra|LTranslit=gambhīra
+3	तर	तर	ADV	_	Case=Nom	4	advmod	_	Translit=tara|LTranslit=tara
+4	रावम्	राव	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	6	dobj	_	Translit=rāvam|LTranslit=rāva
+5	दूर	दूर	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	6	nmod	_	Translit=dūra|LTranslit=dūra
+6	आशृणोत्	अअ-श्रु	VERB	_	Mood=Imp|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=āśr̥ṇot|LTranslit=aa-śru
+
+1	तौ	तद्	X	_	Case=Nom|Gender=Masc|Number=Dual	4	nsubj	_	Translit=tau|LTranslit=tad
+2	परस्परम्	परस्पर	ADJ	_	Case=Acc|Gender=Neut|Number=Sing	3	amod	_	Translit=parasparam|LTranslit=paraspara
+3	विचारम्	विचार्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	4	dobj	_	Translit=vicāram|LTranslit=vicār
+4	आरब्धौ	आ-रब्	VERB	_	Case=Nom|Gender=Masc|Number=Dual|VerbForm=Fin	0	root	_	Translit=ārabdhau|LTranslit=ā-rab
+
+1	तत्र	तत्र	ADV	_	_	3	advmod	_	Translit=tatra|LTranslit=tatra
+2	दमनकः	दमनक	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	Translit=damanakaḥ|LTranslit=damanaka
+3	अब्रवीत्	ब्रू	VERB	_	Mood=Imp|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=abravīt|LTranslit=brū
+
+1	भद्र	भद्र	NOUN	_	Case=Voc|Gender=Masc|Number=Sing	2	compound	_	Translit=bhadra|LTranslit=bhadra
+2	करटक	करटक	PROPN	_	Case=Voc|Gender=Masc|Number=Sing	10	vocative	_	Translit=karaṭaka|LTranslit=karaṭaka
+3	अस्मत्	अहम्	PRON	_	Case=Abl|Number=Plur|Person=1|PronType=Prs	4	nmod	_	Translit=asmat|LTranslit=aham
+4	स्वामी	स्वामिन्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nmod	_	Translit=svāmī|LTranslit=svāmin
+5	पिङ्गलकः	पिङ्गलक	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	Translit=piṅgalakaḥ|LTranslit=piṅgalaka
+6	उदक	उदक	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	7	compound	_	Translit=udaka|LTranslit=udaka
+7	ग्रहण	ग्रहण	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	10	nmod	_	Translit=grahaṇa|LTranslit=grahaṇa
+8	अर्थम्	अर्थ	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	7	nmod	_	Translit=artham|LTranslit=artha
+9	इतः	इतः	ADV	_	_	10	advmod	_	Translit=itaḥ|LTranslit=itaḥ
+10	प्रवृत्तः	प्र-वृत्	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	Translit=pravr̥ttaḥ|LTranslit=pra-vr̥t
+
+1	सः	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	Translit=saḥ|LTranslit=tad
+2	अब्रवीत्	अ-ब्रू	VERB	_	Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=abravīt|LTranslit=a-brū
+
+1	तत्र	तत्र	ADV	_	_	2	expl	_	Translit=tatra|LTranslit=tatra
+2	आसीत्	आस्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=āsīt|LTranslit=ās
+3	मारीचः	मारिच	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	Translit=mārīcaḥ|LTranslit=mārica
+4	नाम	नामन्	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	5	nmod	_	Translit=nāma|LTranslit=nāman
+5	राक्षसः	राक्षस	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	Translit=rākṣasaḥ|LTranslit=rākṣasa
+
+1	यदा	यदा	ADV	_	_	3	advmod	_	Translit=yadā|LTranslit=yadā
+2	मेघः	मेघ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	3	nsubj	_	Translit=meghaḥ|LTranslit=megha
+3	वर्षति	वर्ष्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=varṣati|LTranslit=varṣ
+4	तदा	तदा	ADV	_	_	3	advmod	_	Translit=tadā|LTranslit=tadā
+5	मयूरः	मयूर	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nmod	_	Translit=mayūraḥ|LTranslit=mayūra
+6	नृत्यति	नृत्य्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	Translit=nr̥tyati|LTranslit=nr̥ty
+
+1	रामः	राम	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	Translit=rāmaḥ|LTranslit=rāma
+2	यस्मात्	यद्	PRON	_	Case=Abl|Gender=Masc|Number=Sing|PronType=Rel	3	nmod	_	Translit=yasmāt|LTranslit=yad
+3	अध्यापकम्	अध्यापक	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	5	nmod	_	Translit=adhyāpakam|LTranslit=adhyāpaka
+4	यत्	यद्	DET	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	5	det	_	Translit=yat|LTranslit=yad
+5	पुस्तकम्	पुस्तक	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	6	dobj	_	Translit=pustakam|LTranslit=pustaka
+6	अपठत्	पठ्	VERB	_	Mood=Imp|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=apaṭhat|LTranslit=paṭh
+7	अहम्	अहम्	PRON	_	Case=Nom|Gender=Masc|Person=1|PronType=Prs	12	nsubj	_	Translit=aham|LTranslit=aham
+8	तस्मात्	तद्	PRON	_	Case=Abl|Gender=Masc|Number=Sing|PronType=Dem	9	nmod	_	Translit=tasmāt|LTranslit=tad
+9	अध्यापकात्	अद्ह्यपक	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	11	nmod	_	Translit=adhyāpakāt|LTranslit=adhyapaka
+10	तत्	तद्	DET	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	11	det	_	Translit=tat|LTranslit=tad
+11	पुस्तकम्	पुस्तक	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	12	dobj	_	Translit=pustakam|LTranslit=pustaka
+12	अपठम्	पठ्	VERB	_	Mood=Imp|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	Translit=apaṭham|LTranslit=paṭh
+
+1	त्वम्	त्वद्	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	Translit=tvam|LTranslit=tvad
+2	इच्छसि	इष्	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	Translit=icchasi|LTranslit=iṣ
+3	चेत्	चेद्	ADV	_	_	2	advmod	_	Translit=cet|LTranslit=ced
+4	अहम्	अहम्	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	Translit=aham|LTranslit=aham
+5	भवतः	भवत्	PRON	_	Case=Abl|Number=Sing|Person=2|Polite=Pol|PronType=Prs	6	nmod	_	Translit=bhavataḥ|LTranslit=bhavat
+6	गृहम्	गृह	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	7	dobj	_	Translit=gr̥ham|LTranslit=gr̥ha
+7	आगमिष्यामि	आ-गम्	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	Translit=āgamiṣyāmi|LTranslit=ā-gam
+
+1	प्रथमम्	प्रथम	ADV	_	Case=Acc	3	advmod	_	Translit=prathamam|LTranslit=prathama
+2	अहम्	अहम्	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=aham|LTranslit=aham
+3	शृणोमि	स्णु	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=śr̥ṇomi|LTranslit=sṇu
+4	अथ	अथ	ADV	_	_	5	advmod	_	Translit=atha|LTranslit=atha
+5	लिखामि	लिख्	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	Translit=likhāmi|LTranslit=likh
+
+1	समये	समय	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	Translit=samaye|LTranslit=samaya
+2	न	न	ADV	_	_	3	neg	_	Translit=na|LTranslit=na
+3	आगतः	अअ-गम्	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	8	advcl	_	Translit=āgataḥ|LTranslit=aa-gam
+4	ततः	तद्	ADV	_	_	8	advmod	_	Translit=tataḥ|LTranslit=tad
+5	प्रवेश	प्रवेश	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	6	compound	_	Translit=praveśa|LTranslit=praveśa
+6	परीक्षायाम्	परीक्षा	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	8	nmod	_	Translit=parīkṣāyām|LTranslit=parīkṣā
+7	न	न	ADV	_	_	8	neg	_	Translit=na|LTranslit=na
+8	अनुमतः	अनु-मन्	X	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	0	root	_	Translit=anumataḥ|LTranslit=anu-man
+
+1	देवदत्तः	देवदत्त	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	4	nsubj	_	Translit=devadattaḥ|LTranslit=devadatta
+2	विष्वामित्रेण	विष्वमित्र	PROPN	_	Case=Ins|Gender=Masc|Number=Sing	4	nmod	_	Translit=viṣvāmitreṇa|LTranslit=viṣvamitra
+3	ओदनम्	ओदन	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	4	dobj	_	Translit=odanam|LTranslit=odana
+4	पाचयति	पच	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=pācayati|LTranslit=paca
+
+1	कस्मिन्	क	DET	_	Case=Loc|Gender=Neut|Number=Sing|PronType=Int	3	det	_	Translit=kasmin|LTranslit=ka
+2	चित्	चित्	ADV	_	_	3	advmod	_	Translit=cit|LTranslit=cit
+3	नगर	नगर	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	13	nsubj	_	Translit=nagara|LTranslit=nagara
+4	अभ्यासे	अभ्यास	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	3	nmod	_	Translit=abhyāse|LTranslit=abhyāsa
+5	केनापि	केनापि	ADV	_	_	7	advmod	_	Translit=kenāpi|LTranslit=kenāpi
+6	वणिक्	वणिक्	NOUN	_	_	7	compound	_	Translit=vaṇik|LTranslit=vaṇik
+7	पुत्रेण	पुत्र	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	12	nsubj	_	Translit=putreṇa|LTranslit=putra
+8	तरुखण्ड	तरुखण्ड	NOUN	_	_	9	compound	_	Translit=tarukhaṇḍa|LTranslit=tarukhaṇḍa
+9	मध्ये	मध्य	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	13	nmod	_	Translit=madhye|LTranslit=madhya
+10	देवताः	देव	NOUN	_	Case=Acc|Gender=Masc|Number=Plur	11	compound	_	Translit=devatāḥ|LTranslit=deva
+11	यतनं	यत्नं	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	12	dobj	_	Translit=yatanaṁ|LTranslit=yatnaṁ
+12	कर्तुम्	कृ	VERB	_	VerbForm=Inf	13	advcl	_	Translit=kartum|LTranslit=kr̥
+13	आरब्धम्	आ-रब्ध्	VERB	_	Case=Acc|Gender=Neut|Number=Sing|VerbForm=Part	0	root	_	Translit=ārabdham|LTranslit=ā-rabdh
+
+1	तत्र	तत्र	ADV	_	_	10	advmod	_	Translit=tatra|LTranslit=tatra
+2	ये	यद्	DET	_	Case=Acc|Gender=Neut|Number=Dual|PronType=Rel	3	det	_	Translit=ye|LTranslit=yad
+3	कर्मकराः	कर्मकरि	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	10	nsubj	_	Translit=karmakarāḥ|LTranslit=karmakari
+4	स्थापनादयस्ते	स्थापनादयस्त	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	conj	_	Translit=sthāpanādayaste|LTranslit=sthāpanādayasta
+5	मध्यह्न	मध्यह्न	NOUN	_	_	6	compound	_	Translit=madhyahna|LTranslit=madhyahna
+6	वेलायाम	वेल	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	10	nmod	_	Translit=velāyāma|LTranslit=vela
+7	आहारम्	आहर	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	8	nmod	_	Translit=āhāram|LTranslit=āhara
+8	आर्तम्	आर्तम्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	3	nmod	_	Translit=ārtam|LTranslit=ārtam
+9	नगरमध्ये	नग्रमध्	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	10	nmod	_	Translit=nagaramadhye|LTranslit=nagramadh
+10	गच्छन्ति	गम्	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=gacchanti|LTranslit=gam
+
+1	एतस्मिन्	एतद्	DET	_	Case=Loc|Gender=Neut|Number=Sing|PronType=Dem	2	det	_	Translit=etasmin|LTranslit=etad
+2	अन्तरे	अन्तर	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	8	nmod	_	Translit=antare|LTranslit=antara
+3	ते	तद्	DET	_	Case=Nom|Gender=Neut|Number=Plur|PronType=Dem	4	det	_	Translit=te|LTranslit=tad
+4	वानराः	वानर	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	8	nsubj	_	Translit=vānarāḥ|LTranslit=vānara
+5	यथा	यथा	ADV	_	_	6	advmod	_	Translit=yathā|LTranslit=yathā
+6	इच्छया	इच्छ	NOUN	_	Case=Ins|Gender=Fem|Number=Sing	8	nmod	_	Translit=icchayā|LTranslit=iccha
+7	क्रीडितुम्	क्रीड्	VERB	_	VerbForm=Inf	8	xcomp	_	Translit=krīḍitum|LTranslit=krīḍ
+8	आरब्धम्	आ-रब्ध्	VERB	_	Case=Acc|Gender=Neut|Number=Sing|VerbForm=Part	0	root	_	Translit=ārabdham|LTranslit=ā-rabdh
+
+1	अतः	अतः	ADV	_	_	3	advmod	_	Translit=ataḥ|LTranslit=ataḥ
+2	अहं	अहम्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	Translit=ahaṁ|LTranslit=aham
+3	ब्रवीमि	ब्रु	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=bravīmi|LTranslit=bru
+
+1	आवयोः	अस्मद्	NOUN	_	Case=Gen|Number=Dual	6	nmod	_	Translit=āvayoḥ|LTranslit=asmad
+2	भक्षित	भक्स्	NOUN	_	VerbForm=Ger	5	amod	_	Translit=bhakṣita|LTranslit=bhaks
+3	शेष	शेष	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	4	nmod	_	Translit=śeṣa|LTranslit=śeṣa
+4	आहारः	आहारः	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	Translit=āhāraḥ|LTranslit=āhāraḥ
+5	अस्ति	अस्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=asti|LTranslit=as_1|LId=अस्-१
+6	एव	एव	ADV	_	_	5	advmod	_	Translit=eva|LTranslit=eva
+
+1	दमनक	दमनक	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	Translit=damanaka|LTranslit=damanaka
+2	आह	आह्	VERB	_	Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=āha|LTranslit=āh
+
+1	तत्	तद्	DET	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	3	nsubj	_	Translit=tat|LTranslit=tad
+2	न	न	PART	_	_	3	neg	_	Translit=na|LTranslit=na
+3	युक्तम्	युक्त	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	0	root	_	Translit=yuktam|LTranslit=yukta
+
+1	सुहृदाम्	स्सुहृद्	NOUN	_	Case=Gen|Gender=Neut|Number=Sing	3	nmod	_	Translit=suhr̥dām|LTranslit=ssuhr̥d
+2	उपकारम्	उपकार	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	3	dobj	_	Translit=upakāram|LTranslit=upakāra
+3	करणात्	करण	VERB	_	Case=Abl|Gender=Neut|Number=Sing|VerbForm=Ger	10	advcl	_	Translit=karaṇāt|LTranslit=karaṇa
+4	द्विषतानम्	द्विष	NOUN	_	Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	Translit=dviṣatānam|LTranslit=dviṣa
+5	अपि	अपि	ADV	_	_	3	advmod	_	Translit=api|LTranslit=api
+6	उपकारम्	उपकार	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	7	dobj	_	Translit=upakāram|LTranslit=upakāra
+7	करणात्	करण	VERB	_	Case=Abl|Gender=Neut|Number=Sing|VerbForm=Ger	3	conj	_	Translit=karaṇāt|LTranslit=karaṇa
+8	नृप	नृप	NOUN	_	_	10	compound	_	Translit=nr̥pa|LTranslit=nr̥pa
+9	संश्रय	संश्रय	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	Translit=saṁśraya|LTranslit=saṁśraya
+10	इष्यन्ते	इस्	VERB	_	Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	Translit=iṣyante|LTranslit=is
+11	बुधैः	बुधा	NOUN	_	Case=Ins|Gender=Masc|Number=Plur	10	dobj	_	Translit=budhaiḥ|LTranslit=budhā
+
+1	जठरं	जठर	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	4	dobj	_	Translit=jaṭharaṁ|LTranslit=jaṭhara
+2	को	क	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Int	4	nsubj	_	Translit=ko|LTranslit=ka
+3	न	न	PART	_	_	5	neg	_	Translit=na|LTranslit=na
+4	बिभर्ति	बिभर्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=bibharti|LTranslit=bibhar
+5	केवलम्	केवल	ADV	_	_	4	advmod	_	Translit=kevalam|LTranslit=kevala
+
+1	यस्मिन्	यद्	DET	_	Case=Loc|Gender=Masc|Number=Sing|PronType=Rel	2	det	_	Translit=yasmin|LTranslit=yad
+2	जीवति	जिव्	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	Translit=jīvati|LTranslit=jiv
+3	जीवन्ति	जिव्	NOUN	_	Case=Acc|Gender=Masc|Number=Plur|VerbForm=Ger	7	advcl	_	Translit=jīvanti|LTranslit=jiv
+4	बहवः	बहवत्	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	3	nsubj	_	Translit=bahavaḥ|LTranslit=bahavat
+5	सह्	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	7	nsubj	_	Translit=sah|LTranslit=tad
+6	अत्र	अत्र	ADV	_	_	7	advmod	_	Translit=atra|LTranslit=atra
+7	जीवतु	जिव्	VERB	_	Mood=Imp|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=jīvatu|LTranslit=jiv
+
+1	त्वद्	त्वद्	PRON	_	Case=Abl|Gender=Masc|Number=Sing|Person=2|Poss=Yes|PronType=Prs	2	nmod	_	Translit=tvad|LTranslit=tvad
+2	प्रार्थना	प्रार्थन	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	7	nsubj	_	Translit=prārthanā|LTranslit=prārthana
+3	सिद्धि	सिद्धि	NOUN	_	_	4	compound	_	Translit=siddhi|LTranslit=siddhi
+4	अर्थम्	अर्थ	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	2	nmod	_	Translit=artham|LTranslit=artha
+5	सरस्वती	सरस्वती	NOUN	_	_	6	compound	_	Translit=sarasvatī|LTranslit=sarasvatī
+6	विनोदम्	विनोद	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	7	dobj	_	Translit=vinodam|LTranslit=vinoda
+7	करिष्यामि	कृ	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	Translit=kariṣyāmi|LTranslit=kr̥_1|LId=कृ-१
+
+1	एताम्	एतद्	DET	_	Case=Acc|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	Translit=etām|LTranslit=etad
+2	ब्राह्मणस्य	ब्राह्मण	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	Translit=brāhmaṇasya|LTranslit=brāhmaṇa
+3	असम्भाव्याम्	असम्भाव्य	ADJ	_	Case=Acc|Gender=Fem|Number=Sing	4	amod	_	Translit=asambhāvyām|LTranslit=asambhāvya
+4	प्रतिज्ञाम्	प्रतिज्ञा	NOUN	_	Case=Acc|Gender=Fem|Number=Sing	5	dobj	_	Translit=pratijñām|LTranslit=pratijñā_2|LId=प्रतिज्ञा-२
+5	श्रुत्वा	श्रु	VERB	_	VerbForm=Ger	10	advcl	_	Translit=śrutvā|LTranslit=śru
+6	स	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	7	nmod	_	Translit=sa|LTranslit=tad
+7	सचिवः	सचिव	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	8	nmod	_	Translit=sacivaḥ|LTranslit=saciva
+8	राजा	राजन्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	10	nsubj	_	Translit=rājā|LTranslit=rājan
+9	विस्मय	विस्मय	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	10	nmod	_	Translit=vismaya|LTranslit=vismaya
+10	अन्वितः	अनु-इत	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Ger	0	root	_	Translit=anvitaḥ|LTranslit=anu-ita
+
+1	विष्णुशर्मा	विष्णुशर्मन्	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	Translit=viṣṇuśarmā|LTranslit=viṣṇuśarman
+2	अपि	अपि	ADV	_	_	1	advmod	_	Translit=api|LTranslit=api
+3	तान्	तद्	DET	_	Case=Abl|Gender=Masc|Number=Plur|PronType=Dem	4	dobj	_	Translit=tān|LTranslit=tad
+4	आदाय	आदा	VERB	_	VerbForm=Ger	1	acl	_	Translit=ādāya|LTranslit=ādā
+5	स्वगृहं	स्वगृह	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	6	nmod	_	Translit=svagr̥haṁ|LTranslit=svagr̥ha
+6	गत्वा	गम्	VERB	_	Tense=Past|VerbForm=Part	0	root	_	Translit=gatvā|LTranslit=gam
+
+1	तत्	तद्	PRON	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	2	nmod	_	Translit=tat|LTranslit=tad
+2	अर्थम्	अर्थ	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	10	nmod	_	Translit=artham|LTranslit=artha
+3	मित्रभेदः	मित्रभेद	PROPN	_	Case=Nom|Gender=Neut|Number=Sing	10	nmod	_	Translit=mitrabhedaḥ|LTranslit=mitrabheda
+4	मित्रसंप्राप्तिः	मित्रसंप्राप्ति	PROPN	_	Case=Nom|Gender=Neut|Number=Sing	3	conj	_	Translit=mitrasaṁprāptiḥ|LTranslit=mitrasaṁprāpti
+5	काकोलूकीयम्	काकोलूकीय	PROPN	_	Case=Nom|Gender=Neut|Number=Sing	3	conj	_	Translit=kākolūkīyam|LTranslit=kākolūkīya
+6	लब्धप्रणाशम्	लब्धप्रणाशम्	PROPN	_	Case=Nom|Gender=Neut|Number=Sing	3	conj	_	Translit=labdhapraṇāśam|LTranslit=labdhapraṇāśam
+7	अपरीक्षितकारकम्	अपरीक्षितकारकम्	PROPN	_	Case=Nom|Gender=Neut|Number=Sing	3	conj	_	Translit=aparīkṣitakārakam|LTranslit=aparīkṣitakārakam
+8	इति	इति	CONJ	_	_	3	cc	_	Translit=iti|LTranslit=iti
+9	पञ्च	पञ्चन्	NUM	_	Case=Acc|Gender=Neut|Number=Plur|NumType=Card	10	nummod	_	Translit=pañca|LTranslit=pañcan
+10	तन्त्राणि	तन्त्र	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	12	nsubj	_	Translit=tantrāṇi|LTranslit=tantra
+11	रचयित्वा	रच्	VERB	_	Tense=Past|VerbForm=Part	0	root	_	Translit=racayitvā|LTranslit=rac
+12	पाठिताः	पाठित	VERB	_	Case=Nom|Gender=Masc|Number=Plur|VerbForm=Part	11	conj	_	Translit=pāṭhitāḥ|LTranslit=pāṭhita
+13	ते	तद्	DET	_	Case=Nom|Gender=Masc|Number=Plur|Poss=Yes|PronType=Dem	14	det	_	Translit=te|LTranslit=tad
+14	राजपुत्राः	राजपुत्र	NOUN	_	Case=Nom|Gender=Masc|Number=Plur	12	nmod	_	Translit=rājaputrāḥ|LTranslit=rājaputra
+
+1	यावत्	यावत्	ADV	_	_	5	advmod	_	Translit=yāvat|LTranslit=yāvat
+2	अयम्	इदम्	DET	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	3	det	_	Translit=ayam|LTranslit=idam
+3	प्राणेन	प्राण	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	5	nsubj	_	Translit=prāṇena|LTranslit=prāṇa
+4	न	न	PART	_	_	5	neg	_	Translit=na|LTranslit=na
+5	वियुज्यते	वियुज्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Pass	8	advcl	_	Translit=viyujyate|LTranslit=viyuj
+6	तावत्	तावत्	ADV	_	_	8	advmod	_	Translit=tāvat|LTranslit=tāvat
+7	इमम्	इदम्	PRON	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Dem	8	dobj	_	Translit=imam|LTranslit=idam
+8	गृहाण	ग्रह्	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=gr̥hāṇa|LTranslit=grah
+
+1	स	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	5	nsubj	_	Translit=sa|LTranslit=tad
+2	नूनम्	नूनम्	ADV	_	_	3	advmod	_	Translit=nūnam|LTranslit=nūnam
+3	द्राक्	द्राक्	ADV	_	_	5	advmod	_	Translit=drāk|LTranslit=drāk
+4	प्रबुद्धान्	प्र-बुद्ध	NOUN	_	Case=Abl|Gender=Masc|Number=Plur|VerbForm=Ger	5	xcomp	_	Translit=prabuddhān|LTranslit=pra-buddha
+5	करिष्यति	कृ	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	Translit=kariṣyati|LTranslit=kr̥_1|LId=कृ-१
+
+1	तस्मै	तद्	DET	_	Case=Dat|Gender=Masc|Number=Sing|Poss=Yes|PronType=Dem	2	det	_	Translit=tasmai|LTranslit=tad
+2	कुमारान्	कुमार	NOUN	_	Case=Abl|Gender=Masc|Number=Plur	3	dobj	_	Translit=kumārān|LTranslit=kumāra
+3	समर्पय्	सम्-ऋ	VERB	_	Case=Voc|Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	advcl	_	Translit=samarpay|LTranslit=sam-r̥
+4	पराम्	पर	ADJ	_	Case=Acc|Gender=Fem|Number=Sing	5	amod	_	Translit=parām|LTranslit=para
+5	निर्वृतिम्	निर्वृति	NOUN	_	Case=Acc|Gender=Fem|Number=Sing	6	dobj	_	Translit=nirvr̥tim|LTranslit=nirvr̥ti
+6	जगाम	गम्	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=jagāma|LTranslit=gam
+
+1	वयाम्सि	वयस्	NOUN	_	Case=Nom|Gender=Neut|Number=Plur	4	nsubj	_	Translit=vayāmsi|LTranslit=vayas
+2	किम्	किम्	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	4	nmod	_	Translit=kim|LTranslit=kim
+3	न	न	PART	_	_	4	neg	_	Translit=na|LTranslit=na
+4	कुर्वन्ति	क्र्	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=kurvanti|LTranslit=kr
+5	चञ्च्वा	चञ्चु	NOUN	_	Case=Ins|Gender=Fem|Number=Sing	8	nmod	_	Translit=cañcvā|LTranslit=cañcu
+6	स्वाः	स्व	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Prs|Reflex=Yes	8	nmod	_	Translit=svāḥ|LTranslit=sva
+7	उदर	उदर	NOUN	_	_	8	compound	_	Translit=udara|LTranslit=udara
+8	पूरणम्	पूरण	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	4	dobj	_	Translit=pūraṇam|LTranslit=pūraṇa
+
+1	अथ	अथ	ADV	_	_	4	advmod	_	Translit=atha|LTranslit=atha
+2	भवाम्	भव	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=2|Polite=Pol|PronType=Prs	3	nsubj	_	Translit=bhavām|LTranslit=bhava
+3	कर्तुम्	कृ	VERB	_	VerbForm=Inf	4	advcl	_	Translit=kartum|LTranslit=kr̥
+4	मनाः	मनस्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	Translit=manāḥ|LTranslit=manas
+
+1	यो	यद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Rel	11	nsubj	_	Translit=yo|LTranslit=yad
+2	न	न	PART	_	_	3	neg	_	Translit=na|LTranslit=na
+3	आत्मना	आत्मन्	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	11	nmod	_	Translit=ātmanā|LTranslit=ātman
+4	न	न	PART	_	_	6	neg	_	Translit=na|LTranslit=na
+5	च	च	CONJ	_	_	3	cc	_	Translit=ca|LTranslit=ca
+6	परेण	पर	NOUN	_	Case=Ins|Gender=Masc|Number=Sing	3	conj	_	Translit=pareṇa|LTranslit=para
+7	च	च	CONJ	_	_	3	cc	_	Translit=ca|LTranslit=ca
+8	बन्धुवर्गे	बन्धुवर्ग	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	3	conj	_	Translit=bandhuvarge|LTranslit=bandhuvarga
+9	दीने	दीन	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	3	conj	_	Translit=dīne|LTranslit=dīna
+10	न	न	PART	_	_	11	neg	_	Translit=na|LTranslit=na
+11	कुरुते	कृ	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	Translit=kurute|LTranslit=kr̥
+12	न	न	PART	_	_	14	neg	_	Translit=na|LTranslit=na
+13	च	च	CONJ	_	_	3	cc	_	Translit=ca|LTranslit=ca
+14	मर्त्यवर्गे	मर्त्यवर्ग	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	3	conj	_	Translit=martyavarge|LTranslit=martyavarga
+
+1	किं	किं	DET	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Int	4	det	_	Translit=kiṁ|LTranslit=kiṁ
+2	तस्य	तद्	PRON	_	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	3	nmod	_	Translit=tasya|LTranslit=tad
+3	जीवित	जीवित	VERB	_	VerbForm=Ger	0	root	_	Translit=jīvita|LTranslit=jīvita
+4	फलम्	फल	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	3	dobj	_	Translit=phalam|LTranslit=phala
+5	मनुष्यलोके	मनुष्यलोक्	NOUN	_	Case=Loc|Gender=Masc|Number=Sing	3	nmod	_	Translit=manuṣyaloke|LTranslit=manuṣyalok
+
+1	करटकः	करटक	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	Translit=karaṭakaḥ|LTranslit=karaṭaka
+2	आह	अह्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=āha|LTranslit=ah
+
+1	अथ	अथ	ADV	_	_	4	advmod	_	Translit=atha|LTranslit=atha
+2	भवान्	भवत्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=2|Polite=Pol|PronType=Prs	4	nsubj	_	Translit=bhavān|LTranslit=bhavat
+3	किम्	किम्	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	4	nmod	_	Translit=kim|LTranslit=kim
+4	वक्तुमनाम्	वक्तुमआः	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	0	root	_	Translit=vaktumanām|LTranslit=vaktumaāḥ
+
+1	सः	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	Translit=saḥ|LTranslit=tad
+2	अब्रवीत्	ब्रू	VERB	_	Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=abravīt|LTranslit=brū
+
+1	अयम्	इदम्	PRON	_	Case=Acc|Gender=Neut|Number=Sing|PronType=Dem	8	dobj	_	Translit=ayam|LTranslit=idam
+2	तावत्	तावत्	ADV	_	_	8	advmod	_	Translit=tāvat|LTranslit=tāvat
+3	अस्मत्	अहम्	PRON	_	Case=Abl|Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nmod	_	Translit=asmat|LTranslit=aham
+4	स्वामी	स्वामिन्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	Translit=svāmī|LTranslit=svāmin
+5	भीतः	भीत	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part	8	advcl	_	Translit=bhītaḥ|LTranslit=bhīta
+6	मूढ	मूढ	ADJ	_	Case=Acc|Gender=Masc|Number=Sing	7	amod	_	Translit=mūḍha|LTranslit=mūḍha
+7	मनाः	मनस्	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	8	nsubj	_	Translit=manāḥ|LTranslit=manas
+8	संतिष्ठते	सं-तिष्ठ	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	Translit=saṁtiṣṭhate|LTranslit=saṁ-tiṣṭha
+
+1	सः	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	Translit=saḥ|LTranslit=tad
+2	अब्रवीत्	ब्रू	VERB	_	Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=abravīt|LTranslit=brū
+
+1	कथम्	कथम्	ADV	_	_	3	advmod	_	Translit=katham|LTranslit=katham
+2	भवान्	भवत्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=2|Polite=Pol|PronType=Prs	3	nsubj	_	Translit=bhavān|LTranslit=bhavat_2|LId=भवत्-२
+3	जानाति	ज्ञा	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=jānāti|LTranslit=jñā_1|LId=ज्ञा-१
+
+1	दमनकः	दमनक	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	Translit=damanakaḥ|LTranslit=damanaka
+2	आह	अह्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=āha|LTranslit=ah
+
+1	किम्	किम्	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	3	nsubj	_	Translit=kim|LTranslit=kim
+2	अत्र	अत्र	ADV	_	_	3	advmod	_	Translit=atra|LTranslit=atra
+3	ज्ञातव्यम्	ज्ञन्	X	_	Case=Nom|Gender=Neut|Number=Sing|VerbForm=Ger	0	root	_	Translit=jñātavyam|LTranslit=jñan
+
+1	करटकः	करटक	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	2	nsubj	_	Translit=karaṭakaḥ|LTranslit=karaṭaka
+2	आह	अह्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=āha|LTranslit=ah
+
+1	अनभिज्ञम्	अन्-अभिज्य्ञ	NOUN	_	_	0	root	_	Translit=anabhijñam|LTranslit=an-abhijyña
+2	भवान्	भवत्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=2|Polite=Pol|PronType=Prs	1	nsubj	_	Translit=bhavān|LTranslit=bhavat
+3	किल	किल	ADV	_	_	1	advmod	_	Translit=kila|LTranslit=kila
+4	सेवा	सेवा	NOUN	_	_	5	compound	_	Translit=sevā|LTranslit=sevā
+5	धर्मस्य	धर्म	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	1	nmod	_	Translit=dharmasya|LTranslit=dharma
+
+1	तत्	तद्	ADV	_	_	5	advmod	_	Translit=tat|LTranslit=tad
+2	कथम्	कथ्	PRON	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Int	5	dobj	_	Translit=katham|LTranslit=kath
+3	एनम्	एन	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nmod	_	Translit=enam|LTranslit=ena
+4	वशी	वशी	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	Translit=vaśī|LTranslit=vaśī
+5	करिष्यसि	कृ	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	Translit=kariṣyasi|LTranslit=kr̥
+
+1	सः	तद्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	Translit=saḥ|LTranslit=tad
+2	अब्रवीत्	ब्रू	VERB	_	Mood=Imp|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	Translit=abravīt|LTranslit=brū
+
+1	भद्र	भद्र	NOUN	_	Case=Voc|Gender=Masc|Number=Sing	5	vocative	_	Translit=bhadra|LTranslit=bhadra
+2	अहम्	अहम्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	Translit=aham|LTranslit=aham
+3	न	न	PART	_	_	4	neg	_	Translit=na|LTranslit=na
+4	सेवा	सेवा	NOUN	_	_	5	compound	_	Translit=sevā|LTranslit=sevā
+5	अभिज्ञः	अभिज्ञ	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	0	root	_	Translit=abhijñaḥ|LTranslit=abhijña
+
+1	कदाचित्	कदाचिद्	ADV	_	_	2	advmod	_	Translit=kadācit|LTranslit=kadācid
+2	अयम्	इदम्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	8	nsubj	_	Translit=ayam|LTranslit=idam
+3	अन्	अन्	NOUN	_	_	4	compound	_	Translit=an|LTranslit=an
+4	उचित	उचित	ADJ	_	Case=Acc|Gender=Masc|Number=Sing	5	amod	_	Translit=ucita|LTranslit=ucita
+5	स्थान	स्थान	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	7	nmod	_	Translit=sthāna|LTranslit=sthāna
+6	प्रवेशात्	प्रवेश	NOUN	_	Case=Abl|Gender=Masc|Number=Sing	8	nmod	_	Translit=praveśāt|LTranslit=praveśa
+7	भवन्तम्	भवत्	PRON	_	Case=Acc|Gender=Masc|Number=Sing|Person=2|Polite=Pol|PronType=Prs	8	dobj	_	Translit=bhavantam|LTranslit=bhavat
+8	अवमन्येत	अव-मन्	VERB	_	Mood=Opt|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Mid	0	root	_	Translit=avamanyeta|LTranslit=ava-man
+
+1	अस्ति	अस्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=asti|LTranslit=as
+2	एवम्	एवम्	ADV	_	_	1	advmod	_	Translit=evam|LTranslit=evam
+3	परम्	परम्	ADV	_	_	5	advmod	_	Translit=param|LTranslit=param
+4	अहम्	अहम्	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=1|PronType=Prs	1	nsubj	_	Translit=aham|LTranslit=aham
+5	देश	देश	NOUN	_	Case=Acc|Gender=Fem|Number=Sing	1	dobj	_	Translit=deśa|LTranslit=deśa
+6	काल	काल	NOUN	_	_	7	compound	_	Translit=kāla|LTranslit=kāla
+7	वित्	विद्	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	5	conj	_	Translit=vit|LTranslit=vid
+8	अपि	अपि	ADV	_	_	7	advmod	_	Translit=api|LTranslit=api
+
+1	अप्राप्तकालं	अप्राप्तकालं	ADJ	_	Case=Acc|Gender=Masc|Number=Sing	2	amod	_	Translit=aprāptakālaṁ|LTranslit=aprāptakālaṁ
+2	वचनम्	वचन	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	5	dobj	_	Translit=vacanam|LTranslit=vacana
+3	बृहस्पतिः	बृहस्पति	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	5	nsubj	_	Translit=br̥haspatiḥ|LTranslit=br̥haspati
+4	अपि	अपि	ADV	_	_	5	advmod	_	Translit=api|LTranslit=api
+5	ब्रुवन्	ब्रुवत्	VERB	_	Case=Nom|Gender=Masc|Number=Sing|VerbForm=Part	11	advcl	_	Translit=bruvan|LTranslit=bruvat
+6	न	न	PART	_	_	7	neg	_	Translit=na|LTranslit=na
+7	केवलम्	केवलम्	ADV	_	_	8	advmod	_	Translit=kevalam|LTranslit=kevalam
+8	असंमानं	असंमान	NOUN	_	Case=Acc|Gender=Masc|Number=Sing	11	dobj	_	Translit=asaṁmānaṁ|LTranslit=asaṁmāna
+9	विप्रियत्वं	विप्रियत्व	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	8	conj	_	Translit=vipriyatvaṁ|LTranslit=vipriyatva
+10	च	च	CONJ	_	_	8	cc	_	Translit=ca|LTranslit=ca
+11	गच्छति	गम्	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	Translit=gacchati|LTranslit=gam
+

@@ -1,0 +1,3196 @@
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Foro_para_o_Novo_Estatuto	Foro_para_o_Novo_Estatuto	PROPN	SPMS	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	recolle	recoller	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	dereito	dereito	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+6	a	a	ADP	P	AdpType=Prep	8	case	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	autodeterminación	autodeterminación	NOUN	SCFS	Gender=Fem|Number=Sing	5	nmod	_	_
+
+1	dereito	dereito	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+2	a	a	ADP	P	AdpType=Prep	4	case	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	autodeterminación	autodeterminación	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+5	cidadanía	cidadanía	NOUN	SCFS	Gender=Fem|Number=Sing	1	conj	_	_
+6	galega	galego	ADJ	A0FS	Gender=Fem|Number=Sing	5	amod	_	_
+7	presenza	presenza	NOUN	SCFS	Gender=Fem|Number=Sing	1	conj	_	_
+8	en	en	ADP	P	AdpType=Prep	10	case	_	_
+9	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+10	institucións	institución	NOUN	SCFP	Gender=Fem|Number=Plur	7	nmod	_	_
+11	internacionais	internacional	ADJ	A0FP	Gender=Fem|Number=Plur	10	amod	_	_
+12	e	e	CONJ	CC	_	1	cc	_	_
+13	maior	maior	ADJ	ACMS	Degree=Cmp|Gender=Masc|Number=Sing	14	amod	_	_
+14	autogoberno	autogoberno	NOUN	SCMS	Gender=Masc|Number=Sing	1	conj	_	_
+
+1	intervención	intervención	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	Xosé_Luís_Barreiro_Rivas	Xosé_Luís_Barreiro_Rivas	PROPN	SPM0	Gender=Masc	1	nmod	_	_
+
+1	a	a	ADP	P	AdpType=Prep	3	case	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	dereita	dereita	NOUN	SCFS	Gender=Fem|Number=Sing	5	nmod	_	_
+4	outros	outro	DET	IDMP	Gender=Masc|Number=Plur|PronType=Ind	5	det	_	_
+5	participantes	participante	NOUN	SCMP	Gender=Masc|Number=Plur	0	root	_	_
+6	en	en	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	foro	foro	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+9	Paulo_González_Mariñas	Paulo_González_Mariñas	PROPN	SPM0	Gender=Masc	5	appos	_	_
+10	e	e	CONJ	CC	_	9	cc	_	_
+11	Ramón_Villares	Ramón_Villares	PROPN	SPM0	Gender=Masc	9	conj	_	_
+
+1	europeizar	europeizar	VERB	V0F000	VerbForm=Inf	0	root	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	horario	horario	NOUN	SCMS	Gender=Masc|Number=Sing	1	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	traballo	traballo	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+
+1	votamos	votar	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	Constitución	Constitución	PROPN	SPFS	Gender=Fem|Number=Sing	1	dobj	_	_
+
+1	se	se	SCONJ	CS	_	3	mark	_	_
+2	xa	xa	ADV	WN	_	3	advmod	_	_
+3	somos	ser	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	europeos	europeo	NOUN	SCMP	Gender=Masc|Number=Plur	0	root	_	_
+
+1	a	a	ADP	P	AdpType=Prep	3	case	_	_
+2	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+3	cinco	cinco	NUM	NCNFP	Gender=Fem|Number=Plur|NumType=Card	4	nmod	_	_
+4	remata	rematar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	4	expl	_	_
+6	de	de	ADP	P	AdpType=Prep	7	mark	_	_
+7	traballar	traballar	VERB	V0F000	VerbForm=Inf	4	xcomp	_	_
+
+1	en	en	ADP	P	AdpType=Prep	2	case	_	_
+2	titulares	titular	NOUN	SCMP	Gender=Masc|Number=Plur	5	nmod	_	_
+3	máis	máis	ADV	WM	_	4	advmod	_	_
+4	pequenos	pequeno	ADJ	A0MP	Gender=Masc|Number=Plur	2	amod	_	_
+5	pode	poder	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	7	expl	_	_
+7	ler	ler	VERB	V0F000	VerbForm=Inf	5	xcomp	_	_
+
+1	temos	ter	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	xornada	xornada	NOUN	SCFS	Gender=Fem|Number=Sing	1	dobj	_	_
+4	laboral	laboral	ADJ	A0FS	Gender=Fem|Number=Sing	3	amod	_	_
+5	máis	máis	ADV	WM	_	6	advmod	_	_
+6	longa	longo	ADJ	A0FS	Gender=Fem|Number=Sing	3	amod	_	_
+7	de	de	ADP	P	AdpType=Prep	8	case	_	_
+8	Europa	Europa	PROPN	SP00	_	6	nmod	_	_
+
+1	traballamos	traballar	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	máis	máis	ADV	WM	_	3	advmod	_	_
+3	horas	hora	NOUN	SCFP	Gender=Fem|Number=Plur	1	nmod	_	_
+4	que	que	SCONJ	CS	_	6	case	_	_
+5	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	xaponeses	xaponés	NOUN	SCMP	Gender=Masc|Number=Plur	1	nmod	_	_
+
+1	en	en	ADP	P	AdpType=Prep	2	case	_	_
+2	Francia	Francia	PROPN	SP00	_	3	nmod	_	_
+3	traballa	traballar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	3	expl	_	_
+5	dúas	dous	NUM	NCDFP	Gender=Fem|Number=Plur|NumType=Card	6	nummod	_	_
+6	horas	hora	NOUN	SCFP	Gender=Fem|Number=Plur	7	nmod	_	_
+7	menos	menos	ADV	WM	_	3	advmod	_	_
+8	a	a	ADP	P	AdpType=Prep	10	case	_	_
+9	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	día	día	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+
+1	algúns	algún	PRON	INMP	Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	_	_
+2	fan	facer	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	xornadas	xornada	NOUN	SCFP	Gender=Fem|Number=Plur	2	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	máis	máis	ADV	WN	_	3	advmod	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	12	12	NUM	NCDFP	Gender=Fem|Number=Plur|NumType=Card	8	nummod	_	_
+8	horas	hora	NOUN	SCFP	Gender=Fem|Number=Plur	5	nmod	_	_
+
+1	Cabrera_Infante	Cabrera_Infante	PROPN	SP00	_	0	root	_	_
+2	e	e	CONJ	CC	_	1	cc	_	_
+3	Cuba	Cuba	PROPN	SP00	_	1	conj	_	_
+
+1	Guillermo_Cabrera_Infante	Guillermo_Cabrera_Infante	PROPN	SPM0	Gender=Masc	0	root	_	_
+2	e	e	CONJ	CC	_	1	cc	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+4	súa	seu	DET	MD3SFS	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	5	det	_	_
+5	dona	dona	NOUN	SCFS	Gender=Fem|Number=Sing	1	conj	_	_
+6	Miriam_Gómez	Miriam_Gómez	PROPN	SPFS	Gender=Fem|Number=Sing	5	nmod	_	_
+
+1	Daniel_García_Santos	Daniel_García_Santos	PROPN	SPM0	Gender=Masc	7	nsubj	_	_
+2	director	director	NOUN	SCMS	Gender=Masc|Number=Sing	1	appos	_	_
+3	de	de	ADP	P	AdpType=Prep	5	case	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	editorial	editorial	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+6	Letras_Cubanas	Letras_Cubanas	PROPN	SP00	_	5	nmod	_	_
+7	escribe	escribir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	carta	carta	NOUN	SCFS	Gender=Fem|Number=Sing	7	dobj	_	_
+10	en	en	ADP	P	AdpType=Prep	11	case	_	_
+11	El_País	El_País	PROPN	SP00	_	7	nmod	_	_
+12	28	28	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	11	nmod	_	_
+13	de	de	ADP	P	AdpType=Prep	14	case	_	_
+14	febreiro	febreiro	NOUN	SCMS	Gender=Masc|Number=Sing	12	nmod	_	_
+
+1	isto	este	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	4	nsubj	_	_
+2	non	non	ADV	WN	_	4	neg	_	_
+3	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	certo	certo	ADJ	A0MS	Gender=Masc|Number=Sing	0	root	_	_
+
+1	La_Vanguardia	La_Vanguardia	PROPN	SP00	_	0	root	_	_
+2	28	28	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	1	nmod	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	febreiro	febreiro	NOUN	SCMS	Gender=Masc|Number=Sing	2	nmod	_	_
+
+1	babecas	babecas	NOUN	SCAP	Gender=Com|Number=Plur	0	root	_	_
+2	de	de	ADP	P	AdpType=Prep	4	case	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	(in)cultura	(in)cultura	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	ou_sexa	ou_sexa	CONJ	LCC	_	10	mark	_	_
+2	que	que	SCONJ	CS	_	10	mark	_	_
+3	Viqueira	Viqueira	PROPN	SP00	_	10	nsubj	_	_
+4	Risco	Risco	PROPN	SP00	_	3	conj	_	_
+5	Otero_Pedraio	Otero_Pedraio	PROPN	SP00	_	3	conj	_	_
+6	Filgueira_Valverde	Filgueira_Valverde	PROPN	SP00	_	3	conj	_	_
+7	etc	etc	X	ZA00	_	3	conj	_	_
+8	foron	ser	VERB	VEI30P	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	cop	_	_
+9	uns	un	DET	DIMP	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	obstáculo	obstáculo	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+11	para	para	ADP	P	AdpType=Prep	13	case	_	_
+12	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	cultura	cultura	NOUN	SCFS	Gender=Fem|Number=Sing	10	nmod	_	_
+
+1	e	e	CONJ	CC	_	5	mark	_	_
+2	nin_sequera	nin_sequera	ADV	LA0	_	5	advmod	_	_
+3	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	5	expl	_	_
+4	lle	lle	PRON	RAD3AS	Case=Dat|Gender=Com|Number=Sing|Person=3|PronType=Clit	5	nsubj	_	_
+5	ocorre	ocorrer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	pensar	pensar	VERB	V0F000	VerbForm=Inf	5	xcomp	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	evidente	evidente	ADJ	A0MS	Gender=Masc|Number=Sing	6	dobj	_	_
+
+1	se	se	SCONJ	CS	_	8	mark	_	_
+2	en	en	ADP	P	AdpType=Prep	4	case	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	Galicia	Galicia	PROPN	SPFS	Gender=Fem|Number=Sing	8	nmod	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	entón	entón	ADV	WN	_	4	advmod	_	_
+7	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	posible	posible	ADJ	A0MS	Gender=Masc|Number=Sing	0	root	_	_
+9	atopar	atopar	VERB	V0F000	VerbForm=Inf	8	xcomp	_	_
+10	algo	algo	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	9	dobj	_	_
+11	semellante	semellante	ADJ	A0MS	Gender=Masc|Number=Sing	10	amod	_	_
+12	entre	entre	ADP	P	AdpType=Prep	15	case	_	_
+13	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+14	non	non	ADV	WM	_	15	neg	_	_
+15	nacionalistas	nacionalista	NOUN	SCMP	Gender=Masc|Number=Plur	9	nmod	_	_
+
+1	e	e	CONJ	CC	_	8	mark	_	_
+2	como	como	SCONJ	CS	_	6	mark	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	falar	falar	NOUN	SCMS	Gender=Masc|Number=Sing	6	nsubj	_	_
+5	non	non	ADV	WN	_	6	neg	_	_
+6	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
+7	cancela	cancela	NOUN	SCFS	Gender=Fem|Number=Sing	6	dobj	_	_
+8	engade	engadir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	cultura	cultura	NOUN	SCFS	Gender=Fem|Number=Sing	7	nsubj	_	_
+3	subsidiada	subsidiado	ADJ	A0FS	Gender=Fem|Number=Sing	2	amod	_	_
+4	di	dicir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis	_	_
+5	non	non	ADV	WN	_	7	neg	_	_
+6	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+7	cultura	cultura	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+
+1	e	e	CONJ	CC	_	2	mark	_	_
+2	segue	seguir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+4	seu	seu	DET	MD3SMS	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	5	det	_	_
+5	baduar	baduar	VERB	V0F000	VerbForm=Inf	2	dobj	_	_
+6	a_o_chou	a_o_chou	ADV	LA0	_	2	advmod	_	_
+
+1	meu_Deus	meu_Deus	INTJ	Y	_	0	root	_	_
+
+1	podiamos	poder	VERB	VII10P	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	2	aux	_	_
+2	seguir	seguir	VERB	V0F000	VerbForm=Inf	0	root	_	_
+3	pero	pero	SCONJ	CS	_	2	cc	_	_
+4	de_momento	de_momento	ADV	LA0	_	5	advmod	_	_
+5	abonda	abondar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+
+1	Touriño	Touriño	PROPN	SP00	_	2	nsubj	_	_
+2	dá	dar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	xiro	xiro	NOUN	SCMS	Gender=Masc|Number=Sing	2	dobj	_	_
+5	en	en	ADP	P	AdpType=Prep	8	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+7	súa	seu	DET	MD3SFS	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	8	det	_	_
+8	estratexia	estratexia	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+9	de	de	ADP	P	AdpType=Prep	10	case	_	_
+10	campaña	campaña	NOUN	SCFS	Gender=Fem|Number=Sing	8	nmod	_	_
+
+1	demandan	demandar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	que	que	SCONJ	CS	_	6	mark	_	_
+3	BNG	BNG	PROPN	ZG00	_	6	nsubj	_	_
+4	e	e	CONJ	CC	_	3	cc	_	_
+5	PSOE	PSOE	PROPN	ZG00	_	3	conj	_	_
+6	fagan	facer	VERB	VPS30P	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+7	críbel	críbel	ADJ	A0FS	Gender=Fem|Number=Sing	6	xcomp	_	_
+8	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	alternativa	alternativa	NOUN	SCFS	Gender=Fem|Number=Sing	7	dobj	_	_
+10	a	a	ADP	P	AdpType=Prep	11	case	_	_
+11	Fraga	Fraga	PROPN	SP00	_	9	nmod	_	_
+
+1	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	nummod	_	_
+2	semana	semana	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+3	despois	despois	ADV	WM	_	2	advmod	_	_
+4	semella	semellar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	que	que	SCONJ	CS	_	8	mark	_	_
+6	Pérez_Touriño	Pérez_Touriño	PROPN	SP00	_	8	nsubj	_	_
+7	xa	xa	ADV	WN	_	8	advmod	_	_
+8	tiña	ter	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	ccomp	_	_
+9	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	estratexia	estratexia	NOUN	SCFS	Gender=Fem|Number=Sing	8	dobj	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	mesma	mesmo	PRON	INFS	Gender=Fem|Number=Sing|PronType=Ind	0	root	_	_
+3	que	que	SCONJ	CS	_	4	mark	_	_
+4	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
+5	catro	catro	NUM	NCDMP	Gender=Masc|Number=Plur|NumType=Card	6	nummod	_	_
+6	anos	ano	NOUN	SCMP	Gender=Masc|Number=Plur	4	dobj	_	_
+7	e	e	CONJ	CC	_	2	cc	_	_
+8	que	que	SCONJ	CS	_	12	mark	_	_
+9	a	o	PRON	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	conj	_	_
+10	de	de	ADP	P	AdpType=Prep	11	case	_	_
+11	Abel_Caballero	Abel_Caballero	PROPN	SPM0	Gender=Masc	9	nmod	_	_
+12	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	ccomp	_	_
+13	oito	oito	NUM	NCNMP	Gender=Masc|Number=Plur|NumType=Card	12	dobj	_	_
+
+1	tamén	tamén	ADV	WN	_	3	advmod	_	_
+2	Anxo_Quintana	Anxo_Quintana	PROPN	SPM0	Gender=Masc	3	nsubj	_	_
+3	afirma	afirmar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	que	que	SCONJ	CS	_	5	mark	_	_
+5	sairá	saír	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	ccomp	_	_
+6	a	a	ADP	P	AdpType=Prep	7	mark	_	_
+7	gañar	gañar	VERB	V0F000	VerbForm=Inf	5	xcomp	_	_
+8	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	comicios	comicio	NOUN	SCMP	Gender=Masc|Number=Plur	7	dobj	_	_
+10	en	en	ADP	P	AdpType=Prep	12	case	_	_
+11	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	outono	outono	NOUN	SCMS	Gender=Masc|Number=Sing	7	nmod	_	_
+
+1	compenetración	compenetración	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+2	perfecta	perfecto	ADJ	A0FS	Gender=Fem|Number=Sing	1	amod	_	_
+
+1	até	até	ADP	P	AdpType=Prep	3	case	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	agora	agora	ADV	WN	_	5	advmod	_	_
+4	non	non	ADV	WN	_	5	neg	_	_
+5	tivo	ter	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	éxito	éxito	NOUN	SCMS	Gender=Masc|Number=Sing	5	dobj	_	_
+
+1	pero	pero	SCONJ	CS	_	7	mark	_	_
+2	non	non	ADV	WM	_	3	neg	_	_
+3	todos	todo	DET	IDMP	Gender=Masc|Number=Plur|PronType=Ind	5	det	_	_
+4	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	socialistas	socialista	NOUN	SCMP	Gender=Masc|Number=Plur	7	nsubj	_	_
+6	están	estar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+7	de_acordo	de_acordo	ADV	LA0	_	0	root	_	_
+8	con	con	ADP	P	AdpType=Prep	10	case	_	_
+9	esta	este	DET	EDFS	Gender=Fem|Number=Sing|PronType=Dem	10	det	_	_
+10	estratexia	estratexia	NOUN	SCFS	Gender=Fem|Number=Sing	7	nmod	_	_
+
+1	desde	desde	ADP	P	AdpType=Prep	3	case	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	PSOE	PSOE	PROPN	ZGMS	Gender=Masc|Number=Sing	7	nmod	_	_
+4	tamén	tamén	ADV	WN	_	7	advmod	_	_
+5	están	estar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+6	a	a	ADP	P	AdpType=Prep	7	mark	_	_
+7	traballar	traballar	VERB	V0F000	VerbForm=Inf	0	root	_	_
+8	con	con	ADP	P	AdpType=Prep	10	case	_	_
+9	outra	outro	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	10	det	_	_
+10	posibilidade	posibilidade	NOUN	SCFS	Gender=Fem|Number=Sing	7	nmod	_	_
+
+1	sería	ser	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	3	cop	_	_
+2	como	como	SCONJ	CS	_	3	mark	_	_
+3	reeditar	reeditar	VERB	V0F000	VerbForm=Inf	0	root	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	goberno	goberno	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+6	tripartito	tripartito	ADJ	A0MS	Gender=Masc|Number=Sing	5	amod	_	_
+
+1	reclama	reclamar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+3	primeiro	primeiro	NUM	NODMS	Gender=Masc|Number=Sing|NumType=Ord	4	nummod	_	_
+4	posto	posto	NOUN	SCMS	Gender=Masc|Number=Sing	1	dobj	_	_
+5	en	en	ADP	P	AdpType=Prep	7	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	lista	lista	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+8	de	de	ADP	P	AdpType=Prep	9	case	_	_
+9	A_Coruña	A_Coruña	PROPN	SP00	_	7	nmod	_	_
+10	a	a	ADP	P	AdpType=Prep	12	case	_	_
+11	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Parlamento	Parlamento	PROPN	SPMS	Gender=Masc|Number=Sing	7	nmod	_	_
+
+1	Beiras	Beiras	PROPN	SP00	_	2	nsubj	_	_
+2	abre	abrir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	batalla	batalla	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	de	de	ADP	P	AdpType=Prep	7	case	_	_
+6	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	candidaturas	candidatura	NOUN	SCFP	Gender=Fem|Number=Plur	4	nmod	_	_
+8	autonómicas	autonómico	ADJ	A0FP	Gender=Fem|Number=Plur	7	amod	_	_
+9	en	en	ADP	P	AdpType=Prep	11	case	_	_
+10	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	BNG	BNG	PROPN	ZGMS	Gender=Masc|Number=Sing	7	nmod	_	_
+
+1	Miguel_Barros	Miguel_Barros	PROPN	SPM0	Gender=Masc	2	nsubj	_	_
+2	elixido	elixir	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+3	secretario	secretario	NOUN	SCMS	Gender=Masc|Number=Sing	2	dobj	_	_
+4	comarcal	comarcal	ADJ	A0MS	Gender=Masc|Number=Sing	3	amod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	tricefalia	tricefalia	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+3	de	de	ADP	P	AdpType=Prep	5	case	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	PSdeG-PSOE	PSdeG-PSOE	PROPN	ZGMS	Gender=Masc|Number=Sing	2	nmod	_	_
+6	en	en	ADP	P	AdpType=Prep	7	case	_	_
+7	Vigo	Vigo	PROPN	SP00	_	2	nmod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	situación	situación	NOUN	SCFS	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	complica	complicar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	3	expl	_	_
+5	así	así	ADV	WN	_	3	advmod	_	_
+6	aínda	aínda	ADV	WN	_	7	advmod	_	_
+7	máis	máis	ADV	WN	_	3	advmod	_	_
+8	en	en	ADP	P	AdpType=Prep	9	case	_	_
+9	Vigo	Vigo	PROPN	SP00	_	3	nmod	_	_
+10	para	para	ADP	P	AdpType=Prep	12	case	_	_
+11	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
+12	socialistas	socialista	NOUN	SCMP	Gender=Masc|Number=Plur	3	nmod	_	_
+
+1	en	en	ADP	P	AdpType=Prep	3	case	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	BNG	BNG	PROPN	ZGMS	Gender=Masc|Number=Sing	5	nmod	_	_
+4	tamén	tamén	ADV	WN	_	5	advmod	_	_
+5	pensan	pensar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	que	que	SCONJ	CS	_	9	mark	_	_
+7	sería	ser	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	9	cop	_	_
+8	máis	máis	ADV	WM	_	9	advmod	_	_
+9	fácil	fácil	ADJ	A0MS	Gender=Masc|Number=Sing	5	ccomp	_	_
+10	entender	entender	VERB	V0F000	VerbForm=Inf	9	csubj	_	_
+11	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	10	expl	_	_
+12	con	con	ADP	P	AdpType=Prep	13	case	_	_
+13	el	el	PRON	RTP3MS	Gender=Masc|Number=Sing|Person=3	10	nmod	_	_
+
+1	agora	agora	ADV	WN	_	3	advmod	_	_
+2	Barros	Barros	PROPN	SP00	_	3	nsubj	_	_
+3	lidera	liderar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	comarca	comarca	NOUN	SCFS	Gender=Fem|Number=Sing	3	dobj	_	_
+6	que	que	PRON	TNFS	Gender=Fem|Number=Sing|PronType=Rel	7	nsubj	_	_
+7	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
+8	en	en	ADP	P	AdpType=Prep	10	case	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	estrutura	estrutura	NOUN	SCFS	Gender=Fem|Number=Sing	7	nmod	_	_
+11	partidaria	partidario	ADJ	A0FS	Gender=Fem|Number=Sing	10	amod	_	_
+12	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+13	gran	grande	ADJ	A0MS	Gender=Masc|Number=Sing	14	amod	_	_
+14	poder	poder	NOUN	SCMS	Gender=Masc|Number=Sing	7	dobj	_	_
+
+1	permanecerá	permanecer	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	cop	_	_
+2	relegado	relegar	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+3	Miguel_Barros	Miguel_Barros	PROPN	SPM0	Gender=Masc	2	nsubj	_	_
+
+1	será	ser	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_
+2	el	el	PRON	RTN3MS	Case=Nom|Gender=Masc|Number=Sing|Person=3	4	nsubj	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	candidato	candidato	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+5	socialista	socialista	ADJ	A0MS	Gender=Masc|Number=Sing	4	amod	_	_
+6	se	se	SCONJ	CS	_	7	mark	_	_
+7	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
+8	moción	moción	NOUN	SCFS	Gender=Fem|Number=Sing	7	dobj	_	_
+9	de	de	ADP	P	AdpType=Prep	10	case	_	_
+10	censura	censura	NOUN	SCFS	Gender=Fem|Number=Sing	8	nmod	_	_
+
+1	lograrán	lograr	VERB	VFI30P	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+2	apartar	apartar	VERB	V0F000	VerbForm=Inf	1	xcomp	_	_
+3	a	a	ADP	P	AdpType=Prep	4	case	_	_
+4	Pérez_Mariño	Pérez_Mariño	PROPN	SP00	_	2	dobj	_	_
+5	de	de	ADP	P	AdpType=Prep	7	case	_	_
+6	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	concello	concello	NOUN	SCMS	Gender=Masc|Number=Sing	2	nmod	_	_
+
+1	quen	quen	PRON	GNAS	Gender=Com|Number=Sing|PronType=Int	2	nsubj	_	_
+2	decidirá	decidir	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+3	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	candidatos	candidato	NOUN	SCMP	Gender=Masc|Number=Plur	2	dobj	_	_
+5	a	a	ADP	P	AdpType=Prep	8	case	_	_
+6	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
+7	futuras	futuro	ADJ	A0FP	Gender=Fem|Number=Plur	8	amod	_	_
+8	eleccións	elección	NOUN	SCFP	Gender=Fem|Number=Plur	4	nmod	_	_
+9	autonómicas	autonómico	ADJ	A0FP	Gender=Fem|Number=Plur	8	amod	_	_
+10	e	e	CONJ	CC	_	9	cc	_	_
+11	locais	local	ADJ	A0FP	Gender=Fem|Number=Plur	9	conj	_	_
+
+1	cada	cada	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	2	det	_	_
+2	vez	vez	NOUN	SCFS	Gender=Fem|Number=Sing	10	nmod	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	política	política	NOUN	SCFS	Gender=Fem|Number=Sing	10	nsubj	_	_
+5	de	de	ADP	P	AdpType=Prep	7	case	_	_
+6	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	socialistas	socialista	NOUN	SCMP	Gender=Masc|Number=Plur	4	nmod	_	_
+8	en	en	ADP	P	AdpType=Prep	9	case	_	_
+9	Vigo	Vigo	PROPN	SP00	_	4	nmod	_	_
+10	semella	semellar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	máis	máis	ADV	WM	_	12	advmod	_	_
+12	enrevesada	enrevesado	ADJ	A0FS	Gender=Fem|Number=Sing	10	xcomp	_	_
+13	e	e	CONJ	CC	_	12	cc	_	_
+14	difícil	difícil	ADJ	A0FS	Gender=Fem|Number=Sing	12	conj	_	_
+
+1	Citroën-Zona_Franca	Citroën-Zona_Franca	PROPN	SP00	_	0	root	_	_
+
+1	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	sistema	sistema	NOUN	SCMS	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	moi	moito	ADV	WM	_	4	advmod	_	_
+4	usado	usar	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+5	en	en	ADP	P	AdpType=Prep	7	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	cidade	cidade	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+
+1	non	non	ADV	WN	_	5	neg	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	Javier_Riera	Javier_Riera	PROPN	SPM0	Gender=Masc	5	nsubj	_	_
+4	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	home	home	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+6	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
+7	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	8	expl	_	_
+8	prodigue	prodigar	VERB	VPS30S	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
+9	en	en	ADP	P	AdpType=Prep	10	case	_	_
+10	aparicións	aparición	NOUN	SCFP	Gender=Fem|Number=Plur	8	nmod	_	_
+11	en	en	ADP	P	AdpType=Prep	13	case	_	_
+12	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
+13	medios	medio	NOUN	SCMP	Gender=Masc|Number=Plur	10	nmod	_	_
+14	de	de	ADP	P	AdpType=Prep	15	case	_	_
+15	comunicación	comunicación	NOUN	SCFS	Gender=Fem|Number=Sing	13	nmod	_	_
+
+1	así	así	ADV	WN	_	2	advmod	_	_
+2	funcionan	funcionar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+4	cousas	cousa	NOUN	SCFP	Gender=Fem|Number=Plur	2	nsubj	_	_
+5	en	en	ADP	P	AdpType=Prep	6	case	_	_
+6	Vigo	Vigo	PROPN	SP00	_	2	nmod	_	_
+
+1	Alejandro_Amenábar	Alejandro_Amenábar	PROPN	SPM0	Gender=Masc	0	root	_	_
+
+1	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	circunstancias	circunstancia	NOUN	SCFP	Gender=Fem|Number=Plur	0	root	_	_
+3	que	que	PRON	TNFP	Gender=Fem|Number=Plur|PronType=Rel	4	nsubj	_	_
+4	converten	converter	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	artista	artista	NOUN	SCMS	Gender=Masc|Number=Sing	4	dobj	_	_
+7	en	en	ADP	P	AdpType=Prep	9	case	_	_
+8	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	creador	creador	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+10	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	12	nsubj	_	_
+11	nunca	nunca	ADV	WN	_	12	neg	_	_
+12	perecerá	perecer	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	acl	_	_
+
+1	visitábel	visitábel	ADJ	A0AS	Gender=Com|Number=Sing	0	root	_	_
+2	desde	desde	ADP	P	AdpType=Prep	4	case	_	_
+3	calquera	calquera	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	4	det	_	_
+4	civilización	civilización	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	universalidade	universalidade	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+
+1	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	vella	vello	ADJ	A0FS	Gender=Fem|Number=Sing	3	amod	_	_
+3	discusión	discusión	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+4	sen	sen	ADP	P	AdpType=Prep	5	case	_	_
+5	acordo	acordo	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+6	fácil	fácil	ADJ	A0MS	Gender=Masc|Number=Sing	5	amod	_	_
+
+1	algúns	algún	PRON	INMP	Gender=Masc|Number=Plur|PronType=Ind	2	nsubj	_	_
+2	acadan	acadar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	fama	fama	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	parecen	parecer	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+6	definitivos	definitivo	ADJ	A0MP	Gender=Masc|Number=Plur	5	xcomp	_	_
+7	e	e	CONJ	CC	_	5	cc	_	_
+8	a_o_cabo_de	a_o_cabo_de	ADP	LP0	AdpType=Prep	11	advmod	_	_
+9	os	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	anos	ano	NOUN	SCMP	Gender=Masc|Number=Plur	8	nmod	_	_
+11	esvaen	esvaer	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+12	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	11	expl	_	_
+
+1	dicía	dicir	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+2	Jean_Cocteau	Jean_Cocteau	PROPN	SPM0	Gender=Masc	1	nsubj	_	_
+3	que	que	SCONJ	CS	_	9	mark	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	moda	moda	NOUN	SCFS	Gender=Fem|Number=Sing	9	nsubj	_	_
+6	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	9	nsubj	_	_
+9	pasa	pasar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+10	de	de	ADP	P	AdpType=Prep	11	case	_	_
+11	moda	moda	NOUN	SCFS	Gender=Fem|Number=Sing	9	nmod	_	_
+
+1	eis	eis	ADV	WN	_	3	cop	_	_
+2	a	a	ADP	P	AdpType=Prep	3	case	_	_
+3	Verdi	Verdi	PROPN	SP00	_	0	root	_	_
+4	e	e	CONJ	CC	_	3	cc	_	_
+5	a	a	ADP	P	AdpType=Prep	6	case	_	_
+6	Whitman	Whitman	PROPN	SP00	_	3	conj	_	_
+7	e	e	CONJ	CC	_	3	cc	_	_
+8	a	a	ADP	P	AdpType=Prep	9	case	_	_
+9	Gaudí	Gaudí	PROPN	SP00	_	3	conj	_	_
+10	sen	sen	ADP	P	AdpType=Prep	11	mark	_	_
+11	ir	ir	VERB	V0F000	VerbForm=Inf	3	advmod	_	_
+12	máis	máis	ADV	WM	_	13	advmod	_	_
+13	lonxe	lonxe	ADV	WN	_	11	advmod	_	_
+
+1	esas	ese	DET	EDFP	Gender=Fem|Number=Plur|PronType=Dem	2	det	_	_
+2	expresións	expresión	NOUN	SCFP	Gender=Fem|Number=Plur	0	root	_	_
+3	que	que	PRON	TNFP	Gender=Fem|Number=Plur|PronType=Rel	8	dobj	_	_
+4	moi	moito	ADV	WM	_	5	advmod	_	_
+5	axiña	axiña	ADV	WN	_	8	advmod	_	_
+6	nos	nos	PRON	RAD1AP	Case=Dat|Gender=Com|Number=Plur|Person=1|PronType=Clit	8	nsubj	_	_
+7	parece	parecer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	imposíbel	imposíbel	ADJ	A0MS	Gender=Masc|Number=Sing	2	acl	_	_
+9	que	que	SCONJ	CS	_	12	mark	_	_
+10	non	non	ADV	WN	_	12	neg	_	_
+11	tivesen	ter	VERB	VES30P	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	aux	_	_
+12	existido	existir	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	8	ccomp	_	_
+13	antes	antes	ADV	WN	_	12	advmod	_	_
+
+1	Francisco_Leiro	Francisco_Leiro	PROPN	SPM0	Gender=Masc	0	root	_	_
+2	desde	desde	ADP	P	AdpType=Prep	5	case	_	_
+3	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+4	primeiras	primeiro	NUM	NODFP	Gender=Fem|Number=Plur|NumType=Ord	5	nummod	_	_
+5	esculturas	escultura	NOUN	SCFP	Gender=Fem|Number=Plur	1	nmod	_	_
+
+1	Lars_Von_Trier	Lars_Von_Trier	PROPN	SPM0	Gender=Masc	0	root	_	_
+2	con	con	ADP	P	AdpType=Prep	3	case	_	_
+3	Europa	Europa	PROPN	SP00	_	1	nmod	_	_
+
+1	Paco_de_Lucía	Paco_de_Lucía	PROPN	SPM0	Gender=Masc	0	root	_	_
+2	desde	desde	ADP	P	AdpType=Prep	5	case	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+4	primeira	primeiro	NUM	NODFS	Gender=Fem|Number=Sing|NumType=Ord	5	nummod	_	_
+5	nota	nota	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	Entre_dos_aguas	Entre_dos_aguas	PROPN	SP00	_	5	nmod	_	_
+
+1	sen	sen	ADP	P	AdpType=Prep	2	case	_	_
+2	frivolidade	frivolidade	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+3	nin	nin	CONJ	CC	_	2	cc	_	_
+4	estupidez	estupidez	NOUN	SCFS	Gender=Fem|Number=Sing	2	conj	_	_
+
+1	e	e	CONJ	CC	_	3	mark	_	_
+2	sen	sen	ADP	P	AdpType=Prep	3	case	_	_
+3	renunciar	renunciar	VERB	V0F000	VerbForm=Inf	0	root	_	_
+4	a	a	ADP	P	AdpType=Prep	6	case	_	_
+5	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	complexidade	complexidade	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+7	cando	cando	ADV	WR	PronType=Rel	9	advmod	_	_
+8	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	precisa	preciso	ADJ	A0FS	Gender=Fem|Number=Sing	6	advcl	_	_
+
+1	a	a	ADP	P	AdpType=Prep	3	case	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	envelope	envelope	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+4	lindo	lindo	ADJ	A0MS	Gender=Masc|Number=Sing	3	amod	_	_
+5	sen	sen	ADP	P	AdpType=Prep	6	case	_	_
+6	nada	nada	PRON	IN00	PronType=Ind	3	nmod	_	_
+7	de	de	ADP	P	AdpType=Prep	6	mwe	_	_
+8	nada	nada	PRON	IN00	PronType=Ind	7	mwe	_	_
+9	dentro	dentro	ADV	WN	_	6	advmod	_	_
+
+1	a	a	ADP	P	AdpType=Prep	3	case	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	mediocridade	mediocridade	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cinema	cinema	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+7	español	español	ADJ	A0MS	Gender=Masc|Number=Sing	6	amod	_	_
+
+1	entrou	entrar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	como	como	SCONJ	CS	_	4	mark	_	_
+3	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	canón	canón	NOUN	SCMS	Gender=Masc|Number=Sing	1	advcl	_	_
+5	con	con	ADP	P	AdpType=Prep	6	case	_	_
+6	Tesis	Tesis	PROPN	SP00	_	4	nmod	_	_
+
+1	como	como	ADV	WR	PronType=Rel	2	advmod	_	_
+2	facía	facer	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+3	Picasso	Picasso	PROPN	SP00	_	2	nsubj	_	_
+4	aínda_que	aínda_que	SCONJ	LCS	_	5	mark	_	_
+5	esaxeremos	esaxerar	VERB	VPS10P	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	advcl	_	_
+
+1	pero	pero	SCONJ	CS	_	2	mark	_	_
+2	afirmando	afirmar	VERB	V0X000	VerbForm=Ger	0	root	_	_
+3	que	que	SCONJ	CS	_	7	mark	_	_
+4	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+6	mellor	mellor	ADJ	ACMS	Degree=Cmp|Gender=Masc|Number=Sing	7	amod	_	_
+7	director	director	NOUN	SCMS	Gender=Masc|Number=Sing	2	ccomp	_	_
+8	de	de	ADP	P	AdpType=Prep	9	case	_	_
+9	cinema	cinema	NOUN	SCMS	Gender=Masc|Number=Sing	7	nmod	_	_
+10	español	español	ADJ	A0MS	Gender=Masc|Number=Sing	9	amod	_	_
+11	desde	desde	ADP	P	AdpType=Prep	12	case	_	_
+12	Luis_Buñuel	Luis_Buñuel	PROPN	SPM0	Gender=Masc	7	nmod	_	_
+
+1	e	e	CONJ	CC	_	5	mark	_	_
+2	desde	desde	ADP	P	AdpType=Prep	3	case	_	_
+3	aquí	aquí	ADV	WN	_	5	advmod	_	_
+4	estamos	estar	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	agradecidos	agradecido	ADJ	A0MP	Gender=Masc|Number=Plur	0	root	_	_
+
+1	como	como	ADV	WR	PronType=Rel	0	root	_	_
+2	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	que	que	SCONJ	CS	_	4	mark	_	_
+4	ser	ser	VERB	V0F000	VerbForm=Inf	1	cop	_	_
+
+1	para	para	ADP	P	AdpType=Prep	2	mark	_	_
+2	marcar	marcar	VERB	V0F000	VerbForm=Inf	9	advcl	_	_
+3	que	que	SCONJ	CS	_	4	mark	_	_
+4	chegaron	chegar	VERB	VEI30P	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	2	ccomp	_	_
+5	a	a	ADP	P	AdpType=Prep	6	case	_	_
+6	Galiza	Galiza	PROPN	SP00	_	4	nmod	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	director	director	NOUN	SCMS	Gender=Masc|Number=Sing	9	nsubj	_	_
+9	fai	facer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	silencio	silencio	NOUN	SCMS	Gender=Masc|Number=Sing	9	dobj	_	_
+12	longo	longo	ADJ	A0MS	Gender=Masc|Number=Sing	11	amod	_	_
+
+1	e	e	CONJ	CC	_	7	mark	_	_
+2	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	paisano	paisano	NOUN	SCMS	Gender=Masc|Number=Sing	7	nsubj	_	_
+4	desde	desde	ADP	P	AdpType=Prep	6	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	mostrador	mostrador	NOUN	SCMS	Gender=Masc|Number=Sing	7	nmod	_	_
+7	di	dicir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	pois	pois	ADV	WN	_	9	advmod	_	_
+9	si	si	ADV	WN	_	7	parataxis	_	_
+10	ho	ho	INTJ	Y	_	9	discourse	_	_
+11	e	e	CONJ	CC	_	7	cc	_	_
+12	outra	outro	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	13	det	_	_
+13	pausa	pausa	NOUN	SCFS	Gender=Fem|Number=Sing	7	conj	_	_
+14	longa	longo	ADJ	A0FS	Gender=Fem|Number=Sing	13	amod	_	_
+
+1	nin	nin	ADV	WN	_	3	advmod	_	_
+2	outra	outro	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	3	det	_	_
+3	palabra	palabra	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+
+1	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	indicador	indicador	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	entrada	entrada	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+6	en	en	ADP	P	AdpType=Prep	8	case	_	_
+7	este	este	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
+8	país	país	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+
+1	así	así	ADV	WN	_	3	advmod	_	_
+2	nos	nos	PRON	RAA1AP	Case=Acc|Gender=Com|Number=Plur|Person=1|PronType=Clit	3	dobj	_	_
+3	ven	ver	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+
+1	despois	despois	ADV	WN	_	2	advmod	_	_
+2	pasean	pasear	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	unhas	un	DET	DIFP	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+4	vacas	vaca	NOUN	SCFP	Gender=Fem|Number=Plur	2	dobj	_	_
+5	por	por	ADP	P	AdpType=Prep	7	case	_	_
+6	la	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	cidade	cidade	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+8	de	de	ADP	P	AdpType=Prep	9	case	_	_
+9	Lugo	Lugo	PROPN	SP00	_	7	nmod	_	_
+10	para	para	ADP	P	AdpType=Prep	11	mark	_	_
+11	falar	falar	VERB	V0F000	VerbForm=Inf	2	advcl	_	_
+12	de	de	ADP	P	AdpType=Prep	13	case	_	_
+13	baloncesto	baloncesto	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	socialistas	socialista	NOUN	SCMP	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	reclamamos	reclamar	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	traslado	traslado	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	Ence	Ence	PROPN	ZG00	_	5	nmod	_	_
+8	sen	sen	ADP	P	AdpType=Prep	9	case	_	_
+9	ambigüidades	ambigüidade	NOUN	SCFP	Gender=Fem|Number=Plur	3	nmod	_	_
+
+1	vostede	vostede	PRON	RTN3FS	Case=Nom|Gender=Fem|Number=Sing|Person=3	4	nsubj	_	_
+2	era	ser	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	procedencia	procedencia	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+5	galeguista	galeguista	ADJ	A0FS	Gender=Fem|Number=Sing	4	amod	_	_
+6	mais	mais	SCONJ	CS	_	9	mark	_	_
+7	agora	agora	ADV	WN	_	9	advmod	_	_
+8	está	estar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	integrada	integrar	VERB	V0P0FS	Gender=Fem|Number=Sing|VerbForm=Part	4	conj	_	_
+10	en	en	ADP	P	AdpType=Prep	12	case	_	_
+11	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	PSdeG	PSdeG	PROPN	ZGMS	Gender=Masc|Number=Sing	9	nmod	_	_
+
+1	sigo	seguir	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux	_	_
+2	a	a	ADP	P	AdpType=Prep	4	mark	_	_
+3	ser	ser	VERB	V0F000	VerbForm=Inf	4	cop	_	_
+4	lo	o	PRON	RAA3MS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Clit	0	root	_	_
+
+1	sente	sentir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	1	dobj	_	_
+3	cómoda	cómodo	ADJ	A0FS	Gender=Fem|Number=Sing	1	amod	_	_
+
+1	moi	moito	ADV	WM	_	2	advmod	_	_
+2	cómoda	cómodo	ADJ	A0FS	Gender=Fem|Number=Sing	0	root	_	_
+3	tanto	tanto	ADV	WN	_	6	cc	_	_
+4	en	en	ADP	P	AdpType=Prep	6	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	partido	partido	NOUN	SCMS	Gender=Masc|Number=Sing	2	nmod	_	_
+7	como	como	SCONJ	CS	_	6	cc	_	_
+8	en	en	ADP	P	AdpType=Prep	10	case	_	_
+9	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	grupo	grupo	NOUN	SCMS	Gender=Masc|Number=Sing	6	conj	_	_
+11	municipal	municipal	ADJ	A0MS	Gender=Masc|Number=Sing	10	amod	_	_
+
+1	de_feito	de_feito	ADV	LA0	_	5	discourse	_	_
+2	de	de	ADP	P	AdpType=Prep	5	case	_	_
+3	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+4	cinco	cinco	NUM	NCDMP	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
+5	concelleiros	concelleiro	NOUN	SCMP	Gender=Masc|Number=Plur	0	root	_	_
+6	que	que	PRON	TNMP	Gender=Masc|Number=Plur|PronType=Rel	7	nsubj	_	_
+7	somos	ser	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	acl	_	_
+8	tres	tres	NUM	NCNMP	Gender=Masc|Number=Plur|NumType=Card	9	nsubj	_	_
+9	temos	ter	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	conj	_	_
+10	esa	ese	DET	EDFS	Gender=Fem|Number=Sing|PronType=Dem	11	det	_	_
+11	tendencia	tendencia	NOUN	SCFS	Gender=Fem|Number=Sing	9	dobj	_	_
+
+1	galeguista	galeguista	NOUN	SCAS	Gender=Com|Number=Sing	0	root	_	_
+2	non	non	ADV	WN	_	3	neg	_	_
+3	nacionalista	nacionalista	NOUN	SCAS	Gender=Com|Number=Sing	1	nmod	_	_
+
+1	así	así	ADV	WN	_	0	root	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+
+1	por	por	ADP	P	AdpType=Prep	2	case	_	_
+2	iso	ese	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	3	nmod	_	_
+3	deixei	deixar	VERB	VEI10S	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	partido	partido	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+6	cando	cando	ADV	WR	PronType=Rel	8	mark	_	_
+7	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	8	nsubj	_	_
+8	integrou	integrar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
+9	en	en	ADP	P	AdpType=Prep	11	case	_	_
+10	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	Bloque	Bloque	PROPN	SPMS	Gender=Masc|Number=Sing	8	nmod	_	_
+
+1	dentro	dentro	ADV	WN	_	4	advmod	_	_
+2	de	de	ADP	P	AdpType=Prep	4	case	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	partido	partido	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+5	había	haber	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+6	varias	varios	DET	IDFP	Gender=Fem|Number=Plur|PronType=Ind	7	det	_	_
+7	sensibilidades	sensibilidade	NOUN	SCFP	Gender=Fem|Number=Plur	5	dobj	_	_
+
+1	mais	mais	SCONJ	CS	_	4	mark	_	_
+2	vostede	vostede	PRON	RTN3AS	Case=Nom|Gender=Com|Number=Sing|Person=3	4	nsubj	_	_
+3	non	non	ADV	WN	_	4	neg	_	_
+4	entrou	entrar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	súa	seu	DET	MD3AFS	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=3|Poss=Yes	3	det	_	_
+3	desaparición	desaparición	NOUN	SCFS	Gender=Fem|Number=Sing	6	nsubj	_	_
+4	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+5	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	logro	logro	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+7	europeo	europeo	ADJ	A0MS	Gender=Masc|Number=Sing	6	amod	_	_
+8	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	9	dobj	_	_
+9	defendo	defender	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	acl	_	_
+
+1	gustaría	gustar	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+2	me	me	PRON	RAD1AS	Case=Dat|Gender=Com|Number=Sing|Person=1|PronType=Clit	1	dobj	_	_
+3	que	que	SCONJ	CS	_	4	mark	_	_
+4	así	así	ADV	WN	_	1	ccomp	_	_
+5	fose	ser	VERB	VES30S	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	_
+
+1	en	en	ADP	P	AdpType=Prep	3	case	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	caso	caso	NOUN	SCMS	Gender=Masc|Number=Sing	9	nmod	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	cataláns	catalán	NOUN	SCMP	Gender=Masc|Number=Plur	3	nmod	_	_
+7	son	ser	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	federación	federación	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+10	que	que	PRON	TNFS	Gender=Fem|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	funciona	funcionar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl	_	_
+12	con	con	ADP	P	AdpType=Prep	14	case	_	_
+13	moita	moito	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	14	det	_	_
+14	independencia	independencia	NOUN	SCFS	Gender=Fem|Number=Sing	11	nmod	_	_
+
+1	a_as_veces	a_as_veces	ADV	LA0	_	3	advmod	_	_
+2	iso	ese	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	depende	depender	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
+6	persoas	persoa	NOUN	SCFP	Gender=Fem|Number=Plur	3	nmod	_	_
+
+1	quixera	querer	VERB	VLI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pqp|VerbForm=Fin	0	root	_	_
+2	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	Maragall	Maragall	PROPN	SPMS	Gender=Masc|Number=Sing	1	dobj	_	_
+4	con	con	ADP	P	AdpType=Prep	7	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+6	mesmo	mesmo	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	7	det	_	_
+7	peso	peso	NOUN	SCMS	Gender=Masc|Number=Sing	1	nmod	_	_
+8	que	que	SCONJ	CS	_	9	mark	_	_
+9	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl	_	_
+10	en	en	ADP	P	AdpType=Prep	12	case	_	_
+11	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	Estado	Estado	PROPN	SPMS	Gender=Masc|Number=Sing	9	nmod	_	_
+
+1	en_todo_caso	en_todo_caso	ADV	LA0	_	2	advmod	_	_
+2	parece	parecer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	que	que	SCONJ	CS	_	5	mark	_	_
+4	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	5	nsubj	_	_
+5	entende	entender	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
+6	ben	ben	ADV	WN	_	5	advmod	_	_
+7	con	con	ADP	P	AdpType=Prep	9	case	_	_
+8	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	nacionalistas	nacionalista	NOUN	SCMP	Gender=Masc|Number=Plur	5	nmod	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	goberno	goberno	NOUN	SCMS	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	está	estar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	apoiado	apoiar	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+5	por	por	ADP	P	AdpType=Prep	7	case	_	_
+6	quince	quince	NUM	NCDMP	Gender=Masc|Number=Plur|NumType=Card	7	nummod	_	_
+7	concelleiros	concelleiro	NOUN	SCMP	Gender=Masc|Number=Plur	4	nmod	_	_
+8	fronte_a	fronte_a	ADP	LP0	AdpType=Prep	9	case	_	_
+9	dez	dez	NUM	NCNMP	Gender=Masc|Number=Plur|NumType=Card	7	nmod	_	_
+10	de	de	ADP	P	AdpType=Prep	12	case	_	_
+11	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	PP	PP	PROPN	ZGMS	Gender=Masc|Number=Sing	9	nmod	_	_
+
+1	pode	poder	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
+2	acontecer	acontecer	VERB	V0F000	VerbForm=Inf	0	root	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	contrario	contrario	NOUN	SCMS	Gender=Masc|Number=Sing	2	dobj	_	_
+
+1	non	non	ADV	WN	_	2	neg	_	_
+2	sucedeu	suceder	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	iso	ese	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	2	nsubj	_	_
+4	e	e	CONJ	CC	_	2	cc	_	_
+5	nós	nós	PRON	RTN1AP	Case=Nom|Gender=Com|Number=Plur|Person=1	6	nsubj	_	_
+6	entramos	entrar	VERB	VEI10P	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	2	conj	_	_
+7	en	en	ADP	P	AdpType=Prep	9	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	goberno	goberno	NOUN	SCMS	Gender=Masc|Number=Sing	6	nmod	_	_
+
+1	nós	nós	PRON	RTN1AP	Case=Nom|Gender=Com|Number=Plur|Person=1	3	nsubj	_	_
+2	non	non	ADV	WN	_	3	neg	_	_
+3	temos	ter	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	ese	ese	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+5	problema	problema	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+
+1	agora	agora	ADV	WN	_	2	advmod	_	_
+2	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	máis	máis	ADV	WM	_	4	advmod	_	_
+4	capacidade	capacidade	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	diálogo	diálogo	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+7	con	con	ADP	P	AdpType=Prep	10	case	_	_
+8	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+9	outras	outro	DET	IDFP	Gender=Fem|Number=Plur|PronType=Ind	10	det	_	_
+10	administracións	administración	NOUN	SCFP	Gender=Fem|Number=Plur	6	nmod	_	_
+11	por	por	ADP	P	AdpType=Prep	12	case	_	_
+12	exemplo	exemplo	NOUN	SCMS	Gender=Masc|Number=Sing	2	nmod	_	_
+
+1	estou	estar	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	convencida	convencer	VERB	V0P0FS	Gender=Fem|Number=Sing|VerbForm=Part	0	root	_	_
+3	de	de	ADP	P	AdpType=Prep	10	mark	_	_
+4	que	que	SCONJ	CS	_	10	mark	_	_
+5	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
+6	eleccións	elección	NOUN	SCFP	Gender=Fem|Number=Plur	10	nsubj	_	_
+7	municipais	municipal	ADJ	A0FP	Gender=Fem|Number=Plur	6	amod	_	_
+8	de	de	ADP	P	AdpType=Prep	9	case	_	_
+9	2007	2007	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	6	nmod	_	_
+10	confirmarán	confirmar	VERB	VFI30P	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	2	ccomp	_	_
+11	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	13	dobj	_	_
+13	digo	dicir	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	ccomp	_	_
+
+1	fala	falar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	de	de	ADP	P	AdpType=Prep	4	case	_	_
+3	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	goberno	goberno	NOUN	SCMS	Gender=Masc|Number=Sing	1	nmod	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	acordos	acordo	NOUN	SCMP	Gender=Masc|Number=Plur	4	nmod	_	_
+7	en	en	ADP	P	AdpType=Prep	8	case	_	_
+8	temas	tema	NOUN	SCMP	Gender=Masc|Number=Plur	6	nmod	_	_
+9	relevantes	relevante	ADJ	A0MP	Gender=Masc|Number=Plur	8	amod	_	_
+
+1	un	un	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	5	nsubj	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	eles	el	PRON	RTP3MP	Gender=Masc|Number=Plur|Person=3	1	nmod	_	_
+4	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	o	o	PRON	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	0	root	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	Celulosas	Celulosas	PROPN	SP00	_	5	nmod	_	_
+
+1	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	cuestión	cuestión	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+4	importantísima	importante	ADJ	ASFS	Degree=Sup|Gender=Fem|Number=Sing	3	amod	_	_
+5	para	para	ADP	P	AdpType=Prep	7	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	cidade	cidade	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+8	e	e	CONJ	CC	_	3	cc	_	_
+9	para	para	ADP	P	AdpType=Prep	11	case	_	_
+10	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	futuro	futuro	NOUN	SCMS	Gender=Masc|Number=Sing	3	conj	_	_
+12	de	de	ADP	P	AdpType=Prep	13	case	_	_
+13	ela	el	PRON	RTP3FS	Gender=Fem|Number=Sing|Person=3	11	nmod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	miña	meu	DET	MD1SFS	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes	3	det	_	_
+3	postura	postura	NOUN	SCFS	Gender=Fem|Number=Sing	6	nsubj	_	_
+4	sobre	sobre	ADP	P	AdpType=Prep	5	case	_	_
+5	iso	ese	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	3	nmod	_	_
+6	vén	vir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	de_longo	de_longo	ADV	LA0	_	6	advmod	_	_
+8	e	e	CONJ	CC	_	6	cc	_	_
+9	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	mesmo	mesmo	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	11	dobj	_	_
+11	sucede	suceder	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
+12	con	con	ADP	P	AdpType=Prep	15	case	_	_
+13	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+14	meu	meu	DET	MD1SMS	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=1|Poss=Yes	15	det	_	_
+15	partido	partido	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	se	se	SCONJ	CS	_	2	mark	_	_
+2	cumpría	cumprir	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	advcl	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	lei	lei	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	nada	nada	PRON	IN00	PronType=Ind	8	dobj	_	_
+6	tiña	ter	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux	_	_
+7	que	que	SCONJ	CS	_	8	mark	_	_
+8	temer	temer	VERB	V0F000	VerbForm=Inf	0	root	_	_
+9	pero	pero	SCONJ	CS	_	8	cc	_	_
+10	non	non	ADV	WN	_	11	neg	_	_
+11	solicitou	solicitar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	conj	_	_
+12	esa	ese	DET	EDFS	Gender=Fem|Number=Sing|PronType=Dem	13	det	_	_
+13	licenza	licenza	NOUN	SCFS	Gender=Fem|Number=Sing	11	dobj	_	_
+
+1	e	e	CONJ	CC	_	4	mark	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+3	súa	seu	DET	MD3AFS	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	4	det	_	_
+4	alternativa	alternativa	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+
+1	que	que	SCONJ	CS	_	3	mark	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	3	expl	_	_
+3	cumpra	cumprir	VERB	VPS30S	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	legalidade	legalidade	NOUN	SCFS	Gender=Fem|Number=Sing	3	dobj	_	_
+6	que	que	SCONJ	CS	_	7	mark	_	_
+7	busque	buscar	VERB	VPS30S	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+8	outra	outro	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	9	det	_	_
+9	localización	localización	NOUN	SCFS	Gender=Fem|Number=Sing	7	dobj	_	_
+10	non	non	ADV	WM	_	11	neg	_	_
+11	perniciosa	pernicioso	ADJ	A0FS	Gender=Fem|Number=Sing	9	amod	_	_
+
+1	tamén	tamén	ADV	WN	_	2	advmod	_	_
+2	están	estar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	traballadores	traballador	NOUN	SCMP	Gender=Masc|Number=Plur	2	nsubj	_	_
+
+1	aquí	aquí	ADV	WN	_	2	advmod	_	_
+2	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	manipulación	manipulación	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	de	de	ADP	P	AdpType=Prep	7	case	_	_
+6	este	este	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_
+7	colectivo	colectivo	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+8	por	por	ADP	P	AdpType=Prep	9	case	_	_
+9	parte	parte	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+10	de	de	ADP	P	AdpType=Prep	12	case	_	_
+11	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	empresa	empresa	NOUN	SCFS	Gender=Fem|Number=Sing	9	nmod	_	_
+
+1	iso	ese	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	0	root	_	_
+2	ou	ou	CONJ	CC	_	1	cc	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	peche	peche	NOUN	SCMS	Gender=Masc|Number=Sing	1	conj	_	_
+
+1	digo	dicir	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	eu	eu	PRON	RTN1AS	Case=Nom|Gender=Com|Number=Sing|Person=1	1	nsubj	_	_
+3	que	que	SCONJ	CS	_	4	mark	_	_
+4	haberá	haber	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	aux	_	_
+5	que	que	SCONJ	CS	_	6	mark	_	_
+6	falar	falar	VERB	V0F000	VerbForm=Inf	1	ccomp	_	_
+7	procurar	procurar	VERB	V0F000	VerbForm=Inf	6	conj	_	_
+8	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+9	nova	novo	ADJ	A0FS	Gender=Fem|Number=Sing	10	amod	_	_
+10	localización	localización	NOUN	SCFS	Gender=Fem|Number=Sing	7	dobj	_	_
+
+1	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	evidente	evidente	ADJ	A0MS	Gender=Masc|Number=Sing	0	root	_	_
+
+1	cando	cando	ADV	WR	PronType=Rel	3	advmod	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	3	dobj	_	_
+3	montou	montar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	rexeitamento	rexeitamento	NOUN	SCMS	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	foi	ser	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	cop	_	_
+7	total	total	ADJ	A0MS	Gender=Masc|Number=Sing	3	parataxis	_	_
+
+1	empregaron	empregar	VERB	VEI30P	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	infantería	infantería	NOUN	SCFS	Gender=Fem|Number=Sing	1	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	mariña	mariña	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+6	apuntando	apuntar	VERB	V0X000	VerbForm=Ger	1	advcl	_	_
+7	a	a	ADP	P	AdpType=Prep	9	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	pobo	pobo	NOUN	SCMS	Gender=Masc|Number=Sing	6	dobj	_	_
+10	con	con	ADP	P	AdpType=Prep	13	case	_	_
+11	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
+12	súas	seu	DET	MD3PFP	Gender=Fem|Number=Plur|Number[psor]=Plur|Person=3|Poss=Yes	13	det	_	_
+13	armas	arma	NOUN	SCFP	Gender=Fem|Number=Plur	6	nmod	_	_
+
+1	era	ser	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	ditadura	ditadura	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+
+1	xa	xa	ADV	WN	_	2	advmod	_	_
+2	renunciaron	renunciar	VERB	VEI30P	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+
+1	renunciaron	renunciar	VERB	VEI30P	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	lei	lei	NOUN	SCFS	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	está	estar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	para	para	ADP	P	AdpType=Prep	5	mark	_	_
+5	cumprir	cumprir	VERB	V0F000	VerbForm=Inf	0	root	_	_
+6	pero	pero	SCONJ	CS	_	5	cc	_	_
+7	tamén	tamén	ADV	WN	_	8	advmod	_	_
+8	ofrece	ofrecer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+9	algunhas	algún	DET	IDFP	Gender=Fem|Number=Plur|PronType=Ind	10	det	_	_
+10	alternativas	alternativa	NOUN	SCFP	Gender=Fem|Number=Plur	8	dobj	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	propio	propio	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_
+3	director	director	NOUN	SCMS	Gender=Masc|Number=Sing	7	nsubj	_	_
+4	xeral	xeral	ADJ	A0MS	Gender=Masc|Number=Sing	3	amod	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	Costas	Costas	PROPN	SP00	_	3	nmod	_	_
+7	dixo	dicir	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	que	que	SCONJ	CS	_	12	mark	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	indemnización	indemnización	NOUN	SCFS	Gender=Fem|Number=Sing	12	nsubj	_	_
+11	sería	ser	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	12	cop	_	_
+12	xenerosa	xeneroso	ADJ	A0FS	Gender=Fem|Number=Sing	7	ccomp	_	_
+
+1	tamén	tamén	ADV	WN	_	2	advmod	_	_
+2	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	recursos	recurso	NOUN	SCMP	Gender=Masc|Number=Plur	2	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	UE	UE	PROPN	ZGFS	Gender=Fem|Number=Sing	3	nmod	_	_
+7	para	para	ADP	P	AdpType=Prep	9	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	traslado	traslado	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+10	de	de	ADP	P	AdpType=Prep	11	case	_	_
+11	empresas	empresa	NOUN	SCFP	Gender=Fem|Number=Plur	9	nmod	_	_
+12	por	por	ADP	P	AdpType=Prep	13	case	_	_
+13	razóns	razón	NOUN	SCFP	Gender=Fem|Number=Plur	9	nmod	_	_
+14	ecolóxicas	ecolóxico	ADJ	A0FP	Gender=Fem|Number=Plur	13	amod	_	_
+
+1	existen	existir	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	instrumentos	instrumento	NOUN	SCMP	Gender=Masc|Number=Plur	1	nsubj	_	_
+3	pero	pero	SCONJ	CS	_	1	cc	_	_
+4	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	algo	algo	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	1	conj	_	_
+6	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	10	dobj	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	empresa	empresa	NOUN	SCFS	Gender=Fem|Number=Sing	10	nsubj	_	_
+9	non	non	ADV	WN	_	10	neg	_	_
+10	quere	querer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
+11	ouvir	ouvir	VERB	V0F000	VerbForm=Inf	10	xcomp	_	_
+
+1	pois	pois	ADV	WN	_	2	advmod	_	_
+2	van	ir	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	lado	lado	NOUN	SCMS	Gender=Masc|Number=Sing	2	nmod	_	_
+5	temos	ter	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+6	Zapatero	Zapatero	PROPN	SP00	_	5	dobj	_	_
+7	para	para	ADP	P	AdpType=Prep	9	case	_	_
+8	moito	moito	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	9	det	_	_
+9	tempo	tempo	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+10	e	e	CONJ	CC	_	5	cc	_	_
+11	Touriño	Touriño	PROPN	SP00	_	15	nsubj	_	_
+12	será	ser	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	15	cop	_	_
+13	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+14	próximo	próximo	ADJ	A0MS	Gender=Masc|Number=Sing	15	amod	_	_
+15	presidente	presidente	NOUN	SCMS	Gender=Masc|Number=Sing	5	conj	_	_
+
+1	poden	poder	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
+2	parecer	parecer	VERB	V0F000	VerbForm=Inf	3	cop	_	_
+3	lo	o	PRON	RAA3MS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Clit	0	root	_	_
+
+1	a_as_veces	a_as_veces	ADV	LA0	_	4	advmod	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	xente	xente	NOUN	SCFS	Gender=Fem|Number=Sing	4	nsubj	_	_
+4	quer	querer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	ver	ver	VERB	V0F000	VerbForm=Inf	4	xcomp	_	_
+6	ambigüidade	ambigüidade	NOUN	SCFS	Gender=Fem|Number=Sing	5	dobj	_	_
+7	para	para	ADP	P	AdpType=Prep	8	mark	_	_
+8	facer	facer	VERB	V0F000	VerbForm=Inf	5	advcl	_	_
+9	dano	dano	NOUN	SCMS	Gender=Masc|Number=Sing	8	dobj	_	_
+10	a	a	ADP	P	AdpType=Prep	12	case	_	_
+11	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	adversario	adversario	NOUN	SCMS	Gender=Masc|Number=Sing	8	nmod	_	_
+
+1	non	non	ADV	WN	_	2	neg	_	_
+2	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	tal	tal	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	4	det	_	_
+4	proxecto	proxecto	NOUN	SCMS	Gender=Masc|Number=Sing	2	dobj	_	_
+
+1	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	normativa	normativa	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+3	baseada	basear	VERB	V0P0FS	Gender=Fem|Number=Sing|VerbForm=Part	2	acl	_	_
+4	en	en	ADP	P	AdpType=Prep	6	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	estado	estado	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+7	de	de	ADP	P	AdpType=Prep	9	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	benestar	benestar	NOUN	SCMS	Gender=Masc|Number=Sing	6	nmod	_	_
+
+1	organización	organización	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+2	territorial	territorial	ADJ	A0FS	Gender=Fem|Number=Sing	1	amod	_	_
+
+1	atribuirá	atribuír	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	1	expl	_	_
+3	lle	lle	PRON	RAD3FS	Case=Dat|Gender=Fem|Number=Sing|Person=3|PronType=Clit	1	expl	_	_
+4	estatus	estatus	NOUN	SCMS	Gender=Masc|Number=Sing	1	dobj	_	_
+5	xurídico-público	xurídico-público	ADJ	A0MS	Gender=Masc|Number=Sing	4	amod	_	_
+6	a	a	ADP	P	AdpType=Prep	8	case	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Oficina_de_Representación_de_Galiza_en_Bruxelas	Oficina_de_Representación_de_Galiza_en_Bruxelas	PROPN	SPFS	Gender=Fem|Number=Sing	1	iobj	_	_
+
+1	respecto_a	respecto_a	ADP	LP0	AdpType=Prep	2	case	_	_
+2	competencias	competencia	NOUN	SCFP	Gender=Fem|Number=Plur	9	nmod	_	_
+3	recollidas	recoller	VERB	V0P0FP	Gender=Fem|Number=Plur|VerbForm=Part	2	acl	_	_
+4	en	en	ADP	P	AdpType=Prep	6	case	_	_
+5	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	Base_XII	Base_XII	PROPN	SPFS	Gender=Fem|Number=Sing	3	nmod	_	_
+7	sería	ser	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	9	cop	_	_
+8	moi	moito	ADV	WM	_	9	advmod	_	_
+9	longo	longo	ADJ	A0MS	Gender=Masc|Number=Sing	0	root	_	_
+10	e	e	CONJ	CC	_	9	cc	_	_
+11	difícil	difícil	ADJ	A0MS	Gender=Masc|Number=Sing	9	conj	_	_
+12	presentar	presentar	VERB	V0F000	VerbForm=Inf	9	ccomp	_	_
+13	aquí	aquí	ADV	WN	_	12	advmod	_	_
+14	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	resume	resume	NOUN	SCMS	Gender=Masc|Number=Sing	12	dobj	_	_
+
+1	toda	todo	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	3	det	_	_
+2	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	lección	lección	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	compromiso	compromiso	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+6	e	e	CONJ	CC	_	5	cc	_	_
+7	de	de	ADP	P	AdpType=Prep	8	case	_	_
+8	xenerosidade	xenerosidade	NOUN	SCFS	Gender=Fem|Number=Sing	5	conj	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Casa_da_Auga	Casa_da_Auga	PROPN	SPFS	Gender=Fem|Number=Sing	0	root	_	_
+
+1	e	e	CONJ	CC	_	2	mark	_	_
+2	así	así	ADV	WN	_	0	root	_	_
+3	foi	ser	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
+4	efectivamente	efectivamente	ADV	WN	_	2	advmod	_	_
+
+1	mariñeiros	mariñeiro	NOUN	SCMP	Gender=Masc|Number=Plur	4	nsubj	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	baixura	baixura	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+4	declarando	declarar	VERB	V0X000	VerbForm=Ger	0	root	_	_
+5	en	en	ADP	P	AdpType=Prep	7	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	Comisión_do_Prestige	Comisión_do_Prestige	PROPN	SPFS	Gender=Fem|Number=Sing	4	nmod	_	_
+
+1	Nunca_Máis	Nunca_Máis	PROPN	SP00	_	2	nsubj	_	_
+2	comparece	comparecer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	7	7	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	2	nmod	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	marzo	marzo	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+
+1	Francisco_Iglesias	Francisco_Iglesias	PROPN	SPM0	Gender=Masc	0	root	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	Consellaría	Consellaría	PROPN	SPFS	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	quere	querer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	converter	converter	VERB	V0F000	VerbForm=Inf	3	xcomp	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	naufraxio	naufraxio	NOUN	SCMS	Gender=Masc|Number=Sing	4	dobj	_	_
+7	en	en	ADP	P	AdpType=Prep	9	case	_	_
+8	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	milagro	milagro	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+10	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	fixo	facer	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	acl	_	_
+12	aumentar	aumentar	VERB	V0F000	VerbForm=Inf	11	xcomp	_	_
+13	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	pesca	pesca	NOUN	SCFS	Gender=Fem|Number=Sing	12	dobj	_	_
+
+1	reproducimos	reproducir	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	intervención	intervención	NOUN	SCFS	Gender=Fem|Number=Sing	1	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	patrón_maior	patrón_maior	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+7	de	de	ADP	P	AdpType=Prep	8	case	_	_
+8	O_Grove	O_Grove	PROPN	SP00	_	6	nmod	_	_
+
+1	para	para	ADP	P	AdpType=Prep	3	case	_	_
+2	todo	todo	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_
+3	isto	este	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	11	nmod	_	_
+4	e	e	CONJ	CC	_	11	cc	_	_
+5	solicito	solicitar	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	conj	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+7	súa	seu	DET	MD3AFS	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	9	det	_	_
+8	libre	libre	ADJ	A0FS	Gender=Fem|Number=Sing	9	amod	_	_
+9	colaboración	colaboración	NOUN	SCFS	Gender=Fem|Number=Sing	5	dobj	_	_
+10	vou	ir	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	facer	facer	VERB	V0F000	VerbForm=Inf	0	root	_	_
+12	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	minuto	minuto	NOUN	SCMS	Gender=Masc|Number=Sing	11	dobj	_	_
+14	de	de	ADP	P	AdpType=Prep	15	case	_	_
+15	silencio	silencio	NOUN	SCMS	Gender=Masc|Number=Sing	13	nmod	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	FIDAC	FIDAC	PROPN	ZGMS	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	cualificou	cualificar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Prestige	Prestige	PROPN	SPMS	Gender=Masc|Number=Sing	3	dobj	_	_
+6	como	como	ADV	WR	PronType=Rel	9	case	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+8	peor	peor	ADJ	ACFS	Degree=Cmp|Gender=Fem|Number=Sing	9	amod	_	_
+9	catástrofe	catástrofe	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+10	de	de	ADP	P	AdpType=Prep	14	case	_	_
+11	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
+12	ultimos	ultimo	ADJ	A0MP	Gender=Masc|Number=Plur	14	amod	_	_
+13	25	25	NUM	NCDMP	Gender=Masc|Number=Plur|NumType=Card	14	nummod	_	_
+14	anos	ano	NOUN	SCMP	Gender=Masc|Number=Plur	9	nmod	_	_
+
+1	dito	dicir	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	3	advcl	_	_
+2	isto	este	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	1	dobj	_	_
+3	quixera	querer	VERB	VLI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pqp|VerbForm=Fin	0	root	_	_
+4	formular	formular	VERB	V0F000	VerbForm=Inf	3	xcomp	_	_
+5	tres	tres	NUM	NCDFP	Gender=Fem|Number=Plur|NumType=Card	6	nummod	_	_
+6	cuestións	cuestión	NOUN	SCFP	Gender=Fem|Number=Plur	4	dobj	_	_
+
+1	máis	máis	ADV	WM	_	2	advmod	_	_
+2	cartos	carto	NOUN	SCMP	Gender=Masc|Number=Plur	0	root	_	_
+3	por	por	ADP	P	AdpType=Prep	4	mark	_	_
+4	aparcar	aparcar	VERB	V0F000	VerbForm=Inf	2	acl	_	_
+5	por	por	ADP	P	AdpType=Prep	6	case	_	_
+6	cuartos	cuarto	NOUN	SCMP	Gender=Masc|Number=Plur	4	nmod	_	_
+
+1	será	ser	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	2	cop	_	_
+2	a_partir_de	a_partir_de	ADP	LP0	AdpType=Prep	0	root	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	1	1	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	2	nmod	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	abril	abril	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+7	e	e	CONJ	CC	_	2	cc	_	_
+8	non	non	ADV	WN	_	9	neg	_	_
+9	sen	sen	ADP	P	AdpType=Prep	10	case	_	_
+10	polémicas	polémica	NOUN	SCFP	Gender=Fem|Number=Plur	2	conj	_	_
+11	nin	nin	CONJ	CC	_	10	cc	_	_
+12	alegacións	alegación	NOUN	SCFP	Gender=Fem|Number=Plur	10	conj	_	_
+13	por	por	ADP	P	AdpType=Prep	15	case	_	_
+14	lo	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	medio	medio	NOUN	SCMS	Gender=Masc|Number=Sing	10	nmod	_	_
+
+1	se	se	SCONJ	CS	_	4	mark	_	_
+2	teño	ter	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	que	que	SCONJ	CS	_	4	mark	_	_
+4	chamar	chamar	VERB	V0F000	VerbForm=Inf	11	advcl	_	_
+5	salvo	salvo	ADP	P	AdpType=Prep	6	case	_	_
+6	caso	caso	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+7	de	de	ADP	P	AdpType=Prep	8	case	_	_
+8	emerxencia	emerxencia	NOUN	SCFS	Gender=Fem|Number=Sing	6	nmod	_	_
+9	xa	xa	ADV	WN	_	11	advmod	_	_
+10	o	o	PRON	RAA3MS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Clit	11	expl	_	_
+11	farei	facer	VERB	VFI10S	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
+12	desde	desde	ADP	P	AdpType=Prep	14	case	_	_
+13	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	fixo	fixo	ADJ	A0MS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	rúas	rúa	NOUN	SCFP	Gender=Fem|Number=Plur	5	nsubj	_	_
+3	son	ser	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	máis	máis	ADV	WM	_	5	advmod	_	_
+5	acolledoras	acolledor	ADJ	A0FP	Gender=Fem|Number=Plur	9	ccomp	_	_
+6	para	para	ADP	P	AdpType=Prep	7	mark	_	_
+7	pasear	pasear	VERB	V0F000	VerbForm=Inf	5	advcl	_	_
+8	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	certo	certo	ADJ	A0MS	Gender=Masc|Number=Sing	0	root	_	_
+
+1	agora	agora	ADV	WN	_	4	advmod	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	4	dobj	_	_
+4	fai	facer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	falta	falta	NOUN	SCFS	Gender=Fem|Number=Sing	4	compound	_	_
+6	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+7	tempo	tempo	NOUN	SCMS	Gender=Masc|Number=Sing	4	nsubj	_	_
+8	para	para	ADP	P	AdpType=Prep	9	mark	_	_
+9	pasear	pasear	VERB	V0F000	VerbForm=Inf	7	acl	_	_
+10	por	por	ADP	P	AdpType=Prep	11	case	_	_
+11	elas	el	PRON	RTP3FP	Gender=Fem|Number=Plur|Person=3	9	nmod	_	_
+
+1	menos	menos	ADV	WN	_	7	parataxis	_	_
+2	que	que	SCONJ	CS	_	3	mark	_	_
+3	agora	agora	ADV	WN	_	1	advmod	_	_
+4	se	se	SCONJ	CS	_	7	mark	_	_
+5	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+6	un	un	NUM	NCDMS	Gender=Masc|Number=Sing|NumType=Card	7	nummod	_	_
+7	cuarto	cuarto	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+8	de	de	ADP	P	AdpType=Prep	9	case	_	_
+9	hora	hora	NOUN	SCFS	Gender=Fem|Number=Sing	7	nmod	_	_
+10	para	para	ADP	P	AdpType=Prep	12	case	_	_
+11	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	recado	recado	NOUN	SCMS	Gender=Masc|Number=Sing	7	nmod	_	_
+13	rápido	rápido	ADJ	A0MS	Gender=Masc|Number=Sing	12	amod	_	_
+
+1	pero	pero	SCONJ	CS	_	3	mark	_	_
+2	seguramente	seguramente	ADV	WN	_	3	advmod	_	_
+3	máis	máis	ADV	WN	_	0	root	_	_
+4	que	que	SCONJ	CS	_	5	mark	_	_
+5	agora	agora	ADV	WN	_	3	advmod	_	_
+6	por	por	ADP	P	AdpType=Prep	8	case	_	_
+7	unha	un	NUM	NCDFS	Gender=Fem|Number=Sing|NumType=Card	8	nummod	_	_
+8	hora	hora	NOUN	SCFS	Gender=Fem|Number=Sing	3	parataxis	_	_
+9	ou	ou	CONJ	CC	_	8	cc	_	_
+10	máis	máis	ADV	WN	_	8	conj	_	_
+
+1	sería	ser	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	4	cop	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+3	mellor	mellor	ADJ	ACFS	Degree=Cmp|Gender=Fem|Number=Sing	4	amod	_	_
+4	opción	opción	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+5	para	para	ADP	P	AdpType=Prep	7	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	saúde	saúde	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+8	para	para	ADP	P	AdpType=Prep	10	case	_	_
+9	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	medio	medio	NOUN	SCMS	Gender=Masc|Number=Sing	7	conj	_	_
+11	ambiente	ambiente	NOUN	SCMS	Gender=Masc|Number=Sing	10	compound	_	_
+12	e	e	CONJ	CC	_	7	cc	_	_
+13	para	para	ADP	P	AdpType=Prep	15	case	_	_
+14	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	peto	peto	NOUN	SCMS	Gender=Masc|Number=Sing	7	conj	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	negocio	negocio	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+3	redondo	redondo	ADJ	A0MS	Gender=Masc|Number=Sing	2	amod	_	_
+
+1	música	música	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+2	para	para	ADP	P	AdpType=Prep	4	case	_	_
+3	outra	outro	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	4	det	_	_
+4	guerra	guerra	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	tamén	tamén	ADV	WN	_	2	advmod	_	_
+2	os	o	PRON	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	0	root	_	_
+3	de	de	ADP	P	AdpType=Prep	5	case	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	OTAN	OTAN	PROPN	ZGFS	Gender=Fem|Number=Sing	2	nmod	_	_
+
+1	os	o	PRON	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	nsubj	_	_
+2	de	de	ADP	P	AdpType=Prep	4	case	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	ONU	ONU	PROPN	ZGFS	Gender=Fem|Number=Sing	1	nmod	_	_
+5	calan	calar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+
+1	agora	agora	ADV	WN	_	3	advmod	_	_
+2	O_Líbano	O_Líbano	PROPN	SP00	_	3	nsubj	_	_
+3	levanta	levantar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	3	expl	_	_
+5	contra	contra	ADP	P	AdpType=Prep	8	case	_	_
+6	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+7	seu	seu	DET	MD3SMS	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	8	det	_	_
+8	goberno	goberno	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+9	e	e	CONJ	CC	_	3	cc	_	_
+10	Israel	Israel	PROPN	SP00	_	11	nsubj	_	_
+11	acusa	acusar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+12	a	a	ADP	P	AdpType=Prep	13	case	_	_
+13	Siria	Siria	PROPN	SP00	_	11	dobj	_	_
+14	de	de	ADP	P	AdpType=Prep	15	case	_	_
+15	terrorismo	terrorismo	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	soan	soar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+3	tambores	tambor	NOUN	SCMP	Gender=Masc|Number=Plur	1	nsubj	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	crime	crime	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+
+1	só	só	ADV	WN	_	3	advmod	_	_
+2	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+3	pombas	pomba	NOUN	SCFP	Gender=Fem|Number=Plur	9	nsubj	_	_
+4	de	de	ADP	P	AdpType=Prep	7	case	_	_
+5	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+6	nosos	noso	DET	MD1PMP	Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes	7	det	_	_
+7	labios	labio	NOUN	SCMP	Gender=Masc|Number=Plur	3	nmod	_	_
+8	poden	poder	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	frear	frear	VERB	V0F000	VerbForm=Inf	0	root	_	_
+10	estes	este	DET	EDMP	Gender=Masc|Number=Plur|PronType=Dem	11	det	_	_
+11	preparativos	preparativos	NOUN	SCMP	Gender=Masc|Number=Plur	9	dobj	_	_
+
+1	mais	mais	SCONJ	CS	_	4	mark	_	_
+2	han	haber	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	de	de	ADP	P	AdpType=Prep	4	mark	_	_
+4	voar	voar	VERB	V0F000	VerbForm=Inf	0	root	_	_
+5	xa	xa	ADV	WN	_	4	advmod	_	_
+6	para	para	ADP	P	AdpType=Prep	10	mark	_	_
+7	que	que	SCONJ	CS	_	10	mark	_	_
+8	non	non	ADV	WN	_	10	neg	_	_
+9	nos	nos	PRON	RAA1MP	Case=Acc|Gender=Masc|Number=Plur|Person=1|PronType=Clit	10	dobj	_	_
+10	pillen	pillar	VERB	VPS30P	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
+11	adormecidos	adormecido	ADJ	A0MP	Gender=Masc|Number=Plur	10	xcomp	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	peón	peón	NOUN	SCMS	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	ou	ou	CONJ	CC	_	2	cc	_	_
+4	trompo	trompo	NOUN	SCMS	Gender=Masc|Number=Sing	2	conj	_	_
+5	baila	bailar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	enriba	enriba	ADV	WN	_	9	advmod	_	_
+7	de	de	ADP	P	AdpType=Prep	9	case	_	_
+8	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	pé	pé	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+
+1	e	e	CONJ	CC	_	7	mark	_	_
+2	xa_que	xa_que	SCONJ	LCS	_	3	mark	_	_
+3	falamos	falar	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	7	advcl	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	outras	outro	DET	IDFP	Gender=Fem|Number=Plur|PronType=Ind	6	det	_	_
+6	linguas	lingua	NOUN	SCFP	Gender=Fem|Number=Plur	3	nmod	_	_
+7	diremos	dicir	VERB	VFI10P	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	0	root	_	_
+8	que	que	SCONJ	CS	_	12	mark	_	_
+9	de	de	ADP	P	AdpType=Prep	10	case	_	_
+10	pé	pé	NOUN	SCMS	Gender=Masc|Number=Sing	12	nmod	_	_
+11	tamén	tamén	ADV	WN	_	12	advmod	_	_
+12	proceden	proceder	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	ccomp	_	_
+13	petanca	petanca	NOUN	SCFS	Gender=Fem|Number=Sing	12	dobj	_	_
+14	e	e	CONJ	CC	_	13	cc	_	_
+15	pedigrí	pedigrí	NOUN	SCMS	Gender=Masc|Number=Sing	13	conj	_	_
+
+1	en_xeral	en_xeral	ADV	LA0	_	3	advmod	_	_
+2	son	ser	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	palabras	palabra	NOUN	SCFP	Gender=Fem|Number=Plur	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	uso	uso	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+6	técnico	técnico	ADJ	A0MS	Gender=Masc|Number=Sing	5	amod	_	_
+7	e	e	CONJ	CC	_	6	cc	_	_
+8	científico	científico	ADJ	A0MS	Gender=Masc|Number=Sing	6	conj	_	_
+
+1	a_as_veces	a_as_veces	ADV	LA0	_	2	advmod	_	_
+2	podemos	poder	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	escoller	escoller	VERB	V0F000	VerbForm=Inf	0	root	_	_
+4	para	para	ADP	P	AdpType=Prep	5	mark	_	_
+5	andar	andar	VERB	V0F000	VerbForm=Inf	3	advcl	_	_
+6	pés	pé	NOUN	SCMP	Gender=Masc|Number=Plur	3	dobj	_	_
+7	latinos	latino	ADJ	A0MP	Gender=Masc|Number=Plur	6	amod	_	_
+8	ou	ou	CONJ	CC	_	7	cc	_	_
+9	gregos	grego	ADJ	A0MP	Gender=Masc|Number=Plur	7	conj	_	_
+
+1	sermos	ser	VERB	V0F10P	Number=Plur|Person=1|VerbForm=Inf	2	cop	_	_
+2	bípedes	bípede	ADJ	A0AP	Gender=Com|Number=Plur	0	root	_	_
+3	ou	ou	CONJ	CC	_	2	cc	_	_
+4	dípodos	dípodo	ADJ	A0MP	Gender=Masc|Number=Plur	2	conj	_	_
+5	e	e	CONJ	CC	_	2	cc	_	_
+6	irmos	ir	VERB	V0F10P	Number=Plur|Person=1|VerbForm=Inf	2	conj	_	_
+7	a	a	ADP	P	AdpType=Prep	9	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	pedicuro	pedicuro	NOUN	SCMS	Gender=Masc|Number=Sing	6	nmod	_	_
+10	ou	ou	CONJ	CC	_	9	cc	_	_
+11	a	a	ADP	P	AdpType=Prep	13	case	_	_
+12	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	podólogo	podólogo	NOUN	SCMS	Gender=Masc|Number=Sing	9	conj	_	_
+
+1	escriba	escribir	VERB	VPS30S	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	1	expl	_	_
+3	fútbol	fútbol	NOUN	SCMS	Gender=Masc|Number=Sing	1	dobj	_	_
+4	a	a	ADP	P	AdpType=Prep	6	case	_	_
+5	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	española	español	ADJ	A0FS	Gender=Fem|Number=Sing	1	nmod	_	_
+7	ou	ou	CONJ	CC	_	6	cc	_	_
+8	a	a	ADP	P	AdpType=Prep	10	case	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	lusa	luso	ADJ	A0FS	Gender=Fem|Number=Sing	6	conj	_	_
+
+1	Xurxo_Salgado	Xurxo_Salgado	PROPN	SPM0	Gender=Masc	0	root	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	principal	principal	ADJ	A0MS	Gender=Masc|Number=Sing	3	amod	_	_
+3	problema	problema	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	xornalistas	xornalista	NOUN	SCMP	Gender=Masc|Number=Plur	3	nmod	_	_
+7	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+8	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	precariedade	precariedade	NOUN	SCFS	Gender=Fem|Number=Sing	3	nsubj	_	_
+10	laboral	laboral	ADJ	A0FS	Gender=Fem|Number=Sing	9	amod	_	_
+
+1	vén	vir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux	_	_
+2	de	de	ADP	P	AdpType=Prep	3	mark	_	_
+3	ser	ser	VERB	V0F000	VerbForm=Inf	4	auxpass	_	_
+4	elixido	elixir	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+5	secretario	secretario	NOUN	SCMS	Gender=Masc|Number=Sing	4	xcomp	_	_
+6	xeral	xeral	ADJ	A0MS	Gender=Masc|Number=Sing	5	amod	_	_
+7	de	de	ADP	P	AdpType=Prep	10	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+9	novo	novo	ADJ	A0MS	Gender=Masc|Number=Sing	10	amod	_	_
+10	Sindicato_de_Xornalistas_de_Galicia	Sindicato_de_Xornalistas_de_Galicia	PROPN	SPMS	Gender=Masc|Number=Sing	5	nmod	_	_
+11	SXG	SXG	PROPN	ZG00	_	10	appos	_	_
+
+1	segundo	segundo	ADP	P	AdpType=Prep	2	case	_	_
+2	Salgado	Salgado	PROPN	SP00	_	3	parataxis	_	_
+3	necesitabamos	necesitar	VERB	VII10P	Mood=Ind|Number=Plur|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_
+4	esta	este	DET	EDFS	Gender=Fem|Number=Sing|PronType=Dem	5	det	_	_
+5	organización	organización	NOUN	SCFS	Gender=Fem|Number=Sing	3	dobj	_	_
+6	en	en	ADP	P	AdpType=Prep	8	case	_	_
+7	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	profesión	profesión	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+9	de	de	ADP	P	AdpType=Prep	10	case	_	_
+10	asalariados	asalariado	NOUN	SCMP	Gender=Masc|Number=Plur	8	nmod	_	_
+11	como	como	SCONJ	CS	_	14	mark	_	_
+12	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	_
+13	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	nosa	noso	PRON	MD1PFS	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes	8	acl	_	_
+
+1	con	con	ADP	P	AdpType=Prep	3	case	_	_
+2	que	que	DET	GDMS	Gender=Masc|Number=Sing|PronType=Int	3	det	_	_
+3	obxectivo	obxectivo	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+4	nace	nacer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Sindicato_de_Xornalistas_de_Galicia	Sindicato_de_Xornalistas_de_Galicia	PROPN	SPMS	Gender=Masc|Number=Sing	4	nsubj	_	_
+
+1	pensa	pensar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	que	que	SCONJ	CS	_	9	mark	_	_
+3	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+4	empresas	empresa	NOUN	SCFP	Gender=Fem|Number=Plur	9	nsubj	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	comunicación	comunicación	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+7	están	estar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	por	por	ADP	P	AdpType=Prep	9	mark	_	_
+9	aceptar	aceptar	VERB	V0F000	VerbForm=Inf	1	ccomp	_	_
+10	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	regulación	regulación	NOUN	SCFS	Gender=Fem|Number=Sing	9	dobj	_	_
+12	de	de	ADP	P	AdpType=Prep	14	case	_	_
+13	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	sector	sector	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	a	a	ADP	P	AdpType=Prep	2	case	_	_
+2	día	día	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	hoxe	hoxe	ADV	WN	_	2	advmod	_	_
+5	non	non	ADV	WN	_	0	root	_	_
+
+1	en_canto	en_canto	SCONJ	LCS	_	4	mark	_	_
+2	varios	varios	DET	IDMP	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
+3	medios	medio	NOUN	SCMP	Gender=Masc|Number=Plur	4	nsubj	_	_
+4	accedan	acceder	VERB	VPS30P	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	resto	resto	NOUN	SCMS	Gender=Masc|Number=Sing	7	nsubj	_	_
+7	irán	ir	VERB	VFI30P	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+8	detrás	detrás	ADV	WN	_	7	advmod	_	_
+9	porque	porque	SCONJ	CS	_	12	mark	_	_
+10	non	non	ADV	WN	_	12	neg	_	_
+11	poderán	poder	VERB	VFI30P	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	12	aux	_	_
+12	aguantar	aguantar	VERB	V0F000	VerbForm=Inf	7	advcl	_	_
+13	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	presión	presión	NOUN	SCFS	Gender=Fem|Number=Sing	12	dobj	_	_
+15	pública	público	ADJ	A0FS	Gender=Fem|Number=Sing	14	amod	_	_
+
+1	ese	ese	PRON	ENMS	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	_	_
+2	foi	ser	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	cop	_	_
+3	un	un	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	temas	tema	NOUN	SCMP	Gender=Masc|Number=Plur	3	nmod	_	_
+7	que	que	PRON	TNMP	Gender=Masc|Number=Plur|PronType=Rel	9	dobj	_	_
+8	máis	máis	ADV	WN	_	9	advmod	_	_
+9	discutimos	discutir	VERB	VEI10P	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	6	acl	_	_
+10	en	en	ADP	P	AdpType=Prep	12	case	_	_
+11	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
+12	Asamblea_Constituínte	Asamblea_Constituínte	PROPN	SPFS	Gender=Fem|Number=Sing	9	nmod	_	_
+
+1	mesmo	mesmo	ADV	WN	_	2	advmod	_	_
+2	algún	algún	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	6	nsubj	_	_
+3	de	de	ADP	P	AdpType=Prep	5	case	_	_
+4	aqueles	aquel	DET	EDMP	Gender=Masc|Number=Plur|PronType=Dem	5	det	_	_
+5	representantes	representante	NOUN	SCMP	Gender=Masc|Number=Plur	2	nmod	_	_
+6	defendeu	defender	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	necesidade	necesidade	NOUN	SCFS	Gender=Fem|Number=Sing	6	dobj	_	_
+9	de	de	ADP	P	AdpType=Prep	12	mark	_	_
+10	que	que	SCONJ	CS	_	12	mark	_	_
+11	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	12	expl	_	_
+12	crease	crear	VERB	VES30S	Mood=Sub|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	acl	_	_
+13	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	sindicato	sindicato	NOUN	SCMS	Gender=Masc|Number=Sing	12	dobj	_	_
+15	propio	propio	ADJ	A0MS	Gender=Masc|Number=Sing	14	amod	_	_
+
+1	non	non	ADV	WN	_	2	neg	_	_
+2	nacemos	nacer	VERB	VEI10P	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+3	para	para	ADP	P	AdpType=Prep	4	mark	_	_
+4	pelexar	pelexar	VERB	V0F000	VerbForm=Inf	2	xcomp	_	_
+5	con	con	ADP	P	AdpType=Prep	6	case	_	_
+6	ninguén	ninguén	PRON	INAS	Gender=Com|Number=Sing|PronType=Ind	4	nmod	_	_
+7	senón	senón	SCONJ	CS	_	2	cc	_	_
+8	para	para	ADP	P	AdpType=Prep	9	mark	_	_
+9	colaborar	colaborar	VERB	V0F000	VerbForm=Inf	2	conj	_	_
+
+1	non	non	ADV	WN	_	4	neg	_	_
+2	somos	ser	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	perigo	perigo	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+5	para	para	ADP	P	AdpType=Prep	6	case	_	_
+6	UGT	UGT	PROPN	ZG00	_	4	nmod	_	_
+7	CC_OO	CC_OO	PROPN	ZG00	_	6	conj	_	_
+8	ou	ou	CONJ	CC	_	6	cc	_	_
+9	CIG	CIG	PROPN	ZG00	_	6	conj	_	_
+
+1	cal	cal	PRON	GNMS	Gender=Masc|Number=Sing|PronType=Int	0	root	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	perfil	perfil	NOUN	SCMS	Gender=Masc|Number=Sing	1	nsubj	_	_
+5	de	de	ADP	P	AdpType=Prep	7	case	_	_
+6	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	xornalista	xornalista	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+8	galego	galego	ADJ	A0MS	Gender=Masc|Number=Sing	7	amod	_	_
+
+1	non_embargante	non_embargante	ADV	LA0	_	5	advmod	_	_
+2	non	non	ADV	WN	_	3	neg	_	_
+3	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	que	que	SCONJ	CS	_	5	mark	_	_
+5	ler	ler	VERB	V0F000	VerbForm=Inf	0	root	_	_
+6	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	estudo	estudo	NOUN	SCMS	Gender=Masc|Number=Sing	5	dobj	_	_
+8	para	para	ADP	P	AdpType=Prep	9	mark	_	_
+9	saber	saber	VERB	V0F000	VerbForm=Inf	5	advcl	_	_
+10	como	como	ADV	WG	PronType=Int	9	ccomp	_	_
+11	está	estar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
+12	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	profesión	profesión	NOUN	SCFS	Gender=Fem|Number=Sing	10	nsubj	_	_
+
+1	todos	todo	DET	IDMP	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
+2	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+3	días	día	NOUN	SCMP	Gender=Masc|Number=Plur	5	nmod	_	_
+4	o	o	PRON	RAA3MS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Clit	5	dobj	_	_
+5	vemos	ver	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	en	en	ADP	P	AdpType=Prep	9	case	_	_
+7	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+8	nosos	noso	DET	MD1PMP	Gender=Masc|Number=Plur|Number[psor]=Plur|Person=1|Poss=Yes	9	det	_	_
+9	medios	medio	NOUN	SCMP	Gender=Masc|Number=Plur	5	nmod	_	_
+10	e	e	CONJ	CC	_	9	cc	_	_
+11	en	en	ADP	P	AdpType=Prep	12	case	_	_
+12	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	conj	_	_
+13	de	de	ADP	P	AdpType=Prep	15	case	_	_
+14	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
+15	compañeiros	compañeiro	NOUN	SCMP	Gender=Masc|Number=Plur	12	nmod	_	_
+
+1	ese	ese	PRON	ENMS	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+3	un	un	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	1	nsubj	_	_
+4	de	de	ADP	P	AdpType=Prep	7	case	_	_
+5	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+6	maiores	maior	ADJ	ACMP	Degree=Cmp|Gender=Masc|Number=Plur	7	amod	_	_
+7	problemas	problema	NOUN	SCMP	Gender=Masc|Number=Plur	3	nmod	_	_
+
+1	cada	cada	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
+2	ano	ano	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+3	acaban	acabar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	carreira	carreira	NOUN	SCFS	Gender=Fem|Number=Sing	3	dobj	_	_
+6	en	en	ADP	P	AdpType=Prep	7	case	_	_
+7	Galicia	Galicia	PROPN	SP00	_	3	nmod	_	_
+8	arredor_de	arredor_de	ADP	LP0	AdpType=Prep	10	advmod	_	_
+9	cen	cen	NUM	NCDAP	Gender=Com|Number=Plur|NumType=Card	10	nummod	_	_
+10	xornalistas	xornalista	NOUN	SCAP	Gender=Com|Number=Plur	3	nsubj	_	_
+
+1	esa	ese	DET	EDFS	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+2	cantidade	cantidade	NOUN	SCFS	Gender=Fem|Number=Sing	4	nsubj	_	_
+3	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	excesiva	excesivo	ADJ	A0FS	Gender=Fem|Number=Sing	0	root	_	_
+5	para	para	ADP	P	AdpType=Prep	9	mark	_	_
+6	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	9	dobj	_	_
+8	pode	poder	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	absorver	absorver	VERB	V0F000	VerbForm=Inf	4	advcl	_	_
+10	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	mercado	mercado	NOUN	SCMS	Gender=Masc|Number=Sing	9	nsubj	_	_
+12	galego	galego	ADJ	A0MS	Gender=Masc|Number=Sing	11	amod	_	_
+
+1	crea	crear	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	1	expl	_	_
+3	por_lo_tanto	por_o_tanto	ADV	LA0	_	1	advmod	_	_
+4	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	bolsa	bolsa	NOUN	SCFS	Gender=Fem|Number=Sing	1	dobj	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	licenciados	licenciado	NOUN	SCMP	Gender=Masc|Number=Plur	5	nmod	_	_
+8	en_precario	en_precario	ADV	LA0	_	7	advmod	_	_
+9	de	de	ADP	P	AdpType=Prep	11	case	_	_
+10	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	que	que	PRON	TNFS	Gender=Fem|Number=Sing|PronType=Rel	13	nmod	_	_
+12	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	13	expl	_	_
+13	aproveitan	aproveitar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
+14	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+15	empresas	empresa	NOUN	SCFP	Gender=Fem|Number=Plur	13	nsubj	_	_
+
+1	galegos	galego	NOUN	SCMP	Gender=Masc|Number=Plur	0	root	_	_
+2	en	en	ADP	P	AdpType=Prep	4	case	_	_
+3	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	Premios_da_Música	Premios_da_Música	PROPN	SPMP	Gender=Masc|Number=Plur	1	nmod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	cerimonia	cerimonia	NOUN	SCFS	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	entrega	entrega	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+5	terá	ter	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+6	lugar	lugar	NOUN	SCMS	Gender=Masc|Number=Sing	5	mwe	_	_
+7	en	en	ADP	P	AdpType=Prep	9	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	Palacio_Municipal_de_Congresos_de_Madrid	Palacio_Municipal_de_Congresos_de_Madrid	PROPN	SPMS	Gender=Masc|Number=Sing	5	nmod	_	_
+10	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+11	vindeiro	vindeiro	ADJ	A0MS	Gender=Masc|Number=Sing	12	amod	_	_
+12	22	22	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	5	nmod	_	_
+13	de	de	ADP	P	AdpType=Prep	14	case	_	_
+14	abril	abril	NOUN	SCMS	Gender=Masc|Number=Sing	12	nmod	_	_
+
+1	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	reforma	reforma	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+3	para	para	ADP	P	AdpType=Prep	4	mark	_	_
+4	discutir	discutir	VERB	V0F000	VerbForm=Inf	2	advcl	_	_
+5	con	con	ADP	P	AdpType=Prep	7	case	_	_
+6	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	socialistas	socialista	NOUN	SCMP	Gender=Masc|Number=Plur	4	nmod	_	_
+
+1	aquí	aquí	ADV	WN	_	2	advmod	_	_
+2	existe	existir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+4	importante	importante	ADJ	A0FS	Gender=Fem|Number=Sing	5	amod	_	_
+5	diferenza	diferenza	NOUN	SCFS	Gender=Fem|Number=Sing	2	nsubj	_	_
+6	con	con	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	11	dobj	_	_
+9	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	socialistas	socialista	NOUN	SCMP	Gender=Masc|Number=Plur	11	nsubj	_	_
+11	definen	definir	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	acl	_	_
+12	como	como	ADV	WR	PronType=Rel	11	advmod	_	_
+13	novo	novo	ADJ	A0MS	Gender=Masc|Number=Sing	14	amod	_	_
+14	municipalismo	municipalismo	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	con	con	ADP	P	AdpType=Prep	3	case	_	_
+2	trece	trece	NUM	NCDFP	Gender=Fem|Number=Plur|NumType=Card	3	nummod	_	_
+3	candidaturas	candidatura	NOUN	SCFP	Gender=Fem|Number=Plur	4	nmod	_	_
+4	parte	partir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	O_ano_da_carracha	O_ano_da_carracha	PROPN	SP00	_	4	nsubj	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	Xurxo_Coira	Xurxo_Coira	PROPN	SPM0	Gender=Masc	5	nmod	_	_
+8	e	e	CONJ	CC	_	4	cc	_	_
+9	con	con	ADP	P	AdpType=Prep	10	case	_	_
+10	doce	doce	NUM	NCNFP	Gender=Fem|Number=Plur|NumType=Card	3	remnant	_	_
+11	A_promesa	A_promesa	PROPN	SP00	_	5	remnant	_	_
+
+1	Muíño	Muíño	PROPN	SP00	_	2	nsubj	_	_
+2	presenta	presentar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
+4	súas	seu	DET	MD3SFP	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes	6	det	_	_
+5	novas	novo	ADJ	A0FP	Gender=Fem|Number=Plur	6	amod	_	_
+6	creacións	creación	NOUN	SCFP	Gender=Fem|Number=Plur	2	dobj	_	_
+
+1	Dario_Fo	Dario_Fo	PROPN	SPM0	Gender=Masc	2	nsubj	_	_
+2	chega	chegar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	a	ADP	P	AdpType=Prep	5	case	_	_
+4	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+5	parroquias	parroquia	NOUN	SCFP	Gender=Fem|Number=Plur	2	nmod	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	Ribadeo	Ribadeo	PROPN	SP00	_	5	nmod	_	_
+
+1	e	e	CONJ	CC	_	5	cc	_	_
+2	de	de	ADP	P	AdpType=Prep	5	case	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+4	máis	máis	ADV	WM	_	5	advmod	_	_
+5	moderno	moderno	ADJ	A0MS	Gender=Masc|Number=Sing	0	root	_	_
+6	a	a	ADP	P	AdpType=Prep	9	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	máis	máis	ADV	WM	_	9	advmod	_	_
+9	clásico	clásico	ADJ	A0MS	Gender=Masc|Number=Sing	5	amod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	primeira	primeiro	NUM	NODFS	Gender=Fem|Number=Sing|NumType=Ord	3	nummod	_	_
+3	versión	versión	NOUN	SCFS	Gender=Fem|Number=Sing	9	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	6	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Quixote	Quixote	PROPN	SPMS	Gender=Masc|Number=Sing	3	nmod	_	_
+7	en	en	ADP	P	AdpType=Prep	8	case	_	_
+8	galego	galego	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+9	fixo	facer	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+10	a	o	PRON	RAA3FS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Clit	9	expl	_	_
+11	A_Nosa_Terra	A_Nosa_Terra	PROPN	SP00	_	9	nsubj	_	_
+12	en	en	ADP	P	AdpType=Prep	13	case	_	_
+13	1917	1917	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	9	nmod	_	_
+
+1	Valentín_Arias	Valentín_Arias	PROPN	SPM0	Gender=Masc	2	nsubj	_	_
+2	realizou	realizar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	tradución	tradución	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	completa	completo	ADJ	A0FS	Gender=Fem|Number=Sing	4	amod	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Quixote	Quixote	PROPN	SPMS	Gender=Masc|Number=Sing	4	nmod	_	_
+9	en	en	ADP	P	AdpType=Prep	10	case	_	_
+10	1990	1990	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	2	nmod	_	_
+
+1	arriba	arriba	ADV	WN	_	6	advmod	_	_
+2	a	a	ADP	P	AdpType=Prep	4	case	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	esquerda	esquerda	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+5	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	obra	obra	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+7	de	de	ADP	P	AdpType=Prep	9	case	_	_
+8	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	colección	colección	NOUN	SCFS	Gender=Fem|Number=Sing	6	nmod	_	_
+10	O_Moucho	O_Moucho	PROPN	SP00	_	9	nmod	_	_
+11	de	de	ADP	P	AdpType=Prep	12	case	_	_
+12	Edicións_Castrelos	Edicións_Castrelos	PROPN	SP00	_	9	nmod	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	anaco	anaco	NOUN	SCMS	Gender=Masc|Number=Sing	9	nsubj	_	_
+3	escollido	escoller	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	2	acl	_	_
+4	por	por	ADP	P	AdpType=Prep	5	case	_	_
+5	Valcárcel	Valcárcel	PROPN	SP00	_	3	nmod	_	_
+6	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+7	de	de	ADP	P	AdpType=Prep	9	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	capítulo	capítulo	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+10	IX	IX	NUM	NONMS	Gender=Masc|Number=Sing|NumType=Ord	9	nummod	_	_
+11	primeiro	primeiro	NUM	NODMS	Gender=Masc|Number=Sing|NumType=Ord	12	nummod	_	_
+12	libro	libro	NOUN	SCMS	Gender=Masc|Number=Sing	9	nmod	_	_
+13	coñecido	coñecer	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	9	acl	_	_
+14	como	como	ADV	WR	PronType=Rel	15	case	_	_
+15	Discurso_aos_cabreros	Discurso_aos_cabreros	PROPN	SP00	_	13	nmod	_	_
+
+1	1975	1975	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	0	root	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+4	seguinte	seguinte	ADJ	A0FS	Gender=Fem|Number=Sing	5	amod	_	_
+5	etapa	etapa	NOUN	SCFS	Gender=Fem|Number=Sing	1	nsubj	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Quixote	Quixote	PROPN	SPMS	Gender=Masc|Number=Sing	5	nmod	_	_
+9	en	en	ADP	P	AdpType=Prep	10	case	_	_
+10	galego	galego	NOUN	SCMS	Gender=Masc|Number=Sing	8	nmod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	tradución	tradución	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+3	definitiva	definitivo	ADJ	A0FS	Gender=Fem|Number=Sing	2	amod	_	_
+
+1	Cervantes	Cervantes	PROPN	SP00	_	2	nsubj	_	_
+2	escribía	escribir	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+3	con	con	ADP	P	AdpType=Prep	6	case	_	_
+4	moi	moito	ADV	WM	_	6	advmod	_	_
+5	pouco	pouco	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	6	det	_	_
+6	coidado	coidado	NOUN	SCMS	Gender=Masc|Number=Sing	2	nmod	_	_
+7	e	e	CONJ	CC	_	2	cc	_	_
+8	pese_a	pese_a	ADP	LP0	AdpType=Prep	10	case	_	_
+9	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	estudos	estudo	NOUN	SCMP	Gender=Masc|Number=Plur	13	nmod	_	_
+11	aínda	aínda	ADV	WN	_	12	advmod	_	_
+12	hoxe	hoxe	ADV	WN	_	13	advmod	_	_
+13	permanecen	permanecer	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+14	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+15	dúbidas	dúbida	NOUN	SCFP	Gender=Fem|Number=Plur	13	dobj	_	_
+
+1	porque	porque	SCONJ	CS	_	2	mark	_	_
+2	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	importancia	importancia	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	social	social	ADJ	A0FS	Gender=Fem|Number=Sing	4	amod	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	valoración	valoración	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+9	de	de	ADP	P	AdpType=Prep	11	case	_	_
+10	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	lingua	lingua	NOUN	SCFS	Gender=Fem|Number=Sing	8	nmod	_	_
+12	nosa	noso	DET	MN1PFS	Gender=Fem|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes|PronType=Prs	11	det	_	_
+
+1	Don_Quixote	Don_Quixote	PROPN	SPMS	Gender=Masc|Number=Sing	0	root	_	_
+2	e	e	CONJ	CC	_	1	cc	_	_
+3	Breogán	Breogán	PROPN	SPM0	Gender=Masc	1	conj	_	_
+
+1	escandalizada	escandalizado	ADJ	A0FS	Gender=Fem|Number=Sing	0	root	_	_
+2	estou	estar	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	cop	_	_
+
+1	porque	porque	SCONJ	CS	_	3	mark	_	_
+2	só	só	ADV	WN	_	3	advmod	_	_
+3	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	cinco	cinco	NUM	NCDMP	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
+5	anos	ano	NOUN	SCMP	Gender=Masc|Number=Plur	3	dobj	_	_
+
+1	ou	ou	CONJ	CC	_	5	mark	_	_
+2	porque	porque	SCONJ	CS	_	5	mark	_	_
+3	non	non	ADV	WN	_	5	neg	_	_
+4	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	5	expl	_	_
+5	axusta	axustar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	a	a	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	modelo	modelo	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+9	moral	moral	ADJ	A0MS	Gender=Masc|Number=Sing	8	amod	_	_
+10	cristián	cristián	ADJ	A0MS	Gender=Masc|Number=Sing	8	amod	_	_
+11	cuíño	cu	NOUN	SCMS	Gender=Masc|Number=Sing	10	parataxis	_	_
+12	cuíño	cu	NOUN	SCMS	Gender=Masc|Number=Sing	11	conj	_	_
+
+1	e	e	CONJ	CC	_	3	cc	_	_
+2	en	en	ADP	P	AdpType=Prep	3	case	_	_
+3	Galiza	Galiza	PROPN	SP00	_	0	root	_	_
+
+1	en	en	ADP	P	AdpType=Prep	2	case	_	_
+2	Galiza	Galiza	PROPN	SP00	_	5	nmod	_	_
+3	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	galegos	galego	NOUN	SCMP	Gender=Masc|Number=Plur	5	nsubj	_	_
+5	votan	votar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	si	si	ADV	WN	_	5	advmod	_	_
+
+1	un	un	NUM	NCDMS	Gender=Masc|Number=Sing|NumType=Card	2	nummod	_	_
+2	ano	ano	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+3	lembrando	lembrar	VERB	V0X000	VerbForm=Ger	0	root	_	_
+4	a	a	ADP	P	AdpType=Prep	5	case	_	_
+5	Luísa_Villalta	Luísa_Villalta	PROPN	SPF0	Gender=Fem	3	dobj	_	_
+
+1	A_Nosa_Terra	A_Nosa_Terra	PROPN	SP00	_	2	nsubj	_	_
+2	prepara	preparar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	libro	libro	NOUN	SCMS	Gender=Masc|Number=Sing	2	dobj	_	_
+5	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	6	nsubj	_	_
+6	recollerá	recoller	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	acl	_	_
+7	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
+8	súas	seu	DET	MD3SFP	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes	9	det	_	_
+9	colaboracións	colaboración	NOUN	SCFP	Gender=Fem|Number=Plur	6	dobj	_	_
+
+1	piden	pedir	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	material	material	NOUN	SCMS	Gender=Masc|Number=Sing	1	dobj	_	_
+3	para	para	ADP	P	AdpType=Prep	5	case	_	_
+4	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	fita	fita	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+6	sobre	sobre	ADP	P	AdpType=Prep	7	case	_	_
+7	Manuel_María	Manuel_María	PROPN	SPM0	Gender=Masc	5	nmod	_	_
+
+1	Fernández_Ferreiro	Fernández_Ferreiro	PROPN	SP00	_	2	nsubj	_	_
+2	retoma	retomar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	represión	represión	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	despois	despois	ADV	WN	_	8	advmod	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	36	36	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	4	nmod	_	_
+
+1	a	a	ADP	P	AdpType=Prep	4	case	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+3	seu	seu	DET	MD3SMS	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	4	det	_	_
+4	carón	carón	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+5	Roxelio	Roxelio	PROPN	SPM0	Gender=Masc	0	root	_	_
+6	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	ex-garda_civil	ex-garda_civil	NOUN	SCMS	Gender=Masc|Number=Sing	5	appos	_	_
+8	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	ser	ser	NOUN	SCMS	Gender=Masc|Number=Sing	7	conj	_	_
+10	anxelical	anxelical	ADJ	A0MS	Gender=Masc|Number=Sing	9	amod	_	_
+11	comprensivo	comprensivo	ADJ	A0MS	Gender=Masc|Number=Sing	9	amod	_	_
+
+1	serán	ser	VERB	VFI30P	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_
+2	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+3	únicos	único	ADJ	A0MP	Gender=Masc|Number=Plur	4	amod	_	_
+4	axudantes	axudante	NOUN	SCMP	Gender=Masc|Number=Plur	0	root	_	_
+5	de	de	ADP	P	AdpType=Prep	7	case	_	_
+6	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	fuxidos	fuxido	NOUN	SCMP	Gender=Masc|Number=Plur	4	nmod	_	_
+
+1	concretamente	concretamente	ADV	WN	_	3	advmod	_	_
+2	en	en	ADP	P	AdpType=Prep	3	case	_	_
+3	esta	este	PRON	ENFS	Gender=Fem|Number=Sing|PronType=Dem	5	nmod	_	_
+4	resulta	resultar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	dificil	dificil	ADJ	A0MS	Gender=Masc|Number=Sing	0	root	_	_
+6	sinalar	sinalar	VERB	V0F000	VerbForm=Inf	5	csubj	_	_
+7	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
+8	máis	máis	ADV	WM	_	9	advmod	_	_
+9	salientábeis	salientábel	ADJ	A0FP	Gender=Fem|Number=Plur	6	dobj	_	_
+10	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
+11	mellor	mellor	ADV	WM	_	12	advmod	_	_
+12	configuradas	configurado	ADJ	A0FP	Gender=Fem|Number=Plur	9	conj	_	_
+
+1	quizá	quizá	ADV	WN	_	3	advmod	_	_
+2	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+3	mulleres	muller	NOUN	SCFP	Gender=Fem|Number=Plur	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	Abades	Abades	PROPN	SP00	_	3	nmod	_	_
+6	ou	ou	CONJ	CC	_	3	cc	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	crego	crego	NOUN	SCMS	Gender=Masc|Number=Sing	3	conj	_	_
+9	D.	D.	NOUN	ZAMS	Gender=Masc|Number=Sing	8	nmod	_	_
+10	Osorio	Osorio	PROPN	SPMS	Gender=Masc|Number=Sing	9	name	_	_
+
+1	velaquí	velaquí	ADV	WN	_	3	advmod	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	explicación	explicación	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	12	mark	_	_
+5	que	que	SCONJ	CS	_	12	mark	_	_
+6	en	en	ADP	P	AdpType=Prep	7	case	_	_
+7	A_Galiza	A_Galiza	PROPN	SP00	_	12	nmod	_	_
+8	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	guerrilla	guerrilla	NOUN	SCFS	Gender=Fem|Number=Sing	12	nsubj	_	_
+10	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	fuxidos	fuxido	NOUN	SCMP	Gender=Masc|Number=Plur	9	conj	_	_
+12	tardasen	tardar	VERB	VES30P	Mood=Sub|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
+13	tanto	tanto	ADV	WN	_	12	advmod	_	_
+14	en	en	ADP	P	AdpType=Prep	15	mark	_	_
+15	desaparecer	desaparecer	VERB	V0F000	VerbForm=Inf	12	xcomp	_	_
+
+1	non	non	ADV	WN	_	2	neg	_	_
+2	podían	poder	VERB	VII30P	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+3	continuando	continuar	VERB	V0X000	VerbForm=Ger	2	advcl	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	represión	represión	NOUN	SCFS	Gender=Fem|Number=Sing	3	dobj	_	_
+
+1	infancia	infancia	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+2	en	en	ADP	P	AdpType=Prep	3	case	_	_
+3	Pontedeume	Pontedeume	PROPN	SP00	_	1	nmod	_	_
+
+1	Os_ollos_da_ponte	Os_ollos_da_ponte	PROPN	SP00	_	4	nsubj	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	Ramiro_Fonte	Ramiro_Fonte	PROPN	SPM0	Gender=Masc	1	nmod	_	_
+4	volve	volver	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	a	a	ADP	P	AdpType=Prep	7	case	_	_
+6	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	escenario	escenario	NOUN	SCMS	Gender=Masc|Number=Sing	4	nmod	_	_
+8	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	12	dobj	_	_
+9	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	escritor	escritor	NOUN	SCMS	Gender=Masc|Number=Sing	12	nsubj	_	_
+11	eumés	eumés	ADJ	A0MS	Gender=Masc|Number=Sing	10	amod	_	_
+12	reflectira	reflectir	VERB	VLI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	7	acl	_	_
+13	en	en	ADP	P	AdpType=Prep	14	case	_	_
+14	Os_meus_ollos	Os_meus_ollos	PROPN	SP00	_	12	nmod	_	_
+
+1	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	tempos	tempo	NOUN	SCMP	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	cambian	cambiar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+
+1	xente	xente	NOUN	SCFS	Gender=Fem|Number=Sing	4	parataxis	_	_
+2	nova	novo	ADJ	A0FS	Gender=Fem|Number=Sing	1	amod	_	_
+3	como	como	ADV	WR	PronType=Rel	4	advmod	_	_
+4	dicía	dicir	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	anuncio	anuncio	NOUN	SCMS	Gender=Masc|Number=Sing	4	nsubj	_	_
+7	sobradamente	sobradamente	ADV	WM	_	8	advmod	_	_
+8	preparada	preparado	ADJ	A0FS	Gender=Fem|Number=Sing	2	conj	_	_
+
+1	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	empresas	empresa	NOUN	SCFP	Gender=Fem|Number=Plur	4	nsubj	_	_
+3	debían	deber	VERB	VII30P	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
+4	crear	crear	VERB	V0F000	VerbForm=Inf	0	root	_	_
+5	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	posto	posto	NOUN	SCMS	Gender=Masc|Number=Sing	4	dobj	_	_
+7	de	de	ADP	P	AdpType=Prep	8	case	_	_
+8	traballo	traballo	NOUN	SCMS	Gender=Masc|Number=Sing	6	nmod	_	_
+9	para	para	ADP	P	AdpType=Prep	10	mark	_	_
+10	responder	responder	VERB	V0F000	VerbForm=Inf	4	advcl	_	_
+11	curriculos	curriculo	NOUN	SCMP	Gender=Masc|Number=Plur	10	dobj	_	_
+
+1	en	en	ADP	P	AdpType=Prep	2	case	_	_
+2	Galiza	Galiza	PROPN	SP00	_	5	nmod	_	_
+3	non	non	ADV	WN	_	5	neg	_	_
+4	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	5	expl	_	_
+5	regularizan	regularizar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	apenas	apenas	ADV	WN	_	7	nmod	_	_
+7	inmigrantes	inmigrante	NOUN	SCAP	Gender=Com|Number=Plur	5	nsubj	_	_
+
+1	simple	simple	ADJ	A0AS	Gender=Com|Number=Sing	0	root	_	_
+
+1	ninguén	ninguén	PRON	INAS	Gender=Com|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	lles	lle	PRON	RAD3AP	Case=Dat|Gender=Com|Number=Plur|Person=3|PronType=Clit	3	iobj	_	_
+3	ofrece	ofrecer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	traballo	traballo	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+5	porque	porque	SCONJ	CS	_	7	mark	_	_
+6	non	non	ADV	WN	_	7	neg	_	_
+7	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+8	traballo	traballo	NOUN	SCMS	Gender=Masc|Number=Sing	7	dobj	_	_
+
+1	vir	vir	VERB	V0F000	VerbForm=Inf	8	csubj	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	emigrante	emigrante	NOUN	SCAS	Gender=Com|Number=Sing	1	nmod	_	_
+4	a	a	ADP	P	AdpType=Prep	5	case	_	_
+5	Galiza	Galiza	PROPN	SP00	_	1	nmod	_	_
+6	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+7	como	como	SCONJ	CS	_	8	mark	_	_
+8	sufrir	sufrir	VERB	V0F000	VerbForm=Inf	0	root	_	_
+9	de	de	ADP	P	AdpType=Prep	10	case	_	_
+10	vértigo	vértigo	NOUN	SCMS	Gender=Masc|Number=Sing	8	nmod	_	_
+11	e	e	CONJ	CC	_	8	cc	_	_
+12	facer	facer	VERB	V0F000	VerbForm=Inf	8	conj	_	_
+13	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	12	expl	_	_
+14	aviador	aviador	NOUN	SCMS	Gender=Masc|Number=Sing	12	dobj	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	himno	himno	NOUN	SCMS	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	de	de	ADP	P	AdpType=Prep	5	case	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	revolución	revolución	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+6	laranxa	laranxa	ADJ	A0FS	Gender=Fem|Number=Sing	5	amod	_	_
+7	representará	representar	VERB	VFI30S	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+8	a	a	ADP	P	AdpType=Prep	9	case	_	_
+9	Ucraína	Ucraína	PROPN	SP00	_	7	dobj	_	_
+10	en	en	ADP	P	AdpType=Prep	11	case	_	_
+11	Eurovisión	Eurovisión	PROPN	SP00	_	7	nmod	_	_
+
+1	debería	deber	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	2	aux	_	_
+2	representar	representar	VERB	V0F000	VerbForm=Inf	0	root	_	_
+3	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
+4	Estados_Unidos	Estados_Unidos	PROPN	SPMP	Gender=Masc|Number=Plur	2	dobj	_	_
+5	por	por	ADP	P	AdpType=Prep	7	case	_	_
+6	la	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	nacionalidade	nacionalidade	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+8	de	de	ADP	P	AdpType=Prep	10	case	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	axencia	axencia	NOUN	SCFS	Gender=Fem|Number=Sing	7	nmod	_	_
+11	publicitaria	publicitario	ADJ	A0FS	Gender=Fem|Number=Sing	10	amod	_	_
+12	autora	autor	NOUN	SCFS	Gender=Fem|Number=Sing	10	nmod	_	_
+13	de	de	ADP	P	AdpType=Prep	15	case	_	_
+14	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	música	música	NOUN	SCFS	Gender=Fem|Number=Sing	12	nmod	_	_
+
+1	por	por	ADP	P	AdpType=Prep	2	case	_	_
+2	que	que	PRON	GNAA	Gender=Com|Number=Dual|PronType=Int	3	nmod	_	_
+3	din	dicir	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	que	que	SCONJ	CS	_	8	mark	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Papa	Papa	PROPN	SPMS	Gender=Masc|Number=Sing	8	nsubj	_	_
+7	está	estar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	grave	grave	ADJ	A0MS	Gender=Masc|Number=Sing	3	ccomp	_	_
+9	se	se	SCONJ	CS	_	11	mark	_	_
+10	xa	xa	ADV	WN	_	11	advmod	_	_
+11	conseguiu	conseguir	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	advcl	_	_
+12	pronunciar	pronunciar	VERB	V0F000	VerbForm=Inf	11	xcomp	_	_
+13	algunhas	algún	DET	IDFP	Gender=Fem|Number=Plur|PronType=Ind	14	det	_	_
+14	palabras	palabra	NOUN	SCFP	Gender=Fem|Number=Plur	12	dobj	_	_
+
+1	Fraga	Fraga	PROPN	SP00	_	4	nsubj	_	_
+2	non	non	ADV	WN	_	4	neg	_	_
+3	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	capaz	capaz	ADJ	A0AS	Gender=Com|Number=Sing	0	root	_	_
+5	de	de	ADP	P	AdpType=Prep	6	mark	_	_
+6	pronunciar	pronunciar	VERB	V0F000	VerbForm=Inf	4	advcl	_	_
+7	ben	ben	ADV	WN	_	6	advmod	_	_
+8	ningunha	ningún	PRON	INFS	Gender=Fem|Number=Sing|PronType=Ind	6	dobj	_	_
+9	e	e	CONJ	CC	_	4	cc	_	_
+10	din	dicir	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+11	que	que	SCONJ	CS	_	15	mark	_	_
+12	está	estar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	_
+13	en	en	ADP	P	AdpType=Prep	15	case	_	_
+14	plena	pleno	ADJ	A0FS	Gender=Fem|Number=Sing	15	amod	_	_
+15	forma	forma	NOUN	SCFS	Gender=Fem|Number=Sing	10	ccomp	_	_
+
+1	unha	un	PRON	INFS	Gender=Fem|Number=Sing|PronType=Ind	6	nsubj	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	elas	el	PRON	RTP3FP	Gender=Fem|Number=Plur|Person=3	1	nmod	_	_
+4	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	Tristemil	Tristemil	PROPN	SPMP	Gender=Masc|Number=Plur	1	appos	_	_
+6	sacoden	sacudir	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	6	expl	_	_
+8	por	por	ADP	P	AdpType=Prep	10	case	_	_
+9	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	asasinato	asasinato	NOUN	SCMS	Gender=Masc|Number=Sing	6	nmod	_	_
+11	entre	entre	ADP	P	AdpType=Prep	12	case	_	_
+12	xemelgos	xemelgo	NOUN	SCMP	Gender=Masc|Number=Plur	10	nmod	_	_
+13	por_causa_de	por_causa_de	ADP	LP0	AdpType=Prep	15	case	_	_
+14	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	morgadío	morgadío	NOUN	SCMS	Gender=Masc|Number=Sing	10	nmod	_	_
+
+1	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	pegadas	pegada	NOUN	SCFP	Gender=Fem|Number=Plur	6	nsubj	_	_
+3	de	de	ADP	P	AdpType=Prep	5	case	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	crime	crime	NOUN	SCMS	Gender=Masc|Number=Sing	2	nmod	_	_
+6	van	ir	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	até	até	ADP	P	AdpType=Prep	9	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	século	século	NOUN	SCMS	Gender=Masc|Number=Sing	6	nmod	_	_
+10	XIX	XIX	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	9	nummod	_	_
+
+1	edita	editar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	Sotelo_Blanco	Sotelo_Blanco	PROPN	SP00	_	1	nsubj	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	lobo	lobo	NOUN	SCMS	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	quedou	quedar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	con	con	ADP	P	AdpType=Prep	6	case	_	_
+5	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	carapucha	carapucha	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+
+1	Kalandraka	Kalandraka	PROPN	SP00	_	2	nsubj	_	_
+2	edita	editar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	A_verdadeira_historia_de_Carapuchiña	A_verdadeira_historia_de_Carapuchiña	PROPN	SP00	_	2	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	Antonio_Almodóvar	Antonio_Almodóvar	PROPN	SPM0	Gender=Masc	3	nmod	_	_
+6	e	e	CONJ	CC	_	5	cc	_	_
+7	Marc_Taeger	Marc_Taeger	PROPN	SPM0	Gender=Masc	5	conj	_	_
+
+1	amais	amais	ADV	WN	_	4	advmod	_	_
+2	de	de	ADP	P	AdpType=Prep	4	case	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	lobo	lobo	NOUN	SCMS	Gender=Masc|Number=Sing	8	nmod	_	_
+5	e	e	CONJ	CC	_	4	cc	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	avoa	avó	NOUN	SCFS	Gender=Fem|Number=Sing	4	conj	_	_
+8	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	gato	gato	NOUN	SCMS	Gender=Masc|Number=Sing	8	dobj	_	_
+11	ben	ben	ADV	WM	_	12	advmod	_	_
+12	pavero	pavero	ADJ	A0MS	Gender=Masc|Number=Sing	10	amod	_	_
+13	en	en	ADP	P	AdpType=Prep	15	case	_	_
+14	este	este	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	15	det	_	_
+15	conto	conto	NOUN	SCMS	Gender=Masc|Number=Sing	8	nmod	_	_
+
+1	libro	libro	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	aventuras	aventura	NOUN	SCFP	Gender=Fem|Number=Plur	1	nmod	_	_
+4	con	con	ADP	P	AdpType=Prep	6	case	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	poder	poder	NOUN	SCMS	Gender=Masc|Number=Sing	1	nmod	_	_
+7	evocador	evocador	ADJ	A0MS	Gender=Masc|Number=Sing	6	amod	_	_
+8	de	de	ADP	P	AdpType=Prep	10	case	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	literatura	literatura	NOUN	SCFS	Gender=Fem|Number=Sing	6	nmod	_	_
+
+1	edita	editar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	Galaxia	Galaxia	PROPN	SP00	_	1	nsubj	_	_
+
+1	Tempo_exterior	Tempo_exterior	PROPN	SP00	_	0	root	_	_
+
+1	Revista_de_Análise_e_Estudos_Internacionais	Revista_de_Análise_e_Estudos_Internacionais	PROPN	SP00	_	0	root	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	Brasil	Brasil	PROPN	SPMS	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	Lula	Lula	PROPN	SP00	_	2	nmod	_	_
+5	centra	centrar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
+7	informacións	información	NOUN	SCFP	Gender=Fem|Number=Plur	5	dobj	_	_
+8	de	de	ADP	P	AdpType=Prep	10	case	_	_
+9	este	este	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	10	det	_	_
+10	número	número	NOUN	SCMS	Gender=Masc|Number=Sing	7	nmod	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	activista	activista	NOUN	SCMS	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	social	social	ADJ	A0MS	Gender=Masc|Number=Sing	2	amod	_	_
+4	Frei_Betto	Frei_Betto	PROPN	SPM0	Gender=Masc	2	nmod	_	_
+5	reflexiona	reflexionar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	sobre	sobre	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	problema	problema	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+9	político	político	ADJ	A0MS	Gender=Masc|Number=Sing	8	amod	_	_
+10	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	11	dobj	_	_
+11	representa	representar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	acl	_	_
+12	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	fame	fame	NOUN	SCFS	Gender=Fem|Number=Sing	11	nsubj	_	_
+
+1	Carmen_Rial	Carmen_Rial	PROPN	SPF0	Gender=Fem	4	nsubj	_	_
+2	e	e	CONJ	CC	_	1	cc	_	_
+3	Milton_Rondó	Milton_Rondó	PROPN	SPM0	Gender=Masc	1	conj	_	_
+4	analizan	analizar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	política	política	NOUN	SCFS	Gender=Fem|Number=Sing	4	dobj	_	_
+7	social	social	ADJ	A0FS	Gender=Fem|Number=Sing	6	amod	_	_
+8	de	de	ADP	P	AdpType=Prep	11	case	_	_
+9	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+10	novo	novo	ADJ	A0MS	Gender=Masc|Number=Sing	11	amod	_	_
+11	goberno	goberno	NOUN	SCMS	Gender=Masc|Number=Sing	6	nmod	_	_
+12	de	de	ADP	P	AdpType=Prep	13	case	_	_
+13	centro-esquerda	centro-esquerda	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	Eixo_Atlântico	Eixo_Atlântico	PROPN	SP00	_	0	root	_	_
+
+1	Encrucillada	Encrucillada	PROPN	SP00	_	0	root	_	_
+
+1	Revista_galega_de_pensamento_cristián	Revista_galega_de_pensamento_cristián	PROPN	SP00	_	0	root	_	_
+
+1	Soedade_López	Soedade_López	PROPN	SPF0	Gender=Fem	2	nsubj	_	_
+2	explica	explicar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	como	como	ADV	WG	PronType=Int	4	advmod	_	_
+4	educar	educar	VERB	V0F000	VerbForm=Inf	2	advcl	_	_
+5	para	para	ADP	P	AdpType=Prep	7	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	sexualidade	sexualidade	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+
+1	reedita	reeditar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	1	expl	_	_
+3	Contos_por_palabras	Contos_por_palabras	PROPN	SP00	_	1	nsubj	_	_
+4	grande	grande	ADJ	A0MS	Gender=Masc|Number=Sing	5	amod	_	_
+5	éxito	éxito	NOUN	SCMS	Gender=Masc|Number=Sing	3	appos	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	Agustín_Fernández_Paz	Agustín_Fernández_Paz	PROPN	SPM0	Gender=Masc	5	nmod	_	_
+
+1	Agustín_Fernández_Paz	Agustín_Fernández_Paz	PROPN	SPM0	Gender=Masc	0	root	_	_
+2	visto	ver	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	1	acl	_	_
+3	por	por	ADP	P	AdpType=Prep	4	case	_	_
+4	Calros_Silvar	Calros_Silvar	PROPN	SPM0	Gender=Masc	2	nmod	_	_
+
+1	crítica	crítica	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+2	irónica	irónico	ADJ	A0FS	Gender=Fem|Number=Sing	1	amod	_	_
+3	e	e	CONJ	CC	_	2	cc	_	_
+4	sincera	sincero	ADJ	A0FS	Gender=Fem|Number=Sing	2	conj	_	_
+5	sobre	sobre	ADP	P	AdpType=Prep	7	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	colonización	colonización	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+8	cultural	cultural	ADJ	A0FS	Gender=Fem|Number=Sing	7	amod	_	_
+
+1	García_Teixeiro	García_Teixeiro	PROPN	SP00	_	0	root	_	_
+2	entre	entre	ADP	P	AdpType=Prep	4	case	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	épico	épico	ADJ	A0MS	Gender=Masc|Number=Sing	1	nmod	_	_
+5	e	e	CONJ	CC	_	4	cc	_	_
+6	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	narrativo	narrativo	ADJ	A0MS	Gender=Masc|Number=Sing	4	conj	_	_
+
+1	con	con	ADP	P	AdpType=Prep	2	case	_	_
+2	prólogo	prólogo	NOUN	SCMS	Gender=Masc|Number=Sing	7	nmod	_	_
+3	e	e	CONJ	CC	_	2	cc	_	_
+4	ilustracións	ilustración	NOUN	SCFP	Gender=Fem|Number=Plur	2	conj	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	Xulio_García_Rivas	Xulio_García_Rivas	PROPN	SPM0	Gender=Masc	2	nmod	_	_
+7	ve	ver	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	lume	lume	NOUN	SCMS	Gender=Masc|Number=Sing	7	dobj	_	_
+9	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	libro	libro	NOUN	SCMS	Gender=Masc|Number=Sing	7	nsubj	_	_
+11	de	de	ADP	P	AdpType=Prep	12	case	_	_
+12	Antón_García_Teixeiro	Antón_García_Teixeiro	PROPN	SPM0	Gender=Masc	10	nmod	_	_
+13	Polo_camiño_do_incerto	Polo_camiño_do_incerto	PROPN	SP00	_	10	nmod	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	poema	poema	NOUN	SCMS	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	evoca	evocar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	errancia	errancia	NOUN	SCFS	Gender=Fem|Number=Sing	3	dobj	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Vello_Camiñante	Vello_Camiñante	PROPN	SPMS	Gender=Masc|Number=Sing	5	nmod	_	_
+
+1	Mercedes_Núñez	Mercedes_Núñez	PROPN	SPF0	Gender=Fem	0	root	_	_
+2	voz	voz	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	muller	muller	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+5	presa	preso	ADJ	A0FS	Gender=Fem|Number=Sing	4	amod	_	_
+
+1	nunca	nunca	ADV	WN	_	5	neg	_	_
+2	como	como	SCONJ	CS	_	4	case	_	_
+3	aquel	aquel	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+4	día	día	NOUN	SCMS	Gender=Masc|Number=Sing	1	nmod	_	_
+5	vira	ver	VERB	VLI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pqp|VerbForm=Fin	0	root	_	_
+6	Mercedes_Núñez	Mercedes_Núñez	PROPN	SPF0	Gender=Fem	5	nsubj	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	morte	morte	NOUN	SCFS	Gender=Fem|Number=Sing	5	dobj	_	_
+9	tan	tanto	ADV	WM	_	11	advmod	_	_
+10	de	de	ADP	P	AdpType=Prep	9	mwe	_	_
+11	perto	perto	ADV	WN	_	5	advmod	_	_
+
+1	non	non	ADV	WN	_	2	neg	_	_
+2	sería	ser	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	5	cop	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+4	primeira	primeiro	NUM	NODFS	Gender=Fem|Number=Sing|NumType=Ord	5	nummod	_	_
+5	vez	vez	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+6	que	que	PRON	TNFS	Gender=Fem|Number=Sing|PronType=Rel	8	nmod	_	_
+7	Mercedes_Núñez	Mercedes_Núñez	PROPN	SPF0	Gender=Fem	8	nsubj	_	_
+8	abandeiraba	abandeirar	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	acl	_	_
+9	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	loita	loita	NOUN	SCFS	Gender=Fem|Number=Sing	8	dobj	_	_
+11	contra	contra	ADP	P	AdpType=Prep	13	case	_	_
+12	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	esquecemento	esquecemento	NOUN	SCMS	Gender=Masc|Number=Sing	10	nmod	_	_
+
+1	David_Russell	David_Russell	PROPN	SPM0	Gender=Masc	0	root	_	_
+
+1	que	que	PRON	GNAA	Gender=Com|Number=Dual|PronType=Int	2	dobj	_	_
+2	significa	significar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	este	este	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+4	premio	premio	NOUN	SCMS	Gender=Masc|Number=Sing	2	nsubj	_	_
+5	para	para	ADP	P	AdpType=Prep	8	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+7	súa	seu	DET	MD3SFS	Gender=Fem|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	8	det	_	_
+8	carreira	carreira	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+
+1	supón	supoñer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	axuda	axuda	NOUN	SCFS	Gender=Fem|Number=Sing	1	dobj	_	_
+4	enorme	enorme	ADJ	A0FS	Gender=Fem|Number=Sing	3	amod	_	_
+5	tanto	tanto	ADV	WN	_	6	advmod	_	_
+6	persoalmente	persoalmente	ADV	WN	_	1	advmod	_	_
+7	como	como	SCONJ	CS	_	6	cc	_	_
+8	para	para	ADP	P	AdpType=Prep	10	case	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	promoción	promoción	NOUN	SCFS	Gender=Fem|Number=Sing	6	conj	_	_
+11	e	e	CONJ	CC	_	10	cc	_	_
+12	venda	venda	NOUN	SCFS	Gender=Fem|Number=Sing	10	conj	_	_
+13	de	de	ADP	P	AdpType=Prep	14	case	_	_
+14	discos	disco	NOUN	SCMP	Gender=Masc|Number=Plur	10	nmod	_	_
+
+1	en	en	ADP	P	AdpType=Prep	2	case	_	_
+2	Aire_Latino	Aire_Latino	PROPN	SP00	_	11	nmod	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	disco	disco	NOUN	SCMS	Gender=Masc|Number=Sing	2	appos	_	_
+5	por	por	ADP	P	AdpType=Prep	7	case	_	_
+6	lo	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	8	nmod	_	_
+8	recibiu	recibir	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	acl	_	_
+9	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	Grammy	Grammy	PROPN	SPMS	Gender=Masc|Number=Sing	8	dobj	_	_
+11	recolle	recoller	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+12	obras	obra	NOUN	SCFP	Gender=Fem|Number=Plur	11	dobj	_	_
+13	de	de	ADP	P	AdpType=Prep	14	case	_	_
+14	compositores	compositor	NOUN	SCMP	Gender=Masc|Number=Plur	12	nmod	_	_
+15	sudamericanos	sudamericano	ADJ	A0MP	Gender=Masc|Number=Plur	14	amod	_	_
+
+1	que	que	DET	GDFP	Gender=Fem|Number=Plur|PronType=Int	2	det	_	_
+2	particularidades	particularidade	NOUN	SCFP	Gender=Fem|Number=Plur	3	dobj	_	_
+3	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+
+1	trata	tratar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	1	expl	_	_
+3	de	de	ADP	P	AdpType=Prep	5	case	_	_
+4	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	selección	selección	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	obras	obra	NOUN	SCFP	Gender=Fem|Number=Plur	5	nmod	_	_
+8	coñecidas	coñecido	ADJ	A0FP	Gender=Fem|Number=Plur	7	amod	_	_
+9	de	de	ADP	P	AdpType=Prep	10	case	_	_
+10	autores	autor	NOUN	SCMP	Gender=Masc|Number=Plur	7	nmod	_	_
+11	clásicos	clásico	ADJ	A0MP	Gender=Masc|Number=Plur	10	amod	_	_
+12	ou	ou	CONJ	CC	_	11	cc	_	_
+13	case	case	ADV	WM	_	14	advmod	_	_
+14	clásicos	clásico	ADJ	A0MP	Gender=Masc|Number=Plur	11	conj	_	_
+
+1	son	ser	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+2	temas	tema	NOUN	SCMP	Gender=Masc|Number=Plur	4	nsubj	_	_
+3	moi	moito	ADV	WM	_	4	advmod	_	_
+4	fáciles	fácil	ADJ	A0MP	Gender=Masc|Number=Plur	0	root	_	_
+5	de	de	ADP	P	AdpType=Prep	6	mark	_	_
+6	escoitar	escoitar	VERB	V0F000	VerbForm=Inf	4	xcomp	_	_
+7	e	e	CONJ	CC	_	4	cc	_	_
+8	que	que	PRON	TNMP	Gender=Masc|Number=Plur|PronType=Rel	10	nsubj	_	_
+9	nos	nos	PRON	RAD1AP	Case=Dat|Gender=Com|Number=Plur|Person=1|PronType=Clit	10	iobj	_	_
+10	achegan	achegar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+11	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	ambiente	ambiente	NOUN	SCMS	Gender=Masc|Number=Sing	10	dobj	_	_
+13	sudamericano	sudamericano	ADJ	A0MS	Gender=Masc|Number=Sing	12	amod	_	_
+
+1	cal	cal	PRON	GNMS	Gender=Masc|Number=Sing|PronType=Int	7	nsubj	_	_
+2	de	de	ADP	P	AdpType=Prep	5	case	_	_
+3	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+4	seus	seu	DET	MD3SMP	Gender=Masc|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes	5	det	_	_
+5	profesores	profesor	NOUN	SCMP	Gender=Masc|Number=Plur	1	nmod	_	_
+6	o	o	PRON	RAA3MS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Clit	7	dobj	_	_
+7	marcou	marcar	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	máis	máis	ADV	WN	_	7	advmod	_	_
+
+1	José_Tomas	José_Tomas	PROPN	SPM0	Gender=Masc	0	root	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	Alacante	Alacante	PROPN	SP00	_	1	nmod	_	_
+
+1	coñecín	coñecer	VERB	VEI10S	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+2	o	o	PRON	RAA3MS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Clit	1	dobj	_	_
+3	en	en	ADP	P	AdpType=Prep	4	case	_	_
+4	Música_en_Compostela	Música_en_Compostela	PROPN	SP00	_	1	nmod	_	_
+5	uns	un	DET	DIMP	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	cursos	curso	NOUN	SCMP	Gender=Masc|Number=Plur	4	appos	_	_
+7	que	que	PRON	TNMP	Gender=Masc|Number=Plur|PronType=Rel	8	dobj	_	_
+8	realicei	realizar	VERB	VEI10S	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	6	acl	_	_
+9	en	en	ADP	P	AdpType=Prep	11	case	_	_
+10	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	ano	ano	NOUN	SCMS	Gender=Masc|Number=Sing	8	nmod	_	_
+12	1974	1974	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	11	nummod	_	_
+
+1	dende	dende	ADP	P	AdpType=Prep	2	case	_	_
+2	entón	entón	ADV	WN	_	3	advmod	_	_
+3	considero	considerar	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	o	o	PRON	RAA3MS	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Clit	3	dobj	_	_
+5	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+6	mellor	mellor	ADJ	ACMS	Degree=Cmp|Gender=Masc|Number=Sing	7	amod	_	_
+7	profesor	profesor	NOUN	SCMS	Gender=Masc|Number=Sing	3	xcomp	_	_
+8	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	9	nsubj	_	_
+9	tiven	ter	VERB	VEI10S	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	7	acl	_	_
+
+1	Bach	Bach	PROPN	SP00	_	4	nsubj	_	_
+2	Scarlatti	Scarlatti	PROPN	SP00	_	1	conj	_	_
+3	Tárrega	Tárrega	PROPN	SP00	_	1	conj	_	_
+4	forman	formar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	parte	parte	NOUN	SCFS	Gender=Fem|Number=Sing	4	dobj	_	_
+6	de	de	ADP	P	AdpType=Prep	9	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+8	seu	seu	DET	MD3SMS	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	9	det	_	_
+9	repertorio	repertorio	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+
+1	que	que	DET	GDMP	Gender=Masc|Number=Plur|PronType=Int	2	det	_	_
+2	criterios	criterio	NOUN	SCMP	Gender=Masc|Number=Plur	3	dobj	_	_
+3	segue	seguir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	para	para	ADP	P	AdpType=Prep	5	mark	_	_
+5	escoller	escoller	VERB	V0F000	VerbForm=Inf	3	advcl	_	_
+6	cada	cada	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	7	det	_	_
+7	programa	programa	NOUN	SCMS	Gender=Masc|Number=Sing	5	dobj	_	_
+
+1	cal	cal	PRON	GNMS	Gender=Masc|Number=Sing|PronType=Int	0	root	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	panorama	panorama	NOUN	SCMS	Gender=Masc|Number=Sing	1	nsubj	_	_
+5	actual	actual	ADJ	A0MS	Gender=Masc|Number=Sing	4	amod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	verdade	verdade	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+3	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+4	que	que	SCONJ	CS	_	7	mark	_	_
+5	en	en	ADP	P	AdpType=Prep	6	case	_	_
+6	España	España	PROPN	SP00	_	7	nmod	_	_
+7	existe	existir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	csubj	_	_
+8	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+9	amplo	amplo	ADJ	A0MS	Gender=Masc|Number=Sing	10	amod	_	_
+10	público	público	NOUN	SCMS	Gender=Masc|Number=Sing	7	nsubj	_	_
+11	seguidor	seguidor	ADJ	A0MS	Gender=Masc|Number=Sing	10	amod	_	_
+12	de	de	ADP	P	AdpType=Prep	14	case	_	_
+13	este	este	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	14	det	_	_
+14	instrumento	instrumento	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	como	como	ADV	WG	PronType=Int	2	advmod	_	_
+2	evoluciona	evolucionar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	interpretación	interpretación	NOUN	SCFS	Gender=Fem|Number=Sing	2	nsubj	_	_
+5	guitarrística	guitarrístico	ADJ	A0FS	Gender=Fem|Number=Sing	4	amod	_	_
+
+1	actualmente	actualmente	ADV	WN	_	2	advmod	_	_
+2	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	nivel	nivel	NOUN	SCMS	Gender=Masc|Number=Sing	2	dobj	_	_
+5	moito	moito	ADV	WM	_	6	advmod	_	_
+6	máis	máis	ADV	WM	_	7	advmod	_	_
+7	alto	alto	ADJ	A0MS	Gender=Masc|Number=Sing	4	amod	_	_
+8	ca	ca	SCONJ	CS	_	9	mark	_	_
+9	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	advcl	_	_
+10	un	un	NUM	NCDMS	Gender=Masc|Number=Sing|NumType=Card	11	nummod	_	_
+11	século	século	NOUN	SCMS	Gender=Masc|Number=Sing	9	dobj	_	_
+12	en_parte	en_parte	ADV	LA0	_	2	advmod	_	_
+13	por	por	ADP	P	AdpType=Prep	15	case	_	_
+14	las	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
+15	gravacións	gravación	NOUN	SCFP	Gender=Fem|Number=Plur	2	nmod	_	_
+
+1	antes	antes	ADV	WN	_	5	advmod	_	_
+2	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+3	gravacións	gravación	NOUN	SCFP	Gender=Fem|Number=Plur	5	nsubj	_	_
+4	eran	ser	VERB	VII30P	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	cop	_	_
+5	en_vivo	en_vivo	ADV	LA0	_	0	root	_	_
+6	con	con	ADP	P	AdpType=Prep	9	case	_	_
+7	todos	todo	DET	IDMP	Gender=Masc|Number=Plur|PronType=Ind	9	det	_	_
+8	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
+9	erros	erro	NOUN	SCMP	Gender=Masc|Number=Plur	5	nmod	_	_
+10	que	que	PRON	TNMP	Gender=Masc|Number=Plur|PronType=Rel	11	dobj	_	_
+11	conleva	conlevar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl	_	_
+12	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	concerto	concerto	NOUN	SCMS	Gender=Masc|Number=Sing	11	nsubj	_	_
+
+1	en	en	ADP	P	AdpType=Prep	2	case	_	_
+2	Los_Ángeles	Los_Ángeles	PROPN	SP00	_	3	nmod	_	_
+3	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	grupo	grupo	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	profesores	profesor	NOUN	SCMP	Gender=Masc|Number=Plur	5	nmod	_	_
+8	excelente	excelente	ADJ	A0MS	Gender=Masc|Number=Sing	5	amod	_	_
+
+1	en	en	ADP	P	AdpType=Prep	2	case	_	_
+2	China	China	PROPN	SP00	_	4	nmod	_	_
+3	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	nivel	nivel	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+5	técnico	técnico	ADJ	A0MS	Gender=Masc|Number=Sing	4	amod	_	_
+6	alucinante	alucinante	ADJ	A0MS	Gender=Masc|Number=Sing	4	amod	_	_
+7	porque	porque	SCONJ	CS	_	8	mark	_	_
+8	traballan	traballar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
+9	moitísimo	moito	ADV	WN	_	8	advmod	_	_
+
+1	pero	pero	SCONJ	CS	_	4	mark	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	fenómeno	fenómeno	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+5	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	8	nsubj	_	_
+6	non	non	ADV	WN	_	8	neg	_	_
+7	está	estar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	estendido	estender	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	4	acl	_	_
+9	a_o_longo_de	a_o_longo_de	ADP	LP0	AdpType=Prep	12	case	_	_
+10	todo	todo	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	12	det	_	_
+11	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	país	país	NOUN	SCMS	Gender=Masc|Number=Sing	8	nmod	_	_
+
+1	por_la_contra	por_a_contra	ADV	LA0	_	2	advmod	_	_
+2	trata	tratar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	2	expl	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	puntos	punto	NOUN	SCMP	Gender=Masc|Number=Plur	2	nmod	_	_
+6	concretos	concreto	ADJ	A0MP	Gender=Masc|Number=Plur	5	amod	_	_
+7	dispersos	disperso	ADJ	A0MP	Gender=Masc|Number=Plur	5	amod	_	_
+8	en	en	ADP	P	AdpType=Prep	10	case	_	_
+9	varios	varios	DET	IDMP	Gender=Masc|Number=Plur|PronType=Ind	10	det	_	_
+10	países	país	NOUN	SCMP	Gender=Masc|Number=Plur	7	nmod	_	_
+
+1	cales	cal	PRON	GNFP	Gender=Fem|Number=Plur|PronType=Int	0	root	_	_
+2	son	ser	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+3	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+4	principais	principal	ADJ	A0FP	Gender=Fem|Number=Plur	5	amod	_	_
+5	dificultades	dificultade	NOUN	SCFP	Gender=Fem|Number=Plur	1	nsubj	_	_
+6	técnicas	técnico	ADJ	A0FP	Gender=Fem|Number=Plur	5	amod	_	_
+7	de	de	ADP	P	AdpType=Prep	9	case	_	_
+8	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	guitarra	guitarra	NOUN	SCFS	Gender=Fem|Number=Sing	5	nmod	_	_
+
+1	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+2	moi	moito	ADV	WM	_	3	advmod	_	_
+3	fráxil	fráxil	ADJ	A0AS	Gender=Com|Number=Sing	0	root	_	_
+4	en	en	ADP	P	AdpType=Prep	6	case	_	_
+5	este	este	DET	EDMS	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_
+6	senso	senso	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+
+1	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	guitarristas	guitarrista	NOUN	SCAP	Gender=Com|Number=Plur	1	dobj	_	_
+3	que	que	PRON	TNAP	Gender=Com|Number=Plur|PronType=Rel	5	nsubj	_	_
+4	só	só	ADV	WN	_	5	advmod	_	_
+5	tocan	tocar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
+6	obras	obra	NOUN	SCFP	Gender=Fem|Number=Plur	5	dobj	_	_
+7	de	de	ADP	P	AdpType=Prep	8	case	_	_
+8	guitarra	guitarra	NOUN	SCFS	Gender=Fem|Number=Sing	6	nmod	_	_
+
+1	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	moitas	moito	DET	IDFP	Gender=Fem|Number=Plur|PronType=Ind	3	det	_	_
+3	obras	obra	NOUN	SCFP	Gender=Fem|Number=Plur	1	dobj	_	_
+4	que	que	PRON	TNFP	Gender=Fem|Number=Plur|PronType=Rel	8	nsubjpass	_	_
+5	aínda	aínda	ADV	WN	_	8	advmod	_	_
+6	non	non	ADV	WN	_	8	neg	_	_
+7	foron	ser	VERB	VEI30P	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	8	auxpass	_	_
+8	tocadas	tocar	VERB	V0P0FP	Gender=Fem|Number=Plur|VerbForm=Part	3	acl	_	_
+9	que	que	PRON	TNFP	Gender=Fem|Number=Plur|PronType=Rel	15	dobj	_	_
+10	non	non	ADV	WM	_	11	neg	_	_
+11	todo	todo	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	13	det	_	_
+12	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	mundo	mundo	NOUN	SCMS	Gender=Masc|Number=Sing	14	nsubj	_	_
+14	quere	querer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
+15	facer	facer	VERB	V0F000	VerbForm=Inf	14	xcomp	_	_
+
+1	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	diversas	diverso	ADJ	A0FP	Gender=Fem|Number=Plur	3	amod	_	_
+3	causas	causa	NOUN	SCFP	Gender=Fem|Number=Plur	1	dobj	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	familiaridade	familiaridade	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+3	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+4	unha	un	PRON	INFS	Gender=Fem|Number=Sing|PronType=Ind	2	nsubj	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	elas	el	PRON	RTP3FP	Gender=Fem|Number=Plur|Person=3	4	nmod	_	_
+
+1	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	artes	arte	NOUN	SCFP	Gender=Fem|Number=Plur	4	nsubj	_	_
+3	visuais	visual	ADJ	A0FP	Gender=Fem|Number=Plur	2	amod	_	_
+4	avanzaron	avanzar	VERB	VEI30P	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	porque	porque	SCONJ	CS	_	10	mark	_	_
+6	están	estar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
+7	a	a	ADP	P	AdpType=Prep	10	case	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+9	noso	noso	DET	MD1PMS	Gender=Masc|Number=Sing|Number[psor]=Plur|Person=1|Poss=Yes	10	det	_	_
+10	arredor	arredor	NOUN	SCMS	Gender=Masc|Number=Sing	4	mark	_	_
+
+1	pero	pero	SCONJ	CS	_	6	mark	_	_
+2	en	en	ADP	P	AdpType=Prep	4	case	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	música	música	NOUN	SCFS	Gender=Fem|Number=Sing	6	nmod	_	_
+5	non	non	ADV	WN	_	6	neg	_	_
+6	pasa	pasar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	isto	este	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	6	nsubj	_	_
+
+1	todo	todo	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
+2	músico	músico	NOUN	SCMS	Gender=Masc|Number=Sing	9	nsubj	_	_
+3	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	toca	tocar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
+5	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	instrumento	instrumento	NOUN	SCMS	Gender=Masc|Number=Sing	4	dobj	_	_
+7	melódico	melódico	ADJ	A0MS	Gender=Masc|Number=Sing	6	amod	_	_
+8	debería	deber	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	9	aux	_	_
+9	tocar	tocar	VERB	V0F000	VerbForm=Inf	0	root	_	_
+10	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	harmónico	harmónico	ADJ	A0MS	Gender=Masc|Number=Sing	9	dobj	_	_
+12	e	e	CONJ	CC	_	9	cc	_	_
+13	viceversa	viceversa	ADV	WN	_	9	conj	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	harmonía	harmonía	NOUN	SCFS	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	comprende	comprender	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	3	expl	_	_
+5	mellor	mellor	ADV	WN	_	3	advmod	_	_
+6	se	se	SCONJ	CS	_	8	mark	_	_
+7	a	o	PRON	RAA3FS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Clit	8	dobj	_	_
+8	tocas	tocar	VERB	VPI20S	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+
+1	fale	falar	VERB	VPS30S	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	me	me	PRON	RAD1AS	Case=Dat|Gender=Com|Number=Sing|Person=1|PronType=Clit	1	iobj	_	_
+3	de	de	ADP	P	AdpType=Prep	7	case	_	_
+4	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+5	seu	seu	DET	MD3SMS	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	7	det	_	_
+6	último	último	ADJ	A0MS	Gender=Masc|Number=Sing	7	amod	_	_
+7	disco	disco	NOUN	SCMS	Gender=Masc|Number=Sing	1	nmod	_	_
+8	Lendas_españolas	Lendas_españolas	PROPN	SP00	_	7	nmod	_	_
+
+1	cal	cal	PRON	GNMS	Gender=Masc|Number=Sing|PronType=Int	0	root	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+4	seu	seu	DET	MD3SMS	Gender=Masc|Number=Sing|Number[psor]=Sing|Person=3|Poss=Yes	6	det	_	_
+5	próximo	próximo	ADJ	A0MS	Gender=Masc|Number=Sing	6	amod	_	_
+6	proxecto	proxecto	NOUN	SCMS	Gender=Masc|Number=Sing	1	nsubj	_	_
+
+1	facer	facer	VERB	V0F000	VerbForm=Inf	0	root	_	_
+2	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	disco	disco	NOUN	SCMS	Gender=Masc|Number=Sing	1	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	música	música	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Renacemento	Renacemento	PROPN	SPMS	Gender=Masc|Number=Sing	5	nmod	_	_
+
+1	defina	definir	VERB	VPS30S	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	música	música	NOUN	SCFS	Gender=Fem|Number=Sing	1	dobj	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	música	música	NOUN	SCFS	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	linguaxe	linguaxe	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+6	sinxela	sinxelo	ADJ	A0FS	Gender=Fem|Number=Sing	5	amod	_	_
+7	que	que	PRON	TNFS	Gender=Fem|Number=Sing|PronType=Rel	9	dobj	_	_
+8	todos	todo	PRON	INMP	Gender=Masc|Number=Plur|PronType=Ind	9	nsubj	_	_
+9	entendemos	entender	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	acl	_	_
+10	sen	sen	ADP	P	AdpType=Prep	11	mark	_	_
+11	saber	saber	VERB	V0F000	VerbForm=Inf	9	advcl	_	_
+12	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	que	que	PRON	GNMS	Gender=Masc|Number=Sing|PronType=Int	14	dobj	_	_
+14	entendemos	entender	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	11	ccomp	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	estatuto	estatuto	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	nación	nación	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+
+1	en	en	ADP	P	AdpType=Prep	4	case	_	_
+2	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+3	bo	bo	ADJ	A0MS	Gender=Masc|Number=Sing	4	amod	_	_
+4	camiño	camiño	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+
+1	Galiza	Galiza	PROPN	SP00	_	3	nsubj	_	_
+2	xa	xa	ADV	WN	_	3	advmod	_	_
+3	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	proxecto	proxecto	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+6	de	de	ADP	P	AdpType=Prep	8	case	_	_
+7	novo	novo	ADJ	A0MS	Gender=Masc|Number=Sing	8	amod	_	_
+8	estatuto	estatuto	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+9	baseado	basear	VERB	V0P0MS	Gender=Masc|Number=Sing|VerbForm=Part	5	acl	_	_
+10	en	en	ADP	P	AdpType=Prep	12	case	_	_
+11	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	_	_
+12	necesidades	necesidade	NOUN	SCFP	Gender=Fem|Number=Plur	9	nmod	_	_
+13	de	de	ADP	P	AdpType=Prep	15	case	_	_
+14	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	país	país	NOUN	SCMS	Gender=Masc|Number=Sing	12	nmod	_	_
+
+1	velaquí	velaquí	ADV	WN	_	5	advmod	_	_
+2	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	5	det	_	_
+3	súas	seu	DET	MD3AFP	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes	5	det	_	_
+4	principais	principal	ADJ	A0FP	Gender=Fem|Number=Plur	5	amod	_	_
+5	vantaxes	vantaxe	NOUN	SCFP	Gender=Fem|Number=Plur	0	root	_	_
+6	e	e	CONJ	CC	_	5	cc	_	_
+7	carencias	carencia	NOUN	SCFP	Gender=Fem|Number=Plur	5	conj	_	_
+
+1	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
+2	redactores	redactor	NOUN	SCMP	Gender=Masc|Number=Plur	3	nsubj	_	_
+3	merecen	merecer	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	gratitude	gratitude	NOUN	SCFS	Gender=Fem|Number=Sing	3	dobj	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	todos	todo	PRON	INMP	Gender=Masc|Number=Plur|PronType=Ind	3	nmod	_	_
+
+1	afirman	afirmar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+3	condición	condición	NOUN	SCFS	Gender=Fem|Number=Sing	1	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	Galiza	Galiza	PROPN	SP00	_	3	nmod	_	_
+6	como	como	ADV	WR	PronType=Rel	7	case	_	_
+7	nación	nación	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	lingua	lingua	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	Rosalía	Rosalía	PROPN	SPF0	Gender=Fem	2	nmod	_	_
+5	en	en	ADP	P	AdpType=Prep	7	case	_	_
+6	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
+7	Oscars	Oscar	PROPN	SPMP	Gender=Masc|Number=Plur	2	nmod	_	_
+
+1	Hollywood	Hollywood	PROPN	SP00	_	2	nsubj	_	_
+2	premia	premiar	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	dúas	dous	NUM	NCDFP	Gender=Fem|Number=Plur|NumType=Card	4	nummod	_	_
+4	películas	película	NOUN	SCFP	Gender=Fem|Number=Plur	2	dobj	_	_
+5	sobre	sobre	ADP	P	AdpType=Prep	7	case	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	eutanasia	eutanasia	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	filme	filme	NOUN	SCMS	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	de	de	ADP	P	AdpType=Prep	4	case	_	_
+4	Amenábar	Amenábar	PROPN	SP00	_	2	nmod	_	_
+5	mereceu	merecer	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+6	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	oscar	oscar	NOUN	SCMS	Gender=Masc|Number=Sing	5	dobj	_	_
+8	a	a	ADP	P	AdpType=Prep	11	case	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+10	mellor	mellor	ADJ	ACFS	Degree=Cmp|Gender=Fem|Number=Sing	11	amod	_	_
+11	película	película	NOUN	SCFS	Gender=Fem|Number=Sing	7	nmod	_	_
+12	en	en	ADP	P	AdpType=Prep	13	case	_	_
+13	lingua	lingua	NOUN	SCFS	Gender=Fem|Number=Sing	11	nmod	_	_
+14	non	non	ADV	WM	_	15	advmod	_	_
+15	inglesa	inglés	ADJ	A0FS	Gender=Fem|Number=Sing	13	amod	_	_
+
+1	Alejandro_Amenábar	Alejandro_Amenábar	PROPN	SPM0	Gender=Masc	0	root	_	_
+2	durante	durante	ADP	P	AdpType=Prep	4	case	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	rodaxe	rodaxe	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	Mar_adentro	Mar_adentro	PROPN	SP00	_	4	nmod	_	_
+
+1	todo	todo	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	3	det	_	_
+2	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	exemplo	exemplo	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+4	para	para	ADP	P	AdpType=Prep	5	case	_	_
+5	outros	outro	PRON	INMP	Gender=Masc|Number=Plur|PronType=Ind	3	nmod	_	_
+6	mesmo	mesmo	ADV	WN	_	8	advmod	_	_
+7	para	para	ADP	P	AdpType=Prep	8	case	_	_
+8	algúns	algún	PRON	INMP	Gender=Masc|Number=Plur|PronType=Ind	5	conj	_	_
+9	nacidos	nacer	VERB	V0P0MP	Gender=Masc|Number=Plur|VerbForm=Part	8	acl	_	_
+10	en	en	ADP	P	AdpType=Prep	13	case	_	_
+11	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+12	propia	propio	DET	IDFS	Gender=Fem|Number=Sing|PronType=Ind	13	det	_	_
+13	casa	casa	NOUN	SCFS	Gender=Fem|Number=Sing	9	nmod	_	_
+
+1	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+2	en_todo_caso	en_todo_caso	ADV	LA0	_	5	advmod	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+4	único	único	ADJ	A0MS	Gender=Masc|Number=Sing	5	amod	_	_
+5	punto	punto	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+6	en_común	en_común	ADV	LA0	_	5	advmod	_	_
+7	entre	entre	ADP	P	AdpType=Prep	8	case	_	_
+8	ambos	ambos	PRON	INMP	Gender=Masc|Number=Plur|PronType=Ind	5	nmod	_	_
+
+1	O_fundimento	O_fundimento	PROPN	SP00	_	2	nsubj	_	_
+2	rompe	romper	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	imaxe	imaxe	NOUN	SCFS	Gender=Fem|Number=Sing	2	dobj	_	_
+5	irracional	irracional	ADJ	A0FS	Gender=Fem|Number=Sing	4	amod	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	Hitler	Hitler	PROPN	SP00	_	4	nmod	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	actor	actor	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+3	suízo	suízo	ADJ	A0MS	Gender=Masc|Number=Sing	2	amod	_	_
+4	Bruno_Ganz	Bruno_Ganz	PROPN	SPM0	Gender=Masc	2	nmod	_	_
+5	en	en	ADP	P	AdpType=Prep	7	case	_	_
+6	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	papel	papel	NOUN	SCMS	Gender=Masc|Number=Sing	2	nmod	_	_
+8	de	de	ADP	P	AdpType=Prep	9	case	_	_
+9	Adolf_Hitler	Adolf_Hitler	PROPN	SPM0	Gender=Masc	7	nmod	_	_
+
+1	Goebbels	Goebbels	PROPN	SP00	_	2	nsubj	_	_
+2	pide	pedir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	resistir	resistir	VERB	V0F000	VerbForm=Inf	2	ccomp	_	_
+4	uns	un	DET	DIMP	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
+5	días	día	NOUN	SCMP	Gender=Masc|Number=Plur	3	nmod	_	_
+6	máis	máis	ADV	WM	_	5	advmod	_	_
+7	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	ataque	ataque	NOUN	SCMS	Gender=Masc|Number=Sing	3	dobj	_	_
+9	soviético	soviético	ADJ	A0MS	Gender=Masc|Number=Sing	8	amod	_	_
+10	para	para	ADP	P	AdpType=Prep	12	mark	_	_
+11	así	así	ADV	WN	_	12	advmod	_	_
+12	negociar	negociar	VERB	V0F000	VerbForm=Inf	2	advcl	_	_
+13	con	con	ADP	P	AdpType=Prep	14	case	_	_
+14	Eisenhower	Eisenhower	PROPN	SP00	_	12	nmod	_	_
+
+1	Marisol_Lorenzo	Marisol_Lorenzo	PROPN	SPF0	Gender=Fem	0	root	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	ikebana	ikebana	NOUN	SCFS	Gender=Fem|Number=Sing	4	nsubj	_	_
+3	pode	poder	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	ter	ter	VERB	V0F000	VerbForm=Inf	0	root	_	_
+5	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+6	gran	grande	ADJ	A0MS	Gender=Masc|Number=Sing	7	amod	_	_
+7	futuro	futuro	NOUN	SCMS	Gender=Masc|Number=Sing	4	dobj	_	_
+8	en	en	ADP	P	AdpType=Prep	9	case	_	_
+9	Galiza	Galiza	PROPN	SP00	_	4	nmod	_	_
+
+1	Marisol_Lorenzo	Marisol_Lorenzo	PROPN	SPF0	Gender=Fem	3	nsubj	_	_
+2	economista	economista	NOUN	SCFS	Gender=Fem|Number=Sing	1	appos	_	_
+3	exerceu	exercer	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	profesora	profesor	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+6	en	en	ADP	P	AdpType=Prep	8	case	_	_
+7	un	un	DET	DIMS	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	instituto	instituto	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+9	de	de	ADP	P	AdpType=Prep	10	case	_	_
+10	Formación_Profesional	Formación_Profesional	PROPN	SP00	_	8	nmod	_	_
+11	de	de	ADP	P	AdpType=Prep	12	case	_	_
+12	Ourense	Ourense	PROPN	SP00	_	10	nmod	_	_
+
+1	hoxe	hoxe	ADV	WN	_	4	advmod	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	experta	experto	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+5	en	en	ADP	P	AdpType=Prep	7	case	_	_
+6	esta	este	DET	EDFS	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
+7	arte	arte	NOUN	SCFS	Gender=Fem|Number=Sing	4	nmod	_	_
+8	floral	floral	ADJ	A0FS	Gender=Fem|Number=Sing	7	amod	_	_
+9	xaponesa	xaponés	ADJ	A0FS	Gender=Fem|Number=Sing	7	amod	_	_
+
+1	diga	dicir	VERB	VPS30S	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	me	me	PRON	RAD1AS	Case=Dat|Gender=Com|Number=Sing|Person=1|PronType=Clit	1	iobj	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	que	que	PRON	GNMS	Gender=Masc|Number=Sing|PronType=Int	6	nsubj	_	_
+5	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	iso	ese	PRON	ENNS	Gender=Neut|Number=Sing|PronType=Dem	1	ccomp	_	_
+7	de	de	ADP	P	AdpType=Prep	9	case	_	_
+8	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	ikebana	ikebana	NOUN	SCFS	Gender=Fem|Number=Sing	6	nmod	_	_
+
+1	xurdiu	xurdir	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	en	en	ADP	P	AdpType=Prep	4	case	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	século	século	NOUN	SCMS	Gender=Masc|Number=Sing	1	nmod	_	_
+5	VI	VI	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	4	nummod	_	_
+6	e	e	CONJ	CC	_	1	cc	_	_
+7	non	non	ADV	WN	_	8	neg	_	_
+8	perdeu	perder	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	conj	_	_
+9	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
+10	súas	seu	DET	MD3SFP	Gender=Fem|Number=Plur|Number[psor]=Sing|Person=3|Poss=Yes	11	det	_	_
+11	connotacións	connotación	NOUN	SCFP	Gender=Fem|Number=Plur	8	dobj	_	_
+12	relixiosas	relixioso	ADJ	A0FP	Gender=Fem|Number=Plur	11	amod	_	_
+13	até	até	ADP	P	AdpType=Prep	15	case	_	_
+14	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	XV	XV	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	8	nmod	_	_
+
+1	en_realidade	en_realidade	ADV	LA0	_	4	advmod	_	_
+2	en	en	ADP	P	AdpType=Prep	3	case	_	_
+3	que	que	PRON	GNAA	Gender=Com|Number=Dual|PronType=Int	4	nmod	_	_
+4	consiste	consistir	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+
+1	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	algo	algo	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	0	root	_	_
+3	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	5	nsubj	_	_
+4	che	che	PRON	RAD2AS	Case=Dat|Gender=Com|Number=Sing|Person=2|PronType=Clit	5	iobj	_	_
+5	fai	facer	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl	_	_
+6	ver	ver	VERB	V0F000	VerbForm=Inf	5	xcomp	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	natureza	natureza	NOUN	SCFS	Gender=Fem|Number=Sing	6	dobj	_	_
+9	de	de	ADP	P	AdpType=Prep	10	case	_	_
+10	maneira	maneira	NOUN	SCFS	Gender=Fem|Number=Sing	6	nmod	_	_
+11	diferente	diferente	ADJ	A0FS	Gender=Fem|Number=Sing	10	amod	_	_
+
+1	en	en	ADP	P	AdpType=Prep	2	case	_	_
+2	Xapón	Xapón	PROPN	SP00	_	3	nmod	_	_
+3	metín	meter	VERB	VEI10S	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	_
+4	me	me	PRON	RAA1AS	Case=Acc|Gender=Com|Number=Sing|Person=1|PronType=Clit	3	expl	_	_
+5	en	en	ADP	P	AdpType=Prep	7	case	_	_
+6	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	escola	escola	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+8	de	de	ADP	P	AdpType=Prep	9	case	_	_
+9	arte	arte	NOUN	SCFS	Gender=Fem|Number=Sing	7	nmod	_	_
+10	floral	floral	ADJ	A0FS	Gender=Fem|Number=Sing	9	amod	_	_
+11	moderna	moderno	ADJ	A0FS	Gender=Fem|Number=Sing	9	amod	_	_
+
+1	falamos	falar	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	algo	algo	PRON	INMS	Gender=Masc|Number=Sing|PronType=Ind	1	nmod	_	_
+4	moi	moito	ADV	WM	_	5	advmod	_	_
+5	particularmente	particularmente	ADV	WM	_	6	advmod	_	_
+6	xaponés	xaponés	ADJ	A0MS	Gender=Masc|Number=Sing	3	amod	_	_
+7	ou	ou	CONJ	CC	_	6	cc	_	_
+8	que	que	PRON	TNMS	Gender=Masc|Number=Sing|PronType=Rel	11	nsubj	_	_
+9	xa	xa	ADV	WN	_	11	advmod	_	_
+10	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	11	expl	_	_
+11	estendeu	estender	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	_
+12	por	por	ADP	P	AdpType=Prep	14	case	_	_
+13	lo	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	mundo	mundo	NOUN	SCMS	Gender=Masc|Number=Sing	11	nmod	_	_
+
+1	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	ikebana	ikebana	NOUN	SCFS	Gender=Fem|Number=Sing	3	nsubj	_	_
+3	ten	ter	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	presenza	presenza	NOUN	SCFS	Gender=Fem|Number=Sing	3	dobj	_	_
+5	hoxe	hoxe	ADV	WN	_	3	advmod	_	_
+6	en	en	ADP	P	AdpType=Prep	9	case	_	_
+7	todo	todo	DET	IDMS	Gender=Masc|Number=Sing|PronType=Ind	9	det	_	_
+8	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	mundo	mundo	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+
+1	vexo	ver	VERB	VPI10S	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	a	o	PRON	RAA3FS	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Clit	1	dobj	_	_
+3	convertida	converter	VERB	V0P0FS	Gender=Fem|Number=Sing|VerbForm=Part	1	xcomp	_	_
+4	en	en	ADP	P	AdpType=Prep	6	case	_	_
+5	gran	grande	ADJ	A0FS	Gender=Fem|Number=Sing	6	amod	_	_
+6	mestra	mestre	NOUN	SCFS	Gender=Fem|Number=Sing	3	nmod	_	_
+7	galega	galego	ADJ	A0FS	Gender=Fem|Number=Sing	6	amod	_	_
+8	de	de	ADP	P	AdpType=Prep	10	case	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	ikebana	ikebana	NOUN	SCFS	Gender=Fem|Number=Sing	6	nmod	_	_
+
+1	gustaría	gustar	VERB	VCI30S	Mood=Cnd,Ind|Number=Sing|Person=3|VerbForm=Fin	0	root	_	_
+2	me	me	PRON	RAD1AS	Case=Dat|Gender=Com|Number=Sing|Person=1|PronType=Clit	1	expl	_	_
+3	moito	moito	ADV	WN	_	1	advmod	_	_
+4	desenvolver	desenvolver	VERB	V0F000	VerbForm=Inf	1	xcomp	_	_
+5	esta	este	DET	EDFS	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+6	arte	arte	NOUN	SCFS	Gender=Fem|Number=Sing	4	dobj	_	_
+7	aquí	aquí	ADV	WN	_	4	advmod	_	_
+8	por	por	ADP	P	AdpType=Prep	10	case	_	_
+9	varias	varios	DET	IDFP	Gender=Fem|Number=Plur|PronType=Ind	10	det	_	_
+10	razóns	razón	NOUN	SCFP	Gender=Fem|Number=Plur	1	nmod	_	_
+
+1	finiquito	finiquito	NOUN	SCMS	Gender=Masc|Number=Sing	0	root	_	_
+2	a	a	ADP	P	AdpType=Prep	3	case	_	_
+3	Ferrol	Ferrol	PROPN	SP00	_	1	nmod	_	_
+
+1	Ferrol	Ferrol	PROPN	SP00	_	5	nsubj	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	hoxe	hoxe	ADV	WN	_	5	advmod	_	_
+4	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	cidade	cidade	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+6	deprimida	deprimido	ADJ	A0FS	Gender=Fem|Number=Sing	5	amod	_	_
+
+1	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
+2	vinte_e_cinco	vinte_e_cinco	NUM	NCDMP	Gender=Masc|Number=Plur|NumType=Card	3	nummod	_	_
+3	anos	ano	NOUN	SCMP	Gender=Masc|Number=Plur	1	dobj	_	_
+4	tiña	ter	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+5	13.000	13.000	NUM	NCNAP	Gender=Com|Number=Plur|NumType=Card	4	dobj	_	_
+6	máis	máis	ADV	WM	_	5	advmod	_	_
+7	e	e	CONJ	CC	_	4	cc	_	_
+8	era	ser	VERB	VII30S	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	cop	_	_
+9	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	terceira	terceiro	NUM	NONFS	Gender=Fem|Number=Sing|NumType=Ord	4	conj	_	_
+11	de	de	ADP	P	AdpType=Prep	12	case	_	_
+12	Galiza	Galiza	PROPN	SP00	_	10	nmod	_	_
+
+1	agora	agora	ADV	WN	_	4	advmod	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	cidade	cidade	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+5	galega	galego	ADJ	A0FS	Gender=Fem|Number=Sing	4	amod	_	_
+6	con	con	ADP	P	AdpType=Prep	8	case	_	_
+7	menos	menos	ADV	WM	_	8	advmod	_	_
+8	habitantes	habitante	NOUN	SCMP	Gender=Masc|Number=Plur	4	nmod	_	_
+
+1	Xaime_Bello	Xaime_Bello	PROPN	SPM0	Gender=Masc	0	root	_	_
+2	vicepresidente	vicepresidente	NOUN	SCMS	Gender=Masc|Number=Sing	1	appos	_	_
+3	de	de	ADP	P	AdpType=Prep	5	case	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	Deputación_da_Coruña	Deputación_da_Coruña	PROPN	SPFS	Gender=Fem|Number=Sing	2	nmod	_	_
+
+1	unha	un	DET	DIFS	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
+2	nova	novo	ADJ	A0FS	Gender=Fem|Number=Sing	3	amod	_	_
+3	reestruturación	reestruturación	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	téxtil	téxtil	ADJ	A0MS	Gender=Masc|Number=Sing	10	nsubj	_	_
+3	e	e	CONJ	CC	_	2	cc	_	_
+4	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	industria	industria	NOUN	SCFS	Gender=Fem|Number=Sing	2	conj	_	_
+6	gráfica	gráfico	ADJ	A0FS	Gender=Fem|Number=Sing	5	amod	_	_
+7	son	ser	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	cop	_	_
+8	de	de	ADP	P	AdpType=Prep	10	case	_	_
+9	as	o	DET	DDFP	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	10	det	_	_
+10	poucas	pouco	PRON	INFP	Gender=Fem|Number=Plur|PronType=Ind	0	root	_	_
+11	que	que	PRON	TNFP	Gender=Fem|Number=Plur|PronType=Rel	12	nsubj	_	_
+12	repuntan	repuntar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	10	acl	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	problema	problema	NOUN	SCMS	Gender=Masc|Number=Sing	13	nsubj	_	_
+3	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
+4	que	que	SCONJ	CS	_	13	mark	_	_
+5	cando	cando	ADV	WR	PronType=Rel	6	advmod	_	_
+6	morramos	morrer	VERB	VPS10P	Mood=Sub|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	13	advcl	_	_
+7	os	o	DET	DDMP	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
+8	que	que	PRON	TNMP	Gender=Masc|Number=Plur|PronType=Rel	11	nsubj	_	_
+9	agora	agora	ADV	WN	_	11	advmod	_	_
+10	imos	ir	VERB	VPI10P	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	seguir	seguir	VERB	V0F000	VerbForm=Inf	6	ccomp	_	_
+12	cobrando	cobrar	VERB	V0X000	VerbForm=Ger	11	xcomp	_	_
+13	rematan	rematar	VERB	VPI30P	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+14	eses	ese	DET	EDMP	Gender=Masc|Number=Plur|PronType=Dem	15	det	_	_
+15	ingresos	ingreso	NOUN	SCMP	Gender=Masc|Number=Plur	13	dobj	_	_
+
+1	non	non	ADV	WN	_	2	neg	_	_
+2	hai	haber	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	postos	posto	NOUN	SCMP	Gender=Masc|Number=Plur	2	dobj	_	_
+4	de	de	ADP	P	AdpType=Prep	5	case	_	_
+5	traballo	traballo	NOUN	SCMS	Gender=Masc|Number=Sing	3	nmod	_	_
+6	para	para	ADP	P	AdpType=Prep	8	case	_	_
+7	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	xuventude	xuventude	NOUN	SCFS	Gender=Fem|Number=Sing	2	nmod	_	_
+
+1	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+2	anterior	anterior	ADJ	A0MS	Gender=Masc|Number=Sing	3	amod	_	_
+3	expediente	expediente	NOUN	SCMS	Gender=Masc|Number=Sing	8	nsubj	_	_
+4	o	o	PRON	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	appos	_	_
+5	de	de	ADP	P	AdpType=Prep	6	case	_	_
+6	1999	1999	NUM	NCNMS	Gender=Masc|Number=Sing|NumType=Card	4	nmod	_	_
+7	foi	ser	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	_
+8	mellor	mellor	ADJ	ACMS	Degree=Cmp|Gender=Masc|Number=Sing	0	root	_	_
+9	ca	ca	SCONJ	CS	_	10	case	_	_
+10	este	este	PRON	ENMS	Gender=Masc|Number=Sing|PronType=Dem	8	nmod	_	_
+
+1	daquela	daquela	ADV	WN	_	2	advmod	_	_
+2	crearon	crear	VERB	VEI30P	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+3	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	2	expl	_	_
+4	350	350	NUM	NCDMP	Gender=Masc|Number=Plur|NumType=Card	5	nummod	_	_
+5	postos	posto	NOUN	SCMP	Gender=Masc|Number=Plur	2	nsubj	_	_
+6	de	de	ADP	P	AdpType=Prep	7	case	_	_
+7	traballo	traballo	NOUN	SCMS	Gender=Masc|Number=Sing	5	nmod	_	_
+8	para	para	ADP	P	AdpType=Prep	9	case	_	_
+9	aprendices	aprendiz	NOUN	SCMP	Gender=Masc|Number=Plur	5	nmod	_	_
+
+1	rexuveneceu	rexuvenecer	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+2	se	se	PRON	RAO3AA	Gender=Com|Number=Dual|Person=3|PronType=Clit	1	expl	_	_
+3	o	o	DET	DDMS	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	plantel	plantel	NOUN	SCMS	Gender=Masc|Number=Sing	1	nsubj	_	_
+5	e	e	CONJ	CC	_	1	cc	_	_
+6	a	o	DET	DDFS	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	perda	perda	NOUN	SCFS	Gender=Fem|Number=Sing	12	nsubj	_	_
+8	de	de	ADP	P	AdpType=Prep	9	case	_	_
+9	traballo	traballo	NOUN	SCMS	Gender=Masc|Number=Sing	7	nmod	_	_
+10	non	non	ADV	WN	_	12	neg	_	_
+11	foi	ser	VERB	VEI30S	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	cop	_	_
+12	neta	neto	ADJ	A0FS	Gender=Fem|Number=Sing	1	conj	_	_
+
+1	agora	agora	ADV	WN	_	5	advmod	_	_
+2	é	ser	VERB	VPI30S	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	moito	moito	ADV	WM	_	4	advmod	_	_
+4	máis	máis	ADV	WM	_	5	advmod	_	_
+5	grave	grave	ADJ	A0AS	Gender=Com|Number=Sing	0	root	_	_
+
+1	empresa	empresa	NOUN	SCFS	Gender=Fem|Number=Sing	0	root	_	_
+2	de	de	ADP	P	AdpType=Prep	3	case	_	_
+3	xestión	xestión	NOUN	SCFS	Gender=Fem|Number=Sing	1	nmod	_	_
+4	e	e	CONJ	CC	_	3	cc	_	_
+5	subcontratas	subcontrata	NOUN	SCFP	Gender=Fem|Number=Plur	3	conj	_	_
+

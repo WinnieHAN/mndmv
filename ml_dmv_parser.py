@@ -45,12 +45,9 @@ if __name__ == '__main__':
     parser.add_option("--outdir", type="string", dest="output", default="output")
 
     parser.add_option("--sample_idx", type="int", dest="sample_idx", default=10000)
-    parser.add_option("--prior_alpha", type="float", dest="prior_alpha", default=0.0)
     parser.add_option("--do_eval", action="store_true", dest="do_eval", default=False)
     parser.add_option("--log", dest="log", help="log file", metavar="FILE", default="output/log")
     parser.add_option("--sub_batch", type="int", dest="sub_batch_size", default=5000)
-    parser.add_option("--use_prior", action="store_true", dest="use_prior", default=False)
-    parser.add_option("--prior_epsilon", type="float", dest="prior_epsilon", default=1)
 
     parser.add_option("--function_mask", action="store_true", default=False)
 
@@ -77,7 +74,7 @@ if __name__ == '__main__':
     parser.add_option("--use_neural", action="store_true", dest="use_neural", default=False)
     parser.add_option("--sentence_predict", action="store_true", default=False)
     parser.add_option("--embed_languages", action="store_true", default=False)
-    parser.add_option("--language_path", type="string", dest="language_path", default="data/language_list")
+    parser.add_option("--language_path", type="string", dest="language_path", default="language_list")
     parser.add_option("--non_neural_iter", type="int", dest="non_neural_iter", default=-1)
     parser.add_option("--lan_dim", type="int", dest="lan_dim", default=5)
     parser.add_option("--chosen_list", action="store_true", default=False)

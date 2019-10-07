@@ -1,0 +1,56 @@
+1	PRO1	_	PRON	PN	_	2	nsubj	_	_
+2	SNÖ^MAN	_	NOUN	NN	_	0	root	_	_
+
+1	KLÄ-PÅ.NEDERDEL	_	X	?	_	0	root	_	_
+2	KLÄ-PÅ.ÖVERDEL	_	X	?	_	1	conj	_	_
+3	VARM	_	ADJ	JJ	_	4	amod	_	_
+4	KLÄDER	_	NOUN	NN	_	1	dobj	_	_
+5	MÖSSA(G)	_	X	?	_	4	conj	_	_
+
+1	MAMMA	_	NOUN	NN	_	3	nsubj	_	_
+2	JA@ub@z	_	INTJ	INTERJ	_	3	discourse	_	_
+3	PÅKALLA-UPPMÄRKSAMHET@g	_	X	G	_	0	root	_	_
+
+1	KLÄ-PÅ.HUVUDDEL	_	X	?	_	0	root	_	_
+2	HAND(G)+HANTERA@p	_	VERB	VBAV	_	1	conj	_	_
+3	SPRINGA(Lb)	_	VERB	VB	_	1	conj	_	_
+4	ENTITET(Yb)+FÖRFLYTTA@p	_	VERB	VBAV	_	1	conj	_	_
+5	MÖSSA(G)	_	X	?	_	6	dobj	_	_
+6	LÅTA-VARA	_	X	G	_	1	conj	_	_
+
+1	HAND(JJb)+HANTERA@p	_	VERB	VBAV	_	0	root	_	_
+2	RULLA	_	VERB	VB	_	1	conj	_	_
+3	GLOSA:(JÄSA)@z	_	X	?	_	2	conj	_	_
+4	FORM(JJb)+BESKRIVNING@p	_	VERB	VBAV	_	2	conj	_	_
+5	GLOSA:(PF)@z	_	X	?	_	1	discourse	_	_
+6	HUNGRIG	_	X	?	_	1	conj	_	_
+7	VARELSE(Vb)+FÖRFLYTTA@p	_	VERB	VBAV	_	1	conj	_	_
+8	BEGE-SIG-HEM	_	VERB	VB	_	7	conj	_	_
+
+1	SÄTTA-SIG	_	VERB	VB	_	0	root	_	_
+2	ÄTA(Q)	_	VERB	VB	_	1	conj	_	_
+3	TITTA-PÅ	_	VERB	VB	_	1	conj	_	_
+4	SNÖ^GUBBE	_	NOUN	NN	_	3	dobj	_	_
+5	PEK	_	DET	PEK	_	4	det	_	_
+6	ÄTA(Q)	_	VERB	VB	_	2	conj	_	_
+
+1	PRO1	_	PRON	PN	_	2	nsubj	_	_
+2	UT@b	_	VERB	VB	_	0	root	_	_
+3	PRO1	_	PRON	PN	_	1	conj	_	_
+4	FORTSÄTTA	_	VERB	VB	_	2	conj	_	_
+5	PRO1	_	PRON	PN	_	1	conj	_	_
+6	KLÄ-PÅ:ÖVERDEL	_	X	?	_	2	conj	_	_
+7	SEDAN	_	ADV	AB	_	8	advmod	_	_
+8	KLÄ-PÅ.HUVUDDEL	_	X	?	_	6	conj	_	_
+9	KOMMA-DIT(L)	_	VERB	VBAV	_	2	conj	_	_
+10	SPRINGA(Lb)	_	VERB	VB	_	9	conj	_	_
+11	GLOSA:(PD)@z	_	X	?	_	2	conj	_	_
+12	HAND(YYb)+HANTERA@p	_	VERB	VBAV	_	11	conj	_	_
+
+1	KOMMA-HIT(L)	_	VERB	VBAV	_	0	root	_	_
+2	GÅ-IN(N)	_	VERB	VB	_	1	conj	_	_
+3	HAND(S)+HANTERA@p	_	VERB	VBAV	_	1	conj	_	_
+4	HAND(S)@p@hd	_	VERB	VBAV	_	3	conj	_	_
+5	TOMAT	_	X	?	_	3	dobj	_	_
+6	HAND(S)+HANTERA@p>näsa	_	VERB	VBAV	_	3	conj	_	_
+

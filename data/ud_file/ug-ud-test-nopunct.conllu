@@ -1,0 +1,940 @@
+1	ھەيران	_	NOUN	N	_	2	compound	_	Translit=heyran
+2	قالدىم	_	VERB	V	_	22	parataxis	_	Translit=qaldim
+3	ئادەتتە	_	NOUN	N	_	22	advmod	_	Translit=adette
+4	بۆرە	_	NOUN	N	_	22	nsubj	_	Translit=böre
+5	خەۋپكەيولۇققاندا	_	NOUN	N	_	22	advmod	_	Translit=xewpkeyoluqqanda
+6	باراقسان	_	ADJ	A	_	7	advmod	_	Translit=baraqsan
+7	ئۆسكەن	_	VERB	V	_	11	acl	_	Translit=ösken
+8	ئوت	_	NOUN	N	_	9	compound:redup	_	Translit=ot
+9	چۆپ	_	NOUN	N	_	11	conj	_	Translit=chöp
+10	دەل	_	ADV	D	_	11	compound:redup	_	Translit=del
+11	دەرەخلەر	_	NOUN	N	_	12	nmod:poss	_	Translit=derexler
+12	ئارسىغا	_	NOUN	N	_	13	nmod:cau	_	Translit=arsigha
+13	كىرىۋېلىپ	_	NOUN	N	_	22	conj	_	Translit=kiriwëlip
+14	ئايلىنىپ	_	VERB	V	_	19	conj	_	Translit=aylinip
+15	يۈرۈپ	_	AUX	V	_	14	aux	_	Translit=yürüp
+16	مۇرەككەپ	_	ADJ	A	_	18	amod	_	Translit=murekkep
+17	يەر	_	NOUN	N	_	18	nmod:poss	_	Translit=yer
+18	شەكىلىدىن	_	NOUN	N	_	19	nmod	_	Translit=shekilidin
+19	پايدىلىنىپ	_	VERB	V	_	21	conj	_	Translit=paydilinip
+20	ئېپىنى	_	NOUN	N	_	21	dobj	_	Translit=ëpini
+21	تېپىپ	_	VERB	V	_	22	advcl	_	Translit=tëpip
+22	قېچىپ	_	VERB	V	_	0	root	_	Translit=qëchip
+23	كېتەتتى	_	AUX	V	_	22	aux	_	Translit=këtetti
+
+1	ئەگەر	_	CONJ	C	_	4	mark	_	Translit=eger
+2	قۇم	_	NOUN	N	_	3	compound	_	Translit=qum
+3	دۆۋىسىگە	_	NOUN	N	_	4	nmod	_	Translit=döwisige
+4	ياماشسا	_	VERB	V	_	17	advcl:cond	_	Translit=yamashsa
+5	بۆرە	_	NOUN	N	_	17	nsubj	_	Translit=böre
+6	تېز	_	ADJ	A	_	7	advmod	_	Translit=tëz
+7	يۈگۈرۈپ	_	VERB	V	_	10	advmod	_	Translit=yügürüp
+8	ئادەمدىن	_	NOUN	N	_	9	nmod:cmp	_	Translit=ademdin
+9	چاققان	_	ADJ	A	_	10	compound	_	Translit=chaqqan
+10	كەلگەندەك	_	VERB	V	_	17	advcl	_	Translit=kelgendek
+11	قىلغان	_	AUX	V	_	10	aux	_	Translit=qilghan
+12	بىلەن	_	ADP	R	_	10	parataxis	_	Translit=bilen
+13	قۇم	_	NOUN	N	_	14	compound	_	Translit=qum
+14	دۆۋىسىنىڭ	_	ADJ	A	_	15	nmod:poss	_	Translit=döwisining
+15	چوققىسىغا	_	NOUN	N	_	16	nmod	_	Translit=choqqisigha
+16	چىققاندا	_	VERB	V	_	17	nmod	_	Translit=chiqqanda
+17	يۈگۈرەلمەي	_	VERB	V	_	0	root	_	Translit=yügürelmey
+18	قالاتتى	_	AUX	V	_	17	aux	_	Translit=qalatti
+
+1	بۇ	_	PRON	P	_	3	nsubj	_	Translit=bu
+2	غەلىتە	_	ADJ	A	_	3	amod	_	Translit=ghelite
+3	بۆرىكەن	_	NOUN	N	_	5	parataxis	_	Translit=böriken
+4	بېشى	_	NOUN	N	_	5	nsubj	_	Translit=bëshi
+5	تۆرەپ	_	NOUN	N	_	0	root	_	Translit=törep
+6	قالغان	_	AUX	V	_	5	aux	_	Translit=qalghan
+7	ئوخشايدۇ	_	VERB	V	_	6	compound	_	Translit=oxshaydu
+
+1	مەن	_	PRON	P	_	12	nsubj	_	Translit=men
+2	مۇشۇنداق	_	PRON	P	_	4	det	_	Translit=mushundaq
+3	خىيال	_	NOUN	N	_	4	compound	_	Translit=xiyal
+4	قىلغاچ	_	VERB	V	_	12	advcl	_	Translit=qilghach
+5	قەدەمدە	_	NOUN	N	_	6	compound	_	Translit=qedemde
+6	بىر	_	NUM	M	_	7	nmod	_	Translit=bir
+7	سېيرىلىپ	_	NOUN	N	_	12	advcl	_	Translit=sëyrilip
+8	ئېگىز	_	ADJ	A	_	10	amod	_	Translit=ëgiz
+9	قۇم	_	NOUN	N	_	10	compound	_	Translit=qum
+10	دۆۋىسىنىڭ	_	NOUN	N	_	11	nmod:poss	_	Translit=döwisining
+11	ئۈستىگە	_	NOUN	N	_	12	nmod	_	Translit=üstige
+12	چىقتىم	_	VERB	V	_	0	root	_	Translit=chiqtim
+
+1	ئېنىق	_	ADJ	A	_	2	advmod	_	Translit=ëniq
+2	كۆردۈمكى	_	VERB	V	_	5	parataxis	_	Translit=kördümki
+3	بۆرە	_	NOUN	N	_	5	nsubj	_	Translit=böre
+4	ئۇچقاندەك	_	VERB	V	_	5	advmod	_	Translit=uchqandek
+5	قېچىپ	_	VERB	V	_	0	root	_	Translit=qëchip
+6	كېتىپ	_	VERB	V	_	5	aux	_	Translit=këtip
+7	باراتتى	_	AUX	V	_	5	aux	_	Translit=baratti
+
+1	پەسكە	_	ADJ	A	_	2	nmod	_	Translit=peske
+2	چۈشۈپ	_	VERB	V	_	3	advcl	_	Translit=chüshüp
+3	قوغلاشتىم	_	VERB	V	_	0	root	_	Translit=qoghlashtim
+
+1	بۆرە	_	NOUN	N	_	2	compound	_	Translit=böre
+2	كۈچۈكلىرىنىڭ	_	NOUN	N	_	3	nsubj	_	Translit=küchüklirining
+3	يوقاپ	_	VERB	V	_	5	dobj	_	Translit=yoqap
+4	كەتكەنلىكىنى	_	AUX	V	_	3	aux	_	Translit=ketkenlikini
+5	بىلدىم	_	VERB	V	_	0	root	_	Translit=bildim
+
+1	شۇ	_	PRON	P	_	2	mwe	_	Translit=shu
+2	چاغدا	_	NOUN	N	_	6	nmod:tmod	_	Translit=chaghda
+3	كۆپ	_	ADJ	A	_	4	advmod	_	Translit=köp
+4	ئويلىنىشقا	_	VERB	V	_	6	nmod	_	Translit=oylinishqa
+5	چولام	_	NOUN	N	_	6	compound	_	Translit=cholam
+6	يوق	_	ADJ	A	_	0	root	_	Translit=yoq
+7	ئىدى	_	VERB	V	_	6	cop	_	Translit=idi
+
+1	جېنىمنىڭ	_	NOUN	N	_	2	nmod:poss	_	Translit=jënimning
+2	بارىچە	_	ADV	D	_	3	advmod	_	Translit=bariche
+3	قوغلاشتىم	_	VERB	V	_	0	root	_	Translit=qoghlashtim
+
+1	ئۇنداق	_	PRON	P	_	4	mark	_	Translit=undaq
+2	تېز	_	ADJ	A	_	3	advmod	_	Translit=tëz
+3	يۈگۈرۈدىغان	_	VERB	V	_	4	acl	_	Translit=yügürüdighan
+4	بۆرىنى	_	NOUN	N	_	8	dobj	_	Translit=börini
+5	ئۆمرۈمدە	_	NOUN	N	_	8	nmod	_	Translit=ömrümde
+6	تۇنجى	_	NUM	M	_	8	advmod	_	Translit=tunji
+7	قىتىم	_	NOUN	N	_	6	dep	_	Translit=qitim
+8	كۆرۈشۈم	_	VERB	V	_	0	root	_	Translit=körüshüm
+9	ئىدى	_	VERB	V	_	8	cop	_	Translit=idi
+
+1	ئۇنىڭغا	_	PRON	P	_	5	name	_	Translit=uninggha
+2	بۇنداق	_	PRON	P	_	3	det	_	Translit=bundaq
+3	كۈچ	_	NOUN	N	_	5	nsubj	_	Translit=küch
+4	نەدىن	_	PRON	P	_	5	nmod	_	Translit=nedin
+5	كېلىۋىدىكى	_	VERB	V	_	11	parataxis	_	Translit=këliwidiki
+6	يەر	_	NOUN	N	_	7	dobj	_	Translit=yer
+7	بېغىرلاپ	_	VERB	V	_	11	advcl	_	Translit=bëghirlap
+8	ئېتىلغان	_	VERB	V	_	10	acl	_	Translit=ëtilghan
+9	يا	_	CONJ	C	_	10	compound	_	Translit=ya
+10	ئوقىدەك	_	NOUN	N	_	11	advmod	_	Translit=oqidek
+11	يۈگۈرەيتتى	_	VERB	V	_	0	root	_	Translit=yügüreytti
+
+1	كۈن	_	NOUN	N	_	2	nsubj	_	Translit=kün
+2	پاتقاندا	_	VERB	V	_	5	nmod	_	Translit=patqanda
+3	ئۇنىڭغا	_	PRON	P	_	4	nmod	_	Translit=uninggha
+4	يېقىنلىشىپ	_	VERB	V	_	5	advcl	_	Translit=yëqinliship
+5	ئېتىۋالدىم	_	VERB	V	_	0	root	_	Translit=ëtiwaldim
+
+1	شۇنداق	_	PRON	P	_	3	advmod	_	Translit=shundaq
+2	ھېرىپ	_	VERB	V	_	3	compound	_	Translit=hërip
+3	كېتىپتىمەنكى	_	VERB	V	_	7	parataxis	_	Translit=këtiptimenki
+4	قان	_	NOUN	N	_	5	dobj	_	Translit=qan
+5	قۇسىۋەتكىلى	_	VERB	V	_	7	nmod	_	Translit=qusiwetkili
+6	تاس	_	ADV	D	_	7	compound	_	Translit=tas
+7	قالدىم	_	VERB	V	_	0	root	_	Translit=qaldim
+
+1	بۆرىنىڭ	_	NOUN	N	_	2	nmod:poss	_	Translit=börining
+2	تېرىسىنى	_	NOUN	N	_	3	dobj	_	Translit=tërisini
+3	سويۇپ	_	VERB	V	_	6	conj	_	Translit=soyup
+4	مىلتىقىمنىڭ	_	NOUN	N	_	5	nmod:poss	_	Translit=miltiqimning
+5	ئۇچىغا	_	NOUN	N	_	6	nmod	_	Translit=uchigha
+6	ئىلىۋېلىپ	_	VERB	V	_	8	conj	_	Translit=iliwëlip
+7	ئۆيگە	_	NOUN	N	_	8	nmod	_	Translit=öyge
+8	قاراپ	_	VERB	V	_	10	advcl	_	Translit=qarap
+9	يول	_	NOUN	N	_	10	compound	_	Translit=yol
+10	ئالدىم	_	VERB	V	_	0	root	_	Translit=aldim
+
+1	كېتىۋېتىپ	_	NOUN	N	_	2	advcl	_	Translit=këtiwëtip
+2	ئويلىنىپ	_	VERB	V	_	0	root	_	Translit=oylinip
+3	قالدىم	_	AUX	V	_	2	aux	_	Translit=qaldim
+
+1	ئادەمنىڭ	_	NOUN	N	_	2	nmod:poss	_	Translit=ademning
+2	ئىشەنگۈسى	_	NOUN	N	_	3	nsubj	_	Translit=ishengüsi
+3	كەلمەيدىغان	_	VERB	V	_	4	acl	_	Translit=kelmeydighan
+4	بۆرىكەنغۇ	_	VERB	V	_	10	parataxis	_	Translit=börikenghu
+5	نېمىشقا	_	PRON	P	_	10	advmod	_	Translit=nëmishqa
+6	باشقا	_	ADJ	A	_	7	amod	_	Translit=bashqa
+7	بۆرىلەر	_	NOUN	N	_	8	nsubj	_	Translit=böriler
+8	قىلمايدىغان	_	VERB	V	_	9	acl	_	Translit=qilmaydighan
+9	ئىشنى	_	NOUN	N	_	10	dobj	_	Translit=ishni
+10	قىلدىغاندۇ	_	VERB	V	_	0	root	_	Translit=qildighandu
+
+1	ھېلىقى	_	PRON	P	_	3	det	_	Translit=hëliqi
+2	ئىككى	_	NUM	M	_	3	nummod	_	Translit=ikki
+3	كۈچۈك	_	NOUN	N	_	5	nsubj	_	Translit=küchük
+4	نەگە	_	PRON	P	_	5	nmod	_	Translit=nege
+5	كەتكەندۇ	_	VERB	V	_	0	root	_	Translit=ketkendu
+
+1	ئۆيۈمگە	_	NOUN	N	_	3	nmod	_	Translit=öyümge
+2	ئاز	_	ADJ	A	_	3	advmod	_	Translit=az
+3	قالغاندا	_	VERB	V	_	10	punct	_	Translit=qalghanda
+4	ھېلىقى	_	PRON	P	_	5	det	_	Translit=hëliqi
+5	قۇملۇققا	_	NOUN	N	_	6	nmod	_	Translit=qumluqqa
+6	قايتىپ	_	VERB	V	_	8	conj	_	Translit=qaytip
+7	بېرىپ	_	AUX	V	_	6	aux	_	Translit=bërip
+8	قاراپ	_	VERB	V	_	10	advcl	_	Translit=qarap
+9	باققۇم	_	VERB	V	_	8	compound	_	Translit=baqqum
+10	كەلدى	_	VERB	V	_	0	root	_	Translit=keldi
+
+1	ئۇ	_	PRON	P	_	2	det	_	Translit=u
+2	يەرگە	_	NOUN	N	_	6	nmod:cau	_	Translit=yerge
+3	يېرىم	_	ADJ	A	_	4	amod	_	Translit=yërim
+4	كېچىدە	_	NOUN	N	_	6	nmod	_	Translit=këchide
+5	يېتىپ	_	VERB	V	_	6	advcl	_	Translit=yëtip
+6	كەلدىم	_	VERB	V	_	0	root	_	Translit=keldim
+
+1	ھاۋا	_	NOUN	N	_	3	nsubj	_	Translit=hawa
+2	بەك	_	ADV	D	_	3	advmod	_	Translit=bek
+3	سوغۇق	_	ADJ	A	_	0	root	_	Translit=soghuq
+4	ئىدى	_	VERB	V	_	3	cop	_	Translit=idi
+
+1	قۇم	_	NOUN	N	_	2	compound	_	Translit=qum
+2	بارخانلىرى	_	NOUN	N	_	8	nsubj	_	Translit=barxanliri
+3	ئاينىڭ	_	NOUN	N	_	4	nmod:poss	_	Translit=ayning
+4	يورۇقىدا	_	ADJ	A	_	8	nmod	_	Translit=yoruqida
+5	زومچەك	_	VERB	V	_	6	compound:redup	_	Translit=zomchek
+6	زومچەك	_	NOUN	N	_	7	amod	_	Translit=zomchek
+7	قەبرىستانلىقتەك	_	NOUN	N	_	8	nmod	_	Translit=qebristanliqtek
+8	كۆرۈنەتتى	_	VERB	V	_	0	root	_	Translit=körünetti
+
+1	ئەتراپ	_	NOUN	N	_	2	nsubj	_	Translit=etrap
+2	جىمجىت	_	ADJ	A	_	0	root	_	Translit=jimjit
+
+1	بىھۇدە	_	ADJ	A	_	3	advmod	_	Translit=bihude
+2	ئىش	_	NOUN	N	_	3	nsubj	_	Translit=ish
+3	قىلىپتىمەن	_	VERB	V	_	0	root	_	Translit=qiliptimen
+
+1	ئۇ	_	PRON	P	_	3	nsubj	_	Translit=u
+2	ساراڭ	_	ADJ	A	_	3	amod	_	Translit=sarang
+3	بۆرىكەندە	_	NOUN	N	_	4	ccomp	_	Translit=börikende
+4	دەپ	_	VERB	V	_	5	advcl	_	Translit=dep
+5	ئويلاندىم	_	VERB	V	_	0	root	_	Translit=oylandim
+
+1	كەتمەكچى	_	VERB	V	_	8	advcl	_	Translit=ketmekchi
+2	بولۇپ	_	VERB	V	_	1	aux	_	Translit=bolup
+3	تۇرغاندا	_	VERB	V	_	1	cop	_	Translit=turghanda
+4	بىلىنەر	_	NOUN	N	_	5	compound:redup	_	Translit=biliner
+5	بىلىنمەس	_	NUM	M	_	6	amod	_	Translit=bilinmes
+6	ئازگالغا	_	NOUN	N	_	8	nmod	_	Translit=azgalgha
+7	كۆزۈم	_	NOUN	N	_	8	compound	_	Translit=közüm
+8	چۈشتى	_	VERB	V	_	0	root	_	Translit=chüshti
+
+1	ئۇ	_	PRON	P	_	2	det	_	Translit=u
+2	يەردە	_	NOUN	N	_	7	nmod	_	Translit=yerde
+3	شامنىڭ	_	NOUN	N	_	4	nmod:poss	_	Translit=shamning
+4	يورۇقىدەك	_	VERB	V	_	6	acl	_	Translit=yoruqidek
+5	ئىككى	_	NUM	M	_	6	nummod	_	Translit=ikki
+6	تۈتۈن	_	NOUN	N	_	7	nsubj	_	Translit=tütün
+7	كۆرۈنۈپ	_	VERB	V	_	0	root	_	Translit=körünüp
+8	تۇراتتى	_	AUX	V	_	7	aux	_	Translit=turatti
+
+1	يۈگۈرۈپ	_	VERB	V	_	3	advcl	_	Translit=yügürüp
+2	بېرىپ	_	AUX	V	_	1	aux	_	Translit=bërip
+3	قارىسام	_	VERB	V	_	7	advcl	_	Translit=qarisam
+4	بىر	_	NUM	M	_	5	nummod	_	Translit=bir
+5	دۆۋە	_	DET	Q	_	7	amod	_	Translit=döwe
+6	تۆگە	_	NOUN	N	_	7	nmod:poss	_	Translit=töge
+7	مايىقى	_	NOUN	N	_	0	root	_	Translit=mayiqi
+8	ئىكەن	_	VERB	V	_	7	cop	_	Translit=iken
+
+1	تۈتۈندەك	_	NOUN	N	_	3	amod	_	Translit=tütündek
+2	كۆرۈنگەن	_	VERB	V	_	3	acl	_	Translit=körüngen
+3	ھور	_	NOUN	N	_	7	nsubj	_	Translit=hor
+4	ماياقلار	_	NOUN	N	_	5	nmod:poss	_	Translit=mayaqlar
+5	ئارىسىدىن	_	NOUN	N	_	7	nmod	_	Translit=arisidin
+6	كۆتۈرۈلۈپ	_	VERB	V	_	7	advcl	_	Translit=kötürülüp
+7	چىقىۋېتىپتۇ	_	VERB	V	_	0	root	_	Translit=chiqiwëtiptu
+
+1	ماياقلارنى	_	NOUN	N	_	5	dobj	_	Translit=mayaqlarni
+2	ئىككى	_	NUM	M	_	3	nummod	_	Translit=ikki
+3	چەتكە	_	ADJ	A	_	5	nmod	_	Translit=chetke
+4	ئاستا	_	ADJ	A	_	5	advmod	_	Translit=asta
+5	قايرىپ	_	VERB	V	_	6	advcl	_	Translit=qayrip
+6	قارىسام	_	VERB	V	_	18	advcl:cond	_	Translit=qarisam
+7	كۈندۈزى	_	NOUN	N	_	9	nmod:tmod	_	Translit=kündüzi
+8	يوقاپ	_	VERB	V	_	9	compound:lvc	_	Translit=yoqap
+9	كەتكەن	_	VERB	V	_	11	acl	_	Translit=ketken
+10	ئىككى	_	NUM	M	_	11	nummod	_	Translit=ikki
+11	كۈچۈك	_	NOUN	N	_	18	nsubj	_	Translit=küchük
+12	ماياقلارنىڭ	_	NOUN	N	_	13	nmod:poss	_	Translit=mayaqlarning
+13	ئارسىدا	_	VERB	V	_	18	nmod	_	Translit=arsida
+14	بىر	_	NUM	M	_	15	nummod	_	Translit=bir
+15	خىل	_	NOUN	N	_	16	amod	_	Translit=xil
+16	نەپەس	_	NOUN	N	_	17	dobj	_	Translit=nepes
+17	ئېلىپ	_	VERB	V	_	18	advcl	_	Translit=ëlip
+18	يېتىپتۇ	_	VERB	V	_	0	root	_	Translit=yëtiptu
+
+1	ئەتراپنى	_	NOUN	N	_	7	dobj	_	Translit=etrapni
+2	ئانا	_	NOUN	N	_	3	compound	_	Translit=ana
+3	بۆرە	_	NOUN	N	_	7	nsubj	_	Translit=böre
+4	قۇيرۇقى	_	NOUN	N	_	7	nmod	_	Translit=quyruqi
+5	بىلەن	_	ADP	R	_	4	case	_	Translit=bilen
+6	يېنىك	_	ADJ	A	_	7	advmod	_	Translit=yënik
+7	سۈپۈرۈپ	_	VERB	V	_	0	root	_	Translit=süpürüp
+8	قويغانىكەن	_	AUX	V	_	7	aux	_	Translit=qoyghaniken
+
+1	ئۇ	_	PRON	P	_	6	nsubj	_	Translit=u
+2	ئىشنى	_	NOUN	N	_	6	dobj	_	Translit=ishni
+3	ناھايىتى	_	ADV	D	_	4	advmod	_	Translit=nahayiti
+4	ئەپچىللىك	_	NOUN	N	_	6	nmod	_	Translit=epchillik
+5	بىلەن	_	ADP	R	_	4	case	_	Translit=bilen
+6	پۈتكۈزۈپتۇ	_	VERB	V	_	0	root	_	Translit=pütküzüptu
+
+1	كۈندۈزى	_	NOUN	N	_	6	nmod:tmod	_	Translit=kündüzi
+2	مەندەك	_	VERB	V	_	4	amod	_	Translit=mendek
+3	قېرى	_	ADJ	A	_	4	amod	_	Translit=qëri
+4	ئوۋچىنىڭ	_	NOUN	N	_	5	nmod:poss	_	Translit=owchining
+5	كۆزىنى	_	NOUN	N	_	6	dobj	_	Translit=közini
+6	بوياپ	_	VERB	V	_	0	root	_	Translit=boyap
+7	كېتىپتۇ	_	AUX	V	_	6	aux	_	Translit=këtiptu
+
+1	ھېلىقى	_	PRON	P	_	3	det	_	Translit=hëliqi
+2	ئانا	_	NOUN	N	_	3	compound	_	Translit=ana
+3	بۆرە	_	NOUN	N	_	19	nsubj	_	Translit=böre
+4	كۈچۈكلىرىنى	_	NOUN	N	_	6	dobj	_	Translit=küchüklirini
+5	قوغداپ	_	VERB	V	_	6	compound:lvc	_	Translit=qoghdap
+6	قېلىش	_	VERB	V	_	12	conj	_	Translit=qëlish
+7	ئۈچۈن	_	CONJ	C	_	6	case	_	Translit=üchün
+8	ئالدى	_	NOUN	N	_	9	compound	_	Translit=aldi
+9	بىلەن	_	ADP	R	_	12	advmod	_	Translit=bilen
+10	قۇم	_	NOUN	N	_	11	compound	_	Translit=qum
+11	دۆۋىسىگە	_	NOUN	N	_	12	nmod	_	Translit=döwisige
+12	يامىشىپ	_	VERB	V	_	15	conj	_	Translit=yamiship
+13	مېنىڭ	_	PRON	P	_	14	nmod:poss	_	Translit=mëning
+14	سۈرئىىتىمنى	_	NOUN	N	_	15	dobj	_	Translit=süriitimni
+15	ئاستىلىتىپ	_	NOUN	N	_	19	advcl	_	Translit=astilitip
+16	بالىلىرىنى	_	NOUN	N	_	17	dobj	_	Translit=balilirini
+17	يوشۇرۇدىغان	_	VERB	V	_	18	acl	_	Translit=yoshurudighan
+18	ۋاقىتقا	_	NOUN	N	_	19	nmod	_	Translit=waqitqa
+19	ئېرىشىپتۇ	_	VERB	V	_	0	root	_	Translit=ërishiptu
+
+1	ئىزىنى	_	NOUN	N	_	4	dobj	_	Translit=izini
+2	قۇيرۇقى	_	NOUN	N	_	4	nmod	_	Translit=quyruqi
+3	بىلەن	_	ADP	R	_	2	case	_	Translit=bilen
+4	سۈپۈرۈۋېتىپ	_	VERB	V	_	8	conj	_	Translit=süpürüwëtip
+5	قارشى	_	ADJ	A	_	6	amod	_	Translit=qarshi
+6	تەرەپكە	_	NOUN	N	_	8	nmod	_	Translit=terepke
+7	قاراپ	_	VERB	V	_	8	advcl	_	Translit=qarap
+8	يۈگۈرۈپ	_	VERB	V	_	14	advcl	_	Translit=yügürüp
+9	ئۆزىنىڭ	_	PRON	P	_	10	nmod:poss	_	Translit=özining
+10	ئۆلۈمى	_	NOUN	N	_	11	nsubj	_	Translit=ölümi
+11	ھېسابىغا	_	NOUN	N	_	14	nmod	_	Translit=hësabigha
+12	بالىلىرىنى	_	NOUN	N	_	14	dobj	_	Translit=balilirini
+13	ساقلاپ	_	VERB	V	_	14	aux	_	Translit=saqlap
+14	قالماقچى	_	VERB	V	_	0	root	_	Translit=qalmaqchi
+15	بوپتۇ	_	VERB	V	_	14	cop	_	Translit=boptu
+
+1	كارىز	_	NOUN	N	_	14	nsubj	_	Translit=kariz
+2	ئوزاق	_	NOUN	N	_	3	amod	_	Translit=ozaq
+3	تارىخقا	_	NOUN	N	_	4	nmod	_	Translit=tarixqa
+4	ئىگە	_	NOUN	N	_	9	acl	_	Translit=ige
+5	پارلاق	_	ADJ	A	_	6	amod	_	Translit=parlaq
+6	مەدەنىيەت	_	NOUN	N	_	7	dobj	_	Translit=medeniyet
+7	ياراتقان	_	VERB	V	_	9	acl	_	Translit=yaratqan
+8	ئۇيغۇر	_	NOUN	N	_	9	compound	_	Translit=uyghur
+9	خەلقىنىڭ	_	NOUN	N	_	14	nmod:poss	_	Translit=xelqining
+10	دۇنيا	_	NOUN	N	_	11	nmod:poss	_	Translit=dunya
+11	مەدەنيىتىگە	_	NOUN	N	_	12	nmod	_	Translit=medenyitige
+12	قوشقان	_	VERB	V	_	14	acl	_	Translit=qoshqan
+13	ئۇلۇغ	_	ADJ	A	_	14	amod	_	Translit=ulugh
+14	تۆھپىسىدۇر	_	NOUN	N	_	0	root	_	Translit=töhpisidur
+
+1	ئۇ	_	PRON	P	_	14	nsubj	_	Translit=u
+2	سەدددىچىن	_	NOUN	N	_	3	compound	_	Translit=sedddichin
+3	سېپىلى	_	NOUN	N	_	6	conj	_	Translit=sëpili
+4	بېيجىڭ	_	NOUN	N	_	5	compound	_	Translit=bëyjing
+5	خڭجۇ	_	NOUN	N	_	6	compound	_	Translit=xngju
+6	قانىلى	_	NOUN	N	_	8	nmod	_	Translit=qanili
+7	بىلەن	_	ADP	R	_	6	case	_	Translit=bilen
+8	قوشۇلۇپ	_	VERB	V	_	14	advcl	_	Translit=qoshulup
+9	جۇڭگودىكى	_	NOUN	N	_	13	amod	_	Translit=junggodiki
+10	ئۈچ	_	NUM	M	_	11	nummod	_	Translit=üch
+11	چوڭ	_	ADJ	A	_	13	amod	_	Translit=chong
+12	قەدىمكى	_	ADJ	A	_	13	amod	_	Translit=qedimki
+13	قۇرۇلۇشنىڭ	_	VERB	V	_	14	nmod:poss	_	Translit=qurulushning
+14	بىرى	_	NUM	M	_	0	root	_	Translit=biri
+15	ھېسابلىنىدۇ	_	AUX	V	_	14	cop	_	Translit=hësablinidu
+
+1	كارىز	_	NOUN	N	_	4	nsubj	_	Translit=kariz
+2	ساپ	_	ADJ	A	_	4	amod	_	Translit=sap
+3	ئۇيغۇرچە	_	NOUN	N	_	4	amod	_	Translit=uyghurche
+4	ئاتالغۇ	_	NOUN	N	_	11	parataxis	_	Translit=atalghu
+5	بولۇپ	_	VERB	V	_	4	mark	_	Translit=bolup
+6	كولانغان	_	VERB	V	_	7	acl	_	Translit=kolanghan
+7	جاي	_	NOUN	N	_	8	appos	_	Translit=jay
+8	قۇدۇق	_	NOUN	N	_	9	ccomp	_	Translit=quduq
+9	دېگەن	_	VERB	V	_	10	acl	_	Translit=dëgen
+10	مەنىنى	_	NOUN	N	_	11	dobj	_	Translit=menini
+11	بىلدۇرىدۇ	_	VERB	V	_	0	root	_	Translit=bilduridu
+
+1	قۇلۇلىنىڭ	_	NOUN	N	_	2	nmod:poss	_	Translit=qululining
+2	قاناتلىرى	_	NOUN	N	_	7	nsubj	_	Translit=qanatliri
+3	بارا	_	NOUN	N	_	4	compound:redup	_	Translit=bara
+4	بارا	_	NOUN	N	_	5	advmod	_	Translit=bara
+5	كىچىكلەپ	_	VERB	V	_	7	advcl	_	Translit=kichiklep
+6	ئاخىرى	_	ADV	D	_	7	advmod	_	Translit=axiri
+7	يوقاپ	_	VERB	V	_	0	root	_	Translit=yoqap
+8	كېتىپتۇ	_	AUX	V	_	7	aux	_	Translit=këtiptu
+
+1	ئېغىر	_	ADJ	A	_	3	amod	_	Translit=ëghir
+2	مۇكاپات	_	NOUN	N	_	3	compound	_	Translit=mukapat
+3	لوڭقىسى	_	VERB	V	_	6	nsubj	_	Translit=longqisi
+4	قاتتىق	_	ADJ	A	_	5	amod	_	Translit=qattiq
+5	قاپقا	_	NOUN	N	_	6	nmod	_	Translit=qapqa
+6	ئايلىنىپتۇ	_	VERB	V	_	0	root	_	Translit=ayliniptu
+
+1	شۇنىڭ	_	CONJ	C	_	2	mwe	_	Translit=shuning
+2	بىلەن	_	CONJ	C	_	10	cc	_	Translit=bilen
+3	قۇلۇلە	_	NOUN	N	_	10	nsubj	_	Translit=qulule
+4	بېشىنى	_	NOUN	N	_	7	dobj	_	Translit=bëshini
+5	قېپىدىن	_	NOUN	N	_	7	nmod	_	Translit=qëpidin
+6	تەستە	_	ADJ	A	_	7	advmod	_	Translit=teste
+7	چىقىرىپ	_	VERB	V	_	10	advcl	_	Translit=chiqirip
+8	ئاستا	_	ADJ	A	_	9	advmod	_	Translit=asta
+9	ئۆمىلەپ	_	VERB	V	_	10	advcl	_	Translit=ömilep
+10	ماڭىدىغان	_	VERB	V	_	0	root	_	Translit=mangidighan
+11	بولۇپ	_	VERB	V	_	10	cop	_	Translit=bolup
+12	قاپتۇ	_	AUX	V	_	10	aux	_	Translit=qaptu
+
+1	ئۆردەك	_	NOUN	N	_	3	conj	_	Translit=ördek
+2	بىلەن	_	CONJ	C	_	3	cc	_	Translit=bilen
+3	توخۇ	_	NOUN	N	_	5	nsubj	_	Translit=toxu
+4	يېقىن	_	ADJ	A	_	5	amod	_	Translit=yëqin
+5	دوست	_	NOUN	N	_	0	root	_	Translit=dost
+6	ئىكەن	_	VERB	V	_	5	cop	_	Translit=iken
+
+1	ئۇلار	_	PRON	P	_	4	nsubj	_	Translit=ular
+2	ئىجىل	_	NOUN	N	_	3	compound	_	Translit=ijil
+3	ئىناق	_	ADJ	A	_	4	advmod	_	Translit=inaq
+4	ياشايدىكەن	_	NOUN	N	_	0	root	_	Translit=yashaydiken
+
+1	كۈنلەر	_	NOUN	N	_	2	nsubj	_	Translit=künler
+2	ئۆتۈپتۇ	_	VERB	V	_	0	root	_	Translit=ötüptu
+
+1	ئايلار	_	NOUN	N	_	2	nsubj	_	Translit=aylar
+2	ئۆتۈپتۇ	_	VERB	V	_	0	root	_	Translit=ötüptu
+
+1	بىر	_	NUM	M	_	2	nummod	_	Translit=bir
+2	كۈنلەرگە	_	NOUN	N	_	3	nmod	_	Translit=künlerge
+3	بارغاندا	_	VERB	V	_	10	advcl	_	Translit=barghanda
+4	ئۆردەكنىڭ	_	NOUN	N	_	6	nmod:poss	_	Translit=ördekning
+5	مىس	_	NOUN	N	_	6	compound:redup	_	Translit=mis
+6	مىسلىقى	_	NOUN	N	_	10	nsubj	_	Translit=misliqi
+7	توخۇنىڭ	_	NOUN	N	_	8	nmod:poss	_	Translit=toxuning
+8	كۆزىگە	_	NOUN	N	_	10	nmod	_	Translit=közige
+9	زادىلا	_	ADV	D	_	10	advmod	_	Translit=zadila
+10	سىغمايدىغان	_	VERB	V	_	0	root	_	Translit=sighmaydighan
+11	بولۇپ	_	VERB	V	_	10	cop	_	Translit=bolup
+12	قاپتۇ	_	AUX	V	_	10	aux	_	Translit=qaptu
+
+1	شۇنڭ	_	NOUN	N	_	2	mwe	_	Translit=shunng
+2	بىلەن	_	ADP	R	_	6	advmod	_	Translit=bilen
+3	ئۇ	_	PRON	P	_	6	nsubj	_	Translit=u
+4	ئۆردەككە	_	NOUN	N	_	6	nmod	_	Translit=ördekke
+5	بىر	_	NUM	M	_	6	advmod	_	Translit=bir
+6	كۆرسىتىپ	_	VERB	V	_	0	root	_	Translit=körsitip
+7	قويماقچى	_	AUX	V	_	6	aux	_	Translit=qoymaqchi
+8	بوپتۇ	_	VERB	V	_	6	cop	_	Translit=boptu
+
+1	توخۇ	_	NOUN	N	_	5	punct	_	Translit=toxu
+2	قاناتلىرىنى	_	NOUN	N	_	3	dobj	_	Translit=qanatlirini
+3	قېقىپ	_	VERB	V	_	5	advcl	_	Translit=qëqip
+4	قويۇپ	_	AUX	V	_	3	aux	_	Translit=qoyup
+5	دەپتۇ	_	VERB	V	_	0	root	_	Translit=deptu
+
+1	دوستۇم	_	NOUN	N	_	2	appos	_	Translit=dostum
+2	ئۆردەكجان	_	NOUN	N	_	6	discourse	_	Translit=ördekjan
+3	بىللە	_	ADV	D	_	4	advmod	_	Translit=bille
+4	ئۆتىۋاتقىنىمىزغا	_	VERB	V	_	6	nmod	_	Translit=ötiwatqinimizgha
+5	ئۇزاق	_	ADJ	A	_	6	advmod	_	Translit=uzaq
+6	بولدى	_	VERB	V	_	0	root	_	Translit=boldi
+
+1	ئەمما	_	CONJ	C	_	6	conj	_	Translit=emma
+2	قايسىمىزنىڭ	_	NOUN	N	_	4	nmod:poss	_	Translit=qaysimizning
+3	قانداق	_	PRON	P	_	4	det	_	Translit=qandaq
+4	كارامىتى	_	NOUN	N	_	5	nsubj	_	Translit=karamiti
+5	بارلىقىنى	_	NOUN	N	_	6	dobj	_	Translit=barliqini
+6	بىلمەيمىز	_	VERB	V	_	0	root	_	Translit=bilmeymiz
+
+1	ئىككىيلەن	_	NUM	M	_	3	nsubj	_	Translit=ikkiylen
+2	بىر	_	NUM	M	_	3	advmod	_	Translit=bir
+3	يۈگۈرۈشۈپ	_	NOUN	N	_	0	root	_	Translit=yügürüshüp
+4	باقمايلىمۇ	_	AUX	V	_	3	aux	_	Translit=baqmaylimu
+
+1	ئۆردەك	_	NOUN	N	_	4	nsubj	_	Translit=ördek
+2	توخۇنىڭ	_	NOUN	N	_	3	nmod:poss	_	Translit=toxuning
+3	نىيىتىنى	_	NOUN	N	_	4	dobj	_	Translit=niyitini
+4	چۈشىنىپ	_	VERB	V	_	0	root	_	Translit=chüshinip
+5	يېتىپتۇ	_	AUX	V	_	4	aux	_	Translit=yëtiptu
+
+1	بىراق	_	CONJ	C	_	8	cc	_	Translit=biraq
+2	نېرى	_	ADV	D	_	3	compound:redup	_	Translit=nëri
+3	بېرى	_	ADP	R	_	4	dobj	_	Translit=bëri
+4	دېمەي	_	VERB	V	_	8	advmod	_	Translit=dëmey
+5	ئۇنىڭ	_	PRON	P	_	6	nmod:poss	_	Translit=uning
+6	دېگىنىگە	_	VERB	V	_	8	nmod	_	Translit=dëginige
+7	ماقۇل	_	INTJ	E	_	8	compound	_	Translit=maqul
+8	بوپتۇ	_	VERB	V	_	0	root	_	Translit=boptu
+
+1	يۈگۈرۈش	_	NOUN	N	_	2	amod	_	Translit=yügürüsh
+2	مۇسابىقىسى	_	NOUN	N	_	3	nsubj	_	Translit=musabiqisi
+3	باشلىنىپتۇ	_	VERB	V	_	0	root	_	Translit=bashliniptu
+
+1	ئالدىدا	_	NOUN	N	_	2	nmod	_	Translit=aldida
+2	چېپىپ	_	VERB	V	_	3	aux	_	Translit=chëpip
+3	كېتىۋاتقان	_	VERB	V	_	4	acl	_	Translit=këtiwatqan
+4	توخۇ	_	NOUN	N	_	16	nsubj	_	Translit=toxu
+5	ئۆردەكنىڭ	_	NOUN	N	_	9	nmod:poss	_	Translit=ördekning
+6	ئىغاڭلىغىنىچە	_	NOUN	N	_	9	advmod	_	Translit=ighanglighiniche
+7	مىسىلداپ	_	VERB	V	_	9	advmod	_	Translit=misildap
+8	مېڭىپ	_	VERB	V	_	9	advmod	_	Translit=mëngip
+9	كېلىۋاتقانلىقىنى	_	VERB	V	_	10	dobj	_	Translit=këliwatqanliqini
+10	كۆرۈپ	_	VERB	V	_	16	advmod	_	Translit=körüp
+11	بىردەم	_	ADV	D	_	12	compound	_	Translit=birdem
+12	بىردەم	_	ADV	D	_	14	advmod	_	Translit=birdem
+13	ئارقىغا	_	NOUN	N	_	14	nmod:cau	_	Translit=arqigha
+14	قاراپ	_	VERB	V	_	16	advmod	_	Translit=qarap
+15	مەسخىرىلىك	_	VERB	V	_	16	advmod	_	Translit=mesxirilik
+16	كۈلۈپتۇ	_	VERB	V	_	0	root	_	Translit=külüptu
+
+1	لېكىن	_	CONJ	C	_	8	cc	_	Translit=lëkin
+2	ئۆردەك	_	NOUN	N	_	8	nsubj	_	Translit=ördek
+3	بۇنىڭغا	_	PRON	P	_	5	nmod:cau	_	Translit=buninggha
+4	پەرۋا	_	NOUN	N	_	5	compound	_	Translit=perwa
+5	قىلماي	_	VERB	V	_	8	advmod	_	Translit=qilmay
+6	بىر	_	NUM	M	_	7	nummod	_	Translit=bir
+7	خىلدا	_	NOUN	N	_	8	advmod	_	Translit=xilda
+8	يۈگۈرۈۋېرىپتۇ	_	VERB	V	_	0	root	_	Translit=yügürüwëriptu
+
+1	ئۇزاق	_	ADJ	A	_	2	compound	_	Translit=uzaq
+2	ئۆتمەي	_	VERB	V	_	8	advmod	_	Translit=ötmey
+3	توخۇ	_	NOUN	N	_	8	nsubj	_	Translit=toxu
+4	دولقۇنلاپ	_	VERB	V	_	5	advmod	_	Translit=dolqunlap
+5	ئېقىۋاتقان	_	VERB	V	_	7	acl	_	Translit=ëqiwatqan
+6	بىر	_	NUM	M	_	7	det	_	Translit=bir
+7	دەريانى	_	NOUN	N	_	8	dobj	_	Translit=deryani
+8	كۆرۈپتۇ	_	VERB	V	_	0	root	_	Translit=körüptu
+
+1	ئاپلا	_	VERB	V	_	4	discourse	_	Translit=apla
+2	ئەمدى	_	ADV	D	_	4	mark	_	Translit=emdi
+3	قانداق	_	PRON	P	_	4	nsubj	_	Translit=qandaq
+4	قىلارمەن	_	VERB	V	_	0	root	_	Translit=qilarmen
+
+1	توخۇ	_	NOUN	N	_	10	nsubj	_	Translit=toxu
+2	دەريادىن	_	NOUN	N	_	3	nmod	_	Translit=deryadin
+3	ئۆتۈشنىڭ	_	VERB	V	_	4	nmod:poss	_	Translit=ötüshning
+4	ئامالىنى	_	NOUN	N	_	5	dobj	_	Translit=amalini
+5	قىلالماي	_	VERB	V	_	10	advcl	_	Translit=qilalmay
+6	تىپىرلىغىنىچە	_	NOUN	N	_	10	advmod	_	Translit=tipirlighiniche
+7	ئۇياق	_	NUM	M	_	8	compound:redup	_	Translit=uyaq
+8	بۇياققا	_	PRON	P	_	10	nmod:cau	_	Translit=buyaqqa
+9	پالاقشىپ	_	NOUN	N	_	10	advmod	_	Translit=palaqship
+10	يۈگۈرۈپتۇ	_	VERB	V	_	0	root	_	Translit=yügürüptu
+
+1	ئاڭغىچە	_	PRON	P	_	4	mark	_	Translit=angghiche
+2	ئۆردەك	_	NOUN	N	_	4	nsubj	_	Translit=ördek
+3	يېتىپ	_	VERB	V	_	4	advmod	_	Translit=yëtip
+4	كەپتۇ	_	VERB	V	_	0	root	_	Translit=keptu
+
+1	دەريانى	_	NOUN	N	_	2	dobj	_	Translit=deryani
+2	كۆرگەن	_	VERB	V	_	3	acl	_	Translit=körgen
+3	ئۆردەك	_	NOUN	N	_	4	nsubj	_	Translit=ördek
+4	يايراپ	_	VERB	V	_	0	root	_	Translit=yayrap
+5	كېتىپتۇ	_	AUX	V	_	4	aux	_	Translit=këtiptu
+
+1	ئۇ	_	PRON	P	_	9	nsubj	_	Translit=u
+2	ئۆزىنى	_	PRON	P	_	4	dobj	_	Translit=özini
+3	دەرياغا	_	NOUN	N	_	4	nmod	_	Translit=deryagha
+4	ئېتىپتۇ	_	VERB	V	_	9	parataxis	_	Translit=ëtiptu
+5	دە	_	VERB	V	_	4	mark	_	Translit=de
+6	قارشى	_	ADJ	A	_	7	amod	_	Translit=qarshi
+7	قىرغاققا	_	NOUN	N	_	9	nmod	_	Translit=qirghaqqa
+8	قاراپ	_	VERB	V	_	9	advmod	_	Translit=qarap
+9	ئېقىپ	_	VERB	V	_	0	root	_	Translit=ëqip
+10	كېتىپتۇ	_	AUX	V	_	9	aux	_	Translit=këtiptu
+
+1	بۇنى	_	PRON	P	_	2	dobj	_	Translit=buni
+2	كۆرگەن	_	VERB	V	_	3	acl	_	Translit=körgen
+3	توخۇ	_	NOUN	N	_	7	nsubj	_	Translit=toxu
+4	ئۆزىنى	_	PRON	P	_	5	dobj	_	Translit=özini
+5	تۇتۇۋالالماي	_	VERB	V	_	7	advmod	_	Translit=tutuwalalmay
+6	سۇغا	_	NOUN	N	_	7	nmod:cau	_	Translit=sugha
+7	سەكرەپتۇ	_	VERB	V	_	10	conj	_	Translit=sekreptu
+8	ئەمما	_	CONJ	C	_	10	cc	_	Translit=emma
+9	سۇغا	_	NOUN	N	_	10	nmod	_	Translit=sugha
+10	چۆكۈشكە	_	VERB	V	_	0	root	_	Translit=chöküshke
+11	باشلاپتۇ	_	AUX	V	_	10	aux	_	Translit=bashlaptu
+
+1	پالاقشىغان	_	NOUN	N	_	2	amod	_	Translit=palaqshighan
+2	ئاۋازنى	_	NOUN	N	_	3	dobj	_	Translit=awazni
+3	ئاڭلىغان	_	VERB	V	_	4	acl	_	Translit=anglighan
+4	ئۆردەك	_	NOUN	N	_	6	nsubj	_	Translit=ördek
+5	ئارقىغا	_	NOUN	N	_	6	nmod	_	Translit=arqigha
+6	بۇرۇلۇپتۇ	_	VERB	V	_	0	root	_	Translit=buruluptu
+
+1	قارىسا	_	VERB	V	_	4	mark	_	Translit=qarisa
+2	توخۇ	_	NOUN	N	_	4	nsubj	_	Translit=toxu
+3	جان	_	NOUN	N	_	4	compound	_	Translit=jan
+4	تالىشىۋاتقۇدەك	_	VERB	V	_	0	root	_	Translit=talishiwatqudek
+
+1	ئۆردەك	_	NOUN	N	_	7	nsubj	_	Translit=ördek
+2	ئارقىغا	_	NOUN	N	_	3	nmod	_	Translit=arqigha
+3	يېنىپ	_	VERB	V	_	6	conj	_	Translit=yënip
+4	توخۇنى	_	NOUN	N	_	6	dobj	_	Translit=toxuni
+5	قىرغاققا	_	NOUN	N	_	6	nmod	_	Translit=qirghaqqa
+6	ئېلىپ	_	VERB	V	_	7	advcl	_	Translit=ëlip
+7	چىقىپتۇ	_	VERB	V	_	0	root	_	Translit=chiqiptu
+
+1	توخۇ	_	NOUN	N	_	6	nsubj	_	Translit=toxu
+2	خېلى	_	ADV	D	_	3	nmod	_	Translit=xëli
+3	ۋاقىتتىن	_	NOUN	N	_	6	nmod	_	Translit=waqittin
+4	كېيىن	_	ADV	D	_	3	case	_	Translit=këyin
+5	ھوشىغا	_	NOUN	N	_	6	compound	_	Translit=hoshigha
+6	كەپتۇ	_	VERB	V	_	0	root	_	Translit=keptu
+
+1	ئۇ	_	PRON	P	_	16	nsubj	_	Translit=u
+2	خىجىل	_	NOUN	N	_	3	compound	_	Translit=xijil
+3	بولغان	_	VERB	V	_	7	nmod	_	Translit=bolghan
+4	ھالدا	_	NOUN	N	_	3	case	_	Translit=halda
+5	ئۆردەكتىن	_	NOUN	N	_	7	nmod	_	Translit=ördektin
+6	ئەپۇ	_	NOUN	N	_	7	compound	_	Translit=epu
+7	سوراپتۇ	_	VERB	V	_	16	conj	_	Translit=soraptu
+8	ۋە	_	CONJ	C	_	16	cc	_	Translit=we
+9	چۈشەندىم	_	VERB	V	_	15	discourse	_	Translit=chüshendim
+10	دوستۇم	_	NOUN	N	_	15	discourse	_	Translit=dostum
+11	ھەركىمنىڭ	_	NOUN	N	_	14	nmod:poss	_	Translit=herkimning
+12	ئۆزىگە	_	PRON	P	_	13	compound	_	Translit=özige
+13	تۇشلۇق	_	ADJ	A	_	14	amod	_	Translit=tushluq
+14	كارامىتى	_	ADJ	A	_	15	nsubj	_	Translit=karamiti
+15	بولىدىكەن	_	VERB	V	_	16	ccomp	_	Translit=bolidiken
+16	دەپتۇ	_	VERB	V	_	0	root	_	Translit=deptu
+
+1	كەمتەر	_	NOUN	N	_	2	cop	_	Translit=kemter
+2	بولۇش	_	VERB	V	_	6	conj	_	Translit=bolush
+3	ئۆزىنىڭ	_	PRON	P	_	4	nmod:poss	_	Translit=özining
+4	يېتەرسىزلىكىنىنى	_	NOUN	N	_	6	dobj	_	Translit=yëtersizlikinini
+5	ئېتىراپ	_	NOUN	N	_	6	compound	_	Translit=ëtirap
+6	قىلىش	_	VERB	V	_	10	conj	_	Translit=qilish
+7	باشقىلارنىڭ	_	ADJ	A	_	8	nmod:poss	_	Translit=bashqilarning
+8	ئارتۇقچىلىقىنى	_	NOUN	N	_	10	dobj	_	Translit=artuqchiliqini
+9	ھۆرمەت	_	NOUN	N	_	10	compound	_	Translit=hörmet
+10	قىلىش	_	VERB	V	_	13	nsubj	_	Translit=qilish
+11	گۈزەل	_	ADJ	A	_	13	amod	_	Translit=güzel
+12	ئەخلاق	_	NOUN	N	_	13	compound	_	Translit=exlaq
+13	پەزىلەتتۇر	_	NOUN	N	_	0	root	_	Translit=pezilettur
+
+1	ئۆگىنىشتە	_	NOUN	N	_	2	nmod	_	Translit=öginishte
+2	ئەستايىدىل	_	ADJ	A	_	9	conj	_	Translit=estayidil
+3	بولۇش	_	VERB	V	_	2	cop	_	Translit=bolush
+4	چالا	_	ADJ	A	_	5	compound:redup	_	Translit=chala
+5	بۇلا	_	NOUN	N	_	6	advmod	_	Translit=bula
+6	ئۆگىنىپلا	_	NOUN	N	_	8	advmod	_	Translit=öginipla
+7	قانائەتلىنىپ	_	VERB	V	_	8	compound	_	Translit=qanaetlinip
+8	قېلىشتىن	_	VERB	V	_	9	nmod	_	Translit=qëlishtin
+9	ساقلىنىش	_	VERB	V	_	14	csubj	_	Translit=saqlinish
+10	ئۆگىنىشتە	_	NOUN	N	_	12	nmod	_	Translit=öginishte
+11	نەتىجە	_	NOUN	N	_	12	dobj	_	Translit=netije
+12	قازىنىشنىڭ	_	VERB	V	_	14	nmod:poss	_	Translit=qazinishning
+13	ئۈنۈملىك	_	NOUN	N	_	14	amod	_	Translit=ünümlik
+14	يولىدۇر	_	VERB	V	_	0	root	_	Translit=yolidur
+
+1	تاغ	_	NOUN	N	_	2	dobj	_	Translit=tagh
+2	ئاتلاپ	_	VERB	V	_	6	advmod	_	Translit=atlap
+3	تىرىكچىلىك	_	NOUN	N	_	4	compound	_	Translit=tirikchilik
+4	قىلغىلى	_	VERB	V	_	6	advmod	_	Translit=qilghili
+5	ئىلىغا	_	NOUN	N	_	6	nmod	_	Translit=iligha
+6	چىققىنىغا	_	VERB	V	_	9	nmod	_	Translit=chiqqinigha
+7	بىر	_	NUM	M	_	8	mwe	_	Translit=bir
+8	نەچچە	_	PRON	P	_	9	amod	_	Translit=nechche
+9	يىل	_	NOUN	N	_	10	nsubj	_	Translit=yil
+10	بولغان	_	VERB	V	_	13	acl	_	Translit=bolghan
+11	ئاتا	_	NOUN	N	_	12	compound:redup	_	Translit=ata
+12	بالا	_	NOUN	N	_	13	appos	_	Translit=bala
+13	ئۈچەيلەن	_	NUM	M	_	15	nsubj	_	Translit=ücheylen
+14	يۇرتىغا	_	NOUN	N	_	15	nmod	_	Translit=yurtigha
+15	قايتماقچى	_	VERB	V	_	0	root	_	Translit=qaytmaqchi
+16	بوپتۇ	_	AUX	V	_	15	aux	_	Translit=boptu
+
+1	بۇ	_	PRON	P	_	5	nsubj	_	Translit=bu
+2	قاتتىق	_	ADJ	A	_	3	amod	_	Translit=qattiq
+3	سوغۇق	_	ADJ	A	_	5	amod	_	Translit=soghuq
+4	بولۇۋاتقان	_	VERB	V	_	3	cop	_	Translit=boluwatqan
+5	كۈنلەر	_	NOUN	N	_	0	root	_	Translit=künler
+6	ئىكەن	_	VERB	V	_	5	cop	_	Translit=iken
+
+1	ئۇلار	_	PRON	P	_	9	nsubj	_	Translit=ular
+2	قار	_	NOUN	N	_	3	compound:redup	_	Translit=qar
+3	مۇز	_	NOUN	N	_	4	nsubj	_	Translit=muz
+4	قاپلىغان	_	VERB	V	_	6	acl	_	Translit=qaplighan
+5	مۇز	_	NOUN	N	_	6	nmod	_	Translit=muz
+6	داۋاندىن	_	NOUN	N	_	7	nmod	_	Translit=dawandin
+7	ھالقىپ	_	VERB	V	_	9	advmod	_	Translit=halqip
+8	پەسكە	_	ADJ	A	_	9	nmod	_	Translit=peske
+9	چۈشۈۋاتقاندا	_	VERB	V	_	17	advcl	_	Translit=chüshüwatqanda
+10	ياشانغان	_	VERB	V	_	11	amod	_	Translit=yashanghan
+11	ئاتىنىڭ	_	NOUN	N	_	13	nmod:poss	_	Translit=atining
+12	پۇت	_	NOUN	N	_	13	compound:redup	_	Translit=put
+13	قولى	_	NOUN	N	_	14	nsubj	_	Translit=qoli
+14	ئۈششۈپ	_	VERB	V	_	17	advmod	_	Translit=üshshüp
+15	ماڭغۇدەك	_	VERB	V	_	17	advcl	_	Translit=mangghudek
+16	ھالى	_	NOUN	N	_	17	compound	_	Translit=hali
+17	قالماپتۇ	_	VERB	V	_	0	root	_	Translit=qalmaptu
+
+1	ئۇ	_	PRON	P	_	6	nsubj	_	Translit=u
+2	خىرەلەشكەن	_	ADJ	A	_	3	amod	_	Translit=xireleshken
+3	كۆزلىرىنى	_	NOUN	N	_	5	dobj	_	Translit=közlirini
+4	بالىلىرىغا	_	NOUN	N	_	5	nmod	_	Translit=balilirigha
+5	تىكىپ	_	VERB	V	_	6	advmod	_	Translit=tikip
+6	دەپتۇ	_	VERB	V	_	0	root	_	Translit=deptu
+
+1	بالىلىرىم	_	NOUN	N	_	10	discourse	_	Translit=balilirim
+2	مەن	_	PRON	P	_	3	nsubj	_	Translit=men
+3	بولالمىدىم	_	VERB	V	_	10	parataxis	_	Translit=bolalmidim
+4	سىلەر	_	PRON	P	_	10	nsubj	_	Translit=siler
+5	مېنىڭ	_	PRON	P	_	6	nmod:poss	_	Translit=mëning
+6	كىيىملىرىمنى	_	NOUN	N	_	7	dobj	_	Translit=kiyimlirimni
+7	كىيىپ	_	VERB	V	_	10	advcl	_	Translit=kiyip
+8	دەرھال	_	ADV	D	_	10	advmod	_	Translit=derhal
+9	تاغدىنچۈشۈپ	_	VERB	V	_	10	nmod	_	Translit=taghdinchüshüp
+10	كېتىڭلار	_	VERB	V	_	0	root	_	Translit=këtinglar
+
+1	ياق	_	INTJ	E	_	6	parataxis	_	Translit=yaq
+2	دادا	_	NOUN	N	_	6	discourse	_	Translit=dada
+3	سېنى	_	PRON	P	_	4	dobj	_	Translit=sëni
+4	تاشلاپ	_	VERB	V	_	5	advcl	_	Translit=tashlap
+5	كەتمەيمىز	_	VERB	V	_	6	ccomp	_	Translit=ketmeymiz
+6	دەپتۇ	_	VERB	V	_	0	root	_	Translit=deptu
+
+1	ئىككى	_	NUM	M	_	2	nummod	_	Translit=ikki
+2	ئوغلى	_	NOUN	N	_	3	nsubj	_	Translit=oghli
+3	تەڭلا	_	ADJ	A	_	9	parataxis	_	Translit=tengla
+4	ئاندىن	_	CONJ	C	_	9	mark	_	Translit=andin
+5	ئوغۇل	_	NOUN	N	_	9	nsubj	_	Translit=oghul
+6	كىيىملىرىنى	_	NOUN	N	_	7	dobj	_	Translit=kiyimlirini
+7	سېلىپ	_	VERB	V	_	9	advcl	_	Translit=sëlip
+8	دادىسىغا	_	NOUN	N	_	9	nmod:cau	_	Translit=dadisigha
+9	كىيدۈرۈپتۇ	_	VERB	V	_	0	root	_	Translit=kiydürüptu
+
+1	كىچىك	_	ADJ	A	_	2	amod	_	Translit=kichik
+2	ئوغۇل	_	NOUN	N	_	6	nsubj	_	Translit=oghul
+3	دادىسىنى	_	NOUN	N	_	5	dobj	_	Translit=dadisini
+4	ھاپاش	_	NOUN	N	_	5	compound	_	Translit=hapash
+5	قىلىپ	_	VERB	V	_	6	advmod	_	Translit=qilip
+6	داۋاملاشتۇرۇپتۇ	_	VERB	V	_	0	root	_	Translit=dawamlashturuptu
+
+1	بىراق	_	CONJ	C	_	6	cc	_	Translit=biraq
+2	ئۇزاق	_	ADJ	A	_	3	compound	_	Translit=uzaq
+3	ئۆتمەي	_	VERB	V	_	6	advmod	_	Translit=ötmey
+4	ئاتا	_	NOUN	N	_	6	nsubj	_	Translit=ata
+5	نەپەستىن	_	NOUN	N	_	6	compound	_	Translit=nepestin
+6	قاپتۇ	_	VERB	V	_	0	root	_	Translit=qaptu
+
+1	چوڭ	_	ADJ	A	_	2	amod	_	Translit=chong
+2	ئوغۇلمۇ	_	NOUN	N	_	5	nsubj	_	Translit=oghulmu
+3	ھالىدىن	_	NOUN	N	_	4	compound	_	Translit=halidin
+4	كېتپ	_	VERB	V	_	5	advmod	_	Translit=këtp
+5	يىقىلىپ	_	VERB	V	_	0	root	_	Translit=yiqilip
+6	چۈشۈپتۇ	_	AUX	V	_	5	aux	_	Translit=chüshüptu
+
+1	ئۇ	_	PRON	P	_	6	nsubj	_	Translit=u
+2	قىينالغان	_	VERB	V	_	6	nmod	_	Translit=qiynalghan
+3	ھالدا	_	NOUN	N	_	2	case	_	Translit=halda
+4	ئۈزۈپ	_	NUM	M	_	5	compound:redup	_	Translit=üzüp
+5	ئۈزۈپ	_	VERB	V	_	6	advmod	_	Translit=üzüp
+6	سۆزلەپتۇ	_	VERB	V	_	0	root	_	Translit=sözleptu
+
+1	جېنىم	_	NOUN	N	_	2	amod	_	Translit=jënim
+2	ئۇكام	_	NOUN	N	_	5	discourse	_	Translit=ukam
+3	ئۆيگە	_	NOUN	N	_	5	nmod	_	Translit=öyge
+4	بىللە	_	ADV	D	_	5	advmod	_	Translit=bille
+5	قايتالمايدىغان	_	VERB	V	_	0	root	_	Translit=qaytalmaydighan
+6	ئوخشايمىز	_	VERB	V	_	5	cop	_	Translit=oxshaymiz
+
+1	دەرھال	_	ADV	D	_	6	advmod	_	Translit=derhal
+2	مېنىڭ	_	PRON	P	_	3	nmod:poss	_	Translit=mëning
+3	كىيىملىرىمنى	_	NOUN	N	_	4	dobj	_	Translit=kiyimlirimni
+4	كىيىپ	_	VERB	V	_	6	advmod	_	Translit=kiyip
+5	تاغدىن	_	NOUN	N	_	6	nmod	_	Translit=taghdin
+6	چۈشۈپ	_	VERB	V	_	0	root	_	Translit=chüshüp
+7	كەت	_	AUX	V	_	6	aux	_	Translit=ket
+
+1	سەن	_	PRON	P	_	6	nsubj	_	Translit=sen
+2	بولساڭمۇ	_	VERB	V	_	6	advmod	_	Translit=bolsangmu
+3	تىنچ	_	ADJ	A	_	4	compound:redup	_	Translit=tinch
+4	ئامان	_	ADJ	A	_	6	advmod	_	Translit=aman
+5	يۇرتىمىزغا	_	NOUN	N	_	6	nmod	_	Translit=yurtimizgha
+6	بېرىۋال	_	VERB	V	_	0	root	_	Translit=bëriwal
+
+1	ياق	_	INTJ	E	_	7	discourse	_	Translit=yaq
+2	ئاكا	_	NOUN	N	_	7	discourse	_	Translit=aka
+3	ياق	_	INTJ	E	_	7	discourse	_	Translit=yaq
+4	دادامدىن	_	NOUN	N	_	6	nmod	_	Translit=dadamdin
+5	ئايرىلىپ	_	VERB	V	_	6	compound:lvc	_	Translit=ayrilip
+6	قالغىنىممۇ	_	VERB	V	_	7	nsubj	_	Translit=qalghinimmu
+7	يېتەر	_	VERB	V	_	0	root	_	Translit=yëter
+
+1	ئەمدى	_	ADV	D	_	5	mark	_	Translit=emdi
+2	سەندىن	_	PRON	P	_	4	nmod	_	Translit=sendin
+3	ئايرىلىپ	_	VERB	V	_	4	compound:lvc	_	Translit=ayrilip
+4	قالسام	_	VERB	V	_	5	name	_	Translit=qalsam
+5	بولمايدۇ	_	VERB	V	_	0	root	_	Translit=bolmaydu
+
+1	كىچىك	_	ADJ	A	_	2	amod	_	Translit=kichik
+2	ئوغۇل	_	NOUN	N	_	12	nsubj	_	Translit=oghul
+3	يىغلاپ	_	VERB	V	_	6	advmod	_	Translit=yighlap
+4	تۇرۇپ	_	AUX	V	_	3	aux	_	Translit=turup
+5	شۇنداق	_	PRON	P	_	6	advmod	_	Translit=shundaq
+6	دەپتۇ	_	VERB	V	_	12	parataxis	_	Translit=deptu
+7	دە	_	PART	T	_	6	mark	_	Translit=de
+8	ئۈستىدىكى	_	NOUN	N	_	9	amod	_	Translit=üstidiki
+9	كىيىملىرىنى	_	NOUN	N	_	12	dobj	_	Translit=kiyimlirini
+10	سېلىپ	_	VERB	V	_	12	advcl	_	Translit=sëlip
+11	ئاكىسىغا	_	NOUN	N	_	12	nmod	_	Translit=akisigha
+12	كىيدۈرۈپتۇ	_	VERB	V	_	0	root	_	Translit=kiydürüptu
+
+1	ئۇ	_	PRON	P	_	9	nsubj	_	Translit=u
+2	توڭلاپ	_	VERB	V	_	3	compound:lvc	_	Translit=tonglap
+3	كەتكەن	_	VERB	V	_	4	acl	_	Translit=ketken
+4	ئاكىسىنى	_	NOUN	N	_	6	dobj	_	Translit=akisini
+5	چىڭ	_	ADJ	A	_	6	advmod	_	Translit=ching
+6	قۇچاقلاپ	_	VERB	V	_	9	advmod	_	Translit=quchaqlap
+7	بەدىنى	_	NOUN	N	_	9	dobj	_	Translit=bedini
+8	بىلەن	_	ADP	R	_	7	mark	_	Translit=bilen
+9	ئىسسىتماقچى	_	VERB	V	_	0	root	_	Translit=issitmaqchi
+10	بوپتۇ	_	VERB	V	_	9	cop	_	Translit=boptu
+
+1	ئەتىسى	_	NOUN	N	_	24	nmod	_	Translit=etisi
+2	داۋاندىن	_	NOUN	N	_	3	nmod	_	Translit=dawandin
+3	ئۆتكەنلەر	_	VERB	V	_	24	nsubj	_	Translit=ötkenler
+4	ئاتىنىڭ	_	NOUN	N	_	5	nmod:poss	_	Translit=atining
+5	ئۇچىسىدا	_	NOUN	N	_	8	nmod	_	Translit=uchisida
+6	چوڭ	_	ADJ	A	_	7	amod	_	Translit=chong
+7	ئوغۇلنىڭ	_	NOUN	N	_	8	nmod:poss	_	Translit=oghulning
+8	كىيمىنى	_	VERB	V	_	24	conj	_	Translit=kiymini
+9	چوڭ	_	ADJ	A	_	10	amod	_	Translit=chong
+10	ئوغۇلنىڭ	_	NOUN	N	_	11	nmod:poss	_	Translit=oghulning
+11	ئۇچىسىدا	_	NOUN	N	_	14	nmod	_	Translit=uchisida
+12	كىچىك	_	ADJ	A	_	13	amod	_	Translit=kichik
+13	ئوغۇلنىڭ	_	NOUN	N	_	14	nmod:poss	_	Translit=oghulning
+14	كىيمىنى	_	NOUN	N	_	24	conj	_	Translit=kiymini
+15	كىچىك	_	ADJ	A	_	16	amod	_	Translit=kichik
+16	ئوغۇلنىڭ	_	NOUN	N	_	23	nsubj	_	Translit=oghulning
+17	بولسا	_	VERB	V	_	16	parataxis	_	Translit=bolsa
+18	يۇقا	_	NOUN	N	_	21	amod	_	Translit=yuqa
+19	بىر	_	NUM	M	_	20	nummod	_	Translit=bir
+20	يالاڭ	_	ADJ	A	_	21	amod	_	Translit=yalang
+21	كىيىم	_	NOUN	N	_	23	case	_	Translit=kiyim
+22	بىلەن	_	ADP	R	_	21	mark	_	Translit=bilen
+23	قالغانلىقىنى	_	VERB	V	_	24	dobj	_	Translit=qalghanliqini
+24	كۆرۈپتۇ	_	VERB	V	_	0	root	_	Translit=körüptu
+
+1	ئۇلار	_	PRON	P	_	8	nsubj	_	Translit=ular
+2	بىر	_	NUM	M	_	3	compound	_	Translit=bir
+3	قاراپلا	_	NOUN	N	_	8	advcl	_	Translit=qarapla
+4	قانداق	_	PRON	P	_	5	det	_	Translit=qandaq
+5	ئىش	_	NOUN	N	_	7	nsubj	_	Translit=ish
+6	يۈز	_	NOUN	N	_	7	compound	_	Translit=yüz
+7	بەرگەنلىكىنى	_	VERB	V	_	8	dobj	_	Translit=bergenlikini
+8	چۈشىنىپ	_	VERB	V	_	0	root	_	Translit=chüshinip
+9	يېتىپتۇ	_	AUX	V	_	8	aux	_	Translit=yëtiptu
+
+1	قېرىنداشلىق	_	NOUN	N	_	2	amod	_	Translit=qërindashliq
+2	مېھرى	_	NOUN	N	_	5	nsubj	_	Translit=mëhri
+3	دېگەن	_	VERB	V	_	5	cop	_	Translit=dëgen
+4	مانا	_	PART	T	_	5	advmod:emph	_	Translit=mana
+5	شۇ	_	PRON	P	_	6	ccomp	_	Translit=shu
+6	دەپتۇ	_	VERB	V	_	0	root	_	Translit=deptu
+7	كىشىلەر	_	NOUN	N	_	6	nsubj	_	Translit=kishiler
+8	كۆز	_	NOUN	N	_	9	compound	_	Translit=köz
+9	يېشى	_	NOUN	N	_	10	nsubj	_	Translit=yëshi
+10	قىلىشىپ	_	VERB	V	_	6	advcl	_	Translit=qiliship
+
+1	ئەمما	_	CONJ	C	_	3	cc	_	Translit=emma
+2	بەزىلەر	_	PRON	P	_	3	nsubj	_	Translit=beziler
+3	دەپتۇ	_	VERB	V	_	0	root	_	Translit=deptu
+
+1	ئۇلاردىن	_	PRON	P	_	2	nmod	_	Translit=ulardin
+2	ئىككىيلەن	_	NUM	M	_	4	nsubj	_	Translit=ikkiylen
+3	ھايات	_	NOUN	N	_	4	compound	_	Translit=hayat
+4	قېلىشى	_	VERB	V	_	5	nsubj	_	Translit=qëlishi
+5	مۇمكىن	_	ADJ	A	_	0	root	_	Translit=mumkin
+6	ئىكەن	_	VERB	V	_	5	cop	_	Translit=iken
+
+1	بىراق	_	CONJ	C	_	4	cc	_	Translit=biraq
+2	پۇرسەتنى	_	NOUN	N	_	4	dobj	_	Translit=pursetni
+3	قولدىن	_	NOUN	N	_	4	nmod	_	Translit=qoldin
+4	بېرىپ	_	VERB	V	_	0	root	_	Translit=bërip
+5	قويۇپتۇ	_	AUX	V	_	4	aux	_	Translit=qoyuptu
+
+1	شۇنداق	_	PRON	P	_	2	mwe	_	Translit=shundaq
+2	قىلىپ	_	VERB	V	_	6	advmod	_	Translit=qilip
+3	ھەركىم	_	PRON	P	_	6	nsubj	_	Translit=herkim
+4	ھەر	_	PRON	P	_	5	det	_	Translit=her
+5	نېمە	_	PRON	P	_	6	dobj	_	Translit=nëme
+6	دەپتۇ	_	VERB	V	_	0	root	_	Translit=deptu
+
+1	ئەمما	_	CONJ	C	_	19	cc	_	Translit=emma
+2	ھەممەيلەن	_	NUM	M	_	9	nsubj	_	Translit=hemmeylen
+3	ئاتا	_	NOUN	N	_	4	compound:redup	_	Translit=ata
+4	بالا	_	NOUN	N	_	5	appos	_	Translit=bala
+5	ئۈچەيلەننى	_	NOUN	N	_	9	dobj	_	Translit=ücheylenni
+6	ھۆرمەت	_	NOUN	N	_	9	nmod	_	Translit=hörmet
+7	بىلەن	_	ADP	R	_	6	mark	_	Translit=bilen
+8	دەپنە	_	NOUN	N	_	9	compound	_	Translit=depne
+9	قىپتۇ	_	VERB	V	_	19	conj	_	Translit=qiptu
+10	ۋە	_	CONJ	C	_	19	cc	_	Translit=we
+11	قېرىنداشلىق	_	NOUN	N	_	12	amod	_	Translit=qërindashliq
+12	مېھرى	_	NOUN	N	_	14	nmod	_	Translit=mëhri
+13	توغرۇلۇق	_	ADP	R	_	12	cop	_	Translit=toghruluq
+14	گەپ	_	NOUN	N	_	15	nsubj	_	Translit=gep
+15	بولۇپ	_	VERB	V	_	19	advcl	_	Translit=bolup
+16	قالسا	_	AUX	V	_	15	aux	_	Translit=qalsa
+17	ئۇلارنىڭ	_	PRON	P	_	18	nmod:poss	_	Translit=ularning
+18	ھېكايىسنى	_	NOUN	N	_	19	dobj	_	Translit=hëkayisni
+19	سۆزلەيدىغان	_	VERB	V	_	0	root	_	Translit=sözleydighan
+20	بوپتۇ	_	VERB	V	_	19	cop	_	Translit=boptu
+
+1	بىر	_	NUM	M	_	2	det	_	Translit=bir
+2	كۈنى	_	NOUN	N	_	14	nmod:tmod	_	Translit=küni
+3	بەش	_	NUM	M	_	4	nummod	_	Translit=besh
+4	ياشلىق	_	ADJ	A	_	5	amod	_	Translit=yashliq
+5	ساشا	_	NOUN	N	_	14	nsubj	_	Translit=sasha
+6	ئاتا	_	NOUN	N	_	7	compound:redup	_	Translit=ata
+7	ئانىسى	_	NOUN	N	_	14	conj	_	Translit=anisi
+8	ۋە	_	CONJ	C	_	14	cc	_	Translit=we
+9	ئاكىسى	_	NOUN	N	_	10	appos	_	Translit=akisi
+10	تولىيە	_	NOUN	N	_	14	nmod	_	Translit=toliye
+11	بىلەن	_	ADP	R	_	10	cop	_	Translit=bilen
+12	بىللە	_	ADV	D	_	14	advmod	_	Translit=bille
+13	ئورمانلىققا	_	NOUN	N	_	14	nmod	_	Translit=ormanliqqa
+14	باردى	_	VERB	V	_	0	root	_	Translit=bardi
+
+1	ئورمانلىق	_	NOUN	N	_	3	nsubj	_	Translit=ormanliq
+2	شۇنچە	_	PRON	P	_	3	det	_	Translit=shunche
+3	گۈزەل	_	ADJ	A	_	6	conj	_	Translit=güzel
+4	ھاۋاسىمۇ	_	NOUN	N	_	6	nsubj	_	Translit=hawasimu
+5	شۇنچە	_	PRON	P	_	6	det	_	Translit=shunche
+6	ساپ	_	ADJ	A	_	0	root	_	Translit=sap
+7	ئىدى	_	VERB	V	_	6	cop	_	Translit=idi
+
+1	ئۇلار	_	PRON	P	_	6	nsubj	_	Translit=ular
+2	ئورمانلىقتىكى	_	NOUN	N	_	5	amod	_	Translit=ormanliqtiki
+3	بىر	_	NUM	M	_	5	nummod	_	Translit=bir
+4	بوش	_	ADJ	A	_	5	amod	_	Translit=bosh
+5	يەرگە	_	NOUN	N	_	6	nmod:cau	_	Translit=yerge
+6	كەلدى	_	VERB	V	_	0	root	_	Translit=keldi
+
+1	ئۇ	_	PRON	P	_	2	det	_	Translit=u
+2	يەردە	_	NOUN	N	_	6	nmod	_	Translit=yerde
+3	ياۋا	_	ADJ	A	_	4	amod	_	Translit=yawa
+4	گۈللەر	_	NOUN	N	_	6	nsubj	_	Translit=güller
+5	ھۆپپىدە	_	NOUN	N	_	6	advmod	_	Translit=höppide
+6	ئېچىلىپ	_	VERB	V	_	0	root	_	Translit=ëchilip
+7	كەتكەنىدى	_	AUX	V	_	6	aux	_	Translit=ketkenidi
+
+1	قاراڭلار	_	VERB	V	_	9	discourse	_	Translit=qaranglar
+2	ئاۋۇ	_	PRON	P	_	3	det	_	Translit=awu
+3	يەردە	_	NOUN	N	_	6	nmod	_	Translit=yerde
+4	ئازغان	_	VERB	V	_	5	acl	_	Translit=azghan
+5	چېچېكى	_	NOUN	N	_	6	nsubj	_	Translit=chëchëki
+6	بار	_	ADJ	A	_	8	ccomp	_	Translit=bar
+7	ئىكەن	_	VERB	V	_	6	cop	_	Translit=iken
+8	دەپ	_	VERB	V	_	9	advcl	_	Translit=dep
+9	توۋلىۋەتتى	_	NOUN	N	_	0	root	_	Translit=towliwetti
+10	ساشا	_	VERB	V	_	9	nsubj	_	Translit=sasha
+
