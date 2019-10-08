@@ -28,11 +28,6 @@ The grammar induction is by default set to be performed on 15 selected languages
 
 ## Reference
 ```
-@inproceedings{hwjt2019multi,
-    title = {Multilingual Grammar Induction with Continuous Language Identification},
-    author = {Wenjuan Han and Ge Wang and Yong Jiang and Kewei Tu },
-    booktitle = {Proceedings of EMNLP},
-    year = {2019}
-}
+wait...
 ```
 
