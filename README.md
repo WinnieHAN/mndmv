@@ -21,7 +21,7 @@ Please concact hanwj@shanghaitech.edu.cn or wangge@shanghaitech.edu.cn if you ha
 
 run:
 ```shell
-python ml_dmv_parser.py --cvalency 2 --do_eval --neural_epoch 1 --function_mask --lr 0.001 --epoch 70 --use_neural --embed_languages --em_type em --child_only
+python ml_dmv_parser.py --cvalency 2 --do_eval --neural_epoch 1 --function_mask --lr 0.001 --epoch 70 --use_neural --embed_languages --em_type em --child_only --sentence_predict
 ```
 The grammar induction is by default set to be performed on 15 selected languages, you can customize your own language selection by changing the contents in the language_list file
 
