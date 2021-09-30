@@ -1,4 +1,4 @@
-# multi-lingual grammar induction
+# Multilingual Grammar Induction with Continuous Language Identification
 
 This is PyTorch implementation of the [paper](http://faculty.sist.shanghaitech.edu.cn/faculty/tukw/emnlp19mult.pdf):
 ```
@@ -28,6 +28,12 @@ The grammar induction is by default set to be performed on 15 selected languages
 
 ## Reference
 ```
-wait...
+@inproceedings{han2019multilingual,
+  title={Multilingual grammar induction with continuous language identification},
+  author={Han, Wenjuan and Wang, Ge and Jiang, Yong and Tu, Kewei},
+  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages={5728--5733},
+  year={2019}
+}
 ```
 
