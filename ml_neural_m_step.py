@@ -348,9 +348,9 @@ class m_step_model(nn.Module):
                 batch_loss.backward()
                 self.optim.step()
                 self.optim.zero_grad()
-            print "child loss for this iteration is " + str(iter_loss.detach().data.numpy() / batch_num)
+            print ("child loss for this iteration is " + str(iter_loss.detach().data.numpy() / batch_num))
             if self.sentence_predict or self.language_predict:
-                print "language loss for this iteration is " + str(iter_lang_loss.detach().data.numpy() / batch_num)
+                print ("language loss for this iteration is " + str(iter_lang_loss.detach().data.numpy() / batch_num))
             if not self.child_only:
                 decision_batch_num = len(batch_decision_data['decision_pos'])
                 tot_batch = decision_batch_num
@@ -388,5 +388,5 @@ class m_step_model(nn.Module):
                     batch_decision_loss.backward()
                     self.optim.step()
                     self.optim.zero_grad()
-                print "decision loss for this iteration is " + str(
-                    iter_decision_loss.detach().data.numpy() / batch_num)
+                print ("decision loss for this iteration is " + str(
+                    iter_decision_loss.detach().data.numpy() / batch_num))

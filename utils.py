@@ -171,8 +171,10 @@ def read_conll(fh):
     root = ConllEntry(0, '*root*', '*root*', 'ROOT-CPOS', 'ROOT-POS', '_', -1, 'rroot', '_', '_')
     tokens = [root]
     for line in fh:
-        tok = line.strip().split('\t')
-        if not tok or line.strip() == '':
+        tok = line.decode('utf8').strip().split('\t')
+        if len(tok) == 1 and tok[0] == '':
+            continue
+        elif not tok or line.strip() == '':
             if len(tokens) > 1: yield tokens
             tokens = [root]
         else:
@@ -181,8 +183,8 @@ def read_conll(fh):
             else:
                 # if tok[3][0] == 'V':
                 #    tok[3] = "V"
-                tokens.append(ConllEntry(int(tok[0]), tok[1], tok[2], tok[4], tok[3], tok[5],
-                                         int(tok[6]) if tok[6] != '_' else -1, tok[7], tok[8], tok[9]))
+                tokens.append(ConllEntry(int(float(tok[0])), tok[1], tok[2], tok[4], tok[3], tok[5],
+                                         int(float(tok[6])) if tok[6] != '_' else -1, tok[7], tok[8], tok[9]))
     if len(tokens) > 1:
         yield tokens
 
@@ -271,7 +273,7 @@ def eval(predicted, gold, test_path, log_path, epoch):
                 correct_counter += 1
             total_counter += 1
     accuracy = float(correct_counter) / total_counter
-    print 'UAS is ' + str(accuracy * 100) + '%'
+    print ('UAS is ' + str(accuracy * 100) + '%')
     f_w = open(test_path, 'w')
     for s, sentence in enumerate(gold):
         for entry in sentence.entries:
@@ -443,7 +445,7 @@ def read_multiple_data(data_path, file_set, isPredict):
         for file in file_set:
             one_data_path = data_path + "/" + file
             language_key, _ = get_language_key(file)
-            with open(one_data_path, 'r') as conllFP:
+            with open(one_data_path, 'rb') as conllFP:
                 for sentence in read_conll(conllFP):
                     # wordsCount.update([node.norm for node in sentence if isinstance(node, ConllEntry)])
                     posCount.update([node.pos for node in sentence if isinstance(node, ConllEntry)])
@@ -609,8 +611,8 @@ def eval_ml(predicted, gold, test_path, log_path, language_map, languages, epoch
             total_counter[lan_id] += 1
     accuracy = correct_counter / total_counter
     for l in languages.keys():
-        print 'UAS is ' + str(accuracy[languages[l]] * 100) + '% for ' + l
-    print 'UAS is '+ str(np.mean(accuracy)*100)+ '% for average'
+        print ('UAS is ' + str(accuracy[languages[l]] * 100) + '% for ' + l)
+    print ('UAS is '+ str(np.mean(accuracy)*100)+ '% for average')
     # f_w = open(test_path, 'w')
     # for s, sentence in enumerate(gold):
     #     for entry in sentence.entries:

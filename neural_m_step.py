@@ -229,7 +229,7 @@ class m_step_model(nn.Module):
         decision_param_compare = decision_counter / decision_sum
         decision_difference = decision_param_compare - decision_param
         if not self.child_only:
-            print 'distance for decision in this iteration '+str(LA.norm(decision_difference))
+            print ('distance for decision in this iteration '+str(LA.norm(decision_difference)))
         trans_counter = trans_counter + self.param_smoothing
         child_sum = np.sum(trans_counter, axis=(1, 3), keepdims=True)
         trans_param_compare = trans_counter / child_sum
